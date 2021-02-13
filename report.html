@@ -1,0 +1,471 @@
+<h2>MAGx_LR_1B</h2>
+<p>Magnetic field (1Hz) from VFM and ASM</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_LR">https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_LR</a></p>
+<details>
+
+<table>
+<thead>
+<tr><th>Variable Name  </th><th>Description                                                                                                                                                          </th><th>UNITS  </th><th>DIM  </th><th>TYPE  </th></tr>
+</thead>
+<tbody>
+<tr><td>t              </td><td>Time, UTC                                                                                                                                                            </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>r              </td><td>Position of VFM sensor in ITRF, spherical geocentric coordinates                                                                                                     </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>F              </td><td>Magnetic field intensity (&quot;scalar magnetic field&quot;)                                                                                                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dFAOCS         </td><td>AOCS magneto-torquer stray magnetic field intensity subtracted from scalar measurements                                                                              </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dFother        </td><td>Stray magnetic field intensity of all other sources subtracted from scalar measurements                                                                              </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>Ferror         </td><td>Error estimate on magnetic field intensity.  Accounts for errors of commissioning including:
+
+ - Instrument noise
+ - Uncertainties in instrument calibration and characterisation
+ - Uncertainties in corrections of stray fields from spacecraft
+ - For further details please consult SW-TN-DTU-GS-016                                                                                                                                                                      </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>BVFM           </td><td>Magnetic field vector, VFM frame.  Note: this is set to zero if insufficient vector magnetometer measurements are available (FlagsB = 255)                           </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>BNEC           </td><td>Magnetic field vector, NEC frame.  Note: this is set to zero if insufficient vector magnetometer or attitude measurements are available (FlagsB= 255 or Flagsq = 255)</td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dBSun          </td><td>Sun induced stray magnetic field correction vector subtracted from measurements, VFM frame (implemented from Product Baseline 04).                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dBAOCS         </td><td>AOCS magneto-torquer stray magnetic field correction vector subtracted from vector measurements, VFM frame.                                                          </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dBother        </td><td>Stray magnetic field correction vector of all other sources subtracted from vector measurements, VFM frame.                                                          </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>Berror         </td><td>Error estimate on magnetic field vector, VFM frame.  Accounts for errors of commissioning including:
+
+ - Instrument noise
+ - Uncertainties in instrument calibration and characterisation
+ - Uncertainties in corrections of stray fields from spacecraft
+ - High frequency (ca 2 - 12 Hz) signal content which is reduced in extraction of 1 Hz data from 50 Hz measurements
+ - For further details please consult SW-TN-DTU-GS-016                                                                                                                                                                      </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>QNEC←CRF       </td><td>Rotation from NEC to Common Reference Frame (CRF)                                                                                                                    </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>Atterror       </td><td>Error estimate on attitude information.  
+  Includes effects such as number of STR camera heads supplying attitude information, possible discrepancies in provided attitude information from several heads, lack of STR attitude information (i.e. the attitude used for computing BNEC is obtained by interpolation over longer arcs of S/C motion), etc.                                                                                                                                                                      </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>FlagsF         </td><td>Flags related to the magnetic field intensity measurement                                                                                                            </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>FlagsB         </td><td>Flags related to the magnetic field vector measurement                                                                                                               </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>Flagsq         </td><td>Flags related to the attitude data                                                                                                                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>FlagsPlatform  </td><td>Flags related to the S/C platform – Bus and AOCS telemetry, position accuracy                                                                                        </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>ASM_ Freq_Dev  </td><td>Deviation of actual ASM frequency calibration data from screened and filtered value                                                                                  </td><td>-      </td><td>-    </td><td>-     </td></tr>
+</tbody>
+</table>
+
+</details>
+
+<hr>
+<h2>MAGx_HR_1B</h2>
+<p>Magnetic field (50Hz) from VFM</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_HR">https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_HR</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>EFIx_LP_1B</h2>
+<p>Electric field instrument (Langmuir probe measurements at 2Hz)</p>
+<p>&lt;-&gt;</p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>IPDxIRR_2F</h2>
+<p>Ionospheric plasma characteristics (derived quantities at 1Hz)</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIPD%2FIRR">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIPD%2FIRR</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>TECxTMS_2F</h2>
+<p>Total electron content</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FTEC%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FTEC%2FTMS</a></p>
+<details>
+
+<table>
+<thead>
+<tr><th>Variable Name    </th><th>Description                                           </th><th>Type      </th><th>Unit   </th></tr>
+</thead>
+<tbody>
+<tr><td>Timestamp        </td><td>Time stamp in UTC                                     </td><td>CDF_EPOCH </td><td>ms     </td></tr>
+<tr><td>Latitude         </td><td>Geographic latitude                                   </td><td>CDF_DOUBLE</td><td>degree </td></tr>
+<tr><td>Longitude        </td><td>Geographic longitude                                  </td><td>CDF_DOUBLE</td><td>degree </td></tr>
+<tr><td>Radius           </td><td>Geographic radius                                     </td><td>CDF_DOUBLE</td><td>m      </td></tr>
+<tr><td>GPS_Position     </td><td>X-,Y-,Z-coordinates (WGS84) of the GPS satellite      </td><td>CDF_DOUBLE</td><td>m      </td></tr>
+<tr><td>LEO_Position     </td><td>X-,Y-,Z-coordinates (WGS84) of the LEO satellite      </td><td>CDF_DOUBLE</td><td>m      </td></tr>
+<tr><td>PRN              </td><td>GPS satellite PRN                                     </td><td>CDF_UINT2 </td><td>No Unit</td></tr>
+<tr><td>L1               </td><td>GPS L1 carrier phase observation                      </td><td>CDF_DOUBLE</td><td>m      </td></tr>
+<tr><td>L2               </td><td>GPS L2 carrier phase observation                      </td><td>CDF_DOUBLE</td><td>m      </td></tr>
+<tr><td>P1               </td><td>GPS P1 code phase observation                         </td><td>CDF_DOUBLE</td><td>m      </td></tr>
+<tr><td>P2               </td><td>GPS P2 code phase observation                         </td><td>CDF_DOUBLE</td><td>m      </td></tr>
+<tr><td>S1               </td><td>GPS signal-to-noise ratio or raw signal strength on L1</td><td>CDF_DOUBLE</td><td>dB-Hz  </td></tr>
+<tr><td>S2               </td><td>GPS signal-to-noise ratio or raw signal strength on L2</td><td>CDF_DOUBLE</td><td>dB-Hz  </td></tr>
+<tr><td>Absolute_STEC    </td><td>Absolute slant TEC                                    </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
+<tr><td>Absolute_VTEC    </td><td>Absolute vertical TEC                                 </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
+<tr><td>Elevation-Angle  </td><td>Elevation angle                                       </td><td>CDF_DOUBLE</td><td>degree </td></tr>
+<tr><td>Relative_STEC    </td><td>Relative slant TEC                                    </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
+<tr><td>Relative_STEC_RMS</td><td>Root mean square error of relative slant TEC          </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
+<tr><td>DCB              </td><td>GPS receiver differential code bias                   </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
+<tr><td>DCB_Error        </td><td>Error of the GPS receiver differential code bias      </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
+</tbody>
+</table>
+
+</details>
+
+<hr>
+<h2>FACxTMS_2F</h2>
+<p>Field-aligned currents (single satellite)</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>FAC_TMS_2F</h2>
+<p>Field-aligned currents (dual-satellite A-C)</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>EEFxTMS_2F</h2>
+<p>Equatorial electric field</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FEEF%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FEEF%2FTMS</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>IBIxTMS_2F</h2>
+<p>Ionospheric bubble index</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIBI%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIBI%2FTMS</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>AEJxLPL_2F</h2>
+<p>Auroral electrojets line profile - Line current method (LC)</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPL">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPL</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>AEJxPBL_2F</h2>
+<p>Auroral electrojets peaks and boundaries from LC</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBL">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBL</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>AEJxLPS_2F</h2>
+<p>Auroral electrojets line profile - SECS method</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPS</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>AEJxPBS_2F</h2>
+<p>Auroral electrojets peaks and boundaries from SECS</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBS</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>AOBxFAC_2F</h2>
+<p>Auroral oval boundaries derived from FACs</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAOB%2FFAC">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAOB%2FFAC</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MCO_SHA_2C</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MCO_SHA_2D</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MCO_SHA_2F</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MCO_SHA_2X</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MLI_SHA_2C</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MLI_SHA_2D</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MLI_SHA_2E</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MIN_1DM_2_</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIN">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIN</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MCR_1DM_2_</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCR">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCR</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MMA_SHA_2C</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MMA_SHA_2F</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MIO_SHA_2C</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MIO_SHA_2D</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MIO_SHA_2E</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>IBP_CLI_2_</h2>
+<p>-</p>
+<p>&lt;-&gt;</p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>SP3xCOM_2_</h2>
+<p>-</p>
+<p>&lt;-&gt;</p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>SP3xKIN_2_</h2>
+<p>-</p>
+<p>&lt;-&gt;</p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>ACCxPOD_2_</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FPOD">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FPOD</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>ACCxCAL_2_</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FCAL">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FCAL</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>DNSxPOD_2_</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FPOD">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FPOD</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>DNSxACC_2_</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FACC">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FACC</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>EGF_SHA_2_</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FEGF">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FEGF</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>MTI_SHA_2C</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMTI">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMTI</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>VOBS_xM_2_</h2>
+<p>-</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FVOB">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FVOB</a></p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>AUX_OBSH2_</h2>
+<p>Hourly values derived from both WDC and INTERMAGNET data</p>
+<p>&lt;-&gt;</p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>AUX_OBSM2_</h2>
+<p>Minute values from INTERMAGNET</p>
+<p>&lt;-&gt;</p>
+<details>
+
+
+
+</details>
+
+<hr>
+<h2>AUX_OBSS2_</h2>
+<p>Second values from INTERMAGNET</p>
+<p>&lt;-&gt;</p>
+<details>
+
+
+
+</details>
