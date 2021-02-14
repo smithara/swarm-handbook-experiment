@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - jupyterlab=3.0
+  - pandas=1.2
+  - openpyxl=3.0
+  - tabulate=0.8
+  - markdown=3.3
+  - panel=0.10
