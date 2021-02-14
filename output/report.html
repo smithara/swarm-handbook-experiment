@@ -1,44 +1,48 @@
 <h2>MAGx_LR_1B</h2>
 <p>Magnetic field (1Hz) from VFM and ASM</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_LR">https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_LR</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_LR">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03a1_demo-magx_lr_1b">Link to VirES notebook</a></p>
+<p>The MAGX_LR_1B Product contains magnetic vector and scalar data at 1 Hz rate. The S/C data are processed to provide MAGX_LR_1B data at exact UTC seconds, i.e. both VFM vector and ASM scalar data are interpolated to yield these data. Hence, small gaps in the VFM or ASM data need not cause gaps in the product as the gaps may be filled by this interpolation. Any gaps, however, will have an impact on the error estimate of the associated product element. The measurement data set record of the MAGX_LR_1B Product is described in Table 3. See also Mag-L Data Set Record, MDR_MAG_LR.</p>
+<p>VirES collection names: SW_OPER_MAGx_LR_1B</p>
+<p>VirES variable names: F,dF_AOCS,dF_other,F_error,B_VFM,B_NEC,dB_Sun,dB_AOCS,dB_other,B_error,q_NEC_CRF,Att_error,Flags_F,Flags_B,Flags_q,Flags_Platform,ASM_Freq_Dev</p>
 <details>
 
 <table>
 <thead>
-<tr><th>Variable Name  </th><th>Description                                                                                                                                                          </th><th>UNITS  </th><th>DIM  </th><th>TYPE  </th></tr>
+<tr><th>FIELD        </th><th>DESCRIPTION                                                                                                                                                          </th><th>UNITS  </th><th>DIM  </th><th>TYPE  </th></tr>
 </thead>
 <tbody>
-<tr><td>t              </td><td>Time, UTC                                                                                                                                                            </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>r              </td><td>Position of VFM sensor in ITRF, spherical geocentric coordinates                                                                                                     </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>F              </td><td>Magnetic field intensity (&quot;scalar magnetic field&quot;)                                                                                                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>dFAOCS         </td><td>AOCS magneto-torquer stray magnetic field intensity subtracted from scalar measurements                                                                              </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>dFother        </td><td>Stray magnetic field intensity of all other sources subtracted from scalar measurements                                                                              </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>Ferror         </td><td>Error estimate on magnetic field intensity.  Accounts for errors of commissioning including:
+<tr><td>t            </td><td>Time, UTC                                                                                                                                                            </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>r            </td><td>Position of VFM sensor in ITRF, spherical geocentric coordinates                                                                                                     </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>F            </td><td>Magnetic field intensity (&quot;scalar magnetic field&quot;)                                                                                                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dFAOCS       </td><td>AOCS magneto-torquer stray magnetic field intensity subtracted from scalar measurements                                                                              </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dFother      </td><td>Stray magnetic field intensity of all other sources subtracted from scalar measurements                                                                              </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>Ferror       </td><td>Error estimate on magnetic field intensity.  Accounts for errors of commissioning including:
 
  - Instrument noise
  - Uncertainties in instrument calibration and characterisation
  - Uncertainties in corrections of stray fields from spacecraft
  - For further details please consult SW-TN-DTU-GS-016                                                                                                                                                                      </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>BVFM           </td><td>Magnetic field vector, VFM frame.  Note: this is set to zero if insufficient vector magnetometer measurements are available (FlagsB = 255)                           </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>BNEC           </td><td>Magnetic field vector, NEC frame.  Note: this is set to zero if insufficient vector magnetometer or attitude measurements are available (FlagsB= 255 or Flagsq = 255)</td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>dBSun          </td><td>Sun induced stray magnetic field correction vector subtracted from measurements, VFM frame (implemented from Product Baseline 04).                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>dBAOCS         </td><td>AOCS magneto-torquer stray magnetic field correction vector subtracted from vector measurements, VFM frame.                                                          </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>dBother        </td><td>Stray magnetic field correction vector of all other sources subtracted from vector measurements, VFM frame.                                                          </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>Berror         </td><td>Error estimate on magnetic field vector, VFM frame.  Accounts for errors of commissioning including:
+<tr><td>BVFM         </td><td>Magnetic field vector, VFM frame.  Note: this is set to zero if insufficient vector magnetometer measurements are available (FlagsB = 255)                           </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>BNEC         </td><td>Magnetic field vector, NEC frame.  Note: this is set to zero if insufficient vector magnetometer or attitude measurements are available (FlagsB= 255 or Flagsq = 255)</td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dBSun        </td><td>Sun induced stray magnetic field correction vector subtracted from measurements, VFM frame (implemented from Product Baseline 04).                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dBAOCS       </td><td>AOCS magneto-torquer stray magnetic field correction vector subtracted from vector measurements, VFM frame.                                                          </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>dBother      </td><td>Stray magnetic field correction vector of all other sources subtracted from vector measurements, VFM frame.                                                          </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>Berror       </td><td>Error estimate on magnetic field vector, VFM frame.  Accounts for errors of commissioning including:
 
  - Instrument noise
  - Uncertainties in instrument calibration and characterisation
  - Uncertainties in corrections of stray fields from spacecraft
  - High frequency (ca 2 - 12 Hz) signal content which is reduced in extraction of 1 Hz data from 50 Hz measurements
  - For further details please consult SW-TN-DTU-GS-016                                                                                                                                                                      </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>QNEC←CRF       </td><td>Rotation from NEC to Common Reference Frame (CRF)                                                                                                                    </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>Atterror       </td><td>Error estimate on attitude information.  
+<tr><td>QNEC←CRF     </td><td>Rotation from NEC to Common Reference Frame (CRF)                                                                                                                    </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>Atterror     </td><td>Error estimate on attitude information.  
   Includes effects such as number of STR camera heads supplying attitude information, possible discrepancies in provided attitude information from several heads, lack of STR attitude information (i.e. the attitude used for computing BNEC is obtained by interpolation over longer arcs of S/C motion), etc.                                                                                                                                                                      </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>FlagsF         </td><td>Flags related to the magnetic field intensity measurement                                                                                                            </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>FlagsB         </td><td>Flags related to the magnetic field vector measurement                                                                                                               </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>Flagsq         </td><td>Flags related to the attitude data                                                                                                                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>FlagsPlatform  </td><td>Flags related to the S/C platform – Bus and AOCS telemetry, position accuracy                                                                                        </td><td>-      </td><td>-    </td><td>-     </td></tr>
-<tr><td>ASM_ Freq_Dev  </td><td>Deviation of actual ASM frequency calibration data from screened and filtered value                                                                                  </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>FlagsF       </td><td>Flags related to the magnetic field intensity measurement                                                                                                            </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>FlagsB       </td><td>Flags related to the magnetic field vector measurement                                                                                                               </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>Flagsq       </td><td>Flags related to the attitude data                                                                                                                                   </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>FlagsPlatform</td><td>Flags related to the S/C platform – Bus and AOCS telemetry, position accuracy                                                                                        </td><td>-      </td><td>-    </td><td>-     </td></tr>
+<tr><td>ASM_ Freq_Dev</td><td>Deviation of actual ASM frequency calibration data from screened and filtered value                                                                                  </td><td>-      </td><td>-    </td><td>-     </td></tr>
 </tbody>
 </table>
 
@@ -47,27 +51,83 @@
 <hr>
 <h2>MAGx_HR_1B</h2>
 <p>Magnetic field (50Hz) from VFM</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_HR">https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_HR</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FMAGx_HR">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03a2_demo-magx_hr_1b">Link to VirES notebook</a></p>
+<p>The MAGX_HR_1B Product contains magnetic vector data at 50 Hz rate. The time instants of the data are determined by the VFM instrument samplings. No interpolation of the magnetic data is performed, neither to shift the measurements in time nor to fill any gaps in the VFM source data. The measurement data set record of the MAGX_HR_1B Product is described in Table 2. See also Mag-H Data Set Record, MDR_MAG_HR.</p>
+<p>VirES collection names: SW_OPER_MAGx_HR_1B</p>
+<p>VirES variable names: F,B_VFM,B_NEC,dB_Sun,dB_AOCS,dB_other,B_error,q_NEC_CRF,Att_error,Flags_B,Flags_q,Flags_Platform,ASM_Freq_Dev</p>
 <details>
 
-
+<table>
+<thead>
+<tr><th>FIELD         </th><th>DESCRIPTION                                                                                                        </th><th>UNITS  </th><th style="text-align: right;">  DIM</th><th>TYPE      </th></tr>
+</thead>
+<tbody>
+<tr><td>Timestamp     </td><td>Time of observation                                                                                                </td><td>UTC    </td><td style="text-align: right;">    1</td><td>CDF_EPOCH </td></tr>
+<tr><td>SyncStatus    </td><td>Time synchronization status (of VFM), source and quality, see Appendix D of [AD-13]                                </td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT2 </td></tr>
+<tr><td>Latitude      </td><td>Position in ITRF – Geocentric latitude                                                                             </td><td>deg    </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Longitude     </td><td>Position in ITRF – Geocentric longitude                                                                            </td><td>deg    </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Radius        </td><td>Position in ITRF – Radius                                                                                          </td><td>m      </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>B_VFM         </td><td>Magnetic field vector, VFM frame                                                                                   </td><td>nT     </td><td style="text-align: right;">    3</td><td>CDF_DOUBLE</td></tr>
+<tr><td>B_NEC         </td><td>Magnetic field vector, NEC frame, zero if Flags_q = 255                                                            </td><td>nT     </td><td style="text-align: right;">    3</td><td>CDF_DOUBLE</td></tr>
+<tr><td>dB_Sun        </td><td>Magnetic stray field correction vector of Sun induced stray field, VFM frame (implemented from Product Baseline 04)</td><td>nT     </td><td style="text-align: right;">    3</td><td>CDF_DOUBLE</td></tr>
+<tr><td>dB_AOCS       </td><td>Magnetic stray field correction vector of AOCS magneto-torquer coils, VFM frame                                    </td><td>nT     </td><td style="text-align: right;">    3</td><td>CDF_DOUBLE</td></tr>
+<tr><td>dB_other      </td><td>Magnetic stray field correction vector of all other sources, VFM frame                                             </td><td>nT     </td><td style="text-align: right;">    3</td><td>CDF_DOUBLE</td></tr>
+<tr><td>B_error       </td><td>Error estimates on magnetic field, VFM frame                                                                       </td><td>nT     </td><td style="text-align: right;">    3</td><td>CDF_DOUBLE</td></tr>
+<tr><td>q_NEC_CRF     </td><td>Quaternion, transformation: NEC ← CRF                                                                              </td><td>-      </td><td style="text-align: right;">    4</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Att_error     </td><td>Error estimates on attitude information                                                                            </td><td>mdeg   </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Flags_B       </td><td>Flags characterizing the magnetic field measurement, see Table 14                                                  </td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT1 </td></tr>
+<tr><td>Flags_q       </td><td>Flags characterizing the attitude information, see Table 14                                                        </td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT1 </td></tr>
+<tr><td>Flags_Platform</td><td>Flags characterizing the S/C platform information, see Table 14                                                    </td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT2 </td></tr>
+</tbody>
+</table>
 
 </details>
 
 <hr>
 <h2>EFIx_LP_1B</h2>
 <p>Electric field instrument (Langmuir probe measurements at 2Hz)</p>
-<p>&lt;-&gt;</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel1b%2FLatest_baselines%2FEFIx_LP">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03b__demo-efix_lp_1b">Link to VirES notebook</a></p>
+<p>The EFIX_LP_1B Product contains plasma data from the Langimur Probe (LP) of the Electrical Field Instrument (EFI). The plasma product encompasses the plasma density and temperature. Data is provided at 2 Hz rate. The time instant are determined by the EFI instruments. No interpolation of the EFI data is performed, neither to shift the measurements in time nor to fill any gaps.</p>
+<p>VirES collection names: SW_OPER_EFIx_LP_1B</p>
+<p>VirES variable names: U_orbit,Ne,Ne_error,Te,Te_error,Vs,Vs_error,Flags_LP,Flags_Ne,Flags_Te,Flags_Vs</p>
 <details>
 
-
+<table>
+<thead>
+<tr><th>FIELD     </th><th>DESCRIPTION                                                                                  </th><th>UNITS  </th><th style="text-align: right;">  DIM</th><th>TYPE      </th></tr>
+</thead>
+<tbody>
+<tr><td>Timestamp </td><td>Timestamp of the LP measurement                                                              </td><td>UTC    </td><td style="text-align: right;">    1</td><td>CDF_EPOCH </td></tr>
+<tr><td>SyncStatus</td><td>Time synchronization status (of LP), source and quality, see Appendix D of SW-RS-DSC-SY-0007 </td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT2 </td></tr>
+<tr><td>Latitude  </td><td>Position in ITRF – Geocentric latitude                                                       </td><td>deg    </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Longitude </td><td>Position in ITRF – Geocentric longitude                                                      </td><td>deg    </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Radius    </td><td>Position in ITRF – Radius                                                                    </td><td>m      </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>U_orbit   </td><td>Magnitude of spacecraft velocity in the ITRF                                                 </td><td>m/s    </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Ne        </td><td>Plasma density (electron)                                                                    </td><td>cm-3   </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Ne_error  </td><td>Error of the plasma density estimate                                                         </td><td>cm-3   </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Te        </td><td>Plasma electron temperature                                                                  </td><td>K      </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Te_error  </td><td>Error of the electron temperature estimate                                                   </td><td>K      </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Vs        </td><td>Spacecraft potential                                                                         </td><td>V      </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Vs_error  </td><td>Error of the spacecraft potential estimate                                                   </td><td>V      </td><td style="text-align: right;">    1</td><td>CDF_DOUBLE</td></tr>
+<tr><td>Flags_LP  </td><td>Flags indicating the source of measurements, see Table 6-4 of SW-RS-DSC-SY-0007              </td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT1 </td></tr>
+<tr><td>Flags_Ne  </td><td>Flags characterizing the plasma density measurement, see Table 6-4 of SW-RS-DSC-SY-0007      </td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT1 </td></tr>
+<tr><td>Flags_Te  </td><td>Flags characterizing the electron temperature measurement, see Table 6-4 of SW-RS-DSC-SY-0007</td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT1 </td></tr>
+<tr><td>Flags_Vs  </td><td>Flags characterizing the spacecraft potential measurement, see Table 6-4 of SW-RS-DSC-SY-0007</td><td>-      </td><td style="text-align: right;">    1</td><td>CDF_UINT1 </td></tr>
+</tbody>
+</table>
 
 </details>
 
 <hr>
 <h2>IPDxIRR_2F</h2>
 <p>Ionospheric plasma characteristics (derived quantities at 1Hz)</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIPD%2FIRR">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIPD%2FIRR</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIPD%2FIRR">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03c__demo-ipdxirr_2f">Link to VirES notebook</a></p>
+<p>Time series of characteristics of the plasma density and plasma irregularities along the orbit from single satellite measurements. Time series of local plasma conditions, including background density and total electron content. Data related to geomagnetic regions in the ionosphere. Indication of severity of plasma irregularities for ground-based users provided</p>
+<p>VirES collection names: SW_OPER_IPDxIRR_2F</p>
+<p>VirES variable names: Ne,Te,Background_Ne,Foreground_Ne,PCP_flag,Grad_Ne_at_100km,Grad_Ne_at_50km,Grad_Ne_at_20km,Grad_Ne_at_PCP_edge,ROD,RODI10s,RODI20s,delta_Ne10s,delta_Ne20s,delta_Ne40s,Num_GPS_satellites,mVTEC,mROT,mROTI10s,mROTI20s,IBI_flag,Ionosphere_region_flag,IPIR_index,Ne_quality_flag,TEC_STD</p>
 <details>
 
 
@@ -77,43 +137,25 @@
 <hr>
 <h2>TECxTMS_2F</h2>
 <p>Total electron content</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FTEC%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FTEC%2FTMS</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FTEC%2FTMS">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03d__demo-tecxtms_2f">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_TECxTMS_2F</p>
+<p>VirES variable names: GPS_Position,LEO_Position,PRN,L1,L2,P1,P2,S1,S2,Elevation_Angle,Absolute_VTEC,Absolute_STEC,Relative_STEC,Relative_STEC_RMS,DCB,DCB_Error</p>
 <details>
 
-<table>
-<thead>
-<tr><th>Variable Name    </th><th>Description                                           </th><th>Type      </th><th>Unit   </th></tr>
-</thead>
-<tbody>
-<tr><td>Timestamp        </td><td>Time stamp in UTC                                     </td><td>CDF_EPOCH </td><td>ms     </td></tr>
-<tr><td>Latitude         </td><td>Geographic latitude                                   </td><td>CDF_DOUBLE</td><td>degree </td></tr>
-<tr><td>Longitude        </td><td>Geographic longitude                                  </td><td>CDF_DOUBLE</td><td>degree </td></tr>
-<tr><td>Radius           </td><td>Geographic radius                                     </td><td>CDF_DOUBLE</td><td>m      </td></tr>
-<tr><td>GPS_Position     </td><td>X-,Y-,Z-coordinates (WGS84) of the GPS satellite      </td><td>CDF_DOUBLE</td><td>m      </td></tr>
-<tr><td>LEO_Position     </td><td>X-,Y-,Z-coordinates (WGS84) of the LEO satellite      </td><td>CDF_DOUBLE</td><td>m      </td></tr>
-<tr><td>PRN              </td><td>GPS satellite PRN                                     </td><td>CDF_UINT2 </td><td>No Unit</td></tr>
-<tr><td>L1               </td><td>GPS L1 carrier phase observation                      </td><td>CDF_DOUBLE</td><td>m      </td></tr>
-<tr><td>L2               </td><td>GPS L2 carrier phase observation                      </td><td>CDF_DOUBLE</td><td>m      </td></tr>
-<tr><td>P1               </td><td>GPS P1 code phase observation                         </td><td>CDF_DOUBLE</td><td>m      </td></tr>
-<tr><td>P2               </td><td>GPS P2 code phase observation                         </td><td>CDF_DOUBLE</td><td>m      </td></tr>
-<tr><td>S1               </td><td>GPS signal-to-noise ratio or raw signal strength on L1</td><td>CDF_DOUBLE</td><td>dB-Hz  </td></tr>
-<tr><td>S2               </td><td>GPS signal-to-noise ratio or raw signal strength on L2</td><td>CDF_DOUBLE</td><td>dB-Hz  </td></tr>
-<tr><td>Absolute_STEC    </td><td>Absolute slant TEC                                    </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
-<tr><td>Absolute_VTEC    </td><td>Absolute vertical TEC                                 </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
-<tr><td>Elevation-Angle  </td><td>Elevation angle                                       </td><td>CDF_DOUBLE</td><td>degree </td></tr>
-<tr><td>Relative_STEC    </td><td>Relative slant TEC                                    </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
-<tr><td>Relative_STEC_RMS</td><td>Root mean square error of relative slant TEC          </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
-<tr><td>DCB              </td><td>GPS receiver differential code bias                   </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
-<tr><td>DCB_Error        </td><td>Error of the GPS receiver differential code bias      </td><td>CDF_DOUBLE</td><td>TECU   </td></tr>
-</tbody>
-</table>
+
 
 </details>
 
 <hr>
 <h2>FACxTMS_2F</h2>
 <p>Field-aligned currents (single satellite)</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03e1_demo-facxtms_2f">Link to VirES notebook</a></p>
+<p>Time series of field-aligned and radial current densities along the orbit from single satellite measurements. Field-aligned current (FAC) density is derived by the multiplication of the radial current (IRC) density with the inclination angle of the geomagnetic field. The field-aligned current density can only be calculated at latitudes, where the magnetic field is well inclined, i.e. |I| &gt; 30°. Near the magnetic equator for magnetic inclination angles |I| &lt; 30° FAC values are set to NaN. The radial current density can be provided along the whole orbit. Scale size &gt;7.5 km.</p>
+<p>VirES collection names: SW_OPER_FACxTMS_2F</p>
+<p>VirES variable names: IRC,IRC_Error,FAC,FAC_Error,Flags,Flags_F,Flags_B,Flags_q</p>
 <details>
 
 
@@ -123,7 +165,12 @@
 <hr>
 <h2>FAC_TMS_2F</h2>
 <p>Field-aligned currents (dual-satellite A-C)</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FFAC%2FTMS">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03e2_demo-fac_tms_2f">Link to VirES notebook</a></p>
+<p>Time series of field-aligned and radial current densities along the orbit using the dual-satellite method. Field-aligned current (FAC) density is derived by the multiplication of the radial current (IRC) density with the inclination angle of the geomagnetic field. The field-aligned current density can only be calculated at latitudes, where the magnetic field is well inclined, i.e. |I| &gt; 30°. Near the magnetic equator for magnetic inclination angles |I| &lt; 30° FAC values are set to NaN. The radial current density can be provided along the whole orbit, except for latitudes θ&gt;86° (near poles), where both FAC and IRC values are set to NaN. </p>
+<p>Note that the magnetic field data used for the dual-satellite method is low-pass filtered with a 3-dB cutoff period of 20 s (corresponding to a wavelength of 150 km). This step is indispensable because the lateral distance between Swarm A and Swarm C has to be taken into account.</p>
+<p>VirES collection names: SW_OPER_FAC_TMS_2F</p>
+<p>VirES variable names: IRC,IRC_Error,FAC,FAC_Error,Flags,Flags_F,Flags_B,Flags_q</p>
 <details>
 
 
@@ -132,8 +179,12 @@
 
 <hr>
 <h2>EEFxTMS_2F</h2>
-<p>Equatorial electric field</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FEEF%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FEEF%2FTMS</a></p>
+<p>Dayside equatorial electric field</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FEEF%2FTMS">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03f__demo-eefxtms_2f">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_EEFxTMS_2F</p>
+<p>VirES variable names: EEF,EEJ,RelErr,Flags</p>
 <details>
 
 
@@ -143,7 +194,11 @@
 <hr>
 <h2>IBIxTMS_2F</h2>
 <p>Ionospheric bubble index</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIBI%2FTMS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIBI%2FTMS</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FIBI%2FTMS">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03g__demo-ibixtms_2f">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_IBIxTMS_2F</p>
+<p>VirES variable names: Bubble_Index,Bubble_Probability,Flags_Bubble,Flags_F,Flags_B,Flags_q</p>
 <details>
 
 
@@ -153,7 +208,11 @@
 <hr>
 <h2>AEJxLPL_2F</h2>
 <p>Auroral electrojets line profile - Line current method (LC)</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPL">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPL</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPL">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03h1_demo-aebs-aejxlpl">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_AEJxLPL_2F,SW_OPER_AEJxLPL_2F:Quality</p>
+<p>VirES variable names: Latitude_QD,Longitude_QD,MLT_QD,J_NE,J_QD,RMS_misfit,Confidence</p>
 <details>
 
 
@@ -163,7 +222,11 @@
 <hr>
 <h2>AEJxPBL_2F</h2>
 <p>Auroral electrojets peaks and boundaries from LC</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBL">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBL</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBL">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03h1_demo-aebs-aejxlpl">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_AEJxPBL_2F</p>
+<p>VirES variable names: Latitude_QD,Longitude_QD,MLT_QD,J_QD,Flags,PointType</p>
 <details>
 
 
@@ -173,7 +236,11 @@
 <hr>
 <h2>AEJxLPS_2F</h2>
 <p>Auroral electrojets line profile - SECS method</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPS</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FLPS">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03h2_demo-aebs-aejxlps">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_AEJxLPS_2F,SW_OPER_AEJxLPS_2F:Quality</p>
+<p>VirES variable names: Latitude_QD,Longitude_QD,MLT_QD,J_CF_NE,J_DF_NE,J_CF_SemiQD,J_DF_SemiQD,J_R,RMS_misfit,Confidence</p>
 <details>
 
 
@@ -183,7 +250,11 @@
 <hr>
 <h2>AEJxPBS_2F</h2>
 <p>Auroral electrojets peaks and boundaries from SECS</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBS">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBS</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAEJ%2FPBS">Link to file location</a></p>
+<p><a href="https://swarm.magneticearth.org/notebooks/03h2_demo-aebs-aejxlps">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_AEJxPBS_2F,SW_OPER_AEJxPBS_2F:GroundMagneticDisturbance</p>
+<p>VirES variable names: Latitude_QD,Longitude_QD,MLT_QD,J_DF_SemiQD,Flags,PointType,B_NE</p>
 <details>
 
 
@@ -193,7 +264,11 @@
 <hr>
 <h2>AOBxFAC_2F</h2>
 <p>Auroral oval boundaries derived from FACs</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAOB%2FFAC">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAOB%2FFAC</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FAOB%2FFAC">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_AOBxFAC_2F</p>
+<p>VirES variable names: Latitude_QD,Longitude_QD,MLT_QD,Boundary_Flag,Quality,Pair_Indicator</p>
 <details>
 
 
@@ -202,8 +277,12 @@
 
 <hr>
 <h2>MCO_SHA_2C</h2>
+<p>Spherical harmonic model of the main (core) field and its temporal variation</p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO</a></p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -213,7 +292,11 @@
 <hr>
 <h2>MCO_SHA_2D</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -223,7 +306,11 @@
 <hr>
 <h2>MCO_SHA_2F</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -233,7 +320,11 @@
 <hr>
 <h2>MCO_SHA_2X</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCO">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -243,7 +334,11 @@
 <hr>
 <h2>MLI_SHA_2C</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -253,7 +348,11 @@
 <hr>
 <h2>MLI_SHA_2D</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -263,7 +362,11 @@
 <hr>
 <h2>MLI_SHA_2E</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMLI">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -273,7 +376,11 @@
 <hr>
 <h2>MIN_1DM_2_</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIN">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIN</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIN">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -283,7 +390,11 @@
 <hr>
 <h2>MCR_1DM_2_</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCR">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCR</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMCR">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -293,7 +404,11 @@
 <hr>
 <h2>MMA_SHA_2C</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -303,7 +418,11 @@
 <hr>
 <h2>MMA_SHA_2F</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMMA">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -313,7 +432,11 @@
 <hr>
 <h2>MIO_SHA_2C</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -323,7 +446,11 @@
 <hr>
 <h2>MIO_SHA_2D</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -333,7 +460,11 @@
 <hr>
 <h2>MIO_SHA_2E</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMIO">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: (MODEL)</p>
+<p>VirES variable names: F,B_NEC</p>
 <details>
 
 
@@ -343,7 +474,11 @@
 <hr>
 <h2>IBP_CLI_2_</h2>
 <p>-</p>
-<p>&lt;-&gt;</p>
+<p><a href="-">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -353,7 +488,11 @@
 <hr>
 <h2>SP3xCOM_2_</h2>
 <p>-</p>
-<p>&lt;-&gt;</p>
+<p><a href="-">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -363,7 +502,11 @@
 <hr>
 <h2>SP3xKIN_2_</h2>
 <p>-</p>
-<p>&lt;-&gt;</p>
+<p><a href="-">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -373,7 +516,11 @@
 <hr>
 <h2>ACCxPOD_2_</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FPOD">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FPOD</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FPOD">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -383,7 +530,11 @@
 <hr>
 <h2>ACCxCAL_2_</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FCAL">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FCAL</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FACC%2FCAL">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -393,7 +544,11 @@
 <hr>
 <h2>DNSxPOD_2_</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FPOD">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FPOD</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FPOD">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -403,7 +558,11 @@
 <hr>
 <h2>DNSxACC_2_</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FACC">https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FACC</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2daily%2FLatest_baselines%2FDNS%2FACC">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -413,7 +572,11 @@
 <hr>
 <h2>EGF_SHA_2_</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FEGF">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FEGF</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FEGF">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -423,7 +586,11 @@
 <hr>
 <h2>MTI_SHA_2C</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMTI">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMTI</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FMTI">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -433,7 +600,11 @@
 <hr>
 <h2>VOBS_xM_2_</h2>
 <p>-</p>
-<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FVOB">https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FVOB</a></p>
+<p><a href="https://swarm-diss.eo.esa.int/#swarm%2FLevel2longterm%2FVOB">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: -</p>
+<p>VirES variable names: -</p>
 <details>
 
 
@@ -443,7 +614,11 @@
 <hr>
 <h2>AUX_OBSH2_</h2>
 <p>Hourly values derived from both WDC and INTERMAGNET data</p>
-<p>&lt;-&gt;</p>
+<p><a href="-">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_AUX_OBSH2_</p>
+<p>VirES variable names: B_NEC,F,IAGA_code,Quality,ObsIndex</p>
 <details>
 
 
@@ -453,7 +628,11 @@
 <hr>
 <h2>AUX_OBSM2_</h2>
 <p>Minute values from INTERMAGNET</p>
-<p>&lt;-&gt;</p>
+<p><a href="-">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_AUX_OBSM2_</p>
+<p>VirES variable names: B_NEC,F,IAGA_code,Quality</p>
 <details>
 
 
@@ -463,7 +642,11 @@
 <hr>
 <h2>AUX_OBSS2_</h2>
 <p>Second values from INTERMAGNET</p>
-<p>&lt;-&gt;</p>
+<p><a href="-">Link to file location</a></p>
+<p><a href="-">Link to VirES notebook</a></p>
+<p>-</p>
+<p>VirES collection names: SW_OPER_AUX_OBSS2_</p>
+<p>VirES variable names: B_NEC,F,IAGA_code,Quality</p>
 <details>
 
 
