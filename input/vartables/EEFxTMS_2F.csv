@@ -1,0 +1,8 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,"Time of satellite crossing of the magnetic equator, UTC",1,CDF_EPOCH
+Longitude,degrees,Geographic longitude of satellite crossing of the magnetic equator,1,CDF_REAL8
+Latitude,degrees,Geographic latitude of satellite crossing of the magnetic equator,1,CDF_REAL8
+EEF,mV/m,Estimate of the equatorial electric field,1,CDF_REAL8
+EEJ,mA/m,"Height-integrated east current profile in QD latitude, spanning [-20:0.5:20] degrees",81,CDF_REAL8
+RelErr,-,Quality indicator of EEF estimate; relative error between modeled and observed current profile,1,CDF_REAL8
+Flags,-,Flags describing data gaps and satellite identification,1,CDF_UINT2

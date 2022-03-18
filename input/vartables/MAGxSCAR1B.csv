@@ -1,0 +1,11 @@
+Variable,Units,Description,Dim,Type
+t,-,Time of observation,1,CDF_EPOCH
+r,m,Position in ITRF ... Radius,1,CDF_DOUBLE
+theta,deg,Position in ITRF ... co-latitude,1,CDF_DOUBLE
+phi,deg,Position in ITRF ... Longitude,1,CDF_DOUBLE
+B,nT,"Magnetic field vector, VFM frame",3,CDF_DOUBLE
+F,nT,Magnetic field intensity,1,CDF_DOUBLE
+q,-,"Quaternion, transformation: NEC ... CRF",4,CDF_DOUBLE
+Eclipse,-,Satellite in Earth's eclipse,1,CDF_UINT1
+alpha,deg,"Sun inclination angle, azimuth",1,CDF_DOUBLE
+beta,deg,"Sun inclination angle, elevation",1,CDF_DOUBLE

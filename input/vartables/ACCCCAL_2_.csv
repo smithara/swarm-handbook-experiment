@@ -1,0 +1,14 @@
+Variable,Units,Description,Dim,Type
+time,CDF Epoch (UTC time),Epoch of observation (UTC),1,CDF_EPOCH
+a_cal,m/s^2,"Calibrated linear acceleration (X, Y, Z)",3,CDF_DOUBLE
+a_stp,m/s^2,Step correction for linear accelerations,3,CDF_DOUBLE
+a_tmp,m/s^2,Temperature correction for linear accelerations,3,CDF_DOUBLE
+a_gg,m/s^2,Gravity gradient correction for linear accelerations,3,CDF_DOUBLE
+a_ca,m/s^2,Centrifugal acceleration correction for linear accelerations,3,CDF_DOUBLE
+a_aa,m/s^2,Angular acceleration correction for linear accelerations,3,CDF_DOUBLE
+s,(m/s^2)/(m/s^2),Bias,3,CDF_DOUBLE
+b,m/s^2,Bias for linear accelerations,3,CDF_DOUBLE
+a_spk,m/s^2,Spike correction for linear accelerations,3,CDF_DOUBLE
+flag_cor,-,Flag indicating which corrections are applied,1,CDF_UINT2
+flag_val,-,Flag indicating if data is valid,1,CDF_UINT2
+flag_thr,-,Vector indicating per axis the size of artificial spikes in linear accelerations,1,CDF_UINT2

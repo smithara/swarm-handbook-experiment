@@ -1,0 +1,14 @@
+Variable,Units,Description,Dim,Type
+Timestamp, ,-,1,CDF_EPOCH
+Latitude,degrees,-,1,CDF_REAL8
+Longitude,degrees,-,1,CDF_REAL8
+Height,m,-,1,CDF_REAL8
+Radius,m,-,1,CDF_REAL8
+QDLatitude,degrees,-,1,CDF_REAL8
+MLT,hour,-,1,CDF_REAL8
+Tn_msis,K,-,1,CDF_REAL8
+Te_adj_LP,K,-,1,CDF_REAL8
+Ti_meas_drift,K,-,1,CDF_REAL8
+Ti_model_drift,K,-,1,CDF_REAL8
+Flag_ti_meas, ,-,1,CDF_UINT1
+Flag_ti_model, ,-,1,CDF_UINT1

@@ -1,0 +1,9 @@
+Variable,Units,Description,Dim,Type
+time,-,-,1,CDF_EPOCH
+density,kg/m3,-,1,CDF_DOUBLE
+density_orbitmean,kg/m3,-,1,CDF_DOUBLE
+validity_flag,unknown units,-,1,CDF_INT1
+altitude,m,-,1,CDF_DOUBLE
+latitude,deg,-,1,CDF_DOUBLE
+longitude,deg,-,1,CDF_DOUBLE
+local_solar_time,h,-,1,CDF_DOUBLE

@@ -1,0 +1,13 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,Time stamp,1,CDF_EPOCH
+SyncStatus,-,Synchronization status,1,CDF_UINT2
+dB_Sun,nT,"Magnetic stray field correction vector of Sun induced perturbation, VFM frame",3,CDF_DOUBLE
+dB_AOCS,nT,"Magnetic stray field vector of AOCS magneto-torquer coils, VFM frame",3,CDF_DOUBLE
+dB_Thrust,nT,"Magnetic stray field vector of AOCS thruster activations, VFM frame",3,CDF_DOUBLE
+dB_Battery,nT,"Magnetic stray field vector of battery currents, VFM frame",3,CDF_DOUBLE
+dB_SP,nT,"Magnetic stray field vector of solar panels currents, VFM frame",3,CDF_DOUBLE
+dB_Bus,nT,"Magnetic stray field vector of S/C bus currents, VFM frame",3,CDF_DOUBLE
+dB_STR,nT,"Magnetic stray field vector of STR CHUs, VFM frame",3,CDF_DOUBLE
+dB_Static,nT,"Static magnetic stray field vector of S/C platform, VFM frame",3,CDF_DOUBLE
+dB_Ind,nT,"Magnetically induced stray field vector of S/C platform, VFM frame",3,CDF_DOUBLE
+dB_State,nT,"Instrument and sub-system state dependent magnetic stray field vector, VFM frame",3,CDF_DOUBLE

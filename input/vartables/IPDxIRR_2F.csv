@@ -1,0 +1,30 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,CDF_EPOCH of the measurement.,1,CDF_EPOCH
+Latitude,deg,Position in ITRF - Latitude.,1,CDF_DOUBLE
+Longitude,deg,Position in ITRF - Longitude.,1,CDF_DOUBLE
+Radius,m,Position in ITRF - Radius.,1,CDF_DOUBLE
+Ne,cm^-3,"Plasma density, directly copied from the Langmuir probe files.",1,CDF_DOUBLE
+Background_Ne,cm^-3,"Background density, as calculated from Ne using a percentile filter of 551 datapoints (2 Hz raw data) and 35 as the percentile.",1,CDF_DOUBLE
+Foreground_Ne,cm^-3,"Foreground density, as calculated from ndens using a percentile filter of 7 datapoints (2 Hz raw data) and 50 as the percentile.",1,CDF_DOUBLE
+Te,K,"Electron temperature, directly copied from the Langmuir probe files.",1,CDF_DOUBLE
+PCP_flag,-,"The polar cap patch flag:  0 if the plasma density measurement occurred OUTSIDE a polar cap patch. 1 if the plasma density measurement occurred at one of the edges of a polar cap patch (no plasma velocity measurements are available). 2 if the plasma density measurement occurred at the LEADING edge of a polar cap patch. 3 if the plasma density measurement occurred at the TRAILING edge of a polar cap patch. 4 if the plasma density measurement occurred INSIDE a polar cap patch proper. When no ion drift data is available, the leading and trailing edges cannot be distinguished. In this case the polar cap patch flag is set to 4 throughout the patch proper and to 1 throughout both edges.",1,CDF_INT4
+Grad_Ne_at_100km,cm^-3/m,The electron density gradient in a running window calculated via linear regression over 27 data points for the 2 Hz electron density data.,1,CDF_DOUBLE
+Grad_Ne_at_50km,cm^-3/m,The electron density gradient in a running window calculated via linear regression over 13 data points for the 2 Hz electron density data.,1,CDF_DOUBLE
+Grad_Ne_at_20km,cm^-3/m,The electron density gradient in a running window calculated via linear regression over 5 data points for the 2 Hz electron density data.,1,CDF_DOUBLE
+Grad_Ne_at_PCP_edge,cm^-3/m,The linear electron density gradient calculated over the edges of a patch. This variable is non-zero only at the edges of polar cap patches.,1,CDF_DOUBLE
+ROD,cm^-3/s,Rate Of change of Density,1,CDF_DOUBLE
+RODI10s,cm^-3/s,Rate Of change of Density Index (RODI) is the standard deviation of ROD over 10 seconds.,1,CDF_DOUBLE
+RODI20s,cm^-3/s,Rate Of change of Density Index (RODI) is the standard deviation of ROD over 20 seconds.,1,CDF_DOUBLE
+delta_Ne10s,cm^-3,"Derived by subtracting Ne by its median filtered value in 10 seconds. As a result, delta_Ne10s indicates the electron density fluctuations smaller than 75 km.",1,CDF_DOUBLE
+delta_Ne20s,cm^-3,"Derived by subtracting Ne by its median filtered value in 20 seconds. As a result, delta_Ne20s indicates the electron density fluctuations smaller than 150 km.",1,CDF_DOUBLE
+delta_Ne40s,cm^-3,"Derived by subtracting Ne by its median filtered value in 40 seconds. As a result, delta_Ne40s indicates the electron density fluctuations smaller than 300 km.",1,CDF_DOUBLE
+Num_GPS_satellites,-,Total number of tracked GPS satellites above 20 degrees.,1,CDF_INT4
+mVTEC,TECU,Median of VTEC from all available GPS satellites above 30 degrees.,1,CDF_DOUBLE
+mROT,TECU/s,Median of Rate Of change of TEC (ROT) from all available GPS satellites above 30 degrees.,1,CDF_DOUBLE
+mROTI10s,TECU/s,Median of Rate Of change of TEC Index (ROTI) from all available GPS satellites above 30 degrees. The ROTI of each satellite is the standard deviation of ROT over 10 seconds.,1,CDF_DOUBLE
+mROTI20s,TECU/s,Median of Rate Of change of TEC Index (ROTI) from all available GPS satellites above 30 degrees. The ROTI of each satellite is the standard deviation of ROT over 20 seconds.,1,CDF_DOUBLE
+IBI_flag,-,"Plasma Bubble Index, copied from the level-2 Ionospheric Bubble Index product, IBIxTMS_2F. ",1,CDF_INT4
+Ionosphere_region_flag,-,"0: equator, 1: mid-latitudes; 2: auroral oval; 3: polar cap.",1,CDF_INT4
+IPIR_index,-,"The numeric index for plasma fluctuations and irregularities: 0-3 low, 4-5 medium, and > 6 high level of ionosphericplasma irregularities.",1,CDF_INT4
+Ne_quality_flag,-,"Quality flag for the Ne data and the derived data from Ne, e.g., background density, foreground density etc.",1,CDF_INT4
+TEC_STD,TECU,STD of VTEC from all GPS satellites.,1,CDF_DOUBLE

@@ -1,0 +1,12 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,Time of observation,1,CDF_EPOCH
+Latitude,deg,Geocentric latitude,1,CDF_DOUBLE
+Longitude,deg,Geocentric longitude,1,CDF_DOUBLE
+Radius,m,Radius,1,CDF_DOUBLE
+B_OB,nT,"Estimated observed GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]",3,CDF_DOUBLE
+sigma_OB,nT,Observed field estimated error,3,CDF_DOUBLE
+B_CF,nT,"Estimated core GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]",3,CDF_DOUBLE
+sigma_CF,nT,Core field estimated error,3,CDF_DOUBLE
+Timestamp_SV,-,Time of Secular Variation (*_SV) data,1,CDF_EPOCH
+B_SV,nT/yr,"Estimated secular variation (SV) GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]",3,CDF_DOUBLE
+sigma_SV,nT/yr,Secular variation field estimated error,3,CDF_DOUBLE

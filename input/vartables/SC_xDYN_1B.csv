@@ -1,0 +1,20 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,Time stamp,1,CDF_EPOCH
+SyncStatus,-,Synchronization status,1,CDF_UINT2
+a_Sun,m/s2,"Acceleration due to Solar radiation pressure, S/C frame",3,CDF_DOUBLE
+e_Sun,-,"Direction to the Sun, unit vector, S/C frame",3,CDF_DOUBLE
+m_SC,kg,Actual mass of S/C,1,CDF_DOUBLE
+r_CoG,m,"Center of gravity, S/C frame",3,CDF_DOUBLE
+A_head,m2,"Cross sections of the S/C, orbit frame,front",3,CDF_DOUBLE
+A_right,m2,"Cross sections of the S/C, orbit frame,right",3,CDF_DOUBLE
+A_left,m2,"Cross sections of the S/C, orbit frame,left",3,CDF_DOUBLE
+A_down,m2,"Cross sections of the S/C, orbit frame,down",3,CDF_DOUBLE
+K_Earth,m2,Downward optical reflectivity of the S/C,3,CDF_DOUBLE
+P_Gas,Pa,Pressure of gas tanks,2,CDF_DOUBLE
+T_Gas,deg C,Temperature of gas tanks,2,CDF_DOUBLE
+Flags_Platform,-,Flags characterizing the S/C platform information,1,CDF_UINT2
+dt_thr,s,Thruster on-time,12,CDF_DOUBLE
+thr_set,-,Flag indicating which thruster branch is active ,1,CDF_UINT2
+f_thr,mN,"Nominal thrust force of activated thrusters (combined x, y, z)",3,CDF_DOUBLE
+a_centr,m/s2,"Centrifugal acceleration, S/C frame",3,CDF_DOUBLE
+a_GG,m/s2,"Gravity gradient acceleration, S/C frame",3,CDF_DOUBLE

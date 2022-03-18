@@ -1,0 +1,6 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,Time stamp,1,CDF_EPOCH
+SyncStatus,-,Synchronization status,1,CDF_UINT2
+q,-,"Quaternion, transformation: ITRF <- S/C",4,CDF_DOUBLE
+Flags_q,-,"Flags characterizing the attitude information,",1,CDF_UINT1
+Maneuver_Id,-,Current maneuver identification code,1,CDF_UINT1

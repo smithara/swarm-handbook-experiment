@@ -1,0 +1,23 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,Time stamp,1,CDF_EPOCH
+SyncStatus,-,Synchronization status,1,CDF_UINT2
+Latitude,deg,Position in ITRF - Latitude,1,CDF_DOUBLE
+Longitude,deg,Position in ITRF - Longitude,1,CDF_DOUBLE
+Radius,m,Position in ITRF - Radius,1,CDF_DOUBLE
+F,nT,Magnetic field intensity,1,CDF_DOUBLE
+dF_AOCS,nT,Magnetic stray field correction intensity of AOCS magneto-torquer coils,1,CDF_DOUBLE
+dF_other,nT,Magnetic stray field correction intensity of all other sources,1,CDF_DOUBLE
+F_error,nT,Error estimate on magnetic field intensity,1,CDF_DOUBLE
+F_VFM,nT,"Magnetic field intensity from the VFM instrument,converted and corrected",1,CDF_DOUBLE
+B,nT,"Magnetic field vector, VFM frame",3,CDF_DOUBLE
+dB_Sun,nT,"Magnetic stray field correction vector of Sun induced perturbation, VFM frame",3,CDF_DOUBLE
+dB_AOCS,nT,"Magnetic stray field correction vector of AOCS magneto-torquer coils, VFM frame",3,CDF_DOUBLE
+dB_other,nT,"Magnetic stray field correction vector of all other sources, VFM frame",3,CDF_DOUBLE
+B_pre,nT,"Pre-calibrated VFM magnetic field vector, VFM frame, time Time+dt",3,CDF_DOUBLE
+EU_VFM,eu,"Raw VFM measuremet, time Time+dt_VFM",3,CDF_DOUBLE
+T_CDC,C,"Temperature of VFM CDC, time Time+dt_VFM",1,CDF_DOUBLE
+T_CSC,C,"Temperature of VFM CSC, time Time+dt_VFM",1,CDF_DOUBLE
+T_EU,C,"Temperature of VFM EU, time Time+dt_VFM",1,CDF_DOUBLE
+dt_VFM,s,Time offset of VFM measurement,1,CDF_DOUBLE
+alpha,deg,"Solar inclination angle, rotation about y axis, S/C frame, time Time+dt",1,CDF_DOUBLE
+beta,deg,"Solar inclination angle, angle to y axis, S/C frame, time Time+dt",1,CDF_DOUBLE

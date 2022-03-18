@@ -1,0 +1,6 @@
+Variable,Units,Description,Dim,Type
+time,-,-,1,CDF_EPOCH
+acc_pod,m/s/s,-,3,CDF_DOUBLE
+acc_pod_aero,m/s/s,-,3,CDF_DOUBLE
+validity_flag_tot,unknown units,-,1,CDF_INT1
+validity_flag,unknown units,-,1,CDF_INT1

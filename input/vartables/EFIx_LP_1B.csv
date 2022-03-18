@@ -1,0 +1,17 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,Time stamp,1,CDF_EPOCH
+SyncStatus,-,Synchronization status,1,CDF_UINT2
+Latitude,deg,Position in ITRF – Latitude,1,CDF_DOUBLE
+Longitude,deg,Position in ITRF – Longitude,1,CDF_DOUBLE
+Radius,m,Position in ITRF – Radius,1,CDF_DOUBLE
+U_orbit,m/s,Spacecraft velocity in the ITRF,1,CDF_DOUBLE
+Ne,cm-3,Plasma density (electron),1,CDF_DOUBLE
+Ne_error,cm-3,Error estimate of plasma density (Ne),1,CDF_DOUBLE
+Te,K,Plasma electron temperature,1,CDF_DOUBLE
+Te_error,K,Error estimate of plasma electron temperature (Te),1,CDF_DOUBLE
+Vs,V,Spacecraft potential,1,CDF_DOUBLE
+Vs_error,V,Error estimate of spacecraft potential (U_pol),1,CDF_DOUBLE
+Flags_LP,-,"Flags indicating the source/method of LP measurements (ne, Te, Vs)",1,CDF_UINT1
+Flags_Ne,-,Flags characterizing the plasma density measurement,1,CDF_UINT1
+Flags_Te,-,Flags characterizing the electron temperature measurement,1,CDF_UINT1
+Flags_Vs,-,Flags characterizing the spacecraft potential measurement,1,CDF_UINT1

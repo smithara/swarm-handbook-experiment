@@ -1,0 +1,21 @@
+Variable,Units,Description,Dim,Type
+Timestamp,ms,Time stamp in UTC,1,CDF_EPOCH
+Latitude,degree,Geographic latitude,1,CDF_DOUBLE
+Longitude,degree,Geographic longitude,1,CDF_DOUBLE
+Radius,km,Geographic radius,1,CDF_DOUBLE
+GPS_Position,km,"X-,Y-,Z-coordinates (WGS84) of the GPS satellite",3,CDF_DOUBLE
+LEO_Position,m,"X-,Y-,Z-coordinates (WGS84) of the LEO satellite",3,CDF_DOUBLE
+PRN,-,GPS satellite PRN,1,CDF_UINT2
+L1,m,GPS L1 carrier phase observation,1,CDF_DOUBLE
+L2,m,GPS L2 carrier phase observation,1,CDF_DOUBLE
+P1,m,GPS P1 code phase observation,1,CDF_DOUBLE
+P2,m,GPS P2 code phase observation,1,CDF_DOUBLE
+S1,-,GPS signal-to-noise ratio or raw signal strength on L1,1,CDF_DOUBLE
+S2,-,GPS signal-to-noise ratio or raw signal strength on L2,1,CDF_DOUBLE
+Absolute_STEC,TECU,Absolute slant TEC,1,CDF_DOUBLE
+Absolute_VTEC,TECU,Absolute vertical TEC,1,CDF_DOUBLE
+Elevation_Angle,degree,Elevation Angle,1,CDF_DOUBLE
+Relative_STEC,TECU,Relative slant TEC,1,CDF_DOUBLE
+Relative_STEC_RMS,TECU,Root mean square error of relative slant TEC,1,CDF_DOUBLE
+DCB,TECU,GPS receiver differential code bias,1,CDF_DOUBLE
+DCB_Error,TECU,Error of the GPS receiver differential code bias,1,CDF_DOUBLE

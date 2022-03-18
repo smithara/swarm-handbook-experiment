@@ -1,0 +1,37 @@
+Variable,Units,Description,Dim,Type
+Timestamp,-,Time stamp,1,CDF_EPOCH
+SyncStatus,-,Synchronization status,1,CDF_UINT2
+Probe1_I_Bias_Offset,V,Probe 1 current bias offset,1,CDF_DOUBLE
+Probe1_I_Slope_Offset,V,Probe 1 current slope offset,1,CDF_DOUBLE
+Probe1_I_Fit_Error,V,Probe 1 current fit error,1,CDF_DOUBLE
+Probe1_U_Bias_Offset,V,Probe 1 voltage bias offset,1,CDF_DOUBLE
+Probe1_U_Slope_Offset,V,Probe 1 voltage slope offset,1,CDF_DOUBLE
+Probe1_U_Fit_Error,V,Probe 1 voltage sweep fit error,1,CDF_DOUBLE
+Probe2_I_Bias_Offset,V,Probe 2 current bias offset,1,CDF_DOUBLE
+Probe2_I_Slope_Offset,V,Probe 2 current slope offset,1,CDF_DOUBLE
+Probe2_I_Fit_Error,V,Probe 2 current fit error,1,CDF_DOUBLE
+Probe2_U_Bias_Offset,V,Probe 2 voltage bias offset,1,CDF_DOUBLE
+Probe2_U_Slope_Offset,V,Probe 2 voltage slope offset,1,CDF_DOUBLE
+Probe2_U_Fit_Error,V,Probe 2 voltage sweep fit error,1,CDF_DOUBLE
+FP_I_Bias_Offset,V,Face Plate current bias offset,1,CDF_DOUBLE
+FP_I_Slope_Offset,V,Face Plate current slope offset,1,CDF_DOUBLE
+FP_I_Fit_Error,V,Face Plate current sweep fit error,1,CDF_DOUBLE
+FP_U_Bias_Offset,V,Face Plate voltage bias offset,1,CDF_DOUBLE
+FP_U_Slope_Offset,V,Face Plate voltage slope offset,1,CDF_DOUBLE
+FP_U_Fit_Error,V,Face Plate voltage sweep fit error,1,CDF_DOUBLE
+FP_I_offset,eu,Face Plate current offset measurements,32,CDF_INT2
+FP_U_offset,eu,Face Plate bias offset measurements,32,CDF_INT2
+P1_I_offset,eu,Probe 1 current offset measurements,32,CDF_INT2
+P1_U_offset,eu,Probe 1 bias offset measurements,32,CDF_INT2
+P1_ref_ADC2,eu,Probe 1 reference ADC2,32,CDF_INT2
+P1_ground,eu,Probe 1 ground,32,CDF_INT2
+P2_I_offset,eu,Probe 2 current offset measurements,32,CDF_INT2
+P2_U_offset,eu,Probe 2 bias offset measurements,32,CDF_INT2
+P2_ref_ADC2,eu,Probe 2 reference ADC2,32,CDF_INT2
+P2_ground,eu,Probe 2 ground,32,CDF_INT2
+P1_Slope,V,"robe 1 slope offset, determined on-board",1,CDF_DOUBLE
+P1_Bias,V,"Probe 1 bias offset, determined on-board",1,CDF_DOUBLE
+P1_Error,V,"Probe 1 sweep fit error, determined on-board",1,CDF_DOUBLE
+P2_Slope,V,"Probe 2 slope offset, determined on-board",1,CDF_DOUBLE
+P2_Bias,V,"Probe 2 bias offset, determined on-board",1,CDF_DOUBLE
+P2_Error,V,"Probe 2 sweep fit error, determined on-board",1,CDF_DOUBLE

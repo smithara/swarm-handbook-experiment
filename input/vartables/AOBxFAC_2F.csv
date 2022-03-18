@@ -1,0 +1,11 @@
+Variable,Units,Description,Dim,Type
+t,-,"Time of observation, UTC",1,CDF_EPOCH
+Latitude,-,Position in ITRF - Geocentric latitude,1,CDF_DOUBLE
+Longitude,-,Position in ITRF - Geocentric longitude,1,CDF_DOUBLE
+Radius,-,Position in ITRF - Geocentric radius (from the Earth center),1,CDF_DOUBLE
+Latitude_QD,-,Quasi-dipole latitude,1,CDF_DOUBLE
+Longitude_QD,-,Quasi-dipole longitude,1,CDF_DOUBLE
+MLT,-,Magnetic Local Time (QD),1,CDF_DOUBLE
+Boundary_Flag,-,Indicator for equatorward (=1) or poleward (=2) boundary,1,CDF_UINT1
+Quality,-,"Quality indicator of equatorward/poleward boundary (Pa, Sigma)",2,CDF_DOUBLE
+Pair_Indicator,-,"Indicator of equatorward/poleward boundary of auroral oval. If the auroral oval boundaries are detectable as one pair, the pair indicator represents the record of previous (-1) or next (1) equatorward/poleward boundary within one pair; otherwise, the pair indicator is set to 0",1,CDF_INT1

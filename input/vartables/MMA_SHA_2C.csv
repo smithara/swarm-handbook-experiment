@@ -1,0 +1,25 @@
+Variable,Units,Description,Dim,Type
+t_qs_1, ,-,23872,CDF_EPOCH
+nm_qs_1, ,-,"[1, 2]",CDF_INT2
+qs_1,nT,-,"[23872, 1]",CDF_DOUBLE
+dqs_1,nT,-,"[23872, 1]",CDF_DOUBLE
+t_qs_2, ,-,5968,CDF_EPOCH
+nm_qs_2, ,-,"[7, 2]",CDF_INT2
+qs_2,nT,-,"[5968, 7]",CDF_DOUBLE
+dqs_2,nT,-,"[5968, 7]",CDF_DOUBLE
+t_gh_1, ,-,23872,CDF_EPOCH
+nm_gh_1, ,-,"[1, 2]",CDF_INT2
+gh_1,nT,-,"[23872, 1]",CDF_DOUBLE
+dgh_1,nT,-,"[23872, 1]",CDF_DOUBLE
+t_gh_2, ,-,5968,CDF_EPOCH
+nm_gh_2, ,-,"[14, 2]",CDF_INT2
+gh_2,nT,-,"[5968, 14]",CDF_DOUBLE
+dgh_2,nT,-,"[5968, 14]",CDF_DOUBLE
+t_F107, ,-,1492,CDF_EPOCH
+F107, ,-,1492,CDF_DOUBLE
+dF107, ,-,1492,CDF_DOUBLE
+t_qual, ,-,5968,CDF_EPOCH
+rms,nT,-,5968,CDF_DOUBLE
+n_data, ,-,"[5968, 4]",CDF_INT2
+nm_con, ,-,"[29, 2]",CDF_INT2
+con,1/nT^2,-,"[5968, 29, 29]",CDF_DOUBLE

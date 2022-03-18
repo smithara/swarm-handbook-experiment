@@ -1,0 +1,24 @@
+Variable,Units,Description,Dim,Type
+t_Peak,-,"Time of WEJ and EEJ peaks in the order as they appear in the satellite flight direction, UTC",2,CDF_EPOCH
+Latitude_Peak,-,Geocentric latitude in ITRF of WEJ and EEJ peaks in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Longitude_Peak,-,Geocentric longitude in ITRF of WEJ and EEJ peaks in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Latitude_Peak_QD,-,QD latitude of WEJ and EEJ peaks in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Longitude_Peak_QD,-,QD latitude of WEJ and EEJ peaks in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+MLT_Peak,-,Magnetic Local Time (QD) of WEJ and EEH peaks in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+J_DF,-,Peaks (minimum (WEJ) and maximum (EEJ)) of the divergence-free sheet current density in semiQD frame in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+t_EB,-,"Time of WEJ and EEJ equatorward boundaries in the order as they appear in the satellite flight direction, UTC",2,CDF_EPOCH
+Latitude_EB,-,Geocentric latitude of WEJ and EEJ equatorward boundaries in ITRF in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Longitude_EB,-,Geocentric longitude of WEJ and EEJ equatorward boundaries in ITRF in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Latitude_EB_QD,-,QD latitude of WEJ and EEJ equatorward boundaries in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Longitude_EB_QD,-,QD longitude of WEJ and EEJ equatorward boundaries in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+MLT_EB,-,Magnetic Local Time (QD) of WEJ and EEJ equatorward boundaries in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+t_PB,-,"Time of WEJ and EEJ poleward boundaries in the order as they appear in the satellite flight direction, UTC",2,CDF_EPOCH
+Latitude_PB,-,Geocentric latitude of WEJ and EEJ poleward boundaries in ITRF in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Longitude_PB,-,Geocentric longitude of WEJ and EEJ poleward boundaries in ITRF in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Latitude_PB_QD,-,QD latitude of WEJ and EEJ poleward boundaries in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Longitude_PB_QD,-,QD longitude of WEJ and EEJ poleward boundaries in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+MLT_PB,-,Magnetic Local Time (QD) of WEJ and EEJ poleward boundaries in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Latitude_B,-,Geodetic latitude of peaks (minimum and maximum) in ground magnetic field disturbance in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+Longitude_B,-,Geodetic longitude of peaks (minimum and maximum) in ground magnetic field disturbance in the order as they appear in the satellite flight direction,2,CDF_DOUBLE
+B,-,Maximum (first row) and minimum (second row) of ground magnetic field disturbance. First (second) column gives the north (east) component geodetic frame,"[2, 2]",CDF_DOUBLE
+Flags,-,Quality indicator,1,CDF_UINT2

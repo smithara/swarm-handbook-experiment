@@ -1,0 +1,11 @@
+Variable,Units,Description,Dim,Type
+Timestamp,ms,Time stamp in UTC,1,CDF_EPOCH
+Latitude,degree,Geographic latitude,1,CDF_DOUBLE
+Longitude,degree,Geographic longitude,1,CDF_DOUBLE
+Radius,m,Geographic radius,1,CDF_DOUBLE
+Bubble_Index,-,Plasma Bubble Index,1,CDF_INT1
+Bubble_Probability,-,Detection probability of the plasma bubble,1,CDF_DOUBLE
+Flags_Bubble,-,Flags related to the plasma bubble index,1,CDF_UINT1
+Flags_F,-,Flags_F passed through from MAGx_L1_B,1,CDF_UINT1
+Flags_B,-,Flags_B passed through from MAGx_L1_B,1,CDF_UINT1
+Flags_q,-,Flags_q passed through from MAGx_L1_B,1,CDF_UINT1

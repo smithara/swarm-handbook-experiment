@@ -1,0 +1,13 @@
+Variable,Units,Description,Dim,Type
+t_qs,ms,-,1167,CDF_EPOCH
+nm_qs, ,-,"[3, 2]",CDF_INT2
+qs_geo,nT,-,"[1167, 3]",CDF_DOUBLE
+qs_sm,nT,-,"[1167, 3]",CDF_DOUBLE
+t_gh,ms,-,1167,CDF_EPOCH
+nm_gh, ,-,"[3, 2]",CDF_INT2
+gh_geo,nT,-,"[1167, 3]",CDF_DOUBLE
+gh_sm,nT,-,"[1167, 3]",CDF_DOUBLE
+t_qual,ms,-,1167,CDF_EPOCH
+rms,nT,-,"[1167, 3]",CDF_DOUBLE
+n_data, ,-,"[1167, 3]",CDF_UINT2
+q_flag, ,-,1167,CDF_UINT1
