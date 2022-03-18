@@ -1,7 +1,7 @@
 Variable,Units,Description,Dim,Type
-Timestamp,-,Time stamp of faceplate current measurement,1,CDF_EPOCH
-Latitude,-,"Geodetic latitude, WGS84",1,CDF_DOUBLE
-Longitude,-,"Geodetic longitude, WGS84",1,CDF_DOUBLE
-Height,-,"Height above reference ellipsoid, WGS84",1,CDF_DOUBLE
-Current,-,Faceplate current,1,CDF_DOUBLE
-Density,-,Plasma density,1,CDF_DOUBLE
+Timestamp,"CDF_EPOCH, msec since 01-Jan-0000 00:00:00.000",Time stamp of faceplate current measurement,1,CDF_EPOCH
+Latitude,deg,"Geodetic latitude, WGS84",1,CDF_DOUBLE
+Longitude,deg,"Geodetic longitude, WGS84",1,CDF_DOUBLE
+Height,km,"Height above reference ellipsoid, WGS84",1,CDF_DOUBLE
+Current,nA,Faceplate current,1,CDF_DOUBLE
+Density,per ccm,Plasma density,1,CDF_DOUBLE

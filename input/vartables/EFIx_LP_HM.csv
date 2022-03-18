@@ -1,23 +1,23 @@
 Variable,Units,Description,Dim,Type
-Timestamp,-,Time stamp of faceplate current measurement,1,CDF_EPOCH
-Latitude,-,"Geodetic latitude, WGS84",1,CDF_DOUBLE
-Longitude,-,"Geodetic longitude, WGS84",1,CDF_DOUBLE
-Height,-,"Height above reference ellipsoid, WGS84",1,CDF_DOUBLE
-Radius,-,Distance from the Earth's centre,1,CDF_DOUBLE
-SZA,-,Solar Zenith Angle,1,CDF_DOUBLE
-SAz,-,"Solar Azimuth in Earth frame, north is 0 deg",1,CDF_DOUBLE
-ST,-,Apparent Solar Time,1,CDF_DOUBLE
-Diplat,-,Quasi-dipole latitude,1,CDF_DOUBLE
-Diplon,-,Quasi-dipole longitude,1,CDF_DOUBLE
-MLat,-,Magnetic latitude,1,CDF_DOUBLE
-MLT,-,Magnetic local time based on quasi-dipole,1,CDF_DOUBLE
-AACGMLat,-,Altitude-adjusted corrected geomagnetic latitude,1,CDF_DOUBLE
-AACGMLon,-,Altitude-adjusted corrected geomagnetic longitude,1,CDF_DOUBLE
-n,-,Plasma density from ion current,1,CDF_DOUBLE
-Te_hgn,-,"Electron temperature, estimated by the high gain probe",1,CDF_DOUBLE
-Te_lgn,-,"Electron temperature, estimated by the low gain probe",1,CDF_DOUBLE
-T_elec,-,"Electron temperature, blended value",1,CDF_DOUBLE
-Vs_hgn,-,"Spacecraft potential, estimated by the high gain probe",1,CDF_DOUBLE
-Vs_lgn,-,"Spacecraft potential, estimated by the low gain probe",1,CDF_DOUBLE
-U_SC,-,"Spacecraft potential, blended value",1,CDF_DOUBLE
-Flagbits,-,Flag bits indicating data quality or instrument configuration,1,CDF_INT4
+Timestamp,"CDF_EPOCH, msec since 01-Jan-0000 00:00:00.000",Time stamp of faceplate current measurement,1,CDF_EPOCH
+Latitude,deg,"Geodetic latitude, WGS84",1,CDF_DOUBLE
+Longitude,deg,"Geodetic longitude, WGS84",1,CDF_DOUBLE
+Height,km,"Height above reference ellipsoid, WGS84",1,CDF_DOUBLE
+Radius,km,Distance from the Earth's centre,1,CDF_DOUBLE
+SZA,deg,Solar Zenith Angle,1,CDF_DOUBLE
+SAz,deg,"Solar Azimuth in Earth frame, north is 0 deg",1,CDF_DOUBLE
+ST,hours,Apparent Solar Time,1,CDF_DOUBLE
+Diplat,deg,Quasi-dipole latitude,1,CDF_DOUBLE
+Diplon,deg,Quasi-dipole longitude,1,CDF_DOUBLE
+MLat,deg,Magnetic latitude,1,CDF_DOUBLE
+MLT,hours,Magnetic local time based on quasi-dipole,1,CDF_DOUBLE
+AACGMLat,deg,Altitude-adjusted corrected geomagnetic latitude,1,CDF_DOUBLE
+AACGMLon,deg,Altitude-adjusted corrected geomagnetic longitude,1,CDF_DOUBLE
+n,per ccm,Plasma density from ion current,1,CDF_DOUBLE
+Te_hgn,K,"Electron temperature, estimated by the high gain probe",1,CDF_DOUBLE
+Te_lgn,K,"Electron temperature, estimated by the low gain probe",1,CDF_DOUBLE
+T_elec,K,"Electron temperature, blended value",1,CDF_DOUBLE
+Vs_hgn,V,"Spacecraft potential, estimated by the high gain probe",1,CDF_DOUBLE
+Vs_lgn,V,"Spacecraft potential, estimated by the low gain probe",1,CDF_DOUBLE
+U_SC,V,"Spacecraft potential, blended value",1,CDF_DOUBLE
+Flagbits,N/A,Flag bits indicating data quality or instrument configuration,1,CDF_INT4

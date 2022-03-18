@@ -1,12 +1,12 @@
 Variable,Units,Description,Dim,Type
-t,-,"Time of observation, UTC",1,CDF_EPOCH
-Latitude,-,Position in ITRF - Geocentric latitude,1,CDF_DOUBLE
-Longitude,-,Position in ITRF - Geocentric longitude,1,CDF_DOUBLE
-Latitude_QD,-,Quasi-dipole latitude,1,CDF_DOUBLE
-Longitude_QD,-,Quasi-dipole longitude,1,CDF_DOUBLE
-MLT,-,Magnetic Local Time (QD),1,CDF_DOUBLE
-J,-,North and East component of horizontal sheet current density vector in geocentric frame,2,CDF_DOUBLE
-J_QD,-,East component of horizontal sheet current density in QD frame,1,CDF_DOUBLE
-t_qual,-,"Time instants of quality information (RMS_misfit and Confidence), UTC",1,CDF_EPOCH
-RMS_misfit,-,Root Mean Square error misfit between observations and model values for the oval crossings,1,CDF_DOUBLE
+t, ,"Time of observation, UTC",1,CDF_EPOCH
+Latitude,deg,Position in ITRF - Geocentric latitude,1,CDF_DOUBLE
+Longitude,deg,Position in ITRF - Geocentric longitude,1,CDF_DOUBLE
+Latitude_QD,deg,Quasi-dipole latitude,1,CDF_DOUBLE
+Longitude_QD,deg,Quasi-dipole longitude,1,CDF_DOUBLE
+MLT,hour,Magnetic Local Time (QD),1,CDF_DOUBLE
+J,A/km,North and East component of horizontal sheet current density vector in geocentric frame,2,CDF_DOUBLE
+J_QD,A/km,East component of horizontal sheet current density in QD frame,1,CDF_DOUBLE
+t_qual, ,"Time instants of quality information (RMS_misfit and Confidence), UTC",1,CDF_EPOCH
+RMS_misfit,nT,Root Mean Square error misfit between observations and model values for the oval crossings,1,CDF_DOUBLE
 Confidence,-,Goodness of fit computed as 1 - (residual rms / signal rms) for the oval crossings,1,CDF_DOUBLE

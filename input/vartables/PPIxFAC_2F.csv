@@ -1,25 +1,25 @@
 Variable,Units,Description,Dim,Type
-Timestamp,-,"Time of observation, UTC",1,CDF_EPOCH
-Counter,-,Swarm orbit counter and quarter orbit (four per Swarm orbit) counter that are based on magnetic coordinates as defined in [AD-2] (Sect. 4.1.2.2),2,CDF_UINT4
-Latitude,-,Position of the SSFAC boundary in ITRF - Geocentric latitude,1,CDF_DOUBLE
-Longitude,-,Position of the SSFAC boundary in ITRF - Geocentric longitude,1,CDF_DOUBLE
-Radius,-,Position of the SSFAC boundary in ITRF - Geocentric radius (from the Earth center),1,CDF_DOUBLE
-Latitude_QD,-,QD latitude of the SSFAC boundary,1,CDF_DOUBLE
-Longitude_QD,-,QD longitude of the SSFAC boundary,1,CDF_DOUBLE
-MLT,-,Magnetic Local Time of SSFAC boundary,1,CDF_DOUBLE
-L_value,-,L-value of the SSFAC boundary,1,CDF_DOUBLE
-SZA,-,Solar zenith angle of the SSFAC boundary,1,CDF_DOUBLE
-dL,-,Boundary width in Earth radii,1,CDF_DOUBLE
-Sigma,-,Standard deviation of the linear fit of S at the boundary [RD-2],1,CDF_DOUBLE
-PPI,-,Midnight Plasmapause index,1,CDF_DOUBLE
-Quality,-,Quality indicators of SSFAC boundary detection,7,CDF_INT1
-Timestamp_ID,-,Time vector of observations,2,CDF_EPOCH
-Latitude_ID,-,Position in ITRF - Geocentric latitude,2,CDF_DOUBLE
-Longitude_ID,-,Position in ITRF - Geocentric longitude,2,CDF_DOUBLE
-Radius_ID,-,Position in ITRF - Geocentric radius (from the Earth centre),2,CDF_DOUBLE
-Latitude_QD_ID,-,QD latitude,2,CDF_DOUBLE
-Longitude_QD_ID,-,QD longitude,2,CDF_DOUBLE
-MLT_ID,-,Magnetic Local Time,2,CDF_DOUBLE
-L_value_ID,-,L-value in Earth radii,2,CDF_DOUBLE
-SZA_ID,-,L-value in Earth radii,2,CDF_DOUBLE
-Position_Quality_ID,-,Vector of quality indicators characterising the detection quality of each single positions,2,CDF_INT1
+Timestamp, ,"Time of observation, UTC",1,CDF_EPOCH
+Counter,N/A,Swarm orbit counter and quarter orbit (four per Swarm orbit) counter that are based on magnetic coordinates as defined in [AD-2] (Sect. 4.1.2.2),2,CDF_UINT4
+Latitude,deg,Position of the SSFAC boundary in ITRF - Geocentric latitude,1,CDF_DOUBLE
+Longitude,deg,Position of the SSFAC boundary in ITRF - Geocentric longitude,1,CDF_DOUBLE
+Radius,m,Position of the SSFAC boundary in ITRF - Geocentric radius (from the Earth center),1,CDF_DOUBLE
+Latitude_QD,deg,QD latitude of the SSFAC boundary,1,CDF_DOUBLE
+Longitude_QD,deg,QD longitude of the SSFAC boundary,1,CDF_DOUBLE
+MLT,h,Magnetic Local Time of SSFAC boundary,1,CDF_DOUBLE
+L_value,R_E,L-value of the SSFAC boundary,1,CDF_DOUBLE
+SZA,deg,Solar zenith angle of the SSFAC boundary,1,CDF_DOUBLE
+dL,N/A,Boundary width in Earth radii,1,CDF_DOUBLE
+Sigma,N/A,Standard deviation of the linear fit of S at the boundary [RD-2],1,CDF_DOUBLE
+PPI,R_E,Midnight Plasmapause index,1,CDF_DOUBLE
+Quality,N/A,Quality indicators of SSFAC boundary detection,7,CDF_INT1
+Timestamp_ID, ,Time vector of observations,2,CDF_EPOCH
+Latitude_ID,deg,Position in ITRF - Geocentric latitude,2,CDF_DOUBLE
+Longitude_ID,deg,Position in ITRF - Geocentric longitude,2,CDF_DOUBLE
+Radius_ID,m,Position in ITRF - Geocentric radius (from the Earth centre),2,CDF_DOUBLE
+Latitude_QD_ID,deg,QD latitude,2,CDF_DOUBLE
+Longitude_QD_ID,deg,QD longitude,2,CDF_DOUBLE
+MLT_ID,h,Magnetic Local Time,2,CDF_DOUBLE
+L_value_ID,N/A,L-value in Earth radii,2,CDF_DOUBLE
+SZA_ID,deg,L-value in Earth radii,2,CDF_DOUBLE
+Position_Quality_ID,N/A,Vector of quality indicators characterising the detection quality of each single positions,2,CDF_INT1
