@@ -4,13 +4,13 @@ channels:
 dependencies:
   - python=3.8
   - pip
-  - jupyterlab=3.0
-  - pooch=1.6
-  - pandas=1.2
-  - xarray=2022.3
-  - openpyxl=3.0
-  - tabulate=0.8
-  - markdown=3.3
-  - panel=0.10
-  - pip:
-    - cdflib==0.4.3
+  - jupyterlab
+  - jupyterlab-git
+  - pooch
+  - pandas
+  - xarray
+  - openpyxl
+  - tabulate
+  - markdown
+  - panel=0.14.1
+  - cdflib
