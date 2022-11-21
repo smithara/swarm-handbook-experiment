@@ -1,0 +1,98 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$ref": "#/definitions/Product",
+    "definitions": {
+        "Product": {
+            "type": "object",
+            "additionalProperties": {},
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "contentMediaType": "text/html"
+                },
+                "details": {
+                    "type": "string",
+                    "contentMediaType": "text/html"
+                },
+                "link_files_ftp": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "ftp"
+                    ]
+                },
+                "link_files_http": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "link_hapi": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "link_notebook": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "link_vires_gui": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "name": {
+                    "type": "string"
+                },
+                "product_id": {
+                    "type": "string"
+                },
+                "related_resources": {
+                    "type": "string",
+                    "contentMediaType": "text/html"
+                },
+                "thematic_areas": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ThematicArea"
+                    }
+                },
+                "variables_table": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Product"
+        },
+        "ThematicArea": {
+            "type": "string",
+            "enum": [
+                "Acceleration measurements",
+                "Attitude information",
+                "Core field",
+                "Ephemeris",
+                "Geodesy/Gravity",
+                "GNSS measurements",
+                "HK data",
+                "Ionosphere/Magnetosphere",
+                "Lithosphere",
+                "Magnetic measurements",
+                "Mantle",
+                "Ocean Tides",
+                "Orbit information",
+                "Plasma measurements",
+                "Space Weather",
+                "Thermosphere"
+            ],
+            "title": "ThematicArea"
+        }
+    }
+}
