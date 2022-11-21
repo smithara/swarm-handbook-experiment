@@ -1,0 +1,16 @@
+{
+    "product_id": "SW_MODx_SC_1B",
+    "name": "Satellite Position and velocity from the preliminary Medium Accuracy Orbit Determination",
+    "thematic_areas": [
+        "Ephemeris"
+    ],
+    "description": "Position and velocity from the preliminary Medium Accuracy Orbit Determination (MOD). Data Set Records are MDR_MODSP3 which are SP3c format.",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/MODx_SC",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/MODx_SC",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": ""
+}

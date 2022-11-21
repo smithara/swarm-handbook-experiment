@@ -1,0 +1,16 @@
+{
+    "product_id": "SW_MIO_SHA_2C",
+    "name": "Model of non-polar daily geomagnetic variation caused by ionospheric currents",
+    "thematic_areas": [
+        "Ionosphere/Magnetosphere"
+    ],
+    "description": "Model of non-polar daily geomagnetic variation caused by ionospheric currents, including their variability with season and solar flux, derived in Comprehensive Inversion chain",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MIO",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MIO",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": ""
+}

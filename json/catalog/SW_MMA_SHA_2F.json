@@ -1,0 +1,17 @@
+{
+    "product_id": "SW_MMA_SHA_2F",
+    "name": "Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field",
+    "thematic_areas": [
+        "Ionosphere/Magnetosphere",
+        "Space Weather"
+    ],
+    "description": "Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field and its Earth-induced counterpart derived in Dedicated Inversion chain. This is a fast-track product which is provided without an independent regular validation",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MMA",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MMA",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nt_qs,ms,-,1167,CDF_EPOCH\nnm_qs, ,-,\"[3, 2]\",CDF_INT2\nqs_geo,nT,-,\"[1167, 3]\",CDF_DOUBLE\nqs_sm,nT,-,\"[1167, 3]\",CDF_DOUBLE\nt_gh,ms,-,1167,CDF_EPOCH\nnm_gh, ,-,\"[3, 2]\",CDF_INT2\ngh_geo,nT,-,\"[1167, 3]\",CDF_DOUBLE\ngh_sm,nT,-,\"[1167, 3]\",CDF_DOUBLE\nt_qual,ms,-,1167,CDF_EPOCH\nrms,nT,-,\"[1167, 3]\",CDF_DOUBLE\nn_data, ,-,\"[1167, 3]\",CDF_UINT2\nq_flag, ,-,1167,CDF_UINT1\n",
+    "related_resources": "",
+    "details": ""
+}

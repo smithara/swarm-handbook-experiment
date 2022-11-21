@@ -1,0 +1,16 @@
+{
+    "product_id": "SW_MLI_SHA_2E",
+    "name": "Spherical Harmonic Models of the lithospheric field",
+    "thematic_areas": [
+        "Lithosphere"
+    ],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MLI",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MLI",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": ""
+}

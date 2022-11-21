@@ -1,0 +1,16 @@
+{
+    "product_id": "SW_SP3xCOM_2_",
+    "name": "Precise reduced-dynamic orbit solutions",
+    "thematic_areas": [
+        "Ephemeris"
+    ],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/POD/RD",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/POD/RD",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": ""
+}

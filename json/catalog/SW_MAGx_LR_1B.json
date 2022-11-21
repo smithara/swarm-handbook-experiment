@@ -1,0 +1,17 @@
+{
+    "product_id": "SW_MAGx_LR_1B",
+    "name": "Magnetic field (1Hz) from VFM and ASM",
+    "thematic_areas": [
+        "Magnetic measurements",
+        "Space Weather"
+    ],
+    "description": "The MAGX_LR_1B Product contains magnetic vector and scalar data at 1 Hz rate. The S/C data are processed to provide MAGX_LR_1B data at exact UTC seconds, i.e. both VFM vector and ASM scalar data are interpolated to yield these data. Hence, small gaps in the VFM or ASM data need not cause gaps in the product as the gaps may be filled by this interpolation. Any gaps, however, will have an impact on the error estimate of the associated product element. The measurement data set record of the MAGX_LR_1B Product is described in Table 3. See also Mag-L Data Set Record, MDR_MAG_LR.",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/MAGx_LR",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/MAGx_LR",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,Time stamp,1,CDF_EPOCH\nSyncStatus,-,Synchronization status,1,CDF_UINT2\nLatitude,deg,Position in ITRF - Latitude,1,CDF_DOUBLE\nLongitude,deg,Position in ITRF - Longitude,1,CDF_DOUBLE\nRadius,m,Position in ITRF - Radius,1,CDF_DOUBLE\nF,nT,Magnetic field intensity,1,CDF_DOUBLE\ndF_AOCS,nT,Magnetic stray field correction intensity of AOCS magneto-torquer coils,1,CDF_DOUBLE\ndF_other,nT,Magnetic stray field correction intensity of all other sources,1,CDF_DOUBLE\nF_error,nT,Error estimate on magnetic field intensity,1,CDF_DOUBLE\nB_VFM,nT,\"Magnetic field vector, VFM frame\",3,CDF_DOUBLE\nB_NEC,nT,\"Magnetic field vector, NEC frame\",3,CDF_DOUBLE\ndB_Sun,nT,\"Magnetic stray field correction vector of Sun induced perturbation, VFM frame\",3,CDF_DOUBLE\ndB_AOCS,nT,\"Magnetic stray field correction vector of AOCS magneto-torquer coils, VFM frame\",3,CDF_DOUBLE\ndB_other,nT,\"Magnetic stray field correction vector of all other sources, VFM frame\",3,CDF_DOUBLE\nB_error,nT,\"Error estimates on magnetic field, VFM frame\",3,CDF_DOUBLE\nq_NEC_CRF,-,\"Quaternion, transformation: NEC - CRF\",4,CDF_DOUBLE\nAtt_error,mdeg,Error estimates on attitude information,1,CDF_DOUBLE\nFlags_F,-,Flags characterizing the magnetic field intensity measurement (F),1,CDF_UINT1\nFlags_B,-,Flags characterizing the magnetic field measurement,1,CDF_UINT1\nFlags_q,-,Flags characterizing the attitude information,1,CDF_UINT1\nFlags_Platform,-,Flags characterizing the S/C platform information,1,CDF_UINT2\nASM_Freq_Dev,-,ASM frequency calibration data deviation,1,CDF_DOUBLE\n",
+    "related_resources": "",
+    "details": ""
+}

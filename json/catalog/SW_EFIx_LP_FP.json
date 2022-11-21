@@ -1,0 +1,17 @@
+{
+    "product_id": "SW_EFIx_LP_FP",
+    "name": "16Hz faceplate plasma density",
+    "thematic_areas": [
+        "Plasma measurements",
+        "Space Weather"
+    ],
+    "description": "Ionospheric electron density derived from the faceplate current at 16 Hz",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/16_Hz_Faceplate_plasma_density",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/16_Hz_Faceplate_plasma_density",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,\"CDF_EPOCH, msec since 01-Jan-0000 00:00:00.000\",Time stamp of faceplate current measurement,1,CDF_EPOCH\nLatitude,deg,\"Geodetic latitude, WGS84\",1,CDF_DOUBLE\nLongitude,deg,\"Geodetic longitude, WGS84\",1,CDF_DOUBLE\nHeight,km,\"Height above reference ellipsoid, WGS84\",1,CDF_DOUBLE\nCurrent,nA,Faceplate current,1,CDF_DOUBLE\nDensity,per ccm,Plasma density,1,CDF_DOUBLE\n",
+    "related_resources": "",
+    "details": ""
+}

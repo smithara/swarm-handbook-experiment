@@ -1,0 +1,16 @@
+{
+    "product_id": "SW_GPSxNAV_1B",
+    "name": "On-board GPSR navigational solution",
+    "thematic_areas": [
+        "Ephemeris"
+    ],
+    "description": "Position and velocity from the on-board navigational solution of the GPSR. Data Set Records are MDR_NAVSP3 which are SP3c format.",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/GPSxNAV",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/GPSxNAV",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": ""
+}

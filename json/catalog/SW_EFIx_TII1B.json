@@ -1,0 +1,17 @@
+{
+    "product_id": "SW_EFIx_TII1B",
+    "name": "Provisional plasma dataset: TII data",
+    "thematic_areas": [
+        "Plasma measurements",
+        "Space Weather"
+    ],
+    "description": "Level 1B Thermal Ion Imagers parameters (ionospheric ions bulk speed and temperature, ionospheric electric field) derived by the University of Calgary",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/Provisional_Plasma_dataset/Thermal_Ion_Imagers_Data",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/Provisional_Plasma_dataset/Thermal_Ion_Imagers_Data",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,-,1,CDF_DOUBLE\nlatitude,-,-,1,CDF_DOUBLE\nlongitude,-,-,1,CDF_DOUBLE\nradius,-,-,1,CDF_DOUBLE\nv_SC,-,-,3,CDF_DOUBLE\nv_ion,-,-,3,CDF_DOUBLE\nE,-,-,3,CDF_DOUBLE\nT_ion,-,-,1,CDF_DOUBLE\nv_ion_H,-,-,2,CDF_DOUBLE\nv_ion_V,-,-,2,CDF_DOUBLE\nrms_fit_H,-,-,1,CDF_DOUBLE\nrms_fit_V,-,-,1,CDF_DOUBLE\nvar_x_H,-,-,1,CDF_DOUBLE\nvar_y_H,-,-,1,CDF_DOUBLE\nvar_x_V,-,-,1,CDF_DOUBLE\nvar_y_V,-,-,1,CDF_DOUBLE\nSAA,-,-,1,CDF_INT4\nFlags_TII,-,-,1,CDF_INT4\nFlags_Platform,-,-,1,CDF_INT4\nManeuver_Id,-,-,1,CDF_INT4\n",
+    "related_resources": "",
+    "details": ""
+}
