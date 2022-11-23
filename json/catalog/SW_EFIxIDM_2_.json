@@ -1,8 +1,9 @@
 {
-    "product_id": "SW_STRx_1B",
-    "name": "STR Thermally Corrected Data",
-    "thematic_areas": [],
-    "description": "-",
+    "product_id": "SW_EFIxIDM_2_",
+    "name": "",
+    "thematic_areas": [
+    ],
+    "description": "",
     "link_files_http": "",
     "link_files_ftp": "",
     "link_vires_gui": "",
