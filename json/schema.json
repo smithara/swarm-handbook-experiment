@@ -6,6 +6,45 @@
             "type": "object",
             "additionalProperties": {},
             "properties": {
+                "applicable_missions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Swarm",
+                            "CHAMP",
+                            "CSES",
+                            "Cryosat-2",
+                            "GOCE",
+                            "GRACE",
+                            "GRACE-FO",
+                            "Multimission",
+                            "Misc."
+                        ]
+                    }
+                },
+                "applicable_spacecraft": {
+                    "type": "string",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Swarm A",
+                            "Swarm-B",
+                            "Swarm-C",
+                            "Swarm-E (e-POP)",
+                            "CHAMP",
+                            "CSES-01",
+                            "Cryosat-2",
+                            "GOCE",
+                            "GRACE-A",
+                            "GRACE-B",
+                            "GRACE-FO-1",
+                            "GRACE-FO-2",
+                            "Multimission",
+                            "Misc."
+                        ]
+                    }
+                },
                 "description": {
                     "type": "string",
                     "contentMediaType": "text/html"
@@ -62,7 +101,25 @@
                 "thematic_areas": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/ThematicArea"
+                        "type": "string",
+                        "enum": [
+                            "Acceleration measurements",
+                            "Attitude information",
+                            "Core field",
+                            "Ephemeris",
+                            "Geodesy/Gravity",
+                            "GNSS measurements",
+                            "HK data",
+                            "Ionosphere/Magnetosphere",
+                            "Lithosphere",
+                            "Magnetic measurements",
+                            "Mantle",
+                            "Ocean Tides",
+                            "Orbit information",
+                            "Plasma measurements",
+                            "Space Weather",
+                            "Thermosphere"
+                        ]
                     }
                 },
                 "variables_table": {
@@ -71,28 +128,6 @@
             },
             "required": [],
             "title": "Product"
-        },
-        "ThematicArea": {
-            "type": "string",
-            "enum": [
-                "Acceleration measurements",
-                "Attitude information",
-                "Core field",
-                "Ephemeris",
-                "Geodesy/Gravity",
-                "GNSS measurements",
-                "HK data",
-                "Ionosphere/Magnetosphere",
-                "Lithosphere",
-                "Magnetic measurements",
-                "Mantle",
-                "Ocean Tides",
-                "Orbit information",
-                "Plasma measurements",
-                "Space Weather",
-                "Thermosphere"
-            ],
-            "title": "ThematicArea"
         }
     }
 }
