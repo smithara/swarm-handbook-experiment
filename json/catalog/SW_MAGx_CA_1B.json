@@ -1,6 +1,14 @@
 {
     "product_id": "SW_MAGx_CA_1B",
     "name": "Magnetic vector and scalar data for monitoring and calibration purposes",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Magnetic measurements"
     ],

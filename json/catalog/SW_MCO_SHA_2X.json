@@ -1,6 +1,14 @@
 {
     "product_id": "SW_MCO_SHA_2X",
-    "name": "Spherical harmonic model of the main (core) field and its temporal variation",
+    "name": "CHAOS model: spherical harmonic model of the main (core) field and its temporal variation",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Core field"
     ],
@@ -12,5 +20,5 @@
     "link_hapi": "",
     "variables_table": "",
     "related_resources": "",
-    "details": ""
+    "details": "<table border=\"1\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Product identifier</th>\n\t\t\t<th>MCO_SHA_2X</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Spherical harmonic model of the main (core) field and its temporal variation</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Data</td>\n\t\t\t<td>MAGx_LR_1B, AUX_DST_2_, AUX_KP__2_, AUX_IMF_2_, AUX_OBS_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Time Span</td>\n\t\t\t<td>Minimum of 4 months</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>Spherical Harmonics up to degree 18</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>Snapshot models</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>nT</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>1 pT</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>~10 kB</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data format</td>\n\t\t\t<td>ASCII table</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output Data</td>\n\t\t\t<td>Gauss coefficients</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span and resolution</td>\n\t\t\t<td>Time span: Minimum 4 months<br />\n\t\t\tTime resolution: corresponding to 3 month knots separation and order 2 splines</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>First after 4 month, afterwards update is three months (if granted by data quality).</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>1 week</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td><br />\n\t\t\tAssumed updated rate is three month<br />\n\t\t\t&nbsp;&nbsp;<br />\n\t\t\tMore information can be found at<br />\n\t\t\t<a href=\"http://www.spacecenter.dk/files/magnetic-models/CHAOS-6/\">http://www.spacecenter.dk/files/magnetic-models/CHAOS-6/</a></td>\n\t\t</tr>\n\t</tbody>\n</table>\n"
 }

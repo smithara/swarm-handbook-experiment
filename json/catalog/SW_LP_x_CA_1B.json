@@ -1,6 +1,14 @@
 {
     "product_id": "SW_LP_x_CA_1B",
     "name": "LP calibration parameters",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Plasma measurements"
     ],

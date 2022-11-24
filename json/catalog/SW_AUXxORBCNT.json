@@ -1,10 +1,18 @@
 {
     "product_id": "SW_AUXxORBCNT",
     "name": "Precise Swarm orbit number information",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Orbit information"
     ],
-    "description": "The AUXxORBCNT product contains the Swarm orbit numbers. The new Swarm Orbit Counter data file is referred with a new dedicated product type (ORBxCNT), and it provides precise Swarm orbit number information to the scientific user community.",
+    "description": "The Swarm orbit counter auxiliary data file provides precise Swarm orbit number information. The start of an orbit is defined as the Equator crossing of the ascending node (i.e. the northbound Equator crossing).",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/ORBCNT",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/ORBCNT",
     "link_vires_gui": "",
@@ -12,5 +20,5 @@
     "link_hapi": "",
     "variables_table": "",
     "related_resources": "",
-    "details": ""
+    "details": "<table border=\"1\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Field name</th>\n\t\t\t<th>Type</th>\n\t\t\t<th>Unit</th>\n\t\t\t<th>Contents</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>orbit</td>\n\t\t\t<td>integer</td>\n\t\t\t<td>-</td>\n\t\t\t<td>Orbit number</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>MJD2000</td>\n\t\t\t<td>real</td>\n\t\t\t<td>MJD2000</td>\n\t\t\t<td>Orbit start date/time in MJD2000</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>date</td>\n\t\t\t<td>string</td>\n\t\t\t<td>-</td>\n\t\t\t<td>Orbit start date</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>UT</td>\n\t\t\t<td>string</td>\n\t\t\t<td>UTC</td>\n\t\t\t<td>Orbit start time</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>phi_AN</td>\n\t\t\t<td>real</td>\n\t\t\t<td>deg</td>\n\t\t\t<td>Longitude of orbit start</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Source</td>\n\t\t\t<td>integer</td>\n\t\t\t<td>-</td>\n\t\t\t<td>Source of orbit number information Values:<br />\n\t\t\tBest quality = 0<br />\n\t\t\tReduced quality = 1</td>\n\t\t</tr>\n\t</tbody>\n</table>\n"
 }

@@ -1,6 +1,14 @@
 {
     "product_id": "SW_GPSx_RN_1B",
     "name": "GPS RINEX Navigation data",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "GNSS measurements"
     ],

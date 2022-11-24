@@ -1,6 +1,14 @@
 {
     "product_id": "SW_MLI_SHA_2E",
     "name": "Spherical Harmonic Models of the lithospheric field",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Lithosphere"
     ],
@@ -12,5 +20,5 @@
     "link_hapi": "",
     "variables_table": "",
     "related_resources": "",
-    "details": ""
+    "details": "<table border=\"1\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Product identifier</th>\n\t\t\t<th>MLI_SHA_2E</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Final map of the lithospheric field from the Revised Spherical Cap Harmonic analysis (R-SCHA) Dedicated Lithospheric Inversion, expressed in terms of high degree Spherical Harmonics</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Data</td>\n\t\t\t<td>MAGx_LR_1B, AUX_KP__2_, AUX_DST_2_, AUX_F10_2_, AUX_IMF_2_, AUX_MTI_2_, AUX_LIT_2_, AUX_COR_2_, IBIxTMS_2_, MCO_SHAi2D, MCO_SHA_2F, MMA_SHAi2C, MMA_SHA_2F, MCO_SHAi2C, MIO_SHAi2C, MIO_SHAi2D, MSW_EULi2C, MSW_EULi2D</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Time Span</td>\n\t\t\t<td>One to four years of full Swarm data set</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>Spherical harmonics from degree 16 to 200</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>Snapshot</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>nT</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>1 pT</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>Refer to product quality report</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>Statistics of data misfits provided in validation report</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>~3 MB</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data format</td>\n\t\t\t<td>ASCII table (SHC)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output Data</td>\n\t\t\t<td>Gauss coefficients</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>N/A (lithospheric field is considered constant over the analysed time range)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>One model every year</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>One month</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>The product has the same format as the other lithospheric field models, but at a higher SH degree to be used for mapping purpose only. SH Gauss coefficients are here a mean to store the map, but the product itself is a map. The map should not be computed at altitudes lower than the minimum altitude of Swarm measurements</td>\n\t\t</tr>\n\t</tbody>\n</table>\n"
 }

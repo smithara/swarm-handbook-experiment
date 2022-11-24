@@ -1,6 +1,14 @@
 {
     "product_id": "SW_MCO_SHA_2D",
     "name": "Spherical harmonic model of the main (core) field and its temporal variation",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Core field"
     ],
@@ -12,5 +20,5 @@
     "link_hapi": "",
     "variables_table": "",
     "related_resources": "",
-    "details": ""
+    "details": "<table border=\"1\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Product identifier</th>\n\t\t\t<th>MCO_SHA_2D</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Spherical harmonic model of the main (core) field and its temporal variation</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Data</td>\n\t\t\t<td>MCO_SHAi2D, MCO_VAL_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Time Span</td>\n\t\t\t<td>Nominal minimum of 1 year up to the full Swarm data span</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>Spherical Harmonics up to degree 18</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>Snapshot models (corresponding to 1/2 year knot separation and order 6 splines)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>nT</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>1 pT</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>Refer to quality report</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>Statistics of data misfit, power spectra etc. provided in validation report</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>~10 kB</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data format</td>\n\t\t\t<td>ASCII table (SHC)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output Data</td>\n\t\t\t<td>Gauss coefficients</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>Time span same as for input</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>1 per year</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>6 weeks</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>The model accuracy strongly depends on the LT offset between the A and C satellite pair and the satellite B</td>\n\t\t</tr>\n\t</tbody>\n</table>\n"
 }

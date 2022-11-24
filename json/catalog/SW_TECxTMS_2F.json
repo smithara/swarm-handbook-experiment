@@ -1,6 +1,14 @@
 {
     "product_id": "SW_TECxTMS_2F",
-    "name": "Total electron content",
+    "name": "Ionospheric total electron content",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Ionosphere/Magnetosphere",
         "Space Weather"
@@ -13,5 +21,5 @@
     "link_hapi": "",
     "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,ms,Time stamp in UTC,1,CDF_EPOCH\nLatitude,degree,Geographic latitude,1,CDF_DOUBLE\nLongitude,degree,Geographic longitude,1,CDF_DOUBLE\nRadius,km,Geographic radius,1,CDF_DOUBLE\nGPS_Position,km,\"X-,Y-,Z-coordinates (WGS84) of the GPS satellite\",3,CDF_DOUBLE\nLEO_Position,m,\"X-,Y-,Z-coordinates (WGS84) of the LEO satellite\",3,CDF_DOUBLE\nPRN,-,GPS satellite PRN,1,CDF_UINT2\nL1,m,GPS L1 carrier phase observation,1,CDF_DOUBLE\nL2,m,GPS L2 carrier phase observation,1,CDF_DOUBLE\nP1,m,GPS P1 code phase observation,1,CDF_DOUBLE\nP2,m,GPS P2 code phase observation,1,CDF_DOUBLE\nS1,-,GPS signal-to-noise ratio or raw signal strength on L1,1,CDF_DOUBLE\nS2,-,GPS signal-to-noise ratio or raw signal strength on L2,1,CDF_DOUBLE\nAbsolute_STEC,TECU,Absolute slant TEC,1,CDF_DOUBLE\nAbsolute_VTEC,TECU,Absolute vertical TEC,1,CDF_DOUBLE\nElevation_Angle,degree,Elevation Angle,1,CDF_DOUBLE\nRelative_STEC,TECU,Relative slant TEC,1,CDF_DOUBLE\nRelative_STEC_RMS,TECU,Root mean square error of relative slant TEC,1,CDF_DOUBLE\nDCB,TECU,GPS receiver differential code bias,1,CDF_DOUBLE\nDCB_Error,TECU,Error of the GPS receiver differential code bias,1,CDF_DOUBLE\n",
     "related_resources": "",
-    "details": ""
+    "details": "<table border=\"1\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Product identifier</td>\n\t\t\t<td>TECxTMS_2F</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Time series of the ionospheric total electron content</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input data</td>\n\t\t\t<td>GPS RINEX observation and navigation files (GPSX_RO_1B), Swarm satellite ephemeris (MODX_SC_1B) GPS and Swarm satellite ephemeris (AUX_GPSEPH) GPS transmitter biases(AUX_DCB_2F) Leap seconds (AUX_USLEAP)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input time span</td>\n\t\t\t<td>3 days</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>Line representation of GPS &ndash;Swarm link</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>1-s time series for TEC and 1 day for DCB</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>TECU (1016 electrons/m2)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>1E-8 TECU</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>2 TECU</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>Relative_STEC_RMS (RMS deviation between code and carrier phases) and DCB_Error</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>~4 MB / day / satellite</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output data</td>\n\t\t\t<td>CDF file with time series</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>1 day</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>6 min</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>1 per day</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>The cadence of the TECxTMS_2F data has changed from 10-s (0.1 Hz) to 1-s (1 Hz) at:<br />\n\t\t\t2014-07-14 06:42:59 for Swarm A<br />\n\t\t\t2014-07-14 06:06:46 for Swarm B<br />\n\t\t\t2014-07-14 08:15:59 for Swarm C<br />\n\t\t\tIt is recommended to use absolute VTEC data with corresponding elevation angles of the GPS rays of at least 50&deg;.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n"
 }
