@@ -11,15 +11,15 @@
                     "items": {
                         "type": "string",
                         "enum": [
-                            "Swarm",
                             "CHAMP",
+                            "CRYOSAT",
                             "CSES",
-                            "Cryosat-2",
+                            "EPOP",
                             "GOCE",
                             "GRACE",
                             "GRACE-FO",
-                            "Multimission",
-                            "Misc."
+                            "Misc.",
+                            "Swarm"
                         ]
                     }
                 },
@@ -28,20 +28,19 @@
                     "items": {
                         "type": "string",
                         "enum": [
-                            "Swarm A",
-                            "Swarm-B",
-                            "Swarm-C",
-                            "Swarm-E (e-POP)",
+                            "CASSIOPE_e-POP (Swarm-E)",
                             "CHAMP",
-                            "CSES-01",
                             "Cryosat-2",
+                            "CSES-01",
                             "GOCE",
                             "GRACE-A",
                             "GRACE-B",
                             "GRACE-FO-1",
                             "GRACE-FO-2",
-                            "Multimission",
-                            "Misc."
+                            "Misc.",
+                            "Swarm-A",
+                            "Swarm-B",
+                            "Swarm-C"
                         ]
                     }
                 },
