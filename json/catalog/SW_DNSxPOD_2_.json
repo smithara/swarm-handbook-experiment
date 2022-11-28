@@ -1,6 +1,14 @@
 {
     "product_id": "SW_DNSxPOD_2_",
     "name": "Thermospheric density",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Thermosphere"
     ],
@@ -10,7 +18,7 @@
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "Variable,Units,Description,Dim,Type\ntime,-,-,1,CDF_EPOCH\ndensity,kg/m3,-,1,CDF_DOUBLE\ndensity_orbitmean,kg/m3,-,1,CDF_DOUBLE\nvalidity_flag,unknown units,-,1,CDF_INT1\naltitude,m,-,1,CDF_DOUBLE\nlatitude,deg,-,1,CDF_DOUBLE\nlongitude,deg,-,1,CDF_DOUBLE\nlocal_solar_time,h,-,1,CDF_DOUBLE\n",
+    "variables_table": "Variable,Units,Description,Dim,Type\ntime,-,\"Time of observation\",1,CDF_EPOCH\ndensity,kg/m3,\"Density derived from GPS accelerations (FAST)\",1,CDF_DOUBLE\ndensity_orbitmean,kg/m3,\"Orbit-average of density derived from GPS accelerations\",1,CDF_DOUBLE\nvalidity_flag,-,\"Flag: 0 = nominal data, 1 = anomalous data\",1,CDF_INT1\naltitude,m,\"Altitude\",1,CDF_DOUBLE\nlatitude,deg,\"Geodetic latitude\",1,CDF_DOUBLE\nlongitude,deg,\"Geodetic longitude\",1,CDF_DOUBLE\nlocal_solar_time,h,\"Local solar time\",1,CDF_DOUBLE\n",
     "related_resources": "",
-    "details": ""
+    "details": "<table border=\"1\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Product identifier</td>\n\t\t\t<td>DNSxPOD_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Thermospheric density at the satellite location along with auxiliary parameters (altitude, latitude, longitude and local solar time). Derived from non-gravitational accelerations based on precise orbit determination data only (ACCxPOD_2_)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input data</td>\n\t\t\t<td>MODx_SC_1B, STRxATT_1B, SC_xDYN_1B, ACCxPOD_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input time span</td>\n\t\t\t<td>24 hr</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>Time-series along satellite track, altitude (m), latitude (deg), longitude (deg) and local solar time (hours) available based on MODx_SC_1B</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>UUTC (seconds &ndash; s), nominally with 30 s time step, as well as orbital averages</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>kg/m3 for density</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>64 bit double precision floating point number format</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>30% of variance from models for neutral density</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>Validation report DNSxVAL_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>&lt; 160 Kbyte per satellite per day</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output data</td>\n\t\t\t<td>CDF file with time series</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>24 hr</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>1 month</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>21 days</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>The density data is derived from the ACCxPOD aerodynamic acceleration component along the spacecraft X-axis.<br />\n\t\t\tThe density_orbitmean field contains the mean density, taken over one orbital period, for each time step. The orbital period in seconds is provided as metadata in the CDF file.<br />\n\t\t\tAt high altitude and low solar activity, the errors inherent in the radiation pressure model and acceleration determination using GPS data can become significant compared to the magnitude of the acceleration signal. This can result in large density errors and even negative densities. Users are advised to use the orbit mean densities in those conditions.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n"
 }

@@ -1,6 +1,14 @@
 {
     "product_id": "SW_ACCxPOD_2_",
     "name": "Non-gravitational accelerations",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Thermosphere"
     ],
@@ -10,7 +18,7 @@
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "Variable,Units,Description,Dim,Type\ntime,-,-,1,CDF_EPOCH\nacc_pod,m/s/s,-,3,CDF_DOUBLE\nacc_pod_aero,m/s/s,-,3,CDF_DOUBLE\nvalidity_flag_tot,unknown units,-,1,CDF_INT1\nvalidity_flag,unknown units,-,1,CDF_INT1\n",
+    "variables_table": "Variable,Units,Description,Dim,Type\ntime,-,Time of observation,1,CDF_EPOCH\nacc_pod,m/s/s,\"X total non-gravitational acceleration in satellite reference frame, Y total non-gravitational acceleration in satellite reference frame, Z total non-gravitational acceleration in satellite reference frame\",3,CDF_DOUBLE\nacc_pod_aero,m/s/s,\"X aerodynamic acceleration in satellite reference frame, Y aerodynamic acceleration in satellite reference frame, Z aerodynamic acceleration in satellite reference frame\",3,CDF_DOUBLE\nvalidity_flag_tot,-,\"Flag: 0 = nominal data, 1 = anomalous data\",1,CDF_INT1\nvalidity_flag,-,\"Flag: 0 = nominal data, 1 = anomalous data\",1,CDF_INT1\n",
     "related_resources": "",
-    "details": ""
+    "details": "<table border=\"1\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Product identifier</td>\n\t\t\t<td>ACCxPOD_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Time series of non-gravitational and aerodynamic accelerations obtained by POD</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input data</td>\n\t\t\t<td>GPSx_RO_1B, STRxATT_1B, SC_xDYN_1B, External data from CODE</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input time span</td>\n\t\t\t<td>30 hr (daily batches with overlap)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>N/A</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>UTC (seconds &ndash; s), time step = 30 sec</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>m/s2</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>64 bit double precision floating point number format</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>10-7 m/s2 variance for along-track and cross-track directions</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>Validation report DNSxVAL_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>&lt; 10 Kb per satellite per day</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output data</td>\n\t\t\t<td>CDF file with time series of accelerations</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>24 hr</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>1 month</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>21 days</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>The total non-gravitational acceleration (variable &quot;acc_pod&quot;) is used for calibrating the accelerometer data (in product &quot;ACCxCAL_2&quot;), whereas the aerodynamic acceleration (variable &quot;acc_pod_aero&quot;) is used for the calculation of thermosphere density (in product &quot;DNSxPOD_2&quot;).</td>\n\t\t</tr>\n\t</tbody>\n</table>\n"
 }

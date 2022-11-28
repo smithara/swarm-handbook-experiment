@@ -1,6 +1,14 @@
 {
     "product_id": "SW_ACCxCAL_2_",
     "name": "Non-gravitational accelerations",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Thermosphere"
     ],
@@ -12,5 +20,5 @@
     "link_hapi": "",
     "variables_table": "Variable,Units,Description,Dim,Type\ntime,CDF Epoch (UTC time),Epoch of observation (UTC),1,CDF_EPOCH\na_cal,m/s^2,\"Calibrated linear acceleration (X, Y, Z)\",3,CDF_DOUBLE\na_stp,m/s^2,Step correction for linear accelerations,3,CDF_DOUBLE\na_tmp,m/s^2,Temperature correction for linear accelerations,3,CDF_DOUBLE\na_gg,m/s^2,Gravity gradient correction for linear accelerations,3,CDF_DOUBLE\na_ca,m/s^2,Centrifugal acceleration correction for linear accelerations,3,CDF_DOUBLE\na_aa,m/s^2,Angular acceleration correction for linear accelerations,3,CDF_DOUBLE\ns,(m/s^2)/(m/s^2),Scale factor (time series) for linear accelerations,3,CDF_DOUBLE\nb,m/s^2,Bias for linear accelerations,3,CDF_DOUBLE\na_spk,m/s^2,Spike correction for linear accelerations,3,CDF_DOUBLE\na_jit,m/s^2,Voltage jitter (plus resonant harmonics) correction for linear accelerations,3,CDF_DOUBLE\nflag_cor,-,Flag indicating which corrections are applied,1,CDF_UINT2\nflag_val,-,Flag indicating if data is valid,1,CDF_UINT2\nflag_thr,-,Flag indicating if thrusters are activated,1,CDF_UINT2\n",
     "related_resources": "",
-    "details": ""
+    "details": "<table border=\"1\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Product identifier</td>\n\t\t\t<td>ACCxCAL_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Time series of corrected and calibrated acceleration, including all corrections and calibration parameters</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input data</td>\n\t\t\t<td>ACCx_PR_1B, ACCxPOD_2_, ACCxDISi2_, SC_xDYN_1B, ACCx_PR_1B</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input time span</td>\n\t\t\t<td>24 h</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>Three-dimensional time series along satellite orbit</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>UTC</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>m/s2 for accelerations, unitless for scale factors and flags</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>64 bit double precision floating point number format</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>0.01 scale factor for flight direction, 10-7 m/s2 for along-track bias</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>Validation report ACCxVAL_2_<br />\n\t\t\tGlobal attribute &quot;DAILY_QUALITY_INDEX&quot; of Type CDF_REAL, which ranges from 1.0 (good data quality) to 5.0 (bad data quality)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>15 MB per day</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output data</td>\n\t\t\t<td>CDF file with corrected and calibrated accelerations from the accelerometer, all corrections and calibration parameters, and flags; sampling rate is 1 Hz (accelerations are at original measurement epochs)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>1 day</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>3 months</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>1 month</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>All accelerations are provided in the CRF (x-direction is roughly along-track, y-direction is roughly cross-track, z-direction is roughly nadir)<br />\n\t\t\tCalibration was performed against non-gravitational accelerations from POD that are contained in product ACCxPOD_2_</td>\n\t\t</tr>\n\t</tbody>\n</table>\n"
 }

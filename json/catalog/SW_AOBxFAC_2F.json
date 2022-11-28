@@ -1,6 +1,14 @@
 {
     "product_id": "SW_AOBxFAC_2F",
     "name": "Auroral oval boundaries derived from FACs",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Ionosphere/Magnetosphere",
         "Space Weather"
@@ -9,9 +17,9 @@
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/AOB/FAC",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/AOB/FAC",
     "link_vires_gui": "",
-    "link_notebook": "",
+    "link_notebook": "https://notebooks.vires.services/notebooks/03h3_demo-aebs-aobxfac",
     "link_hapi": "",
     "variables_table": "Variable,Units,Description,Dim,Type\nt, ,\"Time of observation, UTC\",1,CDF_EPOCH\nLatitude,deg,Position in ITRF - Geocentric latitude,1,CDF_DOUBLE\nLongitude,deg,Position in ITRF - Geocentric longitude,1,CDF_DOUBLE\nRadius,m,Position in ITRF - Geocentric radius (from the Earth center),1,CDF_DOUBLE\nLatitude_QD,deg,Quasi-dipole latitude,1,CDF_DOUBLE\nLongitude_QD,deg,Quasi-dipole longitude,1,CDF_DOUBLE\nMLT,hour,Magnetic Local Time (QD),1,CDF_DOUBLE\nBoundary_Flag,,Indicator for equatorward (=1) or poleward (=2) boundary,1,CDF_UINT1\nQuality,,\"Quality indicator of equatorward/poleward boundary (Pa, Sigma)\",2,CDF_DOUBLE\nPair_Indicator,,\"Indicator of equatorward/poleward boundary of auroral oval. If the auroral oval boundaries are detectable as one pair, the pair indicator represents the record of previous (-1) or next (1) equatorward/poleward boundary within one pair; otherwise, the pair indicator is set to 0\",1,CDF_INT1\n",
-    "related_resources": "",
+    "related_resources": "<ul>\n<li><a href=\"https://earth.esa.int/eogateway/activities/swarm-aebs\">Activity: Auroral Electrojet and auroral Boundaries estimated from Swarm observations</a></li>\n<li><a href=\"https://earth.esa.int/eogateway/documents/20142/37627/Swarm-AEBS-product-definition.pdf\">Swarm-AEBS Product Definition</a></li>\n<li><a href=\"https://earth.esa.int/eogateway/documents/20142/37627/Swarm-AEBS-processing-algorithm-description.pdf\">Swarm-AEBS Description of the Processing Algorithm</a></li>\n<li><a href=\"https://earth.esa.int/eogateway/documents/20142/37627/Validation-auroral-electrojet-auroral-boundaries-estimated-from-swarm.pdf\">Validation of Auroral Electrojet and Auroral Boundaries estimated from Swarm observations</a></li>\n</ul>\n",
     "details": ""
 }
