@@ -1,6 +1,14 @@
 {
     "product_id": "SW_STRxATT_1B",
     "name": "Attitude of spacecraft",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Attitude information"
     ],

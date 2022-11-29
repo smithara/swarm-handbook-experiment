@@ -1,10 +1,18 @@
 {
     "product_id": "SW_CFW_SHA_2Y",
-    "name": "-",
+    "name": "Toroidal and poloidal core flow coefficients co-estimated with the magnetic field model MCO_SHA_2Y",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [],
-    "description": "-",
-    "link_files_http": "",
-    "link_files_ftp": "",
+    "description": "",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/CFW",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/CFW",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",

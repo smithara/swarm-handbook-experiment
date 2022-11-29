@@ -1,6 +1,14 @@
 {
     "product_id": "SW_EFIx_TII1B",
     "name": "Provisional plasma dataset: TII data",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Plasma measurements",
         "Space Weather"

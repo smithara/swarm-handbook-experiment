@@ -1,6 +1,14 @@
 {
     "product_id": "SW_EFIx_LP_HM",
     "name": "2Hz LP extended dataset",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
     "thematic_areas": [
         "Plasma measurements",
         "Space Weather"

@@ -1,14 +1,23 @@
 {
     "product_id": "SW_ACCx_AE_2_",
-    "name": "-",
-    "thematic_areas": [],
-    "description": "-",
+    "name": "Time series of calibrated accelerometer data, pre-processed to represent external non-gravitational forces and aerodynamic accelerations",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-C"
+    ],
+    "thematic_areas": [
+        "Acceleration measurements",
+        "Thermosphere"
+    ],
+    "description": "",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/ACC/AE/",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/ACC/AE/",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\ntime,-,Time of observation,1,CDF_EPOCH\nacc_aero_obs,m/s/s,Measured Aerodynamic linear acceleration in S/C X-direction,1,CDF_DOUBLE\nacc_total_obs,m/s/s,\"Calibrated measured linear acceleration in S/C X-direction, with outliers removed\",1,CDF_DOUBLE",
     "related_resources": "",
     "details": ""
 }
