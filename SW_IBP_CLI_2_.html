@@ -1,0 +1,87 @@
+<h1>SW_IBP_CLI_2_</h1>
+<p>Climatological model of ionospheric bubble probability</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<h2>Data access</h2>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<h2>More details</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Product identifier</th>
+            <th>IBP_CLI_2_</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Definition</td>
+            <td>Climatological model of ionospheric bubble probability</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>IBIxTMS_2F, AUX_F10_2, Bubble detection index of CHAMP vector magnetic field data (similar procedure as for IBIxTMS_2F)</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>Entire Swarm mission + entire CHAMP mission</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Low geographic latitudes (ITRF) &lt; 45&deg;, continuous in geographic longitude (ITRF)</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>1 LT hour</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>N/A ([0-1]: probability)</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>0.01</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>See presentation 8th SDQW</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>Approximately 100 kB per file</td>
+        </tr>
+        <tr>
+            <td>Data format</td>
+            <td>CDF</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>Probability estimation by longitude, LT, day of year, F10.7</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>Model is based on data from entire CHAMP and Swarm missions, but it is in valid for any time of solar flux 80 &lt; F10.7 &lt; 200 sfu; resolution: 1 LT hour</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>Yearly</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>Two months</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>The coefficient file, the applicable forward modelling code (in &lsquo;python&#39;), and related documentation are available at https://git.gfz-potsdam.de/rother/ibp-model</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

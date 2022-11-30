@@ -1,0 +1,98 @@
+<h1>SW_MIO_SHA_2E</h1>
+<p>Model of polar daily geomagnetic variation caused by ionospheric currents</p>
+<p>Thematic areas: Ionosphere/Magnetosphere</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MIO">https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MIO</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2longterm/MIO</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://vires.services/?ws=data%3Aapplication/json%2Bgzip%3Bbase64%2CH4sIAGmEGGMC/51VbW/iOBD%2BKyhfD5Bf4jjpN8rLXU%2B0xwK3L0VVZIiX%2Bs4kyElQq4r/vmMHaMgevW6lSOMZzzMznpnMvHi5NDu1kp%2BlyVWWelctj3ajLvLaLbjSclXIZKR0Ic1Y5QVcL7yRvbuO7yoyrEjfkgFoAPk0GAt3uB3PLRnF0pjMOMWsTBNhnuORFmsrmAhl4ps0UStRVCp/xv1RPJMb9WlQsYNztqLDoQtj1HOOb6aODLXciQKeEffStZZW1FvmmS4LGX%2BeD/tngtlBMJUaMLsLgnh6O3OBl8ullvHEZEuxVFoVz1Y6dz7u5CEHsZF5fJslUh9y0xTcnQtGNfYB%2BEJt5MwlvSrFwiMIBx2E4ZsjdOW%2BLkLo3qJrd4ResQi%2BbhRF9ydTg2wj1MkO62DSoaBLLtkhc3R2Z%2B1sTZaUqyLvZ%2Bl3tS6NOIT24s2%2BxH9NhtP4tvd7Lx5PY3ztxDuVK8gUnL8LnUswkZWFVqnM66KtWNkUXrWw9SGM2EhosdxZgDRBIezJiHRtLS0wg4DaLWaJjWqV6czkK%2BH8eP/IwtvbdP4qqNbjICpMKfdVmYaulL1GFJ3A2gveCuGEPVT1DA9gzi6B9xb%2BCnpNow3rLGWoy39O2ugjCfvjp/jwr6Xqa8Mrcl4JfdPrt0ZWuQPx/8Qk8B%2BatUrXMXbY%2BwaWOH/vQd40kCEAw3fgBh/EjZTUybHv6zlqt3z0Zn6%2BxsMvDacMSvn/Lr99FHj/IeDeXW%2B2WSrTwr5y8eIp2x1e73bihmau1m6j/OY1GzYttd4/VCZAasQky9VptGxfmUVACQ1Yl/l%2ByEMc0LDdgilGSMBh2mHftydMoXMDxKKQoC7xMaHMR9iGnyjzOk07MNdoiFgA/RlxgkJKg6AN/xMOeUQYYwHiFIfWGqhGIVhnnGBEsU/CwJortwc7OPJ5xMKA%2BBQRYoMCQIAjaEXARTTgPHKWI8whlBBhjJGPnRGj1o9uk1ofCCNGfJ9iRgKKK0jo8xBeG7CI4TDw4W1dGnLOIQGIV1HJDtiy2XvqPam8vjM82L2qKBO3k7Y6K5qTG6r0bEGHXW4jcvxYLN3ssaWxMnJUejhxDRXXG0ctK3uoC4nDQoxn/hob79zLuwyeAh4%2BFdB4R9V26wiobF68dQ/JVv%2B6QbY4bCRHag%2B9eJ%2BLQmpY/4ffuqe3j6K22K6N2GU1vv8ojFb1bXg369e4v6FCIjkK9vsfJ6XxspAJAAA%3D">VirES GUI</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<h2>More details</h2>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Product identifier</td>
+            <td>MIO_SHA_2E</td>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>An empirical model of the Average Magnetic field and Polar current System (<a href="https://earth.esa.int/eogateway/activities/amps">AMPS</a>). See:<br />
+            - forward code at <a href="https://doi.org/10.5281/zenodo.1182931">doi: 10.5281/zenodo.1182931</a><br />
+            - science paper at <a href="https://doi.org/10.1029/2018JA025387">doi: 10.1029/2018JA025387</a></td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>Swarm magnetic field (MAG-L) measurements, CHAMP magnetic field measurements, model predictions of core, lithospheric and large-scale magnetospheric (including Earth-induced) contributions, taken by the CHAOS geomagnetic field model, OMNI solar wind measurements, F10.7 index</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>Entire Swarm mission + entire CHAMP mission</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Spherical harmonic expansion in QD/modified apex coordinates, with degree up to 45/65 for poloidal/toroidal magnetic field parts. Spherical harmonic order (in MLT) up to 3</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Time dependence contained in parametrization in terms of external parameters: 20 min average solar wind speed and interplanetary magnetic field, dipole tilt angle, and F10.7 index</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>Magnetic field in nT, horizontal sheet current density in mA/m, vertical current density in &micro;A/m2</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>0.1 nT, 1 mA/m, 0.01 &micro;A/m2</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>See <a href="https://doi.org/10.1029/2018JA025387">doi: 10.1029/2018JA025387</a></td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>218 kB</td>
+        </tr>
+        <tr>
+            <td>Data format</td>
+            <td>ASCII</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>Spherical harmonic coefficient</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>Model is based on data from entire CHAMP and Swarm missions, but it is in principle valid for any time when solar wind data was available</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>Yearly (to be confirmed)</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>2 months, due to update rate of OMNI data and computation time</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

@@ -1,0 +1,117 @@
+<h1>SW_VOBS_4M_2_</h1>
+<p>Four-monthly time series of vector magnetic field values at fixed locations, on a uniform grid at satellite altitude</p>
+<p>Thematic areas: Magnetic measurements</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Such data, regularly distributed in space and time are suitable for modelling the main geomagnetic field, for core flow inversion studies, and for data assimilation studies of the core dynamo process.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2longterm/VOB">https://swarm-diss.eo.esa.int/#swarm/Level2longterm/VOB</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2longterm/VOB</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://notebooks.vires.services/notebooks/03i1_demo-vobs">Notebook</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Time of observation</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_OB</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Estimated observed GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">sigma_OB</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Observed field estimated error</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_CF</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Estimated core GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">sigma_CF</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Core field estimated error</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp_SV</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Time of Secular Variation (*_SV) data</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_SV</td>
+<td style="text-align: left;">nT/yr</td>
+<td style="text-align: left;">Estimated secular variation (SV) GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">sigma_SV</td>
+<td style="text-align: left;">nT/yr</td>
+<td style="text-align: left;">Secular variation field estimated error</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>
+<ul>
+<li><a href="https://earth.esa.int/eogateway/activities/gvo">Geomagnetic Virtual Observatories activity</a></li>
+</ul>

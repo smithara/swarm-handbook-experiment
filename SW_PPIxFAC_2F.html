@@ -1,0 +1,203 @@
+<h1>SW_PPIxFAC_2F</h1>
+<p>Equatorward boundary of SSFACs and the associated midnight PP index</p>
+<p>Thematic areas: Ionosphere/Magnetosphere</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/PPI/FAC">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/PPI/FAC</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/PPI/FAC</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Time of observation, UTC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Counter</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Swarm orbit counter and quarter orbit (four per Swarm orbit) counter that are based on magnetic coordinates as defined in [AD-2] (Sect. 4.1.2.2)</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position of the SSFAC boundary in ITRF - Geocentric latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position of the SSFAC boundary in ITRF - Geocentric longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Position of the SSFAC boundary in ITRF - Geocentric radius (from the Earth center)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD latitude of the SSFAC boundary</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD longitude of the SSFAC boundary</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT</td>
+<td style="text-align: left;">h</td>
+<td style="text-align: left;">Magnetic Local Time of SSFAC boundary</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">L_value</td>
+<td style="text-align: left;">R_E</td>
+<td style="text-align: left;">L-value of the SSFAC boundary</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">SZA</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Solar zenith angle of the SSFAC boundary</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dL</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Boundary width in Earth radii</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sigma</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Standard deviation of the linear fit of S at the boundary [RD-2]</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">PPI</td>
+<td style="text-align: left;">R_E</td>
+<td style="text-align: left;">Midnight Plasmapause index</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quality</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Quality indicators of SSFAC boundary detection</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CDF_INT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timestamp_ID</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Time vector of observations</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_ID</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Geocentric latitude</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_ID</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Geocentric longitude</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius_ID</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Position in ITRF - Geocentric radius (from the Earth centre)</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_QD_ID</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD latitude</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_QD_ID</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD longitude</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT_ID</td>
+<td style="text-align: left;">h</td>
+<td style="text-align: left;">Magnetic Local Time</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">L_value_ID</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">L-value in Earth radii</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">SZA_ID</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">L-value in Earth radii</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Position_Quality_ID</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Vector of quality indicators characterising the detection quality of each single positions</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_INT1</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>
+<ul>
+<li><a href="https://earth.esa.int/eogateway/activities/swarm-prism">Activity: Plasmapause Related boundaries in the topside Ionosphere as derived from Swarm Measurements (PRISM)</a></li>
+</ul>

@@ -1,0 +1,141 @@
+<h1>SW_AEJxLPS_2F</h1>
+<p>Auroral electrojets line profile - SECS method</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Characterization of the electrojet sheet current density as well as the total horizontal sheet and associated large-scale field-aligned current density along the Swarm orbit ionospheric footprints at auroral latitudes (by using SECS method).</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/AEJ/LPS">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/AEJ/LPS</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/AEJ/LPS</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://notebooks.vires.services/notebooks/03h2_demo-aebs-aejxlps">Notebook</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">t</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Time of observation, UTC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Geocentric latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Geocentric longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Quasi-dipole latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Quasi-dipole longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">Magnetic local time (QD)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">J_CF</td>
+<td style="text-align: left;">A/km</td>
+<td style="text-align: left;">North and East component of the curl-free horizontal sheet current density vector in geocentric frame</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">J_DF</td>
+<td style="text-align: left;">A/km</td>
+<td style="text-align: left;">North and East component of the divergence-free horizontal sheet current density vector in geocentric frame</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">J_CF_SemiQD</td>
+<td style="text-align: left;">A/km</td>
+<td style="text-align: left;">North component of the curl-free horizontal sheet current density in SemiQD frame</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">J_DF_SemiQD</td>
+<td style="text-align: left;">A/km</td>
+<td style="text-align: left;">East component of the divergence-free horizontal sheet current density in SemiQD frame</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">J_r</td>
+<td style="text-align: left;">A/km^2</td>
+<td style="text-align: left;">Radial ionospheric current density at 110 km altitude in SemiQD frame</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">t_qual</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Time instants of quality information (RMS_misfit and Confidence), UTC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">RMS_misfit</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Root Mean Square error misfit between observations and model values for the oval crossing</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Confidence</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Goodness of fit computed as 1 - (residual rms / signal rms) for the oval crossing</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>
+<ul>
+<li><a href="https://earth.esa.int/eogateway/activities/swarm-aebs">Activity: Auroral Electrojet and auroral Boundaries estimated from Swarm observations</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-AEBS-product-definition.pdf">Swarm-AEBS Product Definition</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-AEBS-processing-algorithm-description.pdf">Swarm-AEBS Description of the Processing Algorithm</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Validation-auroral-electrojet-auroral-boundaries-estimated-from-swarm.pdf">Validation of Auroral Electrojet and Auroral Boundaries estimated from Swarm observations</a></li>
+</ul>

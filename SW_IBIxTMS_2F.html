@@ -1,0 +1,236 @@
+<h1>SW_IBIxTMS_2F</h1>
+<p>Ionospheric bubble index</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>By combining electron density and magnetic field observations the IBI product gives information on bubble climatology and on disturbance level of magnetic field data.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/IBI/TMS">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/IBI/TMS</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/IBI/TMS</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time stamp in UTC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">degree</td>
+<td style="text-align: left;">Geographic latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">degree</td>
+<td style="text-align: left;">Geographic longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Geographic radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bubble_Index</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Plasma Bubble Index</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_INT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bubble_Probability</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Detection probability of the plasma bubble</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_Bubble</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags related to the plasma bubble index</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_F</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags_F passed through from MAGx_L1_B</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_B</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags_B passed through from MAGx_L1_B</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_q</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags_q passed through from MAGx_L1_B</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Product identifier</th>
+            <th>IBIxTMS_2F</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Definition</td>
+            <td>Ionospheric bubble index</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>MAGx_LR_1B, EFIx_PL_1B, Satellite positions, Time stamps (UTC), AUX_IGR_2F, AUX_COR_2F, AUX_LIT_2F, AUX_PMF_2F, AUX_F10_2F, AUX_DST_2F, AUX_IMF_2F, AUX_SWV_2F, AUX_PSM_2F, AUX_PGM_2F</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>3 days</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>One index per data point (characterising whether the magnetic observation is affected by bubble or not.)</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>1s time series</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>~4 MB/day/satellite</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>CDF file with time series</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>6 min</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>1 per day</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <caption>Bubble_Index</caption>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>Quiet</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bubble</td>
+        </tr>
+        <tr>
+            <td>-1</td>
+            <td>Not analyzed</td>
+        </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <caption>Bubble_Probability</caption>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>not probabale</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>very probable</td>
+        </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <caption>Flags_Bubble</caption>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>Quiet</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Confirmed plasma bubble</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Unconfirmed plasma bubble</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Large peak in unfiltered magnetic field residuals</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Time gap</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Too many peaks in filtered magnetic field residuals</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Outside equatorial orbit segment or invalid latitude/local time</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

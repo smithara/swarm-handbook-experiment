@@ -1,0 +1,113 @@
+<h1>SW_AOBxFAC_2F</h1>
+<p>Auroral oval boundaries derived from FACs</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Auroral oval boundaries, associated with auroral precipitation, estimated from the presence of small-scale (&lt;150 km) field-aligned currents.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/AOB/FAC">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/AOB/FAC</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/AOB/FAC</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://notebooks.vires.services/notebooks/03h3_demo-aebs-aobxfac">Notebook</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">t</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Time of observation, UTC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Geocentric latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Geocentric longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Position in ITRF - Geocentric radius (from the Earth center)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Quasi-dipole latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Quasi-dipole longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">Magnetic Local Time (QD)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Boundary_Flag</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicator for equatorward (=1) or poleward (=2) boundary</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quality</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Quality indicator of equatorward/poleward boundary (Pa, Sigma)</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pair_Indicator</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Indicator of equatorward/poleward boundary of auroral oval. If the auroral oval boundaries are detectable as one pair, the pair indicator represents the record of previous (-1) or next (1) equatorward/poleward boundary within one pair; otherwise, the pair indicator is set to 0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_INT1</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>
+<ul>
+<li><a href="https://earth.esa.int/eogateway/activities/swarm-aebs">Activity: Auroral Electrojet and auroral Boundaries estimated from Swarm observations</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-AEBS-product-definition.pdf">Swarm-AEBS Product Definition</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-AEBS-processing-algorithm-description.pdf">Swarm-AEBS Description of the Processing Algorithm</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Validation-auroral-electrojet-auroral-boundaries-estimated-from-swarm.pdf">Validation of Auroral Electrojet and Auroral Boundaries estimated from Swarm observations</a></li>
+</ul>

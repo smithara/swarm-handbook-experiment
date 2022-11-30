@@ -1,0 +1,246 @@
+<h1>SW_TECxTMS_2F</h1>
+<p>Ionospheric total electron content</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Integrated electron density along the line of sight from Swarm to GNSS satellites</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/TEC/TMS">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/TEC/TMS</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/TEC/TMS</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time stamp in UTC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">degree</td>
+<td style="text-align: left;">Geographic latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">degree</td>
+<td style="text-align: left;">Geographic longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">km</td>
+<td style="text-align: left;">Geographic radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">GPS_Position</td>
+<td style="text-align: left;">km</td>
+<td style="text-align: left;">X-,Y-,Z-coordinates (WGS84) of the GPS satellite</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">LEO_Position</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">X-,Y-,Z-coordinates (WGS84) of the LEO satellite</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">PRN</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">GPS satellite PRN</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">L1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GPS L1 carrier phase observation</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">L2</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GPS L2 carrier phase observation</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">P1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GPS P1 code phase observation</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">P2</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GPS P2 code phase observation</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">S1</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">GPS signal-to-noise ratio or raw signal strength on L1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">S2</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">GPS signal-to-noise ratio or raw signal strength on L2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Absolute_STEC</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Absolute slant TEC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Absolute_VTEC</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Absolute vertical TEC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Elevation_Angle</td>
+<td style="text-align: left;">degree</td>
+<td style="text-align: left;">Elevation Angle</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relative_STEC</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Relative slant TEC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relative_STEC_RMS</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Root mean square error of relative slant TEC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">DCB</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">GPS receiver differential code bias</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">DCB_Error</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Error of the GPS receiver differential code bias</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Product identifier</td>
+            <td>TECxTMS_2F</td>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>Time series of the ionospheric total electron content</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>GPS RINEX observation and navigation files (GPSX_RO_1B), Swarm satellite ephemeris (MODX_SC_1B) GPS and Swarm satellite ephemeris (AUX_GPSEPH) GPS transmitter biases(AUX_DCB_2F) Leap seconds (AUX_USLEAP)</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>3 days</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Line representation of GPS &ndash;Swarm link</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>1-s time series for TEC and 1 day for DCB</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>TECU (1016 electrons/m2)</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>1E-8 TECU</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>2 TECU</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>Relative_STEC_RMS (RMS deviation between code and carrier phases) and DCB_Error</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>~4 MB / day / satellite</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>CDF file with time series</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>6 min</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>1 per day</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>The cadence of the TECxTMS_2F data has changed from 10-s (0.1 Hz) to 1-s (1 Hz) at:<br />
+            2014-07-14 06:42:59 for Swarm A<br />
+            2014-07-14 06:06:46 for Swarm B<br />
+            2014-07-14 08:15:59 for Swarm C<br />
+            It is recommended to use absolute VTEC data with corresponding elevation angles of the GPS rays of at least 50&deg;.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

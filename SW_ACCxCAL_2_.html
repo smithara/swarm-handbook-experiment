@@ -1,0 +1,202 @@
+<h1>SW_ACCxCAL_2_</h1>
+<p>Non-gravitational accelerations</p>
+<p>Thematic areas: Thermosphere</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-C</p>
+<h2>Description</h2>
+<p>Time series of non-gravitational and aerodynamic accelerations obtained by POD</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/ACC/CAL">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/ACC/CAL</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/ACC/CAL</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">time</td>
+<td style="text-align: left;">CDF Epoch (UTC time)</td>
+<td style="text-align: left;">Epoch of observation (UTC)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_cal</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Calibrated linear acceleration (X, Y, Z)</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_stp</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Step correction for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_tmp</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Temperature correction for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_gg</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Gravity gradient correction for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_ca</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Centrifugal acceleration correction for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_aa</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Angular acceleration correction for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">s</td>
+<td style="text-align: left;">(m/s^2)/(m/s^2)</td>
+<td style="text-align: left;">Scale factor (time series) for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">b</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Bias for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_spk</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Spike correction for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_jit</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Voltage jitter (plus resonant harmonics) correction for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">flag_cor</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flag indicating which corrections are applied</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">flag_val</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flag indicating if data is valid</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">flag_thr</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flag indicating if thrusters are activated</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Product identifier</td>
+            <td>ACCxCAL_2_</td>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>Time series of corrected and calibrated acceleration, including all corrections and calibration parameters</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>ACCx_PR_1B, ACCxPOD_2_, ACCxDISi2_, SC_xDYN_1B, ACCx_PR_1B</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>24 h</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Three-dimensional time series along satellite orbit</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>UTC</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>m/s2 for accelerations, unitless for scale factors and flags</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>64 bit double precision floating point number format</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>0.01 scale factor for flight direction, 10-7 m/s2 for along-track bias</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>Validation report ACCxVAL_2_<br />
+            Global attribute &quot;DAILY_QUALITY_INDEX&quot; of Type CDF_REAL, which ranges from 1.0 (good data quality) to 5.0 (bad data quality)</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>15 MB per day</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>CDF file with corrected and calibrated accelerations from the accelerometer, all corrections and calibration parameters, and flags; sampling rate is 1 Hz (accelerations are at original measurement epochs)</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>3 months</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>1 month</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>All accelerations are provided in the CRF (x-direction is roughly along-track, y-direction is roughly cross-track, z-direction is roughly nadir)<br />
+            Calibration was performed against non-gravitational accelerations from POD that are contained in product ACCxPOD_2_</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

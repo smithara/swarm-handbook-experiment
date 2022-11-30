@@ -1,0 +1,254 @@
+<h1>SW_EFIx_TCT02</h1>
+<p>2Hz TII cross-track dataset</p>
+<p>Thematic areas: Plasma measurements, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>TII Level 1b dataset at 2 Hz cadence containing cross-track ion measurements along with the electric field, magnetic field in the same coordinate frame</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2Hz_TII_Cross-track_Dataset/">https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2Hz_TII_Cross-track_Dataset/</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/2Hz_TII_Cross-track_Dataset/</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://notebooks.vires.services/notebooks/03k2_demo-efixtct">Notebook</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">UT</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Geocentric latitude.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Geocentric longitude.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Geocentric radius.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">QDLatitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Quasi-dipole magnetic latitude.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">Magnetic local time.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vixh</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Along-track ion drift from horizontal TII sensor in satellite-track coordinates.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vixh_error</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Random error estimate for along-track ion drift from horizontal TII sensor in satellite-track coordinates. Negative value indicates no estimate available.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vixv</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Along-track ion drift from vertical TII sensor in satellite-track coordinates.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vixv_error</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Random error estimate for along-track ion drift from vertical TII sensor in satellite-track coordinates. Negative value indicates no estimate available.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Viy</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Cross-track horizontal ion drift from horizontal TII sensor in satellite-track coordinates.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Viy_error</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Random error estimate for cross-track horizontal ion drift from horizontal TII sensor in satellite-track coordinates. Negative value indicates no estimate available.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Viz</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Cross-track vertical ion drift from vertical TII sensor in satellite-track coordinates.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Viz_error</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Random error estimate for cross-track vertical ion drift from vertical TII sensor in satellite-track coordinates. Negative value indicates no estimate available.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">VsatN</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Satellite velocity N component in north-east-centre coordinates.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">VsatE</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Satellite velocity E component in north-east-centre coordinates.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">VsatC</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Satellite velocity C component in north-east-centre coordinates.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ehx</td>
+<td style="text-align: left;">mV/m</td>
+<td style="text-align: left;">Electric field x component in satellite-track coordinates, derived from -VxB with along-track ion drift from horizontal sensor.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ehy</td>
+<td style="text-align: left;">mV/m</td>
+<td style="text-align: left;">Electric field y component in satellite-track coordinates, derived from -VxB with along-track ion drift from horizontal sensor.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ehz</td>
+<td style="text-align: left;">mV/m</td>
+<td style="text-align: left;">Electric field z component in satellite-track coordinates, derived from -VxB with along-track ion drift from horizontal sensor.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Evx</td>
+<td style="text-align: left;">mV/m</td>
+<td style="text-align: left;">Electric field x component in satellite-track coordinates, derived from -VxB with along-track ion drift from vertical sensor.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Evy</td>
+<td style="text-align: left;">mV/m</td>
+<td style="text-align: left;">Electric field y component in satellite-track coordinates, derived from -VxB with along-track ion drift from vertical sensor.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Evz</td>
+<td style="text-align: left;">mV/m</td>
+<td style="text-align: left;">Electric field z component in satellite-track coordinates, derived from -VxB with along-track ion drift from vertical sensor.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bx</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Geomagnetic field x component in satellite-track coordinates, derived from the 1 Hz product.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">By</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Geomagnetic field y component in satellite-track coordinates, derived from the 1 Hz product.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bz</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Geomagnetic field z component in satellite-track coordinates, derived from the 1 Hz product.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vicrx</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Ion drift corotation signal x component in satellite-track coorinates. This has been removed from ion drift and electric field.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vicry</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Ion drift corotation signal y component in satellite-track coorinates. This has been removed from ion drift and electric field.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vicrz</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Ion drift corotation signal z component in satellite-track coorinates. This has been removed from ion drift and electric field.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quality_flags</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Bitwise flag for each velocity component, where a value of 1 for a particular component signifies that calibration was successful, and that the baseline 1-sigma noise level is less than or equal to 100 m/s at 2 Hz. Electric field quality can be assessed from these flags according to -vxB. Bit0 (least significant) = Vixh, bit1 = Vixv, bit2 = Viy, bit3 = Viz. Refer to the release notes for details.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Calibration_flags</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Information about the calibration process. Refer to the release notes for details.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>

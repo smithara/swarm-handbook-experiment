@@ -1,0 +1,201 @@
+<h1>SW_EFIxIDM_2_</h1>
+<p>Estimated along-track ion drift, ion effective mass, and revised ion den- sity along the Swarm satellite orbits</p>
+<p>Thematic areas: Plasma measurements</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Ion_Drift_Density_and_Effective_Mass_dataset">https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Ion_Drift_Density_and_Effective_Mass_dataset</a></li>
+<li>ftp://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Ion_Drift_Density_and_Effective_Mass_dataset</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://notebooks.vires.services/notebooks/03k3_demo-efixidm">Notebook</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">UT</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Geodetic latitude.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Geodetic longitude.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Geocentric radius.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Height</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Height above WGS84 reference ellipsoid.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">QDLatitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Quasi-dipole magnetic latitude.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">Magnetic local time.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_sat_nec</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Satellite velocity in north, east, centre (NEC) reference frame.</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">M_i_eff</td>
+<td style="text-align: left;">a.m.u.</td>
+<td style="text-align: left;">Ion effective mass.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">M_i_eff_err</td>
+<td style="text-align: left;">a.m.u.</td>
+<td style="text-align: left;">Ion effective mass uncertainty.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">M_i_eff_Flags</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ion effective mass validity flag.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+<tr>
+<td style="text-align: left;">M_i_eff_tbt_model</td>
+<td style="text-align: left;">a.m.u.</td>
+<td style="text-align: left;">Ion effective mass from Truhlik et al. (2015) topside empirical model.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_i</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Ion along-track drift.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_i_err</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Ion along-track drift uncertainty.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_i_Flags</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ion along-track drift validity flag.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_i_raw</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Ion along-track drift without high-latitude detrending.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">N_i</td>
+<td style="text-align: left;">cm^-3</td>
+<td style="text-align: left;">Ion density.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">N_i_err</td>
+<td style="text-align: left;">cm^-3</td>
+<td style="text-align: left;">Ion density unertainty.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">N_i_Flags</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ion density validity flag.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+<tr>
+<td style="text-align: left;">A_fp</td>
+<td style="text-align: left;">m^2</td>
+<td style="text-align: left;">Modified-OML EFI faceplate area.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">R_p</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Modified-OML Langmuir spherical probe radius.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">T_e</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">Electron temperature.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Phi_sc</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">Spacecraft floating potential with respect to plasma potential far from satellite.</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>
+<ul>
+<li><a href="https://earth.esa.int/eogateway/activities/slidem">Activity: Swarm LP Ion Drift and Effective Mass (SLIDEM)</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/2860886/SLIDEM_Product_Definition.pdf">SLIDEM Product Definition</a></li>
+</ul>

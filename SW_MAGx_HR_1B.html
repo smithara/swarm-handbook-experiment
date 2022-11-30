@@ -1,0 +1,422 @@
+<h1>SW_MAGx_HR_1B</h1>
+<p>Magnetic field (50Hz) from VFM</p>
+<p>Thematic areas: Magnetic measurements, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>The MAGX_HR_1B Product contains magnetic vector data at 50 Hz rate. The time instants of the data are determined by the VFM instrument samplings. No interpolation of the magnetic data is performed, neither to shift the measurements in time nor to fill any gaps in the VFM source data.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/MAGx_HR">https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/MAGx_HR</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/MAGx_HR</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://notebooks.vires.services/notebooks/03a2_demo-magx_hr_1b">Notebook</a></li>
+<li><a href="http://hapi-server.org/servers/#server=VirES-for-Swarm&amp;dataset=SW_OPER_MAGA_HR_1B&amp;parameters=B_NEC&amp;start=2022-01-01T00:00:00Z&amp;stop=2022-01-01T00:01:00Z&amp;return=data&amp;format=csv&amp;style=header">HAPI</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Time stamp</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">SyncStatus</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Synchronization status</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF – Latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF – Longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Position in ITRF – Radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_VFM</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic field vector, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_NEC</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic field vector, NEC frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dB_Sun</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field correction vector of Sun induced perturbation, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dB_AOCS</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field correction vector of AOCS magneto-torquer coils, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dB_other</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field correction vector of all other sources, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_error</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Error estimates on magnetic field, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">q_NEC_CRF</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Quaternion, transformation: NEC ← CRF</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Att_error</td>
+<td style="text-align: left;">mdeg</td>
+<td style="text-align: left;">Error estimates on attitude information</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_B</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the magnetic field measurement</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_q</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the attitude information</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_Platform</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the S/C platform information</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <caption>Meaning of Flags_B, Flags_q, and Flags_Platform in the data product</caption>
+    <thead>
+        <tr>
+            <th>Flag</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="8">Flags_B</td>
+            <td>0</td>
+            <td>Magnetic field measurements (VFM) nominal</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ASM instrument turned off</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Outlier detected, gap, or not enough VFM temperature data for filtering</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Both conditions (values) 1 and 2 above</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Suspiciuos VFM sample</td>
+        </tr>
+        <tr>
+            <td>5-7</td>
+            <td>Combination (sum) of values 1-4</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Discrepancy between ASM and VFM measurements</td>
+        </tr>
+        <tr>
+            <td>10,12,14</td>
+            <td>Combination (sum) of values 2, 4, and 8</td>
+        </tr>
+        <tr>
+            <td rowspan="39">Flags_q</td>
+            <td>0</td>
+            <td>Attitude information (STR) nominal</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Lack of 1 or 2 attitudes of CHU1 in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lack of 1 or 2 attitudes of CHU2 in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Lack of 1 or 2 attitudes of CHU3 in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Lack of 3 or 4 attitudes of CHU1 in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Lack of 3 or 4 attitudes of CHU2 in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Lack of 3 or 4 attitudes of CHU3 in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Not currently used</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>On-ground aberrational correction of any attitude sample among 4 nearest STR samples.</td>
+        </tr>
+        <tr>
+            <td>9-14</td>
+            <td>As 1-7 above with on-ground aberrational correction of any attitude sample among 4 nearest STR samples.</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Not currently used</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>CHU1 obscured by bright object in 4 nearest STR samples (all 4 CHU1 samples invalid), CHU2 and CHU3 ok</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>CHU2 obscured by bright object in 4 nearest STR samples (all 4 CHU2 samples invalid) , CHU1 and CHU3 ok</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>CHU3 obscured by bright object in 4 nearest STR samples (all 4 CHU3 samples invalid) , CHU1 and CHU2 ok</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Lack of 2-4 attitudes of CHU1 and CHU2 in 4 nearest STR samples, but not both simultaneously</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Lack of 2-4 attitudes of CHU1 and CHU3 in 4 nearest STR samples, but not both simultaneously</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Lack of 2-4 attitudes of CHU2 and CHU3 in 4 nearest STR samples, but not both simultaneously</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Lack of 3-4 attitudes of CHU1, CHU2, and CHU3 in 4 nearest STR samples, but not two simultaneously</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Not currently used</td>
+        </tr>
+        <tr>
+            <td>24-30</td>
+            <td>As 16-22 above with on-ground aberrational correction.</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Not currently used</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>1 or 2 attitudes based on CHU1 alone (CHU2 and CHU3 missing) in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>1 or 2 attitudes based on CHU2 alone in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>1 or 2 attitudes based on CHU3 alone in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>2 attitudes based on single, intermittent CHU alone in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>36-39</td>
+            <td>Not currently used</td>
+        </tr>
+        <tr>
+            <td>40-43</td>
+            <td>As 32-35 above with on-ground aberrational correction.</td>
+        </tr>
+        <tr>
+            <td>44-47</td>
+            <td>Not currently used</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>1 attitude sample missing among 4 nearest STR samples (data gap)</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>2 attitude samples missing among 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>3 or more attitude samples missing among 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>3 or 4 attitudes based on CHU1 alone in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>52</td>
+            <td>3 or 4 attitudes based on CHU2 alone in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>53</td>
+            <td>3 or 4 attitudes based on CHU3 alone in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>3 or 4 attitudes based on single, intermittent CHU alone in 4 nearest STR samples</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>Not currently used</td>
+        </tr>
+        <tr>
+            <td>56-62</td>
+            <td>As 48-54 above with on-ground aberrational correction.</td>
+        </tr>
+        <tr>
+            <td>63-254</td>
+            <td>Not currently used</td>
+        </tr>
+        <tr>
+            <td>255</td>
+            <td>Not enough STR data for generating attitude information.</td>
+        </tr>
+        <tr>
+            <td rowspan="17">Flags_Platform</td>
+            <td>0</td>
+            <td>Platform telemetry nominal (no missing or suspicious data)</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Thruster latch valves open, thrusters not activated</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Thrusters activated</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Gap in Bus telemetry, 1 or 2 samples missing</td>
+        </tr>
+        <tr>
+            <td>5-7</td>
+            <td>Used for combinations (sum) of values 1, 2, and 4</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Outlier detected in Bus currents</td>
+        </tr>
+        <tr>
+            <td>9-15</td>
+            <td>Used for combinations (sum) of values 1-8</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Not enough data for filtering Bus currents (due to large gap or jump in data)</td>
+        </tr>
+        <tr>
+            <td>17-31</td>
+            <td>Used for combinations (sum) of values 1-16</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Change in instrument state according to Bus telemetry</td>
+        </tr>
+        <tr>
+            <td>33-63</td>
+            <td>Used for combinations (sum) of values 1-32</td>
+        </tr>
+        <tr>
+            <td>64</td>
+            <td>No Bus telemetry available (for extended period)</td>
+        </tr>
+        <tr>
+            <td>65-67</td>
+            <td>Used for combinations (sum) of values 1, 2 and 64</td>
+        </tr>
+        <tr>
+            <td>128</td>
+            <td>Gap in AOCS telemetry</td>
+        </tr>
+        <tr>
+            <td>129-195</td>
+            <td>Used for combinations (sum) of values 1-67 and 128</td>
+        </tr>
+        <tr>
+            <td>256</td>
+            <td>Position information based on on-board (GPSR) navigational solution</td>
+        </tr>
+        <tr>
+            <td>257-323, 384-451</td>
+            <td>Used for combinations (sum) of values 1-67, 128, and 256</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

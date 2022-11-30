@@ -1,0 +1,187 @@
+<h1>SW_EFIx_LP_HM</h1>
+<p>2Hz LP extended dataset</p>
+<p>Thematic areas: Plasma measurements, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>An extended dataset at 2 Hz cadence containing the electron temperature and spacecraft potential measured separately by the two probes</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Langmuir_Probe_Extended_Dataset">https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Langmuir_Probe_Extended_Dataset</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/2_Hz_Langmuir_Probe_Extended_Dataset</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">CDF_EPOCH, msec since 01-Jan-0000 00:00:00.000</td>
+<td style="text-align: left;">Time stamp of faceplate current measurement</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geodetic latitude, WGS84</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geodetic longitude, WGS84</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Height</td>
+<td style="text-align: left;">km</td>
+<td style="text-align: left;">Height above reference ellipsoid, WGS84</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">km</td>
+<td style="text-align: left;">Distance from the Earth's centre</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">SZA</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Solar Zenith Angle</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">SAz</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Solar Azimuth in Earth frame, north is 0 deg</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">ST</td>
+<td style="text-align: left;">hours</td>
+<td style="text-align: left;">Apparent Solar Time</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Diplat</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Quasi-dipole latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Diplon</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Quasi-dipole longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLat</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Magnetic latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT</td>
+<td style="text-align: left;">hours</td>
+<td style="text-align: left;">Magnetic local time based on quasi-dipole</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">AACGMLat</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Altitude-adjusted corrected geomagnetic latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">AACGMLon</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Altitude-adjusted corrected geomagnetic longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">per ccm</td>
+<td style="text-align: left;">Plasma density from ion current</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Te_hgn</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">Electron temperature, estimated by the high gain probe</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Te_lgn</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">Electron temperature, estimated by the low gain probe</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">T_elec</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">Electron temperature, blended value</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vs_hgn</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">Spacecraft potential, estimated by the high gain probe</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vs_lgn</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">Spacecraft potential, estimated by the low gain probe</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">U_SC</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">Spacecraft potential, blended value</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flagbits</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">Flag bits indicating data quality or instrument configuration</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_INT4</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>

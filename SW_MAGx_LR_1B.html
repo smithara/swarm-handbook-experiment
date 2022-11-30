@@ -1,0 +1,312 @@
+<h1>SW_MAGx_LR_1B</h1>
+<p>Magnetic field (1Hz) from VFM and ASM</p>
+<p>Thematic areas: Magnetic measurements, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>The MAGX_LR_1B Product contains magnetic vector and scalar data at 1 Hz rate. The S/C data are processed to provide MAGX_LR_1B data at exact UTC seconds, i.e. both VFM vector and ASM scalar data are interpolated to yield these data. Hence, small gaps in the VFM or ASM data need not cause gaps in the product as the gaps may be filled by this interpolation. Any gaps, however, will have an impact on the error estimate of the associated product element.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/MAGx_LR">https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/MAGx_LR</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/MAGx_LR</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://vires.services/?ws=data%3Aapplication/json%2Bgzip%3Bbase64%2CH4sIAGmEGGMC/5VUbW/aMBD%2BKyifIfJLnMT9RnmZOtGOAe2koSoywaPeTIIcB7Wq%2BO87O5SmtJ20yNLFj%2B%2Beu3v88hxU0uxVLu%2BkqVRZBBedgIY8REG3A0ta5laux0pbaSaqsrC8DMZu7TK7acyoMQNnhuAB5vtwIvzP9WThzDiTxpTGO5Z1sRbmKRtrsXHAVCiTXRVrlQvbuHzNBuNsLrfq%2B7CZDt9OGzsa%2BTLGfZ/4aubNSMu9sNBG1i82Wjqov6pKXVuZ3S1GgzfA/AjMpIaY/SdANrue%2B8Lr1UrLbGrKlVgpreyTQxc%2Bx40M7sFYtZVzL1kj5DIgCMc9hGEsELrwI0QI/XRBrTVCLxiHEXLOf56ohuVWqBMP62HSo%2BBLPuMhC/RmzfHsTLmuc1sNyuKX2tRGHEt7DuY/sm/T0Sy77n/pZ5NZhi89vFeVgj7h35paAkNZW60KWQHyS%2BjKQzuRu/4vOtilEEZsJZyPyhPAuQAV3Z8RxcYRLTGDerod5owrKi91aapc%2BDTBb2mDg9vJ/w1qHdBjuYfmXMKmGVn1z6roxY4v/rSEg4t%2BUWU0vgJVpu9VOWnwn7LcyLP2EPL9EW/fl7TTotqKT3pcfEAGUn1MVBqrRbH2Gt9VZ5qwbucfW3KblWal7PuN6XYo%2B4eQLjaH7o2YlpU6Hbnd62SJKXwppyHBPE4YiWm3E6WM4giFhKZpxBISQ3UpTjBGOGSEIp4miLika2VeL1kPhSkmPCY8imBEjEAYgISzlEcUU0YwTmjqQQYXibIoSpKEEkywY6t3R5oowSTlmHEK3UWU%2BwjIDxGEsIQiwhMUg2JhGjNMEwQZWAwpuaMxavNgj0w0IgjuZUQpYXGcksQFccpjTmKCkpRxlAJRD4c8gpRADN1FiESyh%2BN7J99j/1FV7cckgCdV2XrtH5ydLu35lV4%2BB08u6PhEu5L8fCJWUgNY1Fo7jLw43Z9mZy5%2BT1%2B8HHbfBomPPZz4R49WFrbt2pB%2BgPtcZf7HH%2BalvzetIt4vVMJKDU%2BtbI5tX%2B8exOvLdGnEvmzdv8GDMFq1L%2BnNfNCa3YJqYv0CHA5/ATheqP/7BgAA">VirES GUI</a></li>
+<li><a href="https://notebooks.vires.services/notebooks/03a1_demo-magx_lr_1b">Notebook</a></li>
+<li><a href="http://hapi-server.org/servers/#server=VirES-for-Swarm&amp;dataset=SW_OPER_MAGA_LR_1B&amp;parameters=B_NEC&amp;start=2022-01-01T00:00:00Z&amp;stop=2022-01-01T00:01:00Z&amp;return=data&amp;format=csv&amp;style=header">HAPI</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Time stamp</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">SyncStatus</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Synchronization status</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Position in ITRF - Radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic field intensity</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dF_AOCS</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field correction intensity of AOCS magneto-torquer coils</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dF_other</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field correction intensity of all other sources</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">F_error</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Error estimate on magnetic field intensity</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_VFM</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic field vector, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_NEC</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic field vector, NEC frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dB_Sun</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field correction vector of Sun induced perturbation, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dB_AOCS</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field correction vector of AOCS magneto-torquer coils, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dB_other</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field correction vector of all other sources, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_error</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Error estimates on magnetic field, VFM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">q_NEC_CRF</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Quaternion, transformation: NEC - CRF</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Att_error</td>
+<td style="text-align: left;">mdeg</td>
+<td style="text-align: left;">Error estimates on attitude information</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_F</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the magnetic field intensity measurement (F)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_B</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the magnetic field measurement</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_q</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the attitude information</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_Platform</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the S/C platform information</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ASM_Freq_Dev</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">ASM frequency calibration data deviation</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <caption>Meaning of Flags_F and Flags_B in the data product</caption>
+    <thead>
+        <tr>
+            <th>Flag</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="15">Flags_F</td>
+            <td>0</td>
+            <td>Magnetic field intensity measurements (ASM) nominal (scalar mode)</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ASM running in vector mode</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Outlier detected, gap, or not enough ASM frequency calibration data for filtering</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Combination (sum) of values 1 and 2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>At least one of 4 nearest ASM samples is suspicious</td>
+        </tr>
+        <tr>
+            <td>5-7</td>
+            <td>Combination (sum) of values 1-4</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Within 8 seconds after ASM restart, loss of magnetic field lock, or telemetry gap</td>
+        </tr>
+        <tr>
+            <td>9-15</td>
+            <td>Combination (sum) of values 1-8</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Discrepancy between ASM and VFM measurements &ndash; at least one of the 4 nearest ASM samples differ from VFM measurements</td>
+        </tr>
+        <tr>
+            <td>17-31</td>
+            <td>Combination (sum) of values 1-16</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Gap in 4 nearest ASM samples</td>
+        </tr>
+        <tr>
+            <td>33-63</td>
+            <td>Combination (sum) of values 1-32</td>
+        </tr>
+        <tr>
+            <td>64</td>
+            <td>VFM instrument turned off, i.e. no stray field corrections</td>
+        </tr>
+        <tr>
+            <td>65-79, 96-111</td>
+            <td>Combination (sum) of value 64 with values 1-15 and 32-47</td>
+        </tr>
+        <tr>
+            <td>255</td>
+            <td>Not enough ASM samples to generate F.</td>
+        </tr>
+        <tr>
+            <td rowspan="11">Flags_B</td>
+            <td>0</td>
+            <td>Magnetic field vector measurements (VFM) nominal</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ASM instrument turned off</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Outlier detected, gap, or not enough VFM temperature data for filtering</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Both conditions (values) 1 and 2 above</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>More than 5 suspiciuos VFM samples in 2 seconds surrounding record time</td>
+        </tr>
+        <tr>
+            <td>5-7</td>
+            <td>Combination (sum) of values 1-4</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Discrepancy between ASM and VFM measurements</td>
+        </tr>
+        <tr>
+            <td>10,12,14</td>
+            <td>Combination (sum) of values 2, 4, 8</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Gap in VFM samples in surrounding 2 seconds (by rejection or missing data)</td>
+        </tr>
+        <tr>
+            <td>17-24,26,28,30</td>
+            <td>Combination (sum) of values 1, 2, 4, 8, and 16 (but not 1 and 8 simultaneously)</td>
+        </tr>
+        <tr>
+            <td>255</td>
+            <td>Not enough VFM samples to generate B_VFM and B_NEC</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

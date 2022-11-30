@@ -1,0 +1,188 @@
+<h1>SW_MMA_SHA_2F</h1>
+<p>Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field and its Earth-induced counterpart derived in Dedicated Inversion chain. This is a fast-track product which is provided without an independent regular validation</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MMA">https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MMA</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2longterm/MMA</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">t_qs</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">1167</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">nm_qs</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">[3, 2]</td>
+<td style="text-align: left;">CDF_INT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">qs_geo</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">[1167, 3]</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">qs_sm</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">[1167, 3]</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">t_gh</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">1167</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">nm_gh</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">[3, 2]</td>
+<td style="text-align: left;">CDF_INT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">gh_geo</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">[1167, 3]</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">gh_sm</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">[1167, 3]</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">t_qual</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">1167</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">rms</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">[1167, 3]</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">n_data</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">[1167, 3]</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">q_flag</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">1167</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Product identifier</th>
+            <th>MMA_SHA_2F</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Definition</td>
+            <td>Spherical harmonic representation of the large scale magnetospheric field and its induced counterpart</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>MAGx_LR_1B, AUX_IGR_2_, AUX_COR_2_, MCO_SHA_2F, MCO_SHA_2C, MCO_SHA_2D, AUX_LIT_2_, MLI_SHA_2C, MIO_SHA_2C, AUX_F10_2_, AUX_IMF_2F, AUX_DST_2_, AUX_KP__2_, AUX_OBS_2_</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>Full Swarm data set covering at least 30 days</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Degree 1 spherical Harmonics for the external and internally induced fields</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Snapshot values 1.5 hours apart.</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>See variable &lsquo;Units&#39; in &lsquo;Data format&#39;, below.</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>See variable &lsquo;Type&#39; in &lsquo;Data format&#39;, below.</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>Overall uncertainty will include contributions from uncertainties in the Input Data, which are not calculated here. Estimates of the uncertainty resulting from the modeling process after the Input Data has been processed can be obtained from the &lsquo;rms&#39; output variable.</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>Root-mean-square difference between model and (processed) input data; number of data used per model; quality flag.</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>~5 MB/year</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>Time series of external and induced SH coefficients in Solar Magnetic and Geographic coordinate frames; root-mean-square differences between (processed) input data and models; number of data from each satellite used for each model; quality flag.</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>Daily</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>&lt; 1 day</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

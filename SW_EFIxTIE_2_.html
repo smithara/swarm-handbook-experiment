@@ -1,0 +1,223 @@
+<h1>SW_EFIxTIE_2_</h1>
+<p>Estimated ion temperatures along the Swarm satellite orbits</p>
+<p>Thematic areas: Plasma measurements, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/EFI/TIE">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/EFI/TIE</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/EFI/TIE</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://notebooks.vires.services/notebooks/03k1_demo-efixtie">Notebook</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Height</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">QDLatitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tn_msis</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Te_adj_LP</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ti_meas_drift</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ti_model_drift</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flag_ti_meas</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flag_ti_model</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Product identifier</td>
+            <td>EFIxTIE_2_</td>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>Estimated ion temperatures along the Swarm satellite orbits</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>SW_EXTD_EFIX_LP, SW_EXPT_EFIX_TCT02, empirical models: NRLMSISE-00, HWM14, Weimer 2005</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Estimates along the Swarm satellite&rsquo;s orbit</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Time series in every 0.5 seconds</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>Kelvin</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>1 K</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>~ 20 %</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>~8 MB (daily file)</td>
+        </tr>
+        <tr>
+            <td>Data format</td>
+            <td>CDF</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>two months</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>6 minutes</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+<table border="1">
+    <caption>Flag bit number</caption>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>CDF Type</th>
+            <th>Unit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>0/1</td>
+            <td>High-latitude frictional heating omitted/included</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0/1</td>
+            <td>Used is high-gain/low-gain LP Te</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>0/1</td>
+            <td>Estimated ion temperature not available(= &minus;9999)/available</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>
+<ul>
+<li><a href="https://earth.esa.int/eogateway/activities/site">Activity: Swarm Ion Temperature Estimation (SITE)</a></li>
+</ul>

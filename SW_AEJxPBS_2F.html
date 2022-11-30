@@ -1,0 +1,204 @@
+<h1>SW_AEJxPBS_2F</h1>
+<p>Auroral electrojets peaks and boundaries from SECS</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Characterization of the auroral electrojets and auroral oval boundaries (by using SECS method).</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/AEJ/PBS">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/AEJ/PBS</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/AEJ/PBS</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://notebooks.vires.services/notebooks/03h2_demo-aebs-aejxlps">Notebook</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">t_Peak</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Time of WEJ and EEJ peaks in the order as they appear in the satellite flight direction, UTC</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_Peak</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric latitude in ITRF of WEJ and EEJ peaks in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_Peak</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric longitude in ITRF of WEJ and EEJ peaks in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_Peak_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD latitude of WEJ and EEJ peaks in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_Peak_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD latitude of WEJ and EEJ peaks in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT_Peak</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">Magnetic Local Time (QD) of WEJ and EEH peaks in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">J_DF</td>
+<td style="text-align: left;">A/km</td>
+<td style="text-align: left;">Peaks (minimum (WEJ) and maximum (EEJ)) of the divergence-free sheet current density in semiQD frame in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">t_EB</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Time of WEJ and EEJ equatorward boundaries in the order as they appear in the satellite flight direction, UTC</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_EB</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric latitude of WEJ and EEJ equatorward boundaries in ITRF in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_EB</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric longitude of WEJ and EEJ equatorward boundaries in ITRF in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_EB_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD latitude of WEJ and EEJ equatorward boundaries in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_EB_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD longitude of WEJ and EEJ equatorward boundaries in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT_EB</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">Magnetic Local Time (QD) of WEJ and EEJ equatorward boundaries in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">t_PB</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Time of WEJ and EEJ poleward boundaries in the order as they appear in the satellite flight direction, UTC</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_PB</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric latitude of WEJ and EEJ poleward boundaries in ITRF in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_PB</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric longitude of WEJ and EEJ poleward boundaries in ITRF in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_PB_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD latitude of WEJ and EEJ poleward boundaries in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_PB_QD</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">QD longitude of WEJ and EEJ poleward boundaries in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">MLT_PB</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">Magnetic Local Time (QD) of WEJ and EEJ poleward boundaries in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude_B</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geodetic latitude of peaks (minimum and maximum) in ground magnetic field disturbance in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude_B</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geodetic longitude of peaks (minimum and maximum) in ground magnetic field disturbance in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Maximum (first row) and minimum (second row) of ground magnetic field disturbance. First (second) column gives the north (east) component geodetic frame</td>
+<td style="text-align: left;">[2, 2]</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Quality indicator</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>
+<ul>
+<li><a href="https://earth.esa.int/eogateway/activities/swarm-aebs">Activity: Auroral Electrojet and auroral Boundaries estimated from Swarm observations</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-AEBS-product-definition.pdf">Swarm-AEBS Product Definition</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-AEBS-processing-algorithm-description.pdf">Swarm-AEBS Description of the Processing Algorithm</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Validation-auroral-electrojet-auroral-boundaries-estimated-from-swarm.pdf">Validation of Auroral Electrojet and Auroral Boundaries estimated from Swarm observations</a></li>
+</ul>

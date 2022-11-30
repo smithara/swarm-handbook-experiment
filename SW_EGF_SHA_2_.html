@@ -1,0 +1,96 @@
+<h1>SW_EGF_SHA_2_</h1>
+<p>Monthly gravity field of the Earth</p>
+<p>Thematic areas: Geodesy/Gravity</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Monthly average of Earth's gravity field, i.e. with an implicit epoch located at the middle of the calendar month</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2longterm/EGF">https://swarm-diss.eo.esa.int/#swarm/Level2longterm/EGF</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2longterm/EGF</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<h2>More details</h2>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Product identifier</td>
+            <td>EGF_SHA_2_</td>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>Monthly gravity field of the Earth</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>GPSA_RO_1B, GPSB_RO_1B, GPSC_RO_1B, STRAATT_1B, STRBATT_1B, STRCATT_1B</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>1 calendar month</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Spherical harmonic coefficients</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Monthly average of Earth&#39;s gravity field, i.e. with an implicit epoch located at the middle of the calendar month</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>See output data</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>12 significant digits in scientific notation</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>Typically 1-2 mm geoid height or 1-2 cm Equivalent Water Height discrepancy w.r.t. GRACE over land areas during low solar activity periods, considering Gaussian smoothing with 750km spherical cap radius</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>RMS over ocean areas that are 6 degrees away from coast lines, after removing long-term trend, annual and semi-annual variations estimated from monthly un-weighted averages of numerous GRACE models (AIUB02, CSR05, GRGS03, ITSG14, GFZ05a, JPL05 and TNJ01)</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>20 Kb</td>
+        </tr>
+        <tr>
+            <td>Data format</td>
+            <td>ASCII file with Stokes Coefficients following the ICGEM-format (http://icgem.gfz-potsdam.de/ICGEM-Format-2011.pdf)</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>Degree, order, cosine coefficient, sine coefficient (columns 5 and 6 set to zero)</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>1 calendar month</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>5 months</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>- Stokes coefficients available up to degree 40<br />
+            &nbsp;- No smoothing applied<br />
+            &nbsp;- GRACE comparison indicates that there is little useful geophysical signal above roughly degree 12, i.e. it suggest the signal-to-noise ratio drops below 1 at those degrees and above<br />
+            &nbsp;- Further product details in Swarm ITT1.1 TN-01</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

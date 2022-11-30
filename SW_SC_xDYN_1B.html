@@ -1,0 +1,166 @@
+<h1>SW_SC_xDYN_1B</h1>
+<p>Auxiliary data needed for precise orbit determination and non-gravitational force modelling</p>
+<p>Thematic areas: HK data</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>The SC_XDYN_1B Product contains auxiliary data needed for precise orbit determination and non-gravitational force modelling.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/SC_xDYN">https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/SC_xDYN</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/SC_xDYN</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Time stamp</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">SyncStatus</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Synchronization status</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_Sun</td>
+<td style="text-align: left;">m/s2</td>
+<td style="text-align: left;">Acceleration due to Solar radiation pressure, S/C frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">e_Sun</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Direction to the Sun, unit vector, S/C frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">m_SC</td>
+<td style="text-align: left;">kg</td>
+<td style="text-align: left;">Actual mass of S/C</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">r_CoG</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Center of gravity, S/C frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">A_head</td>
+<td style="text-align: left;">m2</td>
+<td style="text-align: left;">Cross sections of the S/C, orbit frame,front</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">A_right</td>
+<td style="text-align: left;">m2</td>
+<td style="text-align: left;">Cross sections of the S/C, orbit frame,right</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">A_left</td>
+<td style="text-align: left;">m2</td>
+<td style="text-align: left;">Cross sections of the S/C, orbit frame,left</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">A_down</td>
+<td style="text-align: left;">m2</td>
+<td style="text-align: left;">Cross sections of the S/C, orbit frame,down</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">K_Earth</td>
+<td style="text-align: left;">m2</td>
+<td style="text-align: left;">Downward optical reflectivity of the S/C</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">P_Gas</td>
+<td style="text-align: left;">Pa</td>
+<td style="text-align: left;">Pressure of gas tanks</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">T_Gas</td>
+<td style="text-align: left;">deg C</td>
+<td style="text-align: left;">Temperature of gas tanks</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_Platform</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the S/C platform information</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">dt_thr</td>
+<td style="text-align: left;">s</td>
+<td style="text-align: left;">Thruster on-time</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">thr_set</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flag indicating which thruster branch is active</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">f_thr</td>
+<td style="text-align: left;">mN</td>
+<td style="text-align: left;">Nominal thrust force of activated thrusters (combined x, y, z)</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_centr</td>
+<td style="text-align: left;">m/s2</td>
+<td style="text-align: left;">Centrifugal acceleration, S/C frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_GG</td>
+<td style="text-align: left;">m/s2</td>
+<td style="text-align: left;">Gravity gradient acceleration, S/C frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<h2>Related resources</h2>

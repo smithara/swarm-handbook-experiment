@@ -1,0 +1,252 @@
+<h1>SW_FACxTMS_2F</h1>
+<p>Field-aligned currents (single satellite)</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Time series of field-aligned and radial current densities along the orbit from single satellite measurements. Field-aligned current (FAC) density is derived by the multiplication of the radial current (IRC) density with the inclination angle of the geomagnetic field. The field-aligned current density can only be calculated at latitudes, where the magnetic field is well inclined, i.e. |I| &gt; 30°. Near the magnetic equator for magnetic inclination angles |I| &lt; 30° FAC values are set to NaN. The radial current density can be provided along the whole orbit. Scale size &gt;7.5 km.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/FAC/TMS">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/FAC/TMS</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/FAC/TMS</li>
+</ul>
+</li>
+<li>Web services:<ul>
+<li><a href="https://vires.services/?ws=data%3Aapplication/json%2Bgzip%3Bbase64%2CH4sIAGmEGGMC/61WbW/iOBD%2BKyifAfklTuJ%2Bo7ysONEeC2xPWlRFBrzUdyZBToJaVfz3HTuUhgC321WRpYnHnmcez4zHvHqZNDu1lA/SZCpNvJuGR9u8jbxmA5a0XOZyNVA6l2akshyW597Art3G96Xol6JrRQ92gPjaGwn3cTeaWTGIpTGpcRvTIlkJ8xIPtFhbxVgoEw%2BTlVqKvNzyV9wdxFO5UV975bR3Oi1lv%2B9oDDrO8XDiRF/LncjhGHEnWWtpVZ1Fluoil/HDrN89UUwPionUYLO7oognd1NHvFgstIzHJl2IhdIqf7HamfNxL71HELnayKkLWRnIuUcQDloIw5ghdONGGyH03RpV1gi9YRxGm3P%2B/QjVSzdCHXFYC5MWhb3kGg6ZoZM1i7M16apY5lk3TX6odWHEgdqrN/0n/nvcn8R3nS%2BdeDSJ8a1T71Sm4Jzw/UPoTAJEWuRaJTKrqrZiaQNw08DWhzBiI6FAMocAhQFhtF9GJGuLNMcMCDUbzArLapnq1GRL4fx4/8rc29tUftSoUqGgyk0h92VhQtaMzDo1Fq3A4gVXKeyt9VtY%2BoMhhGX8eWG5l7XjIeTOR5w8p7TVItuIK2ecXQCDUF0GSk2uRbJyMX7IajFhzcb/pORbnJqFys8T02xQ9nuBHN4OO7O7aUwGn1Vf5xfxhB5ww79dLydU4bZ/LtXTVlNnSdkHs37aqOpw4a9yf97W6hDsFwinvfQD59lf6M11c379EpymCVr%2B5TTZOP1BluzbUWsU0CbOyawgdmatknWMy37V%2BbjdxRK0YEtgZMQ4zdSxQ2/fJ3NM4Rdx2iaYByEjAW02/IhR7KM2oVHks5AEcJcjHGKMcJsRingUImLprJR5f5NaqB1hwgPCfR%2BGzwiYgZJwFnGfYsoIxiGNnJLBu0OZ74dhSAkm7l4V2wOMH2ISccw4hV7gU%2B4swD9YEMJCiggPEYQEHAYM0xCBBxaAS25hjFo/5Qck6hMEz5hPKWFBEJHQGnHKA04CgsKIcRQBUAu3uQ8uARhO5yPiyxYOHm34njvPKqu%2BvR78A1F5sXLv81anef0FnL96L9ao/EcDqbSknGYkFlKDOim0tjrytu3xOKttcfl%2B22V1j1Ulcbb7I37/OZdJXt1agl7QO1/p8j9XLXNXzRUS5wuZyKWGligP/Udvn8T7xbg1YpdWbkX3SRitqg3uftqtzL5B3MTqTbHf/wQuhM2iLAoAAA%3D%3D">VirES GUI</a></li>
+<li><a href="https://notebooks.vires.services/notebooks/03e1_demo-facxtms_2f">Notebook</a></li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time, UTC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Position in ITRF, Latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Position in ITRF, Longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Position in ITRF, Radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">IRC</td>
+<td style="text-align: left;">uA/m2</td>
+<td style="text-align: left;">Ionospheric radial current (IRC)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">IRC_Error</td>
+<td style="text-align: left;">uA/m2</td>
+<td style="text-align: left;">uncertainty of IRC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">FAC</td>
+<td style="text-align: left;">uA/m2</td>
+<td style="text-align: left;">Field-aligned current (FAC)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">FAC_Error</td>
+<td style="text-align: left;">uA/m2</td>
+<td style="text-align: left;">uncertainty of FAC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags characterizing the product quality (processing flags)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_F</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags_F passed through from L1b and accumulated for quad points</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_B</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags_B passed through from L1b and accumulated for quad points</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags_q</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags_q passed through from L1b and accumulated for quad points</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Product identifier</td>
+            <td>FACxTMS_2F</td>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>Time series of field-aligned and radial current densities along the orbit from single satellite measurements. Field-aligned current (FAC) density is derived by the multiplication of the radial current (IRC) density with the inclination angle of the geomagnetic field. The field-aligned current density can only be calculated at latitudes, where the magnetic field is well inclined, i.e. |I| &gt; 30&deg;. Near the magnetic equator for magnetic inclination angles |I| &lt; 30&deg; FAC values are set to NaN. The radial current density can be provided along the whole orbit. Scale size &gt;7.5 km.</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>MAGx_LR_1B, Satellite positions, Time stamps (UTC), AUX_IGR_2F, AUX_COR_2F, AUX_LIT_2F, AUX_PMF_2F, AUX_F10_2F, AUX_DST_2F, AUX_IMF_2F, AUX_SWV_2F, AUX_PSM_2F, AUX_PGM_2F</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>3 days</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Current density estimates along entire orbits at positions of SwA, SwB, and SwC.</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Time series of current density, &Delta;t=1sec</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>Current density: &micro;A/m2</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>Current density: 1E-6 &micro;A/m2</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>less than FAC_TMS_2F, 70 nA/m2 on top of constant bias of &lt;200nA/m2, for latitudes below 80&deg;, gradually degrading between 80&deg; to 86&deg;, no values beyond 86&deg;</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>5MB per day, per satellite</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>CDF file with time series</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>1day</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>10 min</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>1 per day</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Flags: </strong>A table below presents the list of 10 individual and independent digits, characterizing the FAC-single (FACxTMS_2F) product quality. Digits from 1 to 8 report issues that may have been occurred at one or more of the measurement points used for the computation of a current density value. Digits 9 and 10 report whether the NaN values for the current density were used or not. Values N&gt;0 mark the number of measurement points that were affected and value 0 marks not affected ones. For FAC-single N can be equal to 1 or 2. <strong>Flags_B</strong>, <strong>Flags_F</strong> and <strong>Flags_q </strong>are handed through from Level 1b processing</p>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Digit-Nr.</th>
+            <th>Value</th>
+            <th>Meaning</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>0/N</td>
+            <td>A short (&lt; 5 seconds) data gap occurred, which was interpolated linearly</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>0</td>
+            <td>For FAC-single, this digit is always zero because no filtering is done</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>0/N</td>
+            <td>No EST (external part of AUX_DST_2F) data were available, and a default value was used for the magnetospheric field model</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>0/N</td>
+            <td>No IST (external part of AUX_DST_2F) data were available, and a default value was used for the magnetospheric field model</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>0/N</td>
+            <td>No solar radio flux (AUX_F10_2F) data were available, and a default value was used for the magnetospheric field model</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>0/N</td>
+            <td>No interplanetary magnetic field (AUX_IMF_2F) data were available, and a default value was used for the magnetospheric field model</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>0/N</td>
+            <td>No Em (merging electric field) data were available, and a default value was used for the magnetospheric field model</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>0/N</td>
+            <td>No magnetospheric field coefficients (Aux_PMF_2F or Aux_PSM_2F or Aux_PGM_2F) were available, and magnetospheric field is set to 0</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>0</td>
+            <td>For FAC-single, this digit is always equal to 0</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>0/1</td>
+            <td>This digit is equal to 1 if inclination |I| &lt; 30&deg; (near magnetic equator)<br />
+            (FAC = NaN)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

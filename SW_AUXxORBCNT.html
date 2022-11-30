@@ -1,0 +1,71 @@
+<h1>SW_AUXxORBCNT</h1>
+<p>Precise Swarm orbit number information</p>
+<p>Thematic areas: Orbit information</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>The Swarm orbit counter auxiliary data file provides precise Swarm orbit number information. The start of an orbit is defined as the Equator crossing of the ascending node (i.e. the northbound Equator crossing).</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/ORBCNT">https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/ORBCNT</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/ORBCNT</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<h2>More details</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Field name</th>
+            <th>Type</th>
+            <th>Unit</th>
+            <th>Contents</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>orbit</td>
+            <td>integer</td>
+            <td>-</td>
+            <td>Orbit number</td>
+        </tr>
+        <tr>
+            <td>MJD2000</td>
+            <td>real</td>
+            <td>MJD2000</td>
+            <td>Orbit start date/time in MJD2000</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>string</td>
+            <td>-</td>
+            <td>Orbit start date</td>
+        </tr>
+        <tr>
+            <td>UT</td>
+            <td>string</td>
+            <td>UTC</td>
+            <td>Orbit start time</td>
+        </tr>
+        <tr>
+            <td>phi_AN</td>
+            <td>real</td>
+            <td>deg</td>
+            <td>Longitude of orbit start</td>
+        </tr>
+        <tr>
+            <td>Source</td>
+            <td>integer</td>
+            <td>-</td>
+            <td>Source of orbit number information Values:<br />
+            Best quality = 0<br />
+            Reduced quality = 1</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>

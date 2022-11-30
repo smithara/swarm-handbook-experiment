@@ -1,0 +1,151 @@
+<h1>SW_EEFxTMS_2F</h1>
+<p>Dayside equatorial electric field</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Estimate of eastward equatorial electric field component, by using magnetic measurements of the equatorial electrojet (EEJ) current as the satellites fly overhead. Since the magnetic signal of the EEJ current is directly measured by the satellite, this product also provides an estimate of the EEJ current strength.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/EEF/TMS">https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/EEF/TMS</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/EEF/TMS</li>
+</ul>
+</li>
+</ul>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Time of satellite crossing of the magnetic equator, UTC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Geographic longitude of satellite crossing of the magnetic equator</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">degrees</td>
+<td style="text-align: left;">Geographic latitude of satellite crossing of the magnetic equator</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">EEF</td>
+<td style="text-align: left;">mV/m</td>
+<td style="text-align: left;">Estimate of the equatorial electric field</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">EEJ</td>
+<td style="text-align: left;">mA/m</td>
+<td style="text-align: left;">Height-integrated east current profile in QD latitude, spanning [-20:0.5:20] degrees</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">RelErr</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Quality indicator of EEF estimate; relative error between modeled and observed current profile</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Flags describing data gaps and satellite identification</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Product identifier</td>
+            <td>EEFxTMS_2F</td>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>Dayside equatorial electric field</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>MAGx_LR_1B, MCO_SHA_2X</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>Every dayside equator crossing &plusmn;20 minutes</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>One longitude/latitude pair (on the magnetic equator ) for each output value</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Single values at time of dayside equator crossing</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>V/m</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>0.1 mV/m</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>0.1 mV/m</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>Relative error between modeled and observed current profile</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>&lt; 2 kB</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>CDF file with time series</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>Continuous for entire mission. One value for each day-side equator crossing (90 minute sampling for day-night local time orbits, 45 minutes for dawn-dusk orbits)</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>One output file per day</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>30 hours</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>The EEJ vector has length 81 and corresponds to QD latitudes ranging from -20&deg; to +20&deg; in steps of 0.5&deg;. So for example, the corresponding QD latitude vector could be constructed using the following MATLAB syntax: qdvec = [-20:0.5:20].</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Related resources</h2>
