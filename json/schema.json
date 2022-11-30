@@ -24,7 +24,7 @@
                     }
                 },
                 "applicable_spacecraft": {
-                    "type": "string",
+                    "type": "array",
                     "items": {
                         "type": "string",
                         "enum": [
