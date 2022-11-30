@@ -6,12 +6,31 @@ on:
       - main
 
 jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+      - run: pip install markdown pandas panel tabulate
+      - run: |
+          cd json
+          make html
+      
   deploy:
+    needs: build
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
+      - name: Gather resources to deploy
+        run: |
+          mkdir to_deploy
+          mkdir to_deploy/old
+          cp -r ./json/html/* to_deploy/
+          cp -r ./old/output/* to_deploy/old
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./old/output/
+          publish_dir: ./to_deploy
