@@ -178,7 +178,9 @@ def load_catalog(directory=get_catalog_dir()):
 def dump_html_output(html_directory):
     catalog = load_catalog()
     index_items = []
-    for id in catalog.product_ids:
+    product_ids = catalog.product_ids
+    product_ids.sort()
+    for id in product_ids:
         index_items.append(f"<a href='{id}.html'>{id}</a><br>")
         html = catalog.get_product(id).html_preview
         with open(os.path.join(html_directory, f"{id}.html"), "w") as f:
