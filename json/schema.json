@@ -11,14 +11,15 @@
                     "items": {
                         "type": "string",
                         "enum": [
+                            "CASSIOPE_e-POP",
                             "CHAMP",
-                            "CRYOSAT",
+                            "Combined_Mission_Data",
+                            "CryoSat-2",
                             "CSES",
-                            "EPOP",
                             "GOCE",
                             "GRACE",
                             "GRACE-FO",
-                            "Misc.",
+                            "Miscellaneous",
                             "Swarm"
                         ]
                     }
@@ -30,14 +31,15 @@
                         "enum": [
                             "CASSIOPE_e-POP (Swarm-E)",
                             "CHAMP",
-                            "Cryosat-2",
+                            "Combined_Mission_Data",
+                            "CryoSat-2",
                             "CSES-01",
                             "GOCE",
                             "GRACE-A",
                             "GRACE-B",
                             "GRACE-FO-1",
                             "GRACE-FO-2",
-                            "Misc.",
+                            "Miscellaneous",
                             "Swarm-A",
                             "Swarm-B",
                             "Swarm-C"

@@ -1,12 +1,13 @@
 SPACECRAFT = {
+    "CASSIOPE_e-POP": ("CASSIOPE_e-POP (Swarm-E)",),
     "CHAMP": ("CHAMP",),
-    "CRYOSAT": ("Cryosat-2",),
+    "Combined_Mission_Data": ("Combined_Mission_Data",),
+    "CryoSat-2": ("CryoSat-2",),
     "CSES": ("CSES-01",),
-    "EPOP": ("CASSIOPE_e-POP (Swarm-E)",),
     "GOCE": ("GOCE",),
     "GRACE": ("GRACE-A", "GRACE-B",),
     "GRACE-FO": ("GRACE-FO-1", "GRACE-FO-2",),
-    "Misc.": ("Misc.",),
+    "Miscellaneous": ("Miscellaneous",),
     "Swarm": ("Swarm-A", "Swarm-B", "Swarm-C"),
 }  
 # Build reverse mapping
