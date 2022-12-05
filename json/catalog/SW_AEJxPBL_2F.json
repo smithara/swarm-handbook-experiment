@@ -1,6 +1,6 @@
 {
     "product_id": "SW_AEJxPBL_2F",
-    "name": "Auroral electrojets peaks and boundaries from LC",
+    "definition": "Auroral electrojets peaks and boundaries from LC",
     "applicable_missions": [
         "Swarm"
     ],

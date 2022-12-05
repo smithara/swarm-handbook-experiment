@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MIN_1DM_2_",
-    "name": "Model of electrical conductivity of the mantle",
+    "definition": "Model of electrical conductivity of the mantle",
     "applicable_missions": [
         "Swarm"
     ],

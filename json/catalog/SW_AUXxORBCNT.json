@@ -1,6 +1,6 @@
 {
     "product_id": "SW_AUXxORBCNT",
-    "name": "Precise Swarm orbit number information",
+    "definition": "Precise Swarm orbit number information",
     "applicable_missions": [
         "Swarm"
     ],

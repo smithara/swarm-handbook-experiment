@@ -1,6 +1,6 @@
 {
     "product_id": "SW_VOBS_4M_2_",
-    "name": "Four-monthly time series of vector magnetic field values at fixed locations, on a uniform grid at satellite altitude",
+    "definition": "Four-monthly time series of vector magnetic field values at fixed locations, on a uniform grid at satellite altitude",
     "applicable_missions": [
         "Swarm"
     ],

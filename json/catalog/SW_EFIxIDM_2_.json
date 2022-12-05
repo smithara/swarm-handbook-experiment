@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIxIDM_2_",
-    "name": "Estimated along-track ion drift, ion effective mass, and revised ion den- sity along the Swarm satellite orbits",
+    "definition": "Estimated along-track ion drift, ion effective mass, and revised ion den- sity along the Swarm satellite orbits",
     "applicable_missions": [
         "Swarm"
     ],

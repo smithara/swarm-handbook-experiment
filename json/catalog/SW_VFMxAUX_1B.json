@@ -1,6 +1,6 @@
 {
     "product_id": "SW_VFMxAUX_1B",
-    "name": "S/C magnetic stray fields and Sun induced stray field at VFM sensor position",
+    "definition": "S/C magnetic stray fields and Sun induced stray field at VFM sensor position",
     "applicable_missions": [
         "Swarm"
     ],

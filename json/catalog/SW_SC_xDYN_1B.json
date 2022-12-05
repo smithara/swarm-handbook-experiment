@@ -1,6 +1,6 @@
 {
     "product_id": "SW_SC_xDYN_1B",
-    "name": "Auxiliary data needed for precise orbit determination and non-gravitational force modelling",
+    "definition": "Auxiliary data needed for precise orbit determination and non-gravitational force modelling",
     "applicable_missions": [
         "Swarm"
     ],

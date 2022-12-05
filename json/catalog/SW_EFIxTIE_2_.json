@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIxTIE_2_",
-    "name": "Estimated ion temperatures along the Swarm satellite orbits",
+    "definition": "Estimated ion temperatures along the Swarm satellite orbits",
     "applicable_missions": [
         "Swarm"
     ],

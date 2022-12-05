@@ -1,6 +1,6 @@
 {
     "product_id": "SW_LP_x_CA_1B",
-    "name": "LP calibration parameters",
+    "definition": "LP calibration parameters",
     "applicable_missions": [
         "Swarm"
     ],

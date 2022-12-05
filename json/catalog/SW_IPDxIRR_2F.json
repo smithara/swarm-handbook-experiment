@@ -1,6 +1,6 @@
 {
     "product_id": "SW_IPDxIRR_2F",
-    "name": "Contains ionospheric plasma characteristics from multiple instruments derived at 1Hz, updated daily with 24-hour timespan",
+    "definition": "Contains ionospheric plasma characteristics from multiple instruments derived at 1Hz, updated daily with 24-hour timespan",
     "applicable_missions": [
         "Swarm"
     ],

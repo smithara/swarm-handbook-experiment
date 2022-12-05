@@ -1,6 +1,6 @@
 {
     "product_id": "SW_AEJxPBS_2F",
-    "name": "Auroral electrojets peaks and boundaries from SECS",
+    "definition": "Auroral electrojets peaks and boundaries from SECS",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_AOBxFAC_2F",
-    "name": "Auroral oval boundaries derived from FACs",
+    "definition": "Auroral oval boundaries derived from FACs",
     "applicable_missions": [
         "Swarm"
     ],

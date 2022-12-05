@@ -1,6 +1,6 @@
 {
     "product_id": "SW_IBP_CLI_2_",
-    "name": "Climatological model of ionospheric bubble probability",
+    "definition": "Climatological model of ionospheric bubble probability",
     "applicable_missions": [
         "Swarm"
     ],

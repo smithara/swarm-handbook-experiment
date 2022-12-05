@@ -1,6 +1,6 @@
 {
     "product_id": "SW_AEJxLPL_2F",
-    "name": "Auroral electrojets line profile - Line current method (LC)",
+    "definition": "Auroral electrojets line profile - Line current method (LC)",
     "applicable_missions": [
         "Swarm"
     ],

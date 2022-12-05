@@ -1,6 +1,6 @@
 {
     "product_id": "SW_GPSxNAV_1B",
-    "name": "On-board GPSR navigational solution",
+    "definition": "On-board GPSR navigational solution",
     "applicable_missions": [
         "Swarm"
     ],

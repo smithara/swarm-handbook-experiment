@@ -1,6 +1,6 @@
 {
     "product_id": "SW_SP3xCOM_2_",
-    "name": "Precise reduced-dynamic orbit solutions",
+    "definition": "Precise reduced-dynamic orbit solutions",
     "applicable_missions": [
         "Swarm"
     ],

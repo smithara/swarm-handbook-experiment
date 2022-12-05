@@ -89,7 +89,7 @@
                         "https"
                     ]
                 },
-                "name": {
+                "definition": {
                     "type": "string"
                 },
                 "product_id": {

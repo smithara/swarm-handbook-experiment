@@ -1,6 +1,6 @@
 {
     "product_id": "SW_ACCxCAL_2_",
-    "name": "Non-gravitational accelerations",
+    "definition": "Non-gravitational accelerations",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_GPSx_RN_1B",
-    "name": "GPS RINEX Navigation data",
+    "definition": "GPS RINEX Navigation data",
     "applicable_missions": [
         "Swarm"
     ],

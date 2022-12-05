@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIx_LP_HM",
-    "name": "2Hz LP extended dataset",
+    "definition": "2Hz LP extended dataset",
     "applicable_missions": [
         "Swarm"
     ],

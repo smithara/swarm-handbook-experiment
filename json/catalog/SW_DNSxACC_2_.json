@@ -1,6 +1,6 @@
 {
     "product_id": "SW_DNSxACC_2_",
-    "name": "Thermospheric density",
+    "definition": "Thermospheric density",
     "applicable_missions": [
         "Swarm"
     ],

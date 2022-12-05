@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MMA_SHA_2F",
-    "name": "Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field",
+    "definition": "Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field",
     "applicable_missions": [
         "Swarm"
     ],

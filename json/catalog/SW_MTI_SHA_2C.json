@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MTI_SHA_2C",
-    "name": "Spherical harmonic model of the magnetic signature of oceanic M2 tide",
+    "definition": "Spherical harmonic model of the magnetic signature of oceanic M2 tide",
     "applicable_missions": [
         "Swarm"
     ],

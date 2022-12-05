@@ -1,6 +1,6 @@
 {
     "product_id": "SW_AEJxLPS_2F",
-    "name": "Auroral electrojets line profile - SECS method",
+    "definition": "Auroral electrojets line profile - SECS method",
     "applicable_missions": [
         "Swarm"
     ],

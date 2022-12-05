@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIx_TCT02",
-    "name": "2Hz TII cross-track dataset",
+    "definition": "2Hz TII cross-track dataset",
     "applicable_missions": [
         "Swarm"
     ],

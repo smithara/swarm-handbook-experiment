@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MIO_SHA_2E",
-    "name": "Model of polar daily geomagnetic variation caused by ionospheric currents",
+    "definition": "Model of polar daily geomagnetic variation caused by ionospheric currents",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_TECxTMS_2F",
-    "name": "Ionospheric total electron content",
+    "definition": "Ionospheric total electron content",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIx_TCT16",
-    "name": "16Hz TII cross-track dataset",
+    "definition": "16Hz TII cross-track dataset",
     "applicable_missions": [
         "Swarm"
     ],

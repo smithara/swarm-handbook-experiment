@@ -1,6 +1,6 @@
 {
     "product_id": "SW_SP3xKIN_2_",
-    "name": "Precise kinematic orbit solutions",
+    "definition": "Precise kinematic orbit solutions",
     "applicable_missions": [
         "Swarm"
     ],

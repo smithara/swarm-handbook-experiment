@@ -1,6 +1,6 @@
 {
     "product_id": "SW_FACxTMS_2F",
-    "name": "Field-aligned currents (single satellite)",
+    "definition": "Field-aligned currents (single satellite)",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIx_LP_1B",
-    "name": "Electric field instrument (Langmuir probe measurements at 2Hz)",
+    "definition": "Electric field instrument (Langmuir probe measurements at 2Hz)",
     "applicable_missions": [
         "Swarm"
     ],

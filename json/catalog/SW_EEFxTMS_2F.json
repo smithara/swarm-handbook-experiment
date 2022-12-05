@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EEFxTMS_2F",
-    "name": "Dayside equatorial electric field",
+    "definition": "Dayside equatorial electric field",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_VOBS_1M_2_",
-    "name": "One-monthly time series of vector magnetic field values at fixed locations, on a uniform grid at satellite altitude",
+    "definition": "One-monthly time series of vector magnetic field values at fixed locations, on a uniform grid at satellite altitude",
     "applicable_missions": [
         "Swarm"
     ],

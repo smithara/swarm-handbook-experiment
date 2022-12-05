@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MCO_SHA_2X",
-    "name": "CHAOS model: spherical harmonic model of the main (core) field and its temporal variation",
+    "definition": "CHAOS model: spherical harmonic model of the main (core) field and its temporal variation",
     "applicable_missions": [
         "Swarm"
     ],

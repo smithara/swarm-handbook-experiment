@@ -1,6 +1,6 @@
 {
     "product_id": "SW_PPIxFAC_2F",
-    "name": "Equatorward boundary of SSFACs and the associated midnight PP index",
+    "definition": "Equatorward boundary of SSFACs and the associated midnight PP index",
     "applicable_missions": [
         "Swarm"
     ],

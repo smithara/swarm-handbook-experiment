@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MAGxSCAR1B",
-    "name": "ASM VFM residuals",
+    "definition": "ASM VFM residuals",
     "thematic_areas": [
         "Magnetic measurements"
     ],

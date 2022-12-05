@@ -42,7 +42,7 @@ def load_schema():
 @dataclass
 class Product:
     product_id: str = ""
-    name: str = ""
+    definition: str = ""
     applicable_missions: "list[str]|None" = field(default_factory=lambda: [])
     applicable_spacecraft: "list[str]|None" = field(default_factory=lambda: [])
     thematic_areas: "list[str]|None" = field(default_factory=lambda: [])
@@ -118,7 +118,7 @@ class Product:
     @property
     def markdown_preview(self):
         items = [
-            f"# {self.product_id}\n\n{self.name}",
+            f"# {self.product_id}\n\n{self.definition}",
             f"Thematic areas: {', '.join(self.thematic_areas)}",
             f"Applicable missions: {', '.join(self.applicable_missions)}",
             f"Applicable spacecraft: {', '.join(self.applicable_spacecraft)}",

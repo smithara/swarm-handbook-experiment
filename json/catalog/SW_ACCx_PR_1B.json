@@ -1,6 +1,6 @@
 {
     "product_id": "SW_ACCx_PR_1B",
-    "name": "Pre-processed non-gravitional acceleration",
+    "definition": "Pre-processed non-gravitional acceleration",
     "applicable_missions": [
         "Swarm"
     ],

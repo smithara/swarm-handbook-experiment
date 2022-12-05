@@ -1,6 +1,6 @@
 {
     "product_id": "SW_FAC_TMS_2F",
-    "name": "Field-aligned currents (dual-satellite A-C)",
+    "definition": "Field-aligned currents (dual-satellite A-C)",
     "applicable_missions": [
         "Swarm"
     ],

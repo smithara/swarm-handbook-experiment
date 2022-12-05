@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MODx_SC_1B",
-    "name": "Satellite Position and velocity from the preliminary Medium Accuracy Orbit Determination",
+    "definition": "Satellite Position and velocity from the preliminary Medium Accuracy Orbit Determination",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MAGx_LR_1B",
-    "name": "Magnetic field (1Hz) from VFM and ASM",
+    "definition": "Magnetic field (1Hz) from VFM and ASM",
     "applicable_missions": [
         "Swarm"
     ],

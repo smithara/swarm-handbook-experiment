@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MAGx_CA_1B",
-    "name": "Magnetic vector and scalar data for monitoring and calibration purposes",
+    "definition": "Magnetic vector and scalar data for monitoring and calibration purposes",
     "applicable_missions": [
         "Swarm"
     ],

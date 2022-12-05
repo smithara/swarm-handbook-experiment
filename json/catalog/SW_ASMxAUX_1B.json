@@ -1,6 +1,6 @@
 {
     "product_id": "SW_ASMxAUX_1B",
-    "name": "S/C magnetic stray fields at ASM sensor position",
+    "definition": "S/C magnetic stray fields at ASM sensor position",
     "applicable_missions": [
         "Swarm"
     ],

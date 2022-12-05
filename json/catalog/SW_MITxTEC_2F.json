@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MITxTEC_2F",
-    "name": "Midlatitude Ionospheric Trough Boundaries and Minima from TEC",
+    "definition": "Midlatitude Ionospheric Trough Boundaries and Minima from TEC",
     "applicable_missions": [
         "Swarm"
     ],

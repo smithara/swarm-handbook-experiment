@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIx_TII1B",
-    "name": "Provisional plasma dataset: TII data",
+    "definition": "Provisional plasma dataset: TII data",
     "applicable_missions": [
         "Swarm"
     ],

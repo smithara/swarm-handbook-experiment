@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MAGx_HR_1B",
-    "name": "Magnetic field (50Hz) from VFM",
+    "definition": "Magnetic field (50Hz) from VFM",
     "applicable_missions": [
         "Swarm"
     ],

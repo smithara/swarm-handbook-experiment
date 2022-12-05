@@ -1,6 +1,6 @@
 {
     "product_id": "SW_CFW_SHA_2Y",
-    "name": "Toroidal and poloidal core flow coefficients co-estimated with the magnetic field model MCO_SHA_2Y",
+    "definition": "Toroidal and poloidal core flow coefficients co-estimated with the magnetic field model MCO_SHA_2Y",
     "applicable_missions": [
         "Swarm"
     ],

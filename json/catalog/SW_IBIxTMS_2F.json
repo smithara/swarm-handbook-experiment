@@ -1,6 +1,6 @@
 {
     "product_id": "SW_IBIxTMS_2F",
-    "name": "Ionospheric bubble index",
+    "definition": "Ionospheric bubble index",
     "applicable_missions": [
         "Swarm"
     ],

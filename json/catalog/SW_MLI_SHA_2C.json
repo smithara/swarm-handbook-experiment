@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MLI_SHA_2C",
-    "name": "Spherical harmonic models of the lithospheric field",
+    "definition": "Spherical harmonic models of the lithospheric field",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MITx_LP_2F",
-    "name": "Midlatitude Ionospheric Trough Boundaries and Minima",
+    "definition": "Midlatitude Ionospheric Trough Boundaries and Minima",
     "applicable_missions": [
         "Swarm"
     ],

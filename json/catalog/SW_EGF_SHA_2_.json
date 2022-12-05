@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EGF_SHA_2_",
-    "name": "Monthly gravity field of the Earth",
+    "definition": "Monthly gravity field of the Earth",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIx_LP_FP",
-    "name": "16Hz faceplate plasma density",
+    "definition": "16Hz faceplate plasma density",
     "applicable_missions": [
         "Swarm"
     ],
