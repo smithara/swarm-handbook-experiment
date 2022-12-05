@@ -21,5 +21,6 @@
     "link_hapi": "",
     "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,\"CDF_EPOCH, msec since 01-Jan-0000 00:00:00.000\",Time stamp of faceplate current measurement,1,CDF_EPOCH\nLatitude,deg,\"Geodetic latitude, WGS84\",1,CDF_DOUBLE\nLongitude,deg,\"Geodetic longitude, WGS84\",1,CDF_DOUBLE\nHeight,km,\"Height above reference ellipsoid, WGS84\",1,CDF_DOUBLE\nCurrent,nA,Faceplate current,1,CDF_DOUBLE\nDensity,per ccm,Plasma density,1,CDF_DOUBLE\n",
     "related_resources": "",
-    "details": ""
+    "details": "",
+    "changelog": ""
 }

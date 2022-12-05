@@ -20,5 +20,6 @@
     "link_hapi": "",
     "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,Time of observation,1,CDF_EPOCH\nLatitude,deg,Geocentric latitude,1,CDF_DOUBLE\nLongitude,deg,Geocentric longitude,1,CDF_DOUBLE\nRadius,m,Radius,1,CDF_DOUBLE\nB_OB,nT,\"Estimated observed GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]\",3,CDF_DOUBLE\nsigma_OB,nT,Observed field estimated error,3,CDF_DOUBLE\nB_CF,nT,\"Estimated core GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]\",3,CDF_DOUBLE\nsigma_CF,nT,Core field estimated error,3,CDF_DOUBLE\nTimestamp_SV,-,Time of Secular Variation (*_SV) data,1,CDF_EPOCH\nB_SV,nT/yr,\"Estimated secular variation (SV) GVO magnetic field, spherical polar (r,theta,phi) vector components [i.e (-C,-N,E) components in NEC frame]\",3,CDF_DOUBLE\nsigma_SV,nT/yr,Secular variation field estimated error,3,CDF_DOUBLE\n",
     "related_resources": "<ul>\n<li><a href=\"https://earth.esa.int/eogateway/activities/gvo\">Geomagnetic Virtual Observatories activity</a></li>\n</ul>\n",
-    "details": ""
+    "details": "",
+    "changelog": ""
 }

@@ -46,6 +46,10 @@
                         ]
                     }
                 },
+                "changelog": {
+                    "type": "string",
+                    "contentMediaType": "text/html"
+                },
                 "description": {
                     "type": "string",
                     "contentMediaType": "text/html"

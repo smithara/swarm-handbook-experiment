@@ -19,5 +19,6 @@
     "link_hapi": "",
     "variables_table": "Variable,Units,Description,Dim,Type\ntime,-,Time of observation,1,CDF_EPOCH\nacc_aero_obs,m/s/s,Measured Aerodynamic linear acceleration in S/C X-direction,1,CDF_DOUBLE\nacc_total_obs,m/s/s,\"Calibrated measured linear acceleration in S/C X-direction, with outliers removed\",1,CDF_DOUBLE",
     "related_resources": "",
-    "details": ""
+    "details": "",
+    "changelog": ""
 }

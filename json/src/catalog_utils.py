@@ -55,6 +55,7 @@ class Product:
     variables_table: str = ""
     related_resources: str = ""
     details: str = ""
+    changelog: str = ""
     
     @staticmethod
     def allowed_thematic_areas():
@@ -128,6 +129,7 @@ class Product:
             f"## File contents\n\n{self.tabulate_variables}",
             f"## More details\n\n{self.details}",
             f"## Related resources\n\n{self.related_resources}",
+            f"## Changelog\n\n{self.changelog}",
         ]
         return "\n\n".join(items)
     
