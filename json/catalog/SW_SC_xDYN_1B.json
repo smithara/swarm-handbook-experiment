@@ -21,5 +21,6 @@
     "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,Time stamp,1,CDF_EPOCH\nSyncStatus,-,Synchronization status,1,CDF_UINT2\na_Sun,m/s2,\"Acceleration due to Solar radiation pressure, S/C frame\",3,CDF_DOUBLE\ne_Sun,-,\"Direction to the Sun, unit vector, S/C frame\",3,CDF_DOUBLE\nm_SC,kg,Actual mass of S/C,1,CDF_DOUBLE\nr_CoG,m,\"Center of gravity, S/C frame\",3,CDF_DOUBLE\nA_head,m2,\"Cross sections of the S/C, orbit frame,front\",3,CDF_DOUBLE\nA_right,m2,\"Cross sections of the S/C, orbit frame,right\",3,CDF_DOUBLE\nA_left,m2,\"Cross sections of the S/C, orbit frame,left\",3,CDF_DOUBLE\nA_down,m2,\"Cross sections of the S/C, orbit frame,down\",3,CDF_DOUBLE\nK_Earth,m2,Downward optical reflectivity of the S/C,3,CDF_DOUBLE\nP_Gas,Pa,Pressure of gas tanks,2,CDF_DOUBLE\nT_Gas,deg C,Temperature of gas tanks,2,CDF_DOUBLE\nFlags_Platform,-,Flags characterizing the S/C platform information,1,CDF_UINT2\ndt_thr,s,Thruster on-time,12,CDF_DOUBLE\nthr_set,-,Flag indicating which thruster branch is active ,1,CDF_UINT2\nf_thr,mN,\"Nominal thrust force of activated thrusters (combined x, y, z)\",3,CDF_DOUBLE\na_centr,m/s2,\"Centrifugal acceleration, S/C frame\",3,CDF_DOUBLE\na_GG,m/s2,\"Gravity gradient acceleration, S/C frame\",3,CDF_DOUBLE\n",
     "related_resources": "",
     "details": "",
-    "changelog": ""
+    "changelog": "",
+    "fast_processing": ""
 }

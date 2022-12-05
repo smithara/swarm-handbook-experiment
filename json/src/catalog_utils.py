@@ -56,6 +56,7 @@ class Product:
     related_resources: str = ""
     details: str = ""
     changelog: str = ""
+    fast_processing: str = ""
     
     @staticmethod
     def allowed_thematic_areas():
@@ -125,11 +126,12 @@ class Product:
             f"Applicable spacecraft: {', '.join(self.applicable_spacecraft)}",
             f"## Description\n\n{self.description}",
             f"## Data access\n\n{self.markdown_links}",
+            f"## FAST processing\n\n{self.fast_processing if self.fast_processing else 'N/A'}",
             f"## Preview image\n\n(delivered separately)",
-            f"## File contents\n\n{self.tabulate_variables}",
-            f"## More details\n\n{self.details}",
-            f"## Related resources\n\n{self.related_resources}",
-            f"## Changelog\n\n{self.changelog}",
+            f"## File contents\n\n{self.tabulate_variables if self.tabulate_variables else 'N/A'}",
+            f"## More details\n\n{self.details if self.details else 'N/A'}",
+            f"## Related resources\n\n{self.related_resources if self.related_resources else 'N/A'}",
+            f"## Changelog\n\n{self.changelog if self.changelog else 'N/A'}",
         ]
         return "\n\n".join(items)
     

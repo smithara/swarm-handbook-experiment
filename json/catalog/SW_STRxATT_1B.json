@@ -21,5 +21,6 @@
     "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,Time stamp,1,CDF_EPOCH\nSyncStatus,-,Synchronization status,1,CDF_UINT2\nq,-,\"Quaternion, transformation: ITRF <- S/C\",4,CDF_DOUBLE\nFlags_q,-,\"Flags characterizing the attitude information,\",1,CDF_UINT1\nManeuver_Id,-,Current maneuver identification code,1,CDF_UINT1\n",
     "related_resources": "",
     "details": "",
-    "changelog": ""
+    "changelog": "",
+    "fast_processing": ""
 }

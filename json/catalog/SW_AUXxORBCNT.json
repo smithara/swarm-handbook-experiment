@@ -21,5 +21,6 @@
     "variables_table": "",
     "related_resources": "",
     "details": "<table border=\"1\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Field name</th>\n\t\t\t<th>Type</th>\n\t\t\t<th>Unit</th>\n\t\t\t<th>Contents</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>orbit</td>\n\t\t\t<td>integer</td>\n\t\t\t<td>-</td>\n\t\t\t<td>Orbit number</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>MJD2000</td>\n\t\t\t<td>real</td>\n\t\t\t<td>MJD2000</td>\n\t\t\t<td>Orbit start date/time in MJD2000</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>date</td>\n\t\t\t<td>string</td>\n\t\t\t<td>-</td>\n\t\t\t<td>Orbit start date</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>UT</td>\n\t\t\t<td>string</td>\n\t\t\t<td>UTC</td>\n\t\t\t<td>Orbit start time</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>phi_AN</td>\n\t\t\t<td>real</td>\n\t\t\t<td>deg</td>\n\t\t\t<td>Longitude of orbit start</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Source</td>\n\t\t\t<td>integer</td>\n\t\t\t<td>-</td>\n\t\t\t<td>Source of orbit number information Values:<br />\n\t\t\tBest quality = 0<br />\n\t\t\tReduced quality = 1</td>\n\t\t</tr>\n\t</tbody>\n</table>\n",
-    "changelog": ""
+    "changelog": "",
+    "fast_processing": ""
 }

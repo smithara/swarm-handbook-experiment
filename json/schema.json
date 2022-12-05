@@ -58,6 +58,10 @@
                     "type": "string",
                     "contentMediaType": "text/html"
                 },
+                "fast_processing": {
+                    "type": "string",
+                    "contentMediaType": "text/html"
+                },
                 "link_files_ftp": {
                     "type": "string",
                     "format": "uri",

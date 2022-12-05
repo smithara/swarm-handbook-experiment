@@ -22,5 +22,6 @@
     "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,Time stamp,1,CDF_EPOCH\nSyncStatus,-,Synchronization status,1,CDF_UINT2\nLatitude,deg,Position in ITRF \u2013 Latitude,1,CDF_DOUBLE\nLongitude,deg,Position in ITRF \u2013 Longitude,1,CDF_DOUBLE\nRadius,m,Position in ITRF \u2013 Radius,1,CDF_DOUBLE\nU_orbit,m/s,Spacecraft velocity in the ITRF,1,CDF_DOUBLE\nNe,cm-3,Plasma density (electron),1,CDF_DOUBLE\nNe_error,cm-3,Error estimate of plasma density (Ne),1,CDF_DOUBLE\nTe,K,Plasma electron temperature,1,CDF_DOUBLE\nTe_error,K,Error estimate of plasma electron temperature (Te),1,CDF_DOUBLE\nVs,V,Spacecraft potential,1,CDF_DOUBLE\nVs_error,V,Error estimate of spacecraft potential (U_pol),1,CDF_DOUBLE\nFlags_LP,-,\"Flags indicating the source/method of LP measurements (ne, Te, Vs)\",1,CDF_UINT1\nFlags_Ne,-,Flags characterizing the plasma density measurement,1,CDF_UINT1\nFlags_Te,-,Flags characterizing the electron temperature measurement,1,CDF_UINT1\nFlags_Vs,-,Flags characterizing the spacecraft potential measurement,1,CDF_UINT1\n",
     "related_resources": "",
     "details": "",
-    "changelog": ""
+    "changelog": "",
+    "fast_processing": ""
 }

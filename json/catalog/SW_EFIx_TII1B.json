@@ -22,5 +22,6 @@
     "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,-,1,CDF_DOUBLE\nlatitude,-,-,1,CDF_DOUBLE\nlongitude,-,-,1,CDF_DOUBLE\nradius,-,-,1,CDF_DOUBLE\nv_SC,-,-,3,CDF_DOUBLE\nv_ion,-,-,3,CDF_DOUBLE\nE,-,-,3,CDF_DOUBLE\nT_ion,-,-,1,CDF_DOUBLE\nv_ion_H,-,-,2,CDF_DOUBLE\nv_ion_V,-,-,2,CDF_DOUBLE\nrms_fit_H,-,-,1,CDF_DOUBLE\nrms_fit_V,-,-,1,CDF_DOUBLE\nvar_x_H,-,-,1,CDF_DOUBLE\nvar_y_H,-,-,1,CDF_DOUBLE\nvar_x_V,-,-,1,CDF_DOUBLE\nvar_y_V,-,-,1,CDF_DOUBLE\nSAA,-,-,1,CDF_INT4\nFlags_TII,-,-,1,CDF_INT4\nFlags_Platform,-,-,1,CDF_INT4\nManeuver_Id,-,-,1,CDF_INT4\n",
     "related_resources": "",
     "details": "",
-    "changelog": ""
+    "changelog": "",
+    "fast_processing": ""
 }
