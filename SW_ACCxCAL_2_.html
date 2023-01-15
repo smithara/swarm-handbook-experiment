@@ -1,10 +1,10 @@
 <h1>SW_ACCxCAL_2_</h1>
-<p>Non-gravitational accelerations</p>
-<p>Thematic areas: Thermosphere</p>
+<p>Corrected and calibrated accelerometer observations</p>
+<p>Thematic areas: Thermosphere, Acceleration measurements</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-C</p>
 <h2>Description</h2>
-<p>Time series of non-gravitational and aerodynamic accelerations obtained by POD</p>
+<p>Time series of corrected and calibrated acceleration, including all corrections and calibration parameters</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -132,72 +132,69 @@
 <h2>More details</h2>
 <table border="1">
     <tbody>
-        <tr>
-            <td>Product identifier</td>
-            <td>ACCxCAL_2_</td>
-        </tr>
-        <tr>
-            <td>Definition</td>
-            <td>Time series of corrected and calibrated acceleration, including all corrections and calibration parameters</td>
-        </tr>
-        <tr>
-            <td>Input data</td>
-            <td>ACCx_PR_1B, ACCxPOD_2_, ACCxDISi2_, SC_xDYN_1B, ACCx_PR_1B</td>
-        </tr>
-        <tr>
-            <td>Input time span</td>
-            <td>24 h</td>
-        </tr>
-        <tr>
-            <td>Spatial representation</td>
-            <td>Three-dimensional time series along satellite orbit</td>
-        </tr>
-        <tr>
-            <td>Time representation</td>
-            <td>UTC</td>
-        </tr>
-        <tr>
-            <td>Units</td>
-            <td>m/s2 for accelerations, unitless for scale factors and flags</td>
-        </tr>
-        <tr>
-            <td>Resolution</td>
-            <td>64 bit double precision floating point number format</td>
-        </tr>
-        <tr>
-            <td>Uncertainty</td>
-            <td>0.01 scale factor for flight direction, 10-7 m/s2 for along-track bias</td>
-        </tr>
-        <tr>
-            <td>Quality indicator</td>
-            <td>Validation report ACCxVAL_2_<br />
-            Global attribute &quot;DAILY_QUALITY_INDEX&quot; of Type CDF_REAL, which ranges from 1.0 (good data quality) to 5.0 (bad data quality)</td>
-        </tr>
-        <tr>
-            <td>Data volume</td>
-            <td>15 MB per day</td>
-        </tr>
-        <tr>
-            <td>Output data</td>
-            <td>CDF file with corrected and calibrated accelerations from the accelerometer, all corrections and calibration parameters, and flags; sampling rate is 1 Hz (accelerations are at original measurement epochs)</td>
-        </tr>
-        <tr>
-            <td>Output time span</td>
-            <td>1 day</td>
-        </tr>
-        <tr>
-            <td>Update rate</td>
-            <td>3 months</td>
-        </tr>
-        <tr>
-            <td>Latency</td>
-            <td>1 month</td>
-        </tr>
-        <tr>
-            <td>Notes</td>
-            <td>All accelerations are provided in the CRF (x-direction is roughly along-track, y-direction is roughly cross-track, z-direction is roughly nadir)<br />
-            Calibration was performed against non-gravitational accelerations from POD that are contained in product ACCxPOD_2_</td>
-        </tr>
+    <tr>
+        <td><b>Product identifier</b></td>
+        <td><b>ACCxCAL_2_</b></td>
+    </tr>
+    <tr>
+        <td>Definition</td>
+        <td>Time series of corrected and calibrated acceleration, including all corrections and calibration parameters</td>
+    </tr>
+    <tr>
+        <td>Input Data</td>
+        <td>ACCx_PR_1B, ACCxPOD_2_, ACCxDISi2_, SC_xDYN_1B, ACCx_PR_1B</td>
+    </tr>
+    <tr>
+        <td>Input Time Span</td>
+        <td>24 hours</td>
+    </tr>
+    <tr>
+        <td>Spatial representation</td>
+        <td>Three-dimensional time series along satellite orbit</td>
+    </tr>
+    <tr>
+        <td>Time representation</td>
+        <td>UTC</td>
+    </tr>
+    <tr>
+        <td>Units</td>
+        <td>m/s<sup>2</sup> for accelerations, unitless for scale factors and flags</td>
+    </tr>
+    <tr>
+        <td>Resolution</td>
+        <td>64 bit double precision floating point format</td>
+    </tr>
+    <tr>
+        <td>Quality indicator</td>
+        <td>Validation report ACCxVAL_2_ 
+<br>Global attribute "DAILY_QUALITY_INDEX" of Type CDF_REAL, which ranges from 1.0 (good data quality) to 5.0 (bad data quality)</td>
+    </tr>
+    <tr>
+        <td>Data volume</td>
+        <td>15 MB per day</td>
+    </tr>
+    <tr>
+        <td>Output Data</td>
+        <td>CDF file with corrected and calibrated accelerations from the accelerometer, all corrections and calibration parameters, and flags; sampling rate is 1 Hz (accelerations are at original measurement epochs)</td>
+    </tr>
+    <tr>
+        <td>Output time span</td>
+        <td>1 day</td>
+    </tr>
+    <tr>
+        <td>Update rate</td>
+        <td>3 months</td>
+    </tr>
+    <tr>
+        <td>Latency</td>
+        <td>1 month</td>
+    </tr>
+    <tr>
+        <td>Notes</td>
+        <td>All accelerations are provided in the CRF (x-direction is roughly along-track, y-direction is roughly cross-track, z-direction is roughly nadir)
+<br>Calibration was performed against non-gravitational accelerations from POD that are contained in product ACCxPOD_2_ 
+<br>Early versions of this product will contain only along-track acceleration data</td>
+    </tr>
     </tbody>
 </table>
 

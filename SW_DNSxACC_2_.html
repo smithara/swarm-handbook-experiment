@@ -2,9 +2,9 @@
 <p>Thermospheric density</p>
 <p>Thematic areas: Thermosphere</p>
 <p>Applicable missions: Swarm</p>
-<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-C</p>
 <h2>Description</h2>
-<p>Thermospheric density at the satellite location derived from ACCxCAL_2</p>
+<p>Time series of neutral thermospheric density and wind speed from precise orbit determination and accelerometer data</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -76,71 +76,72 @@
 <h2>More details</h2>
 <table border="1">
     <tbody>
-        <tr>
-            <td>Product identifier</td>
-            <td>DNSxACC_2_</td>
-        </tr>
-        <tr>
-            <td>Definition</td>
-            <td>Thermospheric density at the satellite location derived from ACCxCAL_2</td>
-        </tr>
-        <tr>
-            <td>Input data</td>
-            <td>STRxATT_1B, SC_xDYN_1B, ACCxCAL_1, MODx_SC_1B, external data from IERS, F10.7 and Kp indices from external source</td>
-        </tr>
-        <tr>
-            <td>Input time span</td>
-            <td>24 hr</td>
-        </tr>
-        <tr>
-            <td>Spatial representation</td>
-            <td>Time-series along satellite track, altitude (m), latitude (deg), longitude (deg) and local solar time (hours) available based on MODX_SC_1B</td>
-        </tr>
-        <tr>
-            <td>Time representation</td>
-            <td>UTC (seconds &ndash; s), nominally with 10 s time step</td>
-        </tr>
-        <tr>
-            <td>Units</td>
-            <td>kg/m3 for density</td>
-        </tr>
-        <tr>
-            <td>Resolution</td>
-            <td>64 bit double precision floating point number format</td>
-        </tr>
-        <tr>
-            <td>Uncertainty</td>
-            <td>30% of variance from models for neutral density</td>
-        </tr>
-        <tr>
-            <td>Quality indicator</td>
-            <td>Global attribute &quot;DAILY_QUALITY_INDEX&quot; copied from ACCxCAL_2<br />
-            Validation report TDAxVAL_2_</td>
-        </tr>
-        <tr>
-            <td>Data volume</td>
-            <td>&lt; 15 Mbyte per satellite per day</td>
-        </tr>
-        <tr>
-            <td>Output data</td>
-            <td>CDF file with time series</td>
-        </tr>
-        <tr>
-            <td>Output time span</td>
-            <td>24 hr</td>
-        </tr>
-        <tr>
-            <td>Update rate</td>
-            <td>30 days</td>
-        </tr>
-        <tr>
-            <td>Latency</td>
-            <td>21 days</td>
-        </tr>
-        <tr>
-            <td>Notes</td>
-            <td>&nbsp;</td>
-        </tr>
+    <tr>
+        <td><b>Product identifier</b></td>
+        <td><b>DNSxACC_2_</b></td>
+    </tr>
+    <tr>
+        <td>Definition</td>
+        <td>Thermospheric density at the satellite location estimated from calibrated non-gravitational accelerations (ACCx_AE_2_) that are based on precise orbit determination and accelerometer data</td>
+    </tr>
+    <tr>
+        <td>Input Data</td>
+        <td>STRxATT_1B, SC_xDYN_1B, ACCx_AE_2_, SP3_COM__2,
+<br>AUX_IER_2_, AUX_AER_2_, AUX_F10_2_, AUX_KP__2_
+<br>External data from IERS</td>
+    </tr>
+    <tr>
+        <td>Input Time Span</td>
+        <td>24 hr</td>
+    </tr>
+    <tr>
+        <td>Spatial representation</td>
+        <td>Time-series along satellite track, altitude (m), latitude (deg), longitude (deg) and local solar time (hours) available based on MODX_SC_1B</td>
+    </tr>
+    <tr>
+        <td>Time representation</td>
+        <td>UTC (seconds – s), nominally with 10 s time step</td>
+    </tr>
+    <tr>
+        <td>Units</td>
+        <td>kg/m<sup>3</sup> for density, m/s for wind speed</td>
+    </tr>
+    <tr>
+        <td>Resolution</td>
+        <td>64 bit double precision floating point number format</td>
+    </tr>
+    <tr>
+        <td>Uncertainty</td>
+        <td>30% of variance from models for neutral density</td>
+    </tr>
+    <tr>
+        <td>Quality indicator</td>
+        <td>Validation report TDAxVAL_2_</td>
+    </tr>
+    <tr>
+        <td>Data volume</td>
+        <td>&lt; 15 Mbyte per satellite per day</td>
+    </tr>
+    <tr>
+        <td>Output Data</td>
+        <td>CDF file with time series</td>
+    </tr>
+    <tr>
+        <td>Output time span</td>
+        <td>24 hr</td>
+    </tr>
+    <tr>
+        <td>Update rate</td>
+        <td>3 months</td>
+    </tr>
+    <tr>
+        <td>Latency</td>
+        <td>1 month</td>
+    </tr>
+    <tr>
+        <td>Notes</td>
+        <td>None</td>
+    </tr>
     </tbody>
 </table>
 

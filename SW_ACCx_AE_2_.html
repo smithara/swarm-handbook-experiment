@@ -1,9 +1,10 @@
 <h1>SW_ACCx_AE_2_</h1>
-<p>Time series of calibrated accelerometer data, pre-processed to represent external non-gravitational forces and aerodynamic accelerations</p>
+<p>Time series of calibrated and pre-processed accelerometer observations and of aerodynamic accelerations</p>
 <p>Thematic areas: Acceleration measurements, Thermosphere</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-C</p>
 <h2>Description</h2>
+<p>Time series of calibrated accelerometer data, pre-processed to represent external non-gravitational forces and aerodynamic accelerations</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -52,7 +53,79 @@
 </tbody>
 </table>
 <h2>More details</h2>
-<p>N/A</p>
+<table border="1">
+ <tbody>
+    <tr>
+        <td>Product identifier</td>
+        <td>ACCx_AE_2_</td>
+    </tr>
+    <tr>
+        <td>Definition</td>
+        <td>Time series of calibrated accelerometer data, pre-processed to represent external non-gravitational forces and aerodynamic accelerations</td>
+    </tr>
+    <tr>
+        <td>Input Data</td>
+        <td>SC_xDYN_1B, STRxATT_1B, SP3xCOM_2_, ACCxCAL_2_, ACCxPOD_2_, AUX_F10_2_, AUX_KP__2_</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>External data from IERS</td>
+    </tr>
+    <tr>
+        <td>Input Time Span</td>
+        <td>24 hr</td>
+    </tr>
+    <tr>
+        <td>Spatial representation</td>
+        <td>Time-series along satellite track, altitude (m), latitude (deg), longitude (deg) and local solar time (hours) available based on MODX_SC_1B</td>
+    </tr>
+    <tr>
+        <td>Time representation</td>
+        <td>UTC (seconds ? s), nominally with 10 s time step</td>
+    </tr>
+    <tr>
+        <td>Units</td>
+        <td>nm/s<sup>2</sup> for accelerations, s for time, m for altitude, degrees for latitude, longitude, hours for local solar time</td>
+    </tr>
+    <tr>
+        <td>Resolution</td>
+        <td>64 bit double precision floating point number format</td>
+    </tr>
+    <tr>
+        <td>Uncertainty</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>Quality indicator</td>
+        <td>Validation report TDAxVAL_2_</td>
+    </tr>
+    <tr>
+        <td>Data volume</td>
+        <td>&lt; 10 Mbyte per satellite per day</td>
+    </tr>
+    <tr>
+        <td>Output Data</td>
+        <td>CDF file with time series</td>
+    </tr>
+    <tr>
+        <td>Output time span</td>
+        <td>24 hr</td>
+    </tr>
+    <tr>
+        <td>Update rate</td>
+        <td>3 months</td>
+    </tr>
+    <tr>
+        <td>Latency</td>
+        <td>1 month</td>
+    </tr>
+    <tr>
+        <td>Notes</td>
+        <td>The applied accelerometer bias and scale factors are available in the metadata.</td>
+    </tr>
+ </tbody>
+</table>
+
 <h2>Related resources</h2>
 <p>N/A</p>
 <h2>Changelog</h2>
