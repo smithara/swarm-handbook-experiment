@@ -1,6 +1,6 @@
 {
     "product_id": "SW_ACCxPOD_2_",
-    "definition": "Non-gravitational accelerations",
+    "definition": "Non-gravitational and aerodynamic accelerations",
     "applicable_missions": [
         "Swarm"
     ],
@@ -10,7 +10,8 @@
         "Swarm-C"
     ],
     "thematic_areas": [
-        "Thermosphere"
+        "Thermosphere",
+        "Acceleration measurements"
     ],
     "description": "Time series of non-gravitational and aerodynamic accelerations obtained by POD",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/ACC/POD",
