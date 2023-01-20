@@ -1,21 +1,23 @@
 {
     "product_id": "MM_CON_EPH_2_",
-    "definition": "",
+    "definition": "Conjunction information",
     "applicable_missions": [
         "Combined_Mission_Data"
     ],
     "applicable_spacecraft": [
         "Combined_Mission_Data"
     ],
-    "thematic_areas": [],
+    "thematic_areas": [
+        "Ephemeris"
+    ],
     "description": " ",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/Combined_Mission_Data/Conjunction",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/Combined_Mission_Data/Conjunction",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "",
-    "related_resources": "",
+    "variables_table": "\"Field name\",\"Type\",\"Dimension\",\"Unit\",\"Contents\"\n\"crossover_times\",\"CDF_EPOCH\",\"2\",\"ms\",\"Crossover times of the satellites (UTC)\"\n\"crossover_time_difference\",\"CDF_REAL8\",\"1\",\"s\",\"Time between the first and second satellite passing over the same location\"\n\"crossover_satellites\",\"CDF_UINT4\",\"2\",\"-\",\"IDs of the satellites, see note 2\"\n\"crossover_altitudes\",\"CDF_REAL8\",\"2\",\"m\",\"Altitudes of the satellites at crossover (GRS80)\"\n\"crossover_latitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Geodetic latitude of crossover\"\n\"crossover_longitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Longitude of crossover \"\n\"crossover_magnetic_latitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Magnetic latitude of crossover\"\n\"crossover_magnetic_longitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Magnetic longitude of crossover \"\n\"crossover_local_solar_times\",\"CDF_REAL8\",\"2\",\"h\",\"Local solar times of the satellites at crossover\"\n\"plane_alignment_time\",\"CDF_EPOCH\",\"1\",\"ms\",\"Time of orbital plane alignment (UTC)\"\n\"plane_alignment_satellites\",\"CDF_UINT4\",\"2\",\"-\",\"IDs of the satellites, see note 2\"\n\"plane_alignment_ltan\",\"CDF_REAL8\",\"2\",\"h\",\"LTAN of the satellites\"\n\"plane_alignment_altitudes\",\"CDF_REAL8\",\"2\",\"m\",\"Altitudes of the satellites (GRS80)\"\n\"plane_alignment_ltan_rates\",\"CDF_REAL8\",\"2\",\"h/d\",\"LTAN drift rates of the satellites\"",
+    "related_resources": "<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/activities/toleos\">TOLEOS Project</a></li>\n</ul>",
     "details": "",
     "changelog": "",
     "fast_processing": ""

@@ -1,6 +1,6 @@
 {
     "product_id": "GR_TECxTMS_2F",
-    "definition": "",
+    "definition": "Time series of the ionospheric Total Electron Content (TEC) derived for GRACE 1 and 2 satellites",
     "applicable_missions": [
         "GRACE"
     ],
@@ -8,15 +8,18 @@
         "GRACE-A",
         "GRACE-B"
     ],
-    "thematic_areas": [],
-    "description": " ",
+    "thematic_areas": [
+        "Space Weather",
+        "Ionosphere/Magnetosphere"
+    ],
+    "description": " Integrated electron density along the line of sight from GRACE 1 and 2 to GNSS satellites",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE/TEC",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE/TEC",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "",
-    "related_resources": "",
+    "variables_table": "\"Variable Name\",\"Type\",\"Dim\",\"Unit\",\"Description\"\n\"Timestamp\",\"CDF_EPOCH\",\"1\",\"ms\",\"Time of observation, UTC\"\n\"Latitude\",\"CDF_DOUBLE\",\"1\",\"deg\",\"GRACE position in ITRF \u2013 Geocentric latitude\"\n\"Longitude\",\"CDF_DOUBLE\",\"1\",\"deg\",\"GRACE position in ITRF \u2013 Geocentric longitude\"\n\"Radius\",\"CDF_DOUBLE\",\"1\",\"m\",\"GRACE position in ITRF \u2013 Geocentric radius (from the Earth centre)\"\n\"GPS_Position\",\"CDF_DOUBLE\",\"3\",\"m\",\"X-, Y-, Z-coordinates of the GPS satellite\"\n\"LEO_Position\",\"CDF_DOUBLE\",\"3\",\"m\",\"X-, Y-, Z-coordinates of the GRACE satellite\"\n\"PRN\",\"CDF_UINT2\",\"1\",\"-\",\"Pseudorandom noise (PRN) code of GPS satellite\"\n\"L1\",\"CDF_DOUBLE\",\"1\",\"m\",\"GPS L1C (LA in RINEX v.2.20) carrier phase observation\"\n\"L2\",\"CDF_DOUBLE\",\"1\",\"m\",\"GPS L2W (L2 in RINEX v.2.20) carrier phase observation\"\n\"P1\",\"CDF_DOUBLE\",\"1\",\"m\",\"GPS C1W (P1 in RINEX v.2.20) code phase observation\"\n\"P2\",\"CDF_DOUBLE\",\"1\",\"m\",\"GPS C2W (P2 in RINEX v.2.20) code phase observation\"\n\"S1_C_N0\",\"CDF_DOUBLE\",\"1\",\"dB-Hz\",\"GPS S1 carrier-to-noise density C/N0 [AD-4] (Sect. 3.1.2.2)\"\n\"S2_C_N0\",\"CDF_DOUBLE\",\"1\",\"dB-Hz\",\"GPS S2 carrier-to-noise density C/N0 [AD-4] (Sect. 3.1.2.2)\"\n\"Absolute_STEC\",\"CDF_DOUBLE\",\"1\",\"TECU\",\"Absolute slant TEC\"\n\"Absolute_VTEC\",\"CDF_DOUBLE\",\"1\",\"TECU\",\"Absolute vertical TEC\"\n\"Elevation_Angle\",\"CDF_DOUBLE\",\"1\",\"deg\",\"Elevation angle\"\n\"Relative_STEC\",\"CDF_DOUBLE\",\"1\",\"TECU\",\"Relative slant TEC\"\n\"Relative_STEC_RMS\",\"CDF_DOUBLE\",\"1\",\"TECU\",\"Root mean square of relative slant TEC2\"\n\"DCB\",\"CDF_DOUBLE\",\"1\",\"TECU\",\"GPS receiver differential code bias (DCB3) (P2\u2013P1)\"\n\"DCB_Error\",\"CDF_DOUBLE\",\"1\",\"TECU\",\"Post fit RMS of the least square system using pairs of mapped slant TEC\"",
+    "related_resources": "<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/activities/tiro\">TIRO Project</a></li>\n</ul>",
     "details": "",
     "changelog": "",
     "fast_processing": ""

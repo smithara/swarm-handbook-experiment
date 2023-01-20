@@ -1,21 +1,25 @@
 {
     "product_id": "CH_DNS_ACC_2_",
-    "definition": "",
+    "definition": "Thermosphere mass density at the CHAMP satellite location",
     "applicable_missions": [
         "CHAMP"
     ],
     "applicable_spacecraft": [
         "CHAMP"
     ],
-    "thematic_areas": [],
+    "thematic_areas": [
+        "Ionosphere/Magnetosphere",
+        "Thermosphere",
+        "Space Weather"
+    ],
     "description": " ",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/CHAMP/DNS",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/CHAMP/DNS",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "",
-    "related_resources": "",
+    "variables_table": "\"Field name\",\"Type\",\"Dimension\",\"Unit\",\"Contents\"\n\"time\",\"CDF_EPOCH\",\"1\",\"ms\",\"Observation time (UTC)\"\n\"altitude\",\"CDF_REAL8\",\"1\",\"m\",\"Observation altitude (GRS80)\"\n\"latitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Observation geodetic latitude\"\n\"longitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Observation longitude \"\n\"local_solar_time\",\"CDF_REAL8\",\"1\",\"h\",\"Local solar time\"\n\"density\",\"CDF_REAL8\",\"1\",\"kg/m3\",\"Mass density\"\n\"density_orbitmean\",\"CDF_REAL8\",\"1\",\"kg/m3\",\"Orbit average of mass density (implemented as moving average)\"\n\"validity_flag\",\"CDF_INT1\",\"1\",\"-\",\"0 = nominal data, 1 = anomalous data\"\n\"validity_flag_orbitmean\",\"CDF_INT1\",\"1\",\"-\",\"0 = nominal data, 1 = anomalous data\"",
+    "related_resources": "<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/activities/toleos\">TOLEOS Project</a></li>\n</ul>",
     "details": "",
     "changelog": "",
     "fast_processing": ""

@@ -1,6 +1,6 @@
 {
     "product_id": "GFx_FGM_ACAL_CORR",
-    "definition": "",
+    "definition": "Magnetic measurements derived from GRACE-FO platform magnetometers",
     "applicable_missions": [
         "GRACE-FO"
     ],
@@ -8,15 +8,17 @@
         "GRACE-FO-1",
         "GRACE-FO-2"
     ],
-    "thematic_areas": [],
+    "thematic_areas": [
+        "Magnetic measurements"
+    ],
     "description": " ",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE-FO/Magnetic_data",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE-FO/Magnetic_data",
     "link_vires_gui": "",
     "link_notebook": "https://notebooks.vires.services/notebooks/03y1_multi-mission-intro",
     "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=GF1_OPER_FGM_ACAL_CORR&parameters=B_NEC&start=2018-06-01T00:00:00Z&stop=2018-06-01T01:00:00.000Z&return=data&format=csv&style=header",
-    "variables_table": "",
-    "related_resources": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,ms,Timestamp,1,CDF_EPOCH\nLatitude,-,-,1,CDF_DOUBLE\nLongitude,-,-,1,CDF_DOUBLE\nRadius,-,-,1,CDF_DOUBLE\nB_FGM,nT,\"[nT] Fluxgate magnetometer, FGM, aligned, vector-vector calibrated and corrected for satellite disturbances, FGM frame\",3,CDF_DOUBLE\nB_NEC,nT,\"[nT] Fluxgate magnetometer, FGM, aligned, vector-vector calibrated and corrected for satellite disturbances, NEC frame\",3,CDF_DOUBLE\nq_NEC_FGM, ,\"Quaternion, transformation: NEC ... FGM\",4,CDF_DOUBLE\ndB_MTQ_FGM,nT,\"[nT] Disturbance field related to magnetorquer, FGM frame\",3,CDF_DOUBLE\ndB_XI_FGM,nT,\"[nT] Disturbance field related to 2nd order non-linearities, FGM frame\",3,CDF_DOUBLE\ndB_NY_FGM,nT,\"[nT] Disturbance field related to 3rd order non-linearities, FGM frame\",3,CDF_DOUBLE\ndB_BT_FGM,nT,\"[nT] Disturbance field related to temperature dependency of offsets, FGM frame\",3,CDF_DOUBLE\ndB_ST_FGM,nT,\"[nT] Disturbance field related to temperature dependency of scale factors, FGM frame\",3,CDF_DOUBLE\ndB_SA_FGM,nT,\"[nT] Disturbance field related to solar array currents, FGM frame\",3,CDF_DOUBLE\ndB_BAT_FGM,nT,\"[nT] Disturbance field related to battery currents, FGM frame\",3,CDF_DOUBLE\nB_FLAG,-,-,1,CDF_UINT1\nLABELS_B,-,LABELS_B,3,CDF_CHAR\nLABELS_BNEC,-,LABELS_BNEC,3,CDF_CHAR\nLABELS_Q,-,LABELS_Q,4,CDF_CHAR",
+    "related_resources": "<ul>\n\t<li>Stolle, C., Michaelis, I., Xiong, C. et al., Observing Earth&rsquo;s magnetic environment with the GRACE-FO mission. Earth Planets Space 73, 51 (2021).<br />\n\t<a class=\"reference external\" href=\"https://doi.org/10.1186/s40623-021-01364-w\">https://doi.org/10.1186/s40623-021-01364-w</a></li>\n</ul>\n",
     "details": "",
     "changelog": "",
     "fast_processing": ""

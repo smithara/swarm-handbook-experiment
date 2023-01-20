@@ -1,21 +1,23 @@
 {
     "product_id": "CS_MAG",
-    "definition": "",
+    "definition": "Magnetic measurements derived from Cryosat-2 platform magnetometers",
     "applicable_missions": [
         "CryoSat-2"
     ],
     "applicable_spacecraft": [
         "CryoSat-2"
     ],
-    "thematic_areas": [],
+    "thematic_areas": [
+        "Magnetic measurements"
+    ],
     "description": " ",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/CryoSat-2",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/CryoSat-2",
     "link_vires_gui": "",
     "link_notebook": "https://notebooks.vires.services/notebooks/03y1_multi-mission-intro",
     "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=CS_OPER_MAG&parameters=B_NEC&start=2010-04-08T17:03:26.254008Z&stop=2010-04-08T18:03:26.254Z&return=data&format=csv&style=header",
-    "variables_table": "",
-    "related_resources": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,Time stamp,1,CDF_EPOCH\nLatitude,deg,Position in ITRF: Geocentric latitude,1,CDF_DOUBLE\nLongitude,deg,Position in ITRF: Geocentric longitude,1,CDF_DOUBLE\nRadius,m,Position in ITRF: Geocentric Radius,1,CDF_DOUBLE\nB_FGM1,nT,\"calibrated magnetic vector from FGM1, in instrument frame\",3,CDF_DOUBLE\nB_FGM2,nT,\"calibrated magnetic vector from FGM2, in instrument frame\",3,CDF_DOUBLE\nB_FGM3,nT,\"calibrated magnetic vector from FGM3, in instrument frame\",3,CDF_DOUBLE\nB_NEC1,nT,\"calibrated and aligned magnetic vector from FGM1, in NEC (North, East, Center) frame\",3,CDF_DOUBLE\nB_NEC2,nT,\"calibrated and aligned magnetic vector from FGM2, in NEC (North, East, Center) frame\",3,CDF_DOUBLE\nB_NEC3,nT,\"calibrated and aligned magnetic vector from FGM3, in NEC (North, East, Center) frame\",3,CDF_DOUBLE\nB_NEC,nT,\"calibrated and aligned magnetic vector in NEC (North, East, Center) frame, 5 sample (i.e. 20 second) robust average of all 3 FGM, \",3,CDF_DOUBLE\nF,nT,\"magnetic field intensity determined from B_NEC, \",1,CDF_DOUBLE\nB_mod_NEC,nT,\"CHAOS-6 model field (core, crust + magnetosphere), in NEC (North, East, Center) frame\",3,CDF_DOUBLE\nq_NEC_CRF,-,\"Quaternion, transformation: NEC <- CRF\",4,CDF_DOUBLE\nq_error,-,experimental error indicator of attitude given in Quaternion q_NEC_CRF. Bad attitude if > approx 40,1,CDF_DOUBLE",
+    "related_resources": "<ul>\n\t<li>Olsen, N., Albini, G., Bouffard, J. et al., Magnetic observations from CryoSat-2: calibration and processing of satellite platform magnetometer data. Earth Planets Space 72, 48 (2020). <a class=\"reference external\" href=\"https://doi.org/10.1186/s40623-020-01171-9\">https://doi.org/10.1186/s40623-020-01171-9</a></li>\n</ul>\n",
     "details": "",
     "changelog": "",
     "fast_processing": ""

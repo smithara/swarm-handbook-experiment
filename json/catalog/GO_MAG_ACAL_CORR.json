@@ -1,21 +1,23 @@
 {
     "product_id": "GO_MAG_ACAL_CORR",
-    "definition": "",
+    "definition": "Magnetic measurements derived from GOCE platform magnetometers",
     "applicable_missions": [
         "GOCE"
     ],
     "applicable_spacecraft": [
         "GOCE"
     ],
-    "thematic_areas": [],
+    "thematic_areas": [
+        "Magnetic measurements"
+    ],
     "description": " ",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GOCE/Magnetic_data",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GOCE/Magnetic_data",
     "link_vires_gui": "",
     "link_notebook": "https://notebooks.vires.services/notebooks/03y1_multi-mission-intro",
     "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=GO_MAG_ACAL_CORR_ML&parameters=B_NEC&start=2009-11-01T00:49:15.411000Z&stop=2009-11-03T00:49:15.411Z&return=data&format=csv&style=header",
-    "variables_table": "",
-    "related_resources": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,ms,Timestamp,1,CDF_EPOCH\nLatitude,-,-,1,CDF_DOUBLE\nLongitude,-,-,1,CDF_DOUBLE\nRadius,-,-,1,CDF_DOUBLE\nB_MAG,nT,\"[nT] Fluxgate magnetometer, combined MAG, aligned, vector-vector calibrated and corrected for satellite disturbances, SC frame\",3,CDF_DOUBLE\nB_NEC,nT,\"[nT] Fluxgate magnetometer, combined MAG, aligned, vector-vector calibrated and corrected for satellite disturbances, NEC frame\",3,CDF_DOUBLE\nq_SC_NEC, ,\"Quaternion, transformation: SC .. NEC\",4,CDF_DOUBLE\ndB_MTQ_SC,nT,\"[nT] Disturbance field related to magnetorquer, SC frame\",3,CDF_DOUBLE\ndB_XI_SC,nT,\"[nT] Disturbance field related to 2nd order non-linearities, SC frame\",3,CDF_DOUBLE\ndB_NY_SC,nT,\"[nT] Disturbance field related to 3rd order non-linearities, SC frame\",3,CDF_DOUBLE\ndB_BT_SC,nT,\"[nT] Disturbance field related to temperature dependency of offsets, SC frame\",3,CDF_DOUBLE\ndB_ST_SC,nT,\"[nT] Disturbance field related to temperature dependency of scale factors, SC frame\",3,CDF_DOUBLE\ndB_SA_SC,nT,\"[nT] Disturbance field related to solar array currents, SC frame\",3,CDF_DOUBLE\ndB_BAT_SC,nT,\"[nT] Disturbance field related to battery currents, SC frame\",3,CDF_DOUBLE\ndB_HK_SC,nT,\"[nT] Disturbance field related to housekeeping data, SC frame\",3,CDF_DOUBLE\ndB_BLOCK_CORR,nT,\"[nT] Block correction for MAG2 and MAG3, MAG frame\",6,CDF_DOUBLE\nB_FLAG,-,-,1,CDF_UINT4\nq_MAG_SC, ,\"Quaternion, transformation: combined MAG ... SC\",4,CDF_DOUBLE\nLABELS_B,-,LABELS_B,3,CDF_CHAR\nLABELS_BNEC,-,LABELS_BNEC,3,CDF_CHAR\nLABELS_Q,-,LABELS_Q,4,CDF_CHAR\nLABELS_BLOCK_CORR,-,LABELS_BLOCK_CORR,6,CDF_CHAR",
+    "related_resources": "<ul>\n\t<li>Michaelis, Ingo; Korte, Monika (2022), GOCE calibrated and characterised magnetometer data. V. 0205. GFZ Data Services. <a class=\"reference external\" href=\"https://doi.org/10.5880/GFZ.2.3.2022.001\">https://doi.org/10.5880/GFZ.2.3.2022.001</a></li>\n</ul>\n",
     "details": "",
     "changelog": "",
     "fast_processing": ""

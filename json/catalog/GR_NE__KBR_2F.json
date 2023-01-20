@@ -1,6 +1,6 @@
 {
     "product_id": "GR_NE__KBR_2F",
-    "definition": "",
+    "definition": "Time series of the averaged electron density (Ne) between GRACE 1 and 2 satellites",
     "applicable_missions": [
         "GRACE"
     ],
@@ -8,15 +8,18 @@
         "GRACE-A",
         "GRACE-B"
     ],
-    "thematic_areas": [],
+    "thematic_areas": [
+        "Space Weather",
+        "Ionosphere/Magnetosphere"
+    ],
     "description": " ",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE/NE",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE/NE",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "",
-    "related_resources": "",
+    "variables_table": "\"Variable Name\",\"Type\",\"Dim\",\"Unit\",\"Description\"\n\"Timestamp\",\"CDF_EPOCH\",\"1\",\"ms\",\"Time of observation, UTC\"\n\"Latitude\",\"CDF_DOUBLE\",\"1\",\"deg\",\"Middle point position between GRACE 1 and 2 satellites in ITRF \u2013 Geocentric latitude\"\n\"Longitude\",\"CDF_DOUBLE\",\"1\",\"deg\",\"Middle point position between GRACE 1 and 2 satellites in ITRF \u2013 Geocentric longitude\"\n\"Radius\",\"CDF_DOUBLE\",\"1\",\"m\",\"Middle point position between GRACE 1 and 2 satellites in ITRF \u2013 Geocentric radius (from the Earth centre)\"\n\"LEO_Position\",\"CDF_DOUBLE\",\"2x3\",\"m\",\"X-, Y-, Z-coordinates of the GRACE 1 and 2 satellites\"\n\"Distance\",\"CDF_DOUBLE\",\"1\",\"m\",\"Distance between GRACE 1 and 2 satellites\"\n\"Relative_Hor_TEC\",\"CDF_DOUBLE\",\"1\",\"TECU\",\"Relative horizontal TEC between GRACE 1 and 2 satellites\"\n\"Relative_Ne2\",\"CDF_DOUBLE\",\"1\",\"m-3\",\"Mean relative electron density of the area between GRACE 1 and 2 satellites\"\n\"Absolute_Ne\",\"CDF_DOUBLE\",\"1\",\"m-3\",\"Electron density between GRACE 1 and 2 satellites\"",
+    "related_resources": "<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/activities/tiro\">TIRO Project</a></li>\n</ul>",
     "details": "",
     "changelog": "",
     "fast_processing": ""
