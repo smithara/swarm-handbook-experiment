@@ -1,0 +1,23 @@
+{
+    "product_id": "GR_DNSxACC_2_",
+    "definition": "",
+    "applicable_missions": [
+        "GRACE"
+    ],
+    "applicable_spacecraft": [
+        "GRACE-A",
+        "GRACE-B"
+    ],
+    "thematic_areas": [],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE/DNS",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE/DNS",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}

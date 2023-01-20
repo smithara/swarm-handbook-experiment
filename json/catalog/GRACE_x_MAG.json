@@ -1,0 +1,23 @@
+{
+    "product_id": "GRACE_x_MAG",
+    "definition": "",
+    "applicable_missions": [
+        "GRACE"
+    ],
+    "applicable_spacecraft": [
+        "GRACE-A",
+        "GRACE-B"
+    ],
+    "thematic_areas": [],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE/Magnetic_data",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE/Magnetic_data",
+    "link_vires_gui": "",
+    "link_notebook": "https://notebooks.vires.services/notebooks/03y1_multi-mission-intro",
+    "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=GRACE_A_MAG&parameters=B_NEC&start=2008-01-01T00:00:04.787680Z&stop=2008-01-01T01:00:04.787Z&return=data&format=csv&style=header",
+    "variables_table": "",
+    "related_resources": "",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}

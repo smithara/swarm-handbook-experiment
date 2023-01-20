@@ -1,0 +1,23 @@
+{
+    "product_id": "GFx_FGM_ACAL_CORR",
+    "definition": "",
+    "applicable_missions": [
+        "GRACE-FO"
+    ],
+    "applicable_spacecraft": [
+        "GRACE-FO-1",
+        "GRACE-FO-2"
+    ],
+    "thematic_areas": [],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE-FO/Magnetic_data",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE-FO/Magnetic_data",
+    "link_vires_gui": "",
+    "link_notebook": "https://notebooks.vires.services/notebooks/03y1_multi-mission-intro",
+    "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=GF1_OPER_FGM_ACAL_CORR&parameters=B_NEC&start=2018-06-01T00:00:00Z&stop=2018-06-01T01:00:00.000Z&return=data&format=csv&style=header",
+    "variables_table": "",
+    "related_resources": "",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}

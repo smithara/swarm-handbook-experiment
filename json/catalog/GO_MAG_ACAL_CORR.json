@@ -1,0 +1,22 @@
+{
+    "product_id": "GO_MAG_ACAL_CORR",
+    "definition": "",
+    "applicable_missions": [
+        "GOCE"
+    ],
+    "applicable_spacecraft": [
+        "GOCE"
+    ],
+    "thematic_areas": [],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GOCE/Magnetic_data",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GOCE/Magnetic_data",
+    "link_vires_gui": "",
+    "link_notebook": "https://notebooks.vires.services/notebooks/03y1_multi-mission-intro",
+    "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=GO_MAG_ACAL_CORR_ML&parameters=B_NEC&start=2009-11-01T00:49:15.411000Z&stop=2009-11-03T00:49:15.411Z&return=data&format=csv&style=header",
+    "variables_table": "",
+    "related_resources": "",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}

@@ -1,0 +1,22 @@
+{
+    "product_id": "CS_MAG",
+    "definition": "",
+    "applicable_missions": [
+        "CryoSat-2"
+    ],
+    "applicable_spacecraft": [
+        "CryoSat-2"
+    ],
+    "thematic_areas": [],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/CryoSat-2",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/CryoSat-2",
+    "link_vires_gui": "",
+    "link_notebook": "https://notebooks.vires.services/notebooks/03y1_multi-mission-intro",
+    "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=CS_OPER_MAG&parameters=B_NEC&start=2010-04-08T17:03:26.254008Z&stop=2010-04-08T18:03:26.254Z&return=data&format=csv&style=header",
+    "variables_table": "",
+    "related_resources": "",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}

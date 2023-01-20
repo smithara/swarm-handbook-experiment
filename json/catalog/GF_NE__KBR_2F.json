@@ -1,0 +1,23 @@
+{
+    "product_id": "GF_NE__KBR_2F",
+    "definition": "",
+    "applicable_missions": [
+        "GRACE-FO"
+    ],
+    "applicable_spacecraft": [
+        "GRACE-FO-1",
+        "GRACE-FO-2"
+    ],
+    "thematic_areas": [],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE-FO/NE",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE-FO/NE",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}

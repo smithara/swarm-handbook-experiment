@@ -1,0 +1,22 @@
+{
+    "product_id": "CH_WND_ACC_2_",
+    "definition": "",
+    "applicable_missions": [
+        "CHAMP"
+    ],
+    "applicable_spacecraft": [
+        "CHAMP"
+    ],
+    "thematic_areas": [],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/CHAMP/WND",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/CHAMP/WND",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}

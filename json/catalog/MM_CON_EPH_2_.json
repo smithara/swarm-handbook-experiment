@@ -1,0 +1,22 @@
+{
+    "product_id": "MM_CON_EPH_2_",
+    "definition": "",
+    "applicable_missions": [
+        "Combined_Mission_Data"
+    ],
+    "applicable_spacecraft": [
+        "Combined_Mission_Data"
+    ],
+    "thematic_areas": [],
+    "description": " ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/Combined_Mission_Data/Conjunction",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/Combined_Mission_Data/Conjunction",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "",
+    "related_resources": "",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}
