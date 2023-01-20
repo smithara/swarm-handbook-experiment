@@ -134,7 +134,75 @@
 </tbody>
 </table>
 <h2>More details</h2>
-<p>N/A</p>
+<table border="1">
+<tbody>
+  <tr>
+    <td> Product identifier  </td>
+    <td> AEJxLPS_2F  </td>
+  </tr>
+  <tr>
+    <td> Definition  </td>
+    <td> Latitude profiles of high-latitude ionospheric horizontal sheet current densities and radial current densities using the Spherical Elementary Current Systems method (Juusola, L. et al., doi: 10.1186/BF03351964).  </td>
+  </tr>
+  <tr>
+    <td> Input Data  </td>
+    <td> MAGx_LR_1B, Latest CHAOS model1 including, core, lithosphere, magnetosphere and secondary currents.  </td>
+  </tr>
+  <tr>
+    <td> Input Time Span  </td>
+    <td> 24 h  </td>
+  </tr>
+  <tr>
+    <td> Spatial representation  </td>
+    <td> One geographic, quasi-dipole latitude/longitude pair for each output value, given at Swarm footprints (at 110 km altitude) according to the time representation of this product2. The footprints have been determined with mapping along the geomagnetic field line.  </td>
+  </tr>
+  <tr>
+    <td> Time representation  </td>
+    <td> 1 Hz  </td>
+  </tr>
+  <tr>
+    <td> Units  </td>
+    <td> A/km and A/km2  </td>
+  </tr>
+  <tr>
+    <td> Resolution  </td>
+    <td> Full resolution (Double precision)  </td>
+  </tr>
+  <tr>
+    <td> Uncertainty  </td>
+    <td> c.f. Juusola et al., doi: 10.1002/2016JA022961  </td>
+  </tr>
+  <tr>
+    <td> Quality indicator  </td>
+    <td> RMS and confidence characterizing the misfit between modelled and measured magnetic field by Swarm  </td>
+  </tr>
+  <tr>
+    <td> Data volume  </td>
+    <td> ~3 MB  </td>
+  </tr>
+  <tr>
+    <td> Data format  </td>
+    <td> CDF  </td>
+  </tr>
+  <tr>
+    <td> Output time span  </td>
+    <td> 24 h  </td>
+  </tr>
+  <tr>
+    <td> Update rate  </td>
+    <td> Daily  </td>
+  </tr>
+  <tr>
+    <td> Latency  </td>
+    <td> &lt; 1 day  </td>
+  </tr>
+  <tr>
+    <td> Notes  </td>
+    <td> 1Version information of Input Data are available in the CDF global attributes. <br>2Although the Spatial Representation is given with 1 Hz (~7 km) resolution, the method can resolve current structures with ~1 deg resolution. <br>3Horizontal current components will be given both in geocentric frame and in a spherical frame whose north pole is defined by the QD frame (SW-DS-GFZ-GS-001_AEBS_DPA, Swarm-AEBS Description of the Processing Algorithm). The latitude and longitude of QD north pole are available in the CDF global attributes LatitudePOLEQD and LongitudePOLEQD respectively. These are vectors of two elements. The 1st (2nd) value is for the case when Swarm is in the northern (southern) hemisphere. <br>4 In SECS method the equatorward boundary of oval crossing is always +/- 50 QD latitude and the poleward boundary is at +/-85 QD latitude if the satellite trajectory covers such high latitudes.<br>5 Product always contain data from the start of the first oval crossing of the day until the end of the last oval crossing starting that day, i.e., may contain data from the next day if oval crossing occurs around midnight.</td>
+  </tr>
+</tbody>
+</table>
+
 <h2>Related resources</h2>
 <ul>
 <li><a href="https://earth.esa.int/eogateway/activities/swarm-aebs">Activity: Auroral Electrojet and auroral Boundaries estimated from Swarm observations</a></li>

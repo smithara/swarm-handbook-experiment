@@ -36,7 +36,7 @@
 <tr>
 <td style="text-align: left;">t_Peak</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Time of WEJ and EEJ peaks in the order as they appear in the satellite flight direction</td>
+<td style="text-align: left;">Time of WEJ and EEJ peaks in the order as they appear in the satellite flight direction<sup>3</sup></td>
 <td style="text-align: right;">2</td>
 <td style="text-align: left;">CDF_EPOCH</td>
 </tr>
@@ -176,7 +176,130 @@
 </tbody>
 </table>
 <h2>More details</h2>
-<p>N/A</p>
+<table border="1">
+<tbody>
+  <tr>
+    <td> Product identifier  </td>
+    <td> AEJxPBL_2F  </td>
+  </tr>
+  <tr>
+    <td> Definition  </td>
+    <td> High-latitude ionospheric sheet current boundary locations, the locations of minimum (WEJ) and maximum (EEJ) eastward current density in QD frame, peak current intensity (in QD).  </td>
+  </tr>
+  <tr>
+    <td> Input Data  </td>
+    <td> MAGx_LR_1B, Latest CHAOS model1 including, core, lithosphere, magnetosphere and secondary currents.  </td>
+  </tr>
+  <tr>
+    <td> Input Time Span  </td>
+    <td> Up to one year  </td>
+  </tr>
+  <tr>
+    <td> Spatial representation  </td>
+    <td> One geographic and quasi-dipole latitude/longitude pair for each output value. Longitudes and latitudes are taken from the nearest magnetic-field measurement. The Swarm footprints at 110 km altitude have been determined with radial mapping.  </td>
+  </tr>
+  <tr>
+    <td> Time representation  </td>
+    <td> 20 – 25 min (4 values per orbit)  </td>
+  </tr>
+  <tr>
+    <td> Units  </td>
+    <td> A/km (for peak sheet current density) nT (for ground B) and degree (for locations)  </td>
+  </tr>
+  <tr>
+    <td> Resolution  </td>
+    <td> Full resolution (Double precision)  </td>
+  </tr>
+  <tr>
+    <td> Uncertainty  </td>
+    <td> c.f. Olsen, N, Geophys. Res. Lett., 23, 3635-3638, doi: 10.1029/96GL02896 and Aakjaer, C. D. et al., doi: 10.1186/s40623-016-0509-y  </td>
+  </tr>
+  <tr>
+    <td> Quality indicator  </td>
+    <td> Note: Flag values are specified in binary. If two or more situations occurs simultaneously, the Flag value will be a sum of the different Flags values. For more information and examples (see SW-DS-GFZ-GS-001_AEBS_DPA, Swarm-AEBS Description of the Processing Algorithm) <br>
+<table border="1">
+<tbody>
+  <tr>
+    <td> Value  </td>
+    <td> Meaning  </td>
+  </tr>
+<tr>
+    <td> 0000000000000  </td>
+    <td> Both EEJ and WEJ are detected, and their current densities are zero at all boundaries.  </td>
+  </tr><tr>
+    <td> 0000000000001  </td>
+    <td> No eastward currents detected.  </td>
+  </tr><tr>
+    <td> 0000000000010  </td>
+    <td> No westward currents detected. </td>
+  </tr><tr>
+    <td> 0000000000100  </td>
+    <td> Equatorward EEJ boundary occurs at the edge of the analysis area<sup>2</sup>, and the density is larger than 20% of peak value.  </td>
+  </tr><tr>
+    <td>0000000001000  </td>
+    <td> Poleward EEJ boundary occurs at the edge of the analysis area<sup>2</sup>, and the density is larger than 20% of peak value.  </td>
+  </tr><tr>
+    <td> 0000000010000  </td>
+    <td> Equatorward WEJ boundary occurs at the edge of the analysis area<sup>2</sup>, and the density is larger than 20% of peak value.  </td>
+  </tr><tr>
+    <td> 0000000100000  </td>
+    <td> Poleward WEJ boundary occurs at the edge of the analysis area<sup>2</sup>, and the density is larger than 20% of peak value.  </td>
+  </tr><tr>
+    <td> 0000001000000  </td>
+    <td> Swarm orbit does not fully cover the predefined oval latitude range<sup>2</sup>. Latitude gap is 2 degrees or larger.  </td>
+  </tr><tr>
+    <td> 0000010000000  </td>
+    <td> Equatorward EEJ boundary occurs at the edge of the analysis area<sup>2</sup>.  </td>
+  </tr><tr>
+    <td> 0000100000000  </td>
+    <td> Poleward EEJ boundary occurs at the edge of the analysis area<sup>2</sup>.  </td>
+  </tr>
+ </tr><tr>
+    <td> 0001000000000  </td>
+    <td> Equatorward WEJ boundary occurs at the edge of the analysis area<sup>2</sup>.  </td>
+  </tr>
+</tr><tr>
+    <td> 0010000000000  </td>
+    <td> Poleward WEJ boundary occurs at the edge of the analysis area<sup>2</sup>.  </td>
+  </tr>
+</tr><tr>
+    <td> 0100000000000  </td>
+    <td>Peak value of EEJ occurs at the edge of the analysis area<sup>2</sup>.  </td>
+  </tr></tr><tr>
+    <td> 1000000000000  </td>
+    <td> Peak value of WEJ occurs at the edge of the analysis area<sup>2</sup>.  </td>
+  </tr>
+</tbody>
+</table>
+<p></td>
+  </tr>
+<br />
+<tr>
+    <td> Data volume  </td>
+    <td> Up to 6 MB  </td>
+  </tr></p>
+<tr>
+    <td> Data format  </td>
+    <td> CDF  </td>
+  </tr>
+<tr>
+    <td> Output time span  </td>
+    <td> Up to one year<sup>4</sup>  </td>
+  </tr>
+<tr>
+    <td> Update rate  </td>
+    <td> Daily  </td>
+  </tr>
+<tr>
+    <td> Latency  </td>
+    <td> &lt; 1 day  </td>
+  </tr>
+<tr>
+    <td> Notes  </td>
+    <td> <sup>1</sup> Version information of Input Data are available in the CDF global attributes. <br><sup>2</sup> QD latitudes from 50 to 85 (Northern hemisphere) or -50 to -85 (Southern hemisphere). Note that Swarm orbits does not always cover this area completely. <br><sup>3</sup> If only eastward current detected timestamps for westward peak and boundaries are set to time of eastward peak and predefined oval boundaries, and vice versa. <br><sup>4</sup> Product contain data from the start of the first oval crossing of the year up until the end of the last oval crossing starting that year, i.e., may contain data from the next year if oval crossing occurs around midnight on the last day of the year.  </td>
+  </tr>
+<p></tbody>
+</table></p>
 <h2>Related resources</h2>
 <ul>
 <li><a href="https://earth.esa.int/eogateway/activities/swarm-aebs">Activity: Auroral Electrojet and auroral Boundaries estimated from Swarm observations</a></li>

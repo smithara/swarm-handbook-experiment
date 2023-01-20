@@ -1,10 +1,16 @@
 <h1>SW_EFIx_LP_1B</h1>
-<p>Electric field instrument (Langmuir probe measurements at 2Hz)</p>
+<p>Electric field instrument (EFI) Langmuir probe (LP) measurements at 2Hz</p>
 <p>Thematic areas: Plasma measurements, Space Weather</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
 <h2>Description</h2>
-<p>The EFIXLPI_1B Product contains the EFIX_LP_1B plasma data interpolated at full UTC seconds, the same as the low resolution magnetic data MAG_LR.</p>
+<p>The EFIx_LP_1B Product contains plasma data from the Langmuir Probe (LP) of the Electrical Field Instrument (EFI). The plasma product encompasses the plasma density and temperature. Data is provided at 2 Hz rate. The time instant are determined by the EFI instruments. No interpolation of the EFI data is performed, neither to shift the measurements in time nor to fill any gaps.</p>
+<p>Each product comes in a zip file composed of one XML Header file, one Product file and one Quality Test Report file:</p>
+<ul>
+<li>XML Header file with extension .HDR</li>
+<li>Product File with extension .cdf</li>
+<li>Quality Test Report file with extension .EEF</li>
+</ul>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -36,7 +42,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">UTC</td>
 <td style="text-align: left;">Time stamp</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_EPOCH</td>
@@ -51,14 +57,14 @@
 <tr>
 <td style="text-align: left;">Latitude</td>
 <td style="text-align: left;">deg</td>
-<td style="text-align: left;">Position in ITRF – Latitude</td>
+<td style="text-align: left;">Position in ITRF – Geocentric Latitude</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
 <tr>
 <td style="text-align: left;">Longitude</td>
 <td style="text-align: left;">deg</td>
-<td style="text-align: left;">Position in ITRF – Longitude</td>
+<td style="text-align: left;">Position in ITRF – Geocentric Longitude</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -72,7 +78,7 @@
 <tr>
 <td style="text-align: left;">U_orbit</td>
 <td style="text-align: left;">m/s</td>
-<td style="text-align: left;">Spacecraft velocity in the ITRF</td>
+<td style="text-align: left;">Magnitude of spacecraft velocity in the ITRF</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -86,7 +92,7 @@
 <tr>
 <td style="text-align: left;">Ne_error</td>
 <td style="text-align: left;">cm-3</td>
-<td style="text-align: left;">Error estimate of plasma density (Ne)</td>
+<td style="text-align: left;">Error of the plasma density estimate</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -100,7 +106,7 @@
 <tr>
 <td style="text-align: left;">Te_error</td>
 <td style="text-align: left;">K</td>
-<td style="text-align: left;">Error estimate of plasma electron temperature (Te)</td>
+<td style="text-align: left;">Error of the plasma electron temperature estimate</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -114,7 +120,7 @@
 <tr>
 <td style="text-align: left;">Vs_error</td>
 <td style="text-align: left;">V</td>
-<td style="text-align: left;">Error estimate of spacecraft potential (U_pol)</td>
+<td style="text-align: left;">Error of the spacecraft potential estimate</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -149,8 +155,215 @@
 </tbody>
 </table>
 <h2>More details</h2>
-<p>N/A</p>
+<table border="1" class="tg">
+    <thead>
+        <tr>
+            <th>&nbsp;&nbsp;&nbsp;<br />
+            Flag&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th>&nbsp;&nbsp;&nbsp;<br />
+            Value&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th>&nbsp;&nbsp;&nbsp;<br />
+            Description&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">&nbsp;&nbsp;&nbsp;<br />
+            Flags_LP<br />
+            &nbsp;&nbsp;&nbsp;<br />
+            &nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            1&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            High gain&nbsp;&nbsp;&nbsp;probe has no errors&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            3&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            High gain&nbsp;&nbsp;&nbsp;probe has errors, instead partially the low gain probe was used. See Flags_Te&nbsp;&nbsp;&nbsp;for implications.&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            9&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Data is from&nbsp;&nbsp;&nbsp;duplicated harmonic mode because of on-going sweep, it is recommended to&nbsp;&nbsp;&nbsp;discard these duplicate data&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="5">&nbsp;&nbsp;&nbsp;<br />
+            Flags_Ne<br />
+            &nbsp;&nbsp;&nbsp;<br />
+            &nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            10&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Nominal data,&nbsp;&nbsp;&nbsp;calibration error for this sample is computed&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            19&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Nominal data,&nbsp;&nbsp;&nbsp;but calibration error not computed/out of range&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            20&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Nominal data,&nbsp;&nbsp;&nbsp;error for this sample is not computed&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            30&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            The estimate&nbsp;&nbsp;&nbsp;is from low gain probe, Ne estimate&nbsp;&nbsp;&nbsp;probably has a larger random error than the nominal high gain probe&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            40&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Negative&nbsp;&nbsp;&nbsp;density (high positive values, even extremes, are not flagged)&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="14">&nbsp;&nbsp;&nbsp;<br />
+            Flags_Te<br />
+            &nbsp;&nbsp;&nbsp;<br />
+            &nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            10&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Nominal data,&nbsp;&nbsp;&nbsp;calibration error for this sample is computed&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            19&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Nominal data,&nbsp;&nbsp;&nbsp;but calibration error not computed/out of range&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            20&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Nominal data,&nbsp;&nbsp;&nbsp;error for this sample is not computed&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            12&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Calibration&nbsp;&nbsp;&nbsp;error for this sample is computed, but ADC overflow at the linear bias, high&nbsp;&nbsp;&nbsp;gain probe, tracking ok, but discard Te&nbsp;&nbsp;&nbsp;is recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            15&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Calibration&nbsp;&nbsp;&nbsp;error for this sample is computed, but ADC overflow at the linear bias, low&nbsp;&nbsp;&nbsp;gain probe, tracking ok, but discard Te&nbsp;&nbsp;&nbsp;is recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            22&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Error for&nbsp;&nbsp;&nbsp;this sample is not computed, ADC overflow at the linear bias, high gain&nbsp;&nbsp;&nbsp;probe, tracking ok, but discard Te is recommended&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            25&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Error for&nbsp;&nbsp;&nbsp;this sample is not computed, ADC overflow at the linear bias, low gain probe,&nbsp;&nbsp;&nbsp;tracking ok, but discard Te is&nbsp;&nbsp;&nbsp;recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            32&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Failed&nbsp;&nbsp;&nbsp;tracking, high gain probe, discard Te&nbsp;&nbsp;&nbsp;is recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            35&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Failed&nbsp;&nbsp;&nbsp;tracking, low gain probe, discard Te is&nbsp;&nbsp;&nbsp;recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            36&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Extreme&nbsp;&nbsp;&nbsp;value, discard Te is&nbsp;&nbsp;&nbsp;recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            40&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Negative Te value, discard Te is recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            41&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            ADC overflow&nbsp;&nbsp;&nbsp;at the retarded bias, high gain probe, discard Te is recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            44&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Wrong bias&nbsp;&nbsp;&nbsp;order, discard Te is&nbsp;&nbsp;&nbsp;recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            46&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            ADC overflow&nbsp;&nbsp;&nbsp;at the retarded bias, low gain probe, discard Te&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="6">&nbsp;&nbsp;&nbsp;<br />
+            Flags_Vs<br />
+            &nbsp;&nbsp;&nbsp;<br />
+            &nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            10&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Nominal data,&nbsp;&nbsp;&nbsp;calibration error for this sample is computed&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            20&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Nominal data,&nbsp;&nbsp;&nbsp;error for this sample is not computed&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            25&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            ADC overflow&nbsp;&nbsp;&nbsp;at the retard bias, discarding Vs is&nbsp;&nbsp;&nbsp;recommend&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            26&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            ADC overflow&nbsp;&nbsp;&nbsp;at the linear bias, discarding Vs is&nbsp;&nbsp;&nbsp;recommend&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            30&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Failed&nbsp;&nbsp;&nbsp;tracking, discarding Vs is&nbsp;&nbsp;&nbsp;recommend&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            33&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;<br />
+            Value of Vs is unreasonable, discarding Vs is recommended&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
 <h2>Related resources</h2>
-<p>N/A</p>
+<p><strong>Level 1B Product Descriptions:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-processor-algorithms.pdf/e0606842-41ca-fa48-0a40-05a0d4824501">Swarm Level 1B Processor Algorithms</a></li>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-plasma-processor-algorithm.pdf/bae64759-b901-d961-4d18-0a5b317f8c12">Swarm&nbsp;Swarm Level 1B&nbsp;Plasma Processor Algorithm</a></li>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-cdf-data-format.pdf/ddba5600-e0e2-725c-c62f-d5002d38c65b">Swarm Level 1B CDF Data Format</a></li>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-product-definition-specification.pdf/12995649-fbcb-6ae2-5302-2269fecf5a08">Swarm Level 1B Product Definition</a></li>
+
+</ul>
+
 <h2>Changelog</h2>
 <p>N/A</p>

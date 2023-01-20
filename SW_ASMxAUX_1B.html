@@ -1,10 +1,16 @@
 <h1>SW_ASMxAUX_1B</h1>
-<p>S/C magnetic stray fields at ASM sensor position</p>
+<p>Spacecraft (S/C) magnetic stray fields at ASM sensor position</p>
 <p>Thematic areas: Magnetic measurements</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
 <h2>Description</h2>
-<p>The ASMXAUX_1B Product contains detailed information on the S/C magnetic stray fields at the ASM sensor position. The data are provided at 50 Hz at the time-instants of the VFM measurements (for internal practical purposes); the stray field vectors are provided in the ASM sensor frame. </p>
+<p>The ASMxAUX_1B Product contains detailed information on the S/C magnetic stray fields and the Sun induced stray field at the ASM sensor position. The data are provided at 50 Hz at the time-instants of the VFM measurements (for internal practical purposes); the stray field vectors are provided in the ASM sensor frame. </p>
+<p>Each product comes in a zip file composed of one XML Header file, one Product file and one Quality Test Report file:</p>
+<ul>
+<li>XML Header file with extension .HDR</li>
+<li>Product file with extension .cdf</li>
+<li>Quality Test Report file with extension .EEF</li>
+</ul>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -31,8 +37,8 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">Time stamp</td>
+<td style="text-align: left;">UTC</td>
+<td style="text-align: left;">Time of observation</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_EPOCH</td>
 </tr>
@@ -93,6 +99,13 @@
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
 <tr>
+<td style="text-align: left;">dB_Sun</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray field vector of Sun induced stray field at ASM sensor, ASM frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
 <td style="text-align: left;">dB_Ind</td>
 <td style="text-align: left;">nT</td>
 <td style="text-align: left;">Magnetically induced stray field vector of S/C platform, ASM frame</td>
@@ -111,6 +124,20 @@
 <h2>More details</h2>
 <p>N/A</p>
 <h2>Related resources</h2>
-<p>N/A</p>
+<p><strong>Level 1B Product Descriptions:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-processor-algorithms.pdf/e0606842-41ca-fa48-0a40-05a0d4824501?version=1.0">Swarm Level 1B Processor Algorithms</a></li>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-product-definition-specification.pdf/12995649-fbcb-6ae2-5302-2269fecf5a08">Swarm Level 1B Product Definition</a></li>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-cdf-data-format.pdf/ddba5600-e0e2-725c-c62f-d5002d38c65b">Swarm Level 1B CDF Data Format</a></li>
+</ul>
+
+<p><strong>Technical Notes:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/In-flight+Scalar+Calibration+and+Characterisation+of+the+Swarm+Magnetometry+Package.pdf/cb3531b0-1955-a1ab-b9ee-2441e3a77bf3">In-flight Scalar Calibration and Characterisation of the Swarm Magnetometry Package</a></li>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-scalar-mapping.pdf">Mapping of Swarm Magnetic Field Intensity from Alpha and Charlie</a></li>
+</ul>
+
 <h2>Changelog</h2>
 <p>N/A</p>

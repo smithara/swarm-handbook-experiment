@@ -1,10 +1,17 @@
 <h1>SW_EFIx_LP_FP</h1>
-<p>16Hz faceplate plasma density</p>
+<p>Electric field instrument (EFI) faceplate (FP) plasma density at 16 Hz</p>
 <p>Thematic areas: Plasma measurements, Space Weather</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
 <h2>Description</h2>
-<p>Ionospheric electron density derived from the faceplate current at 16 Hz</p>
+<p>The EFIx_LP_FP Product contains extended Swarm Electrical Field Instrument (EFI) plasma data derived from the faceplate (FP) current at 16 Hz.</p>
+<p>They include:</p>
+<ul>
+<li>estimates of the ionospheric electron density from the faceplate current at 16 Hz resolution;</li>
+<li>the actual 16 Hz faceplate current measurements;</li>
+<li>geodetic coordinates of the satellite positions interpolated to the times of the current measurements.</li>
+</ul>
+<p>Each product comes in a zip file composed of one Product file with extension .cdf.</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -31,22 +38,22 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;">CDF_EPOCH, msec since 01-Jan-0000 00:00:00.000</td>
-<td style="text-align: left;">Time stamp of faceplate current measurement</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time stamp in milliseconds  since 01-Jan-0000 00:00:00.000 UTC</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_EPOCH</td>
 </tr>
 <tr>
 <td style="text-align: left;">Latitude</td>
 <td style="text-align: left;">deg</td>
-<td style="text-align: left;">Geodetic latitude, WGS84</td>
+<td style="text-align: left;">Geodetic latitude, WGS84 ellipsoid</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
 <tr>
 <td style="text-align: left;">Longitude</td>
 <td style="text-align: left;">deg</td>
-<td style="text-align: left;">Geodetic longitude, WGS84</td>
+<td style="text-align: left;">Geodetic longitude, WGS84 ellipsoid</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -60,14 +67,14 @@
 <tr>
 <td style="text-align: left;">Current</td>
 <td style="text-align: left;">nA</td>
-<td style="text-align: left;">Faceplate current</td>
+<td style="text-align: left;">Calibrated measured Faceplate current</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
 <tr>
 <td style="text-align: left;">Density</td>
-<td style="text-align: left;">per ccm</td>
-<td style="text-align: left;">Plasma density</td>
+<td style="text-align: left;">cm-3</td>
+<td style="text-align: left;">Plasma density from the faceplate current</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -76,6 +83,12 @@
 <h2>More details</h2>
 <p>N/A</p>
 <h2>Related resources</h2>
-<p>N/A</p>
+<p><strong>Product Descriptions:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/SW-RN-IRF-GS-005_Extended_LP_Data_Probes.pdf/dfacf8ec-4c15-3870-35f1-83325ebd6bc9?version=1.0&t=1610383294788">Product Release Note</a></li>
+
+</ul>
+
 <h2>Changelog</h2>
 <p>N/A</p>
