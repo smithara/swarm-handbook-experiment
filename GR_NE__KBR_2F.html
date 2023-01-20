@@ -1,5 +1,6 @@
 <h1>GR_NE__KBR_2F</h1>
-<p>Thematic areas: </p>
+<p>Time series of the averaged electron density (Ne) between GRACE 1 and 2 satellites</p>
+<p>Thematic areas: Space Weather, Ionosphere/Magnetosphere</p>
 <p>Applicable missions: GRACE</p>
 <p>Applicable spacecraft: GRACE-A, GRACE-B</p>
 <h2>Description</h2>
@@ -16,10 +17,88 @@
 <h2>Preview image</h2>
 <p>(delivered separately)</p>
 <h2>File contents</h2>
-<p>N/A</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Dim</th>
+<th style="text-align: left;">Unit</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time of observation, UTC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Middle point position between GRACE 1 and 2 satellites in ITRF – Geocentric latitude</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Middle point position between GRACE 1 and 2 satellites in ITRF – Geocentric longitude</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Middle point position between GRACE 1 and 2 satellites in ITRF – Geocentric radius (from the Earth centre)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LEO_Position</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">2x3</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">X-, Y-, Z-coordinates of the GRACE 1 and 2 satellites</td>
+</tr>
+<tr>
+<td style="text-align: left;">Distance</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Distance between GRACE 1 and 2 satellites</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relative_Hor_TEC</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Relative horizontal TEC between GRACE 1 and 2 satellites</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relative_Ne2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">m-3</td>
+<td style="text-align: left;">Mean relative electron density of the area between GRACE 1 and 2 satellites</td>
+</tr>
+<tr>
+<td style="text-align: left;">Absolute_Ne</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">m-3</td>
+<td style="text-align: left;">Electron density between GRACE 1 and 2 satellites</td>
+</tr>
+</tbody>
+</table>
 <h2>More details</h2>
 <p>N/A</p>
 <h2>Related resources</h2>
-<p>N/A</p>
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/activities/tiro">TIRO Project</a></li>
+</ul>
+
 <h2>Changelog</h2>
 <p>N/A</p>

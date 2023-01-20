@@ -1,5 +1,6 @@
 <h1>GRACE_x_MAG</h1>
-<p>Thematic areas: </p>
+<p>Magnetic measurements derived from GRACE platform magnetometers</p>
+<p>Thematic areas: Magnetic measurements</p>
 <p>Applicable missions: GRACE</p>
 <p>Applicable spacecraft: GRACE-A, GRACE-B</p>
 <h2>Description</h2>
@@ -21,10 +22,96 @@
 <h2>Preview image</h2>
 <p>(delivered separately)</p>
 <h2>File contents</h2>
-<p>N/A</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Time stamp</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF: Geocentric latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF: Geocentric longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Position in ITRF: Geocentric Radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_FGM</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">calibrated magnetic vector from FGM, in instrument frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_NEC_raw</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">calibrated and aligned magnetic vector in NEC (North, East, Center) frame</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">B_NEC</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">calibrated and aligned magnetic vector in NEC (North, East, Center) frame, 11 sample (i.e. 11 second) robust average</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">magnetic field intensity determined from B_NEC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">q_NEC_CRF</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Quaternion, transformation: NEC &lt;- CRF</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">q_error</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">experimental error indicator of attitude given in Quaternion q_NEC_CRF. Bad attitude if &gt; approx 40</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+</tbody>
+</table>
 <h2>More details</h2>
 <p>N/A</p>
 <h2>Related resources</h2>
-<p>N/A</p>
+<ul>
+    <li>Olsen, N., Magnetometer data from the GRACE satellite duo. Earth Planets Space 73, 62 (2021).<br />
+    <a class="reference external" href="https://doi.org/10.1186/s40623-021-01373-9">https://doi.org/10.1186/s40623-021-01373-9</a></li>
+</ul>
+
 <h2>Changelog</h2>
 <p>N/A</p>

@@ -1,8 +1,10 @@
 <h1>GR_TECxTMS_2F</h1>
-<p>Thematic areas: </p>
+<p>Time series of the ionospheric Total Electron Content (TEC) derived for GRACE 1 and 2 satellites</p>
+<p>Thematic areas: Space Weather, Ionosphere/Magnetosphere</p>
 <p>Applicable missions: GRACE</p>
 <p>Applicable spacecraft: GRACE-A, GRACE-B</p>
 <h2>Description</h2>
+<p>Integrated electron density along the line of sight from GRACE 1 and 2 to GNSS satellites</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -16,10 +18,165 @@
 <h2>Preview image</h2>
 <p>(delivered separately)</p>
 <h2>File contents</h2>
-<p>N/A</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Unit</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time of observation, UTC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">GRACE position in ITRF – Geocentric latitude</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">GRACE position in ITRF – Geocentric longitude</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GRACE position in ITRF – Geocentric radius (from the Earth centre)</td>
+</tr>
+<tr>
+<td style="text-align: left;">GPS_Position</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">X-, Y-, Z-coordinates of the GPS satellite</td>
+</tr>
+<tr>
+<td style="text-align: left;">LEO_Position</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">X-, Y-, Z-coordinates of the GRACE satellite</td>
+</tr>
+<tr>
+<td style="text-align: left;">PRN</td>
+<td style="text-align: left;">CDF_UINT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Pseudorandom noise (PRN) code of GPS satellite</td>
+</tr>
+<tr>
+<td style="text-align: left;">L1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GPS L1C (LA in RINEX v.2.20) carrier phase observation</td>
+</tr>
+<tr>
+<td style="text-align: left;">L2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GPS L2W (L2 in RINEX v.2.20) carrier phase observation</td>
+</tr>
+<tr>
+<td style="text-align: left;">P1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GPS C1W (P1 in RINEX v.2.20) code phase observation</td>
+</tr>
+<tr>
+<td style="text-align: left;">P2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">GPS C2W (P2 in RINEX v.2.20) code phase observation</td>
+</tr>
+<tr>
+<td style="text-align: left;">S1_C_N0</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">dB-Hz</td>
+<td style="text-align: left;">GPS S1 carrier-to-noise density C/N0 [AD-4] (Sect. 3.1.2.2)</td>
+</tr>
+<tr>
+<td style="text-align: left;">S2_C_N0</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">dB-Hz</td>
+<td style="text-align: left;">GPS S2 carrier-to-noise density C/N0 [AD-4] (Sect. 3.1.2.2)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Absolute_STEC</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Absolute slant TEC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Absolute_VTEC</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Absolute vertical TEC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Elevation_Angle</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Elevation angle</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relative_STEC</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Relative slant TEC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relative_STEC_RMS</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Root mean square of relative slant TEC2</td>
+</tr>
+<tr>
+<td style="text-align: left;">DCB</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">GPS receiver differential code bias (DCB3) (P2–P1)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DCB_Error</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">TECU</td>
+<td style="text-align: left;">Post fit RMS of the least square system using pairs of mapped slant TEC</td>
+</tr>
+</tbody>
+</table>
 <h2>More details</h2>
 <p>N/A</p>
 <h2>Related resources</h2>
-<p>N/A</p>
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/activities/tiro">TIRO Project</a></li>
+</ul>
+
 <h2>Changelog</h2>
 <p>N/A</p>

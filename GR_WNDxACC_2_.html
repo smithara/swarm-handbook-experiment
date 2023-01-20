@@ -1,5 +1,6 @@
 <h1>GR_WNDxACC_2_</h1>
-<p>Thematic areas: </p>
+<p>Thermosphere crosswind at the GRACE satellite locations</p>
+<p>Thematic areas: Ionosphere/Magnetosphere, Thermosphere, Space Weather</p>
 <p>Applicable missions: GRACE</p>
 <p>Applicable spacecraft: GRACE-A, GRACE-B</p>
 <h2>Description</h2>
@@ -16,10 +17,81 @@
 <h2>Preview image</h2>
 <p>(delivered separately)</p>
 <h2>File contents</h2>
-<p>N/A</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: right;">Dimension</th>
+<th style="text-align: left;">Unit</th>
+<th style="text-align: left;">Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">time</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Observation time (UTC)</td>
+</tr>
+<tr>
+<td style="text-align: left;">altitude</td>
+<td style="text-align: left;">CDF_REAL8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Observation altitude (GRS80)</td>
+</tr>
+<tr>
+<td style="text-align: left;">latitude</td>
+<td style="text-align: left;">CDF_REAL8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Observation geodetic latitude</td>
+</tr>
+<tr>
+<td style="text-align: left;">longitude</td>
+<td style="text-align: left;">CDF_REAL8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Observation longitude</td>
+</tr>
+<tr>
+<td style="text-align: left;">local_solar_time</td>
+<td style="text-align: left;">CDF_REAL8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">h</td>
+<td style="text-align: left;">Local solar time</td>
+</tr>
+<tr>
+<td style="text-align: left;">crosswind</td>
+<td style="text-align: left;">CDF_REAL8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">m/s</td>
+<td style="text-align: left;">Crosswind magnitude</td>
+</tr>
+<tr>
+<td style="text-align: left;">crosswind_direction</td>
+<td style="text-align: left;">CDF_REAL8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Direction of the crosswind in local North-East-Down frame (unit vector)</td>
+</tr>
+<tr>
+<td style="text-align: left;">validity_flag</td>
+<td style="text-align: left;">CDF_INT1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">0 = nominal data, 1 = anomalous data</td>
+</tr>
+</tbody>
+</table>
 <h2>More details</h2>
 <p>N/A</p>
 <h2>Related resources</h2>
-<p>N/A</p>
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/activities/toleos">TOLEOS Project</a></li>
+</ul>
+
 <h2>Changelog</h2>
 <p>N/A</p>
