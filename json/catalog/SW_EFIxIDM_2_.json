@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIxIDM_2_",
-    "definition": "Estimated along-track ion drift, ion effective mass, and revised ion den- sity along the Swarm satellite orbits",
+    "definition": "Swarm Electric Field Instrument (EFI) Langumir Probe (LP) Ion Drift and Effective Mass",
     "applicable_missions": [
         "Swarm"
     ],
@@ -12,14 +12,14 @@
     "thematic_areas": [
         "Plasma measurements"
     ],
-    "description": "",
+    "description": "Estimated ion drift velocity, effective ion mass, and electron density along the Swarm satellite orbits, derived using measurements taken from the Swarm electric field instrument (EFI) Langmuir Probes (LP) and faceplate (FP), within the framework of modified orbital motion limited (OML) theory. The dataset is produced within the Swarm LP Ion Drift and Effective Mass (SLIDEM) project.\n\nEach product comes in a zip file composed of one Product file with extension .cdf.\n",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Ion_Drift_Density_and_Effective_Mass_dataset",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Ion_Drift_Density_and_Effective_Mass_dataset",
     "link_vires_gui": "",
     "link_notebook": "https://notebooks.vires.services/notebooks/03k3_demo-efixidm",
     "link_hapi": "",
-    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp, ,UT,1,CDF_EPOCH\nLatitude,degrees,Geodetic latitude.,1,CDF_REAL8\nLongitude,degrees,Geodetic longitude.,1,CDF_REAL8\nRadius,m,Geocentric radius.,1,CDF_REAL8\nHeight,m,Height above WGS84 reference ellipsoid.,1,CDF_REAL8\nQDLatitude,degrees,Quasi-dipole magnetic latitude.,1,CDF_REAL8\nMLT,hour,Magnetic local time.,1,CDF_REAL8\nV_sat_nec,m/s,\"Satellite velocity in north, east, centre (NEC) reference frame.\",3,CDF_REAL8\nM_i_eff,a.m.u.,Ion effective mass.,1,CDF_REAL8\nM_i_eff_err,a.m.u.,Ion effective mass uncertainty.,1,CDF_REAL8\nM_i_eff_Flags, ,Ion effective mass validity flag.,1,CDF_UINT4\nM_i_eff_tbt_model,a.m.u.,Ion effective mass from Truhlik et al. (2015) topside empirical model.,1,CDF_REAL8\nV_i,m/s,Ion along-track drift.,1,CDF_REAL8\nV_i_err,m/s,Ion along-track drift uncertainty.,1,CDF_REAL8\nV_i_Flags, ,Ion along-track drift validity flag.,1,CDF_UINT4\nV_i_raw,m/s,Ion along-track drift without high-latitude detrending.,1,CDF_REAL8\nN_i,cm^-3,Ion density.,1,CDF_REAL8\nN_i_err,cm^-3,Ion density unertainty.,1,CDF_REAL8\nN_i_Flags, ,Ion density validity flag.,1,CDF_UINT4\nA_fp,m^2,Modified-OML EFI faceplate area.,1,CDF_REAL8\nR_p,m,Modified-OML Langmuir spherical probe radius.,1,CDF_REAL8\nT_e,K,Electron temperature.,1,CDF_REAL8\nPhi_sc,V,Spacecraft floating potential with respect to plasma potential far from satellite.,1,CDF_REAL8",
-    "related_resources": "<ul>\n<li><a href=\"https://earth.esa.int/eogateway/activities/slidem\">Activity: Swarm LP Ion Drift and Effective Mass (SLIDEM)</a></li>\n<li><a href=\"https://earth.esa.int/eogateway/documents/20142/2860886/SLIDEM_Product_Definition.pdf\">SLIDEM Product Definition</a></li>\n</ul>",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,UTC,Time of observation,1,CDF_EPOCH\nLatitude,degrees,Geodetic latitude.,1,CDF_REAL8\nLongitude,degrees,Geodetic longitude.,1,CDF_REAL8\nRadius,m,Geocentric radius.,1,CDF_REAL8\nHeight,m,Height above WGS84 reference ellipsoid.,1,CDF_REAL8\nQDLatitude,degrees,Quasi-dipole magnetic latitude.,1,CDF_REAL8\nMLT,hour,Magnetic local time.,1,CDF_REAL8\nV_sat_nec,m/s,\"Satellite velocity in north, east, centre (NEC) reference frame.\",3,CDF_REAL8\nM_i_eff,a.m.u.,Ion effective mass.,1,CDF_REAL8\nM_i_eff_err,a.m.u.,Ion effective mass uncertainty.,1,CDF_REAL8\nM_i_eff_Flags, - ,Ion effective mass validity flag.,1,CDF_UINT4\nM_i_eff_tbt_model,a.m.u.,Ion effective mass from Truhlik et al. (2015) topside empirical model.,1,CDF_REAL8\nV_i,m/s,Ion along-track drift.,1,CDF_REAL8\nV_i_err,m/s,Ion along-track drift uncertainty.,1,CDF_REAL8\nV_i_Flags, - ,Ion along-track drift validity flag.,1,CDF_UINT4\nV_i_raw,m/s,Ion along-track drift without high-latitude detrending.,1,CDF_REAL8\nN_i,cm^-3,Ion density.,1,CDF_REAL8\nN_i_err,cm^-3,Ion density unertainty.,1,CDF_REAL8\nN_i_Flags, - ,Ion density validity flag.,1,CDF_UINT4\nA_fp,m^2,Modified-OML EFI faceplate area.,1,CDF_REAL8\nR_p,m,Modified-OML Langmuir spherical probe radius.,1,CDF_REAL8\nT_e,K,Electron temperature.,1,CDF_REAL8\nPhi_sc,V,Spacecraft floating potential with respect to plasma potential far from satellite.,1,CDF_REAL8",
+    "related_resources": "<p><strong>Product Descriptions:</strong></p>\n\n<ul>\n\n<li><a href=\"https://earth.esa.int/eogateway/documents/20142/2860886/SLIDEM_Product_Definition.pdf\">SLIDEM Product Definition</a>\n\n<p><strong>Related Project:</strong></p>\n<li><a href=\"https://earth.esa.int/eogateway/activities/slidem\">Activity: Swarm LP Ion Drift and Effective Mass (SLIDEM)</a></li>\n\n</ul>\n\n",
     "details": "",
     "changelog": "",
     "fast_processing": ""

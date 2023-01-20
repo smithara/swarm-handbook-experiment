@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIx_LP_HM",
-    "definition": "2Hz LP extended dataset",
+    "definition": "Extended dataset of the Electric field instrument (EFI) Langmuir probe (LP) measurements at 2Hz",
     "applicable_missions": [
         "Swarm"
     ],
@@ -13,14 +13,14 @@
         "Plasma measurements",
         "Space Weather"
     ],
-    "description": "An extended dataset at 2 Hz cadence containing the electron temperature and spacecraft potential measured separately by the two probes",
+    "description": "Extended Swarm Electric field instrument (EFI) data from the Langmuir probes (LP) in the so-called \u201charmonic submode\u201d, with a 2 Hz cadence. The dataset contains the electron temperature and spacecraft potential measured separately by the two probes.\n\nEach product comes in a zip file composed of one Product file with extension .cdf.",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Langmuir_Probe_Extended_Dataset",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/2_Hz_Langmuir_Probe_Extended_Dataset",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,\"CDF_EPOCH, msec since 01-Jan-0000 00:00:00.000\",Time stamp of faceplate current measurement,1,CDF_EPOCH\nLatitude,deg,\"Geodetic latitude, WGS84\",1,CDF_DOUBLE\nLongitude,deg,\"Geodetic longitude, WGS84\",1,CDF_DOUBLE\nHeight,km,\"Height above reference ellipsoid, WGS84\",1,CDF_DOUBLE\nRadius,km,Distance from the Earth's centre,1,CDF_DOUBLE\nSZA,deg,Solar Zenith Angle,1,CDF_DOUBLE\nSAz,deg,\"Solar Azimuth in Earth frame, north is 0 deg\",1,CDF_DOUBLE\nST,hours,Apparent Solar Time,1,CDF_DOUBLE\nDiplat,deg,Quasi-dipole latitude,1,CDF_DOUBLE\nDiplon,deg,Quasi-dipole longitude,1,CDF_DOUBLE\nMLat,deg,Magnetic latitude,1,CDF_DOUBLE\nMLT,hours,Magnetic local time based on quasi-dipole,1,CDF_DOUBLE\nAACGMLat,deg,Altitude-adjusted corrected geomagnetic latitude,1,CDF_DOUBLE\nAACGMLon,deg,Altitude-adjusted corrected geomagnetic longitude,1,CDF_DOUBLE\nn,per ccm,Plasma density from ion current,1,CDF_DOUBLE\nTe_hgn,K,\"Electron temperature, estimated by the high gain probe\",1,CDF_DOUBLE\nTe_lgn,K,\"Electron temperature, estimated by the low gain probe\",1,CDF_DOUBLE\nT_elec,K,\"Electron temperature, blended value\",1,CDF_DOUBLE\nVs_hgn,V,\"Spacecraft potential, estimated by the high gain probe\",1,CDF_DOUBLE\nVs_lgn,V,\"Spacecraft potential, estimated by the low gain probe\",1,CDF_DOUBLE\nU_SC,V,\"Spacecraft potential, blended value\",1,CDF_DOUBLE\nFlagbits,,Flag bits indicating data quality or instrument configuration,1,CDF_INT4\n",
-    "related_resources": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,\"ms\", Time stamp of faceplate current measurement since 01-Jan-0000 00:00:00.000,1,CDF_EPOCH\nLatitude,deg,\"Geodetic latitude, WGS84\",1,CDF_DOUBLE\nLongitude,deg,\"Geodetic longitude, WGS84\",1,CDF_DOUBLE\nHeight,km,\"Height above reference ellipsoid, WGS84\",1,CDF_DOUBLE\nRadius,km,Distance from the Earth's centre,1,CDF_DOUBLE\nSZA,deg,Solar Zenith Angle,1,CDF_DOUBLE\nSAz,deg,\"Solar Azimuth in Earth frame, north is 0 deg\",1,CDF_DOUBLE\nST,hours,Apparent Solar Time,1,CDF_DOUBLE\nDiplat,deg,Quasi-dipole latitude,1,CDF_DOUBLE\nDiplon,deg,Quasi-dipole longitude,1,CDF_DOUBLE\nMLat,deg,Magnetic latitude,1,CDF_DOUBLE\nMLT,hours,Magnetic local time based on quasi-dipole,1,CDF_DOUBLE\nAACGMLat,deg,Altitude-adjusted corrected geomagnetic latitude,1,CDF_DOUBLE\nAACGMLon,deg,Altitude-adjusted corrected geomagnetic longitude,1,CDF_DOUBLE\nn,cm-3,Plasma density from ion current,1,CDF_DOUBLE\nTe_hgn,K,\"Electron temperature, estimated by the high gain probe\",1,CDF_DOUBLE\nTe_lgn,K,\"Electron temperature, estimated by the low gain probe\",1,CDF_DOUBLE\nT_elec,K,\"Electron temperature, blended value\",1,CDF_DOUBLE\nVs_hgn,V,\"Spacecraft potential, estimated by the high gain probe\",1,CDF_DOUBLE\nVs_lgn,V,\"Spacecraft potential, estimated by the low gain probe\",1,CDF_DOUBLE\nU_SC,V,\"Spacecraft potential, blended value\",1,CDF_DOUBLE\nFlagbits,-,Flag bits indicating data quality or instrument configuration,1,CDF_INT4\n",
+    "related_resources": "<p><strong>Product Descriptions:</strong></p>\n\n<ul>\n\t<li><a href=\"https://swarm-diss.eo.esa.int/?do=download&file=swarm%2FAdvanced%2FPlasma_Data%2F2_Hz_Langmuir_Probe_Extended_Dataset%2FSW-RN-IRF-GS-005_Extended_LP_Data_Probes.pdf\">Product Release Note</a></li>\n\n</ul>\n",
     "details": "",
     "changelog": "",
     "fast_processing": ""

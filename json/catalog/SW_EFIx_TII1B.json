@@ -1,6 +1,6 @@
 {
     "product_id": "SW_EFIx_TII1B",
-    "definition": "Provisional plasma dataset: TII data",
+    "definition": "Swarm Electric Field Instrument (EFI) Thermal Ion Imager (TII) Provisional plasma dataset",
     "applicable_missions": [
         "Swarm"
     ],
@@ -13,14 +13,14 @@
         "Plasma measurements",
         "Space Weather"
     ],
-    "description": "Level 1B Thermal Ion Imagers parameters (ionospheric ions bulk speed and temperature, ionospheric electric field) derived by the University of Calgary",
+    "description": "Swarm Electric Field Instrument (EFI) Thermal Ion Imager (TII) parameter for ionospheric ions bulk velocity, ion temperature, and electric field measurements obtained from a development, or \"sandbox\", processor from University of Calgary.",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/Provisional_Plasma_dataset/Thermal_Ion_Imagers_Data",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/Provisional_Plasma_dataset/Thermal_Ion_Imagers_Data",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
-    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,-,1,CDF_DOUBLE\nlatitude,-,-,1,CDF_DOUBLE\nlongitude,-,-,1,CDF_DOUBLE\nradius,-,-,1,CDF_DOUBLE\nv_SC,-,-,3,CDF_DOUBLE\nv_ion,-,-,3,CDF_DOUBLE\nE,-,-,3,CDF_DOUBLE\nT_ion,-,-,1,CDF_DOUBLE\nv_ion_H,-,-,2,CDF_DOUBLE\nv_ion_V,-,-,2,CDF_DOUBLE\nrms_fit_H,-,-,1,CDF_DOUBLE\nrms_fit_V,-,-,1,CDF_DOUBLE\nvar_x_H,-,-,1,CDF_DOUBLE\nvar_y_H,-,-,1,CDF_DOUBLE\nvar_x_V,-,-,1,CDF_DOUBLE\nvar_y_V,-,-,1,CDF_DOUBLE\nSAA,-,-,1,CDF_INT4\nFlags_TII,-,-,1,CDF_INT4\nFlags_Platform,-,-,1,CDF_INT4\nManeuver_Id,-,-,1,CDF_INT4\n",
-    "related_resources": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,s, Times are seconds from 1 Jan 2000 00:00:00 UT,1,CDF_DOUBLE\nlatitude,deg, ITRF spherical latitude derived from L1B Medium Orbit Determination (MOD),1,CDF_DOUBLE\nlongitude,deg, ITRF spherical longitude derived from L1B MOD,1,CDF_DOUBLE\nradius,m, ITRF spherical radius derived from L1B MOD,1,CDF_DOUBLE\nv_SC,m/s, Satellite velocity vector in North East and Centre (NEC) frame,3,CDF_DOUBLE\nv_ion,m/s, Ion velocity vector in NEC frame,3,CDF_DOUBLE\nE,mV/s, Electric field vector in NEC frame,3,CDF_DOUBLE\nT_ion,K, Ion temperature,1,CDF_DOUBLE\nv_ion_H,m/s, Horizontal sensor ion velocity in TII coordinates x and y,2,CDF_DOUBLE\nv_ion_V, m/s, Vertical sensor ion velocity in TII coordinates x and y,2,CDF_DOUBLE\nrms_fit_H,DN, RMS error from TII x-profile 2-Gaussian fits H sensor,1,CDF_DOUBLE\nrms_fit_V,DN, RMS error from TII x-profile 2-Gaussian fits V sensor,1,CDF_DOUBLE\nvar_x_H, pixel^2, Variance of 16 Hz X moment H sensor,1,CDF_DOUBLE\nvar_y_H, pixel^2, Variance of 16 Hz Y moment H sensor,1,CDF_DOUBLE\nvar_x_V, pixel^2, Variance of 16 Hz X moment V sensor,1,CDF_DOUBLE\nvar_y_V, pixel^2, Variance of 16 Hz Y moment V sensor,1,CDF_DOUBLE\nSAA,-, South Atlantic Anomaly proximity indicator,1,CDF_INT4\nFlags_TII,-, TII quality flag,1,CDF_INT4\nFlags_Platform,-, Satellite platform flag,1,CDF_INT4\nManeuver_Id,-, Satellite maneuver identification code,1,CDF_INT4\n\n\n\n",
+    "related_resources": "<p><strong>Product Descriptions:</strong></p>\n\n<ul>\n\t<li><a href=\"https://swarm-diss.eo.esa.int/?do=download&file=swarm%2FAdvanced%2FPlasma_Data%2FProvisional_Plasma_dataset%2FThermal_Ion_Imagers_Data%2FSW-RN-UoC-GS-002_Preliminary_TII_Data_ReleaseNotes.pdf\">Product Release Note</a></li>\n\n</ul>",
     "details": "",
     "changelog": "",
     "fast_processing": ""
