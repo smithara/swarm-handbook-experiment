@@ -106,7 +106,92 @@
 </tbody>
 </table>
 <h2>More details</h2>
-<p>N/A</p>
+<table border="1">
+<tbody>
+  <tr>
+    <td> Product identifier  </td>
+    <td> AOBxFAC_2F  </td>
+  </tr>
+  <tr>
+    <td> Definition  </td>
+    <td> Auroral Oval Boundaries using the FAC method  </td>
+  </tr>
+  <tr>
+    <td> Input Data  </td>
+    <td> FACxTMS_2F<sup>1</sup>  </td>
+  </tr>
+  <tr>
+    <td> Input Time Span  </td>
+    <td> Up to one year  </td>
+  </tr>
+  <tr>
+    <td> Spatial representation  </td>
+    <td> One geographic and quasi-dipole latitude/longitude as well as magnetic local time for each output value at the nearest magnetic-field measurement.  </td>
+  </tr>
+  <tr>
+    <td> Time representation  </td>
+    <td> One timestamp for each boundary represented by the geographic and quasi-dipole latitude/longitude as well as magnetic local time.  </td>
+  </tr>
+  <tr>
+    <td> Units  </td>
+    <td> Degrees  </td>
+  </tr>
+  <tr>
+    <td> Resolution  </td>
+    <td> Full resolution (Double precision)  </td>
+  </tr>
+  <tr>
+    <td> Uncertainty  </td>
+    <td> 3 deg, c.f. Xiong, C. and Lühr, H., doi: 10.5194/angeo-32-623-2014  </td>
+  </tr>
+<tr>
+    <td> Quality indicator </td>
+    <td>
+<table border="1">
+<tbody>
+  <tr>
+    <td>Value</td>
+    <td>Meaning</td>
+  </tr>
+  <tr>
+    <td>Pa</td>
+    <td>Slop of linear fit of S value. Users are suggested to use boundaries with pa larger than 0.2</td>
+  </tr>
+  <tr>
+    <td>Sigma</td>
+    <td>The standard deviation of the linear fit of S value. Users are suggested to use boundaries with σ less than 0.4. See SW-DS-GFZ-GS-001_AEBS_DPA Swarm-AEBS Description of the Processing Algorithm, for the S value definition</td>
+  </tr>
+</tbody>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td> Data volume  </td>
+    <td> Up to 2.5 MB  </td>
+  </tr>
+  <tr>
+    <td> Data format  </td>
+    <td> CDF  </td>
+  </tr>
+  <tr>
+    <td> Output time span  </td>
+    <td> Up to one year<sup>2</sup>  </td>
+  </tr>
+  <tr>
+    <td> Update rate  </td>
+    <td> Daily  </td>
+  </tr>
+  <tr>
+    <td> Latency  </td>
+    <td> &lt; 1 day  </td>
+  </tr>
+  <tr>
+    <td> Notes  </td>
+    <td> <sup>1</sup> Version information of Input Data are available in the CDF global attributes. <br> <sup>2</sup> Product always contain data from the start of the first oval crossing of the year until the end of the last oval crossing starting that year, i.e., may contain data from the next year if oval crossing occurs around midnight.  </td>
+  </tr>
+</tbody>
+</table>
+
 <h2>Related resources</h2>
 <ul>
 <li><a href="https://earth.esa.int/eogateway/activities/swarm-aebs">Activity: Auroral Electrojet and auroral Boundaries estimated from Swarm observations</a></li>

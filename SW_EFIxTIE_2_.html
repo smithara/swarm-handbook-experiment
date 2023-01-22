@@ -34,92 +34,92 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Milliseconds since Jan 1, UTC</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_EPOCH</td>
 </tr>
 <tr>
 <td style="text-align: left;">Latitude</td>
 <td style="text-align: left;">degrees</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Geodetic latitude</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_REAL8</td>
 </tr>
 <tr>
 <td style="text-align: left;">Longitude</td>
 <td style="text-align: left;">degrees</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CDF_REAL8</td>
-</tr>
-<tr>
-<td style="text-align: left;">Height</td>
-<td style="text-align: left;">m</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Geodetic longitude</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_REAL8</td>
 </tr>
 <tr>
 <td style="text-align: left;">Radius</td>
 <td style="text-align: left;">m</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Geocentric radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Height</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Height above WGS84 reference ellipsoid</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_REAL8</td>
 </tr>
 <tr>
 <td style="text-align: left;">QDLatitude</td>
 <td style="text-align: left;">degrees</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Quasi-dipole magnetic latitude</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_REAL8</td>
 </tr>
 <tr>
 <td style="text-align: left;">MLT</td>
 <td style="text-align: left;">hour</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CDF_REAL8</td>
-</tr>
-<tr>
-<td style="text-align: left;">Tn_msis</td>
-<td style="text-align: left;">K</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CDF_REAL8</td>
-</tr>
-<tr>
-<td style="text-align: left;">Te_adj_LP</td>
-<td style="text-align: left;">K</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Magnetic local time</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_REAL8</td>
 </tr>
 <tr>
 <td style="text-align: left;">Ti_meas_drift</td>
 <td style="text-align: left;">K</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Ion temperature estimated using Swarm TII drift at high latitudes</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_REAL8</td>
 </tr>
 <tr>
 <td style="text-align: left;">Ti_model_drift</td>
 <td style="text-align: left;">K</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Ion temperature estimated using Weimer 2005 model drifts at high latitudes</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Te_adj_LP</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">Corrected Swarm LP electron temperature</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tn_msis</td>
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">Neutral temperature from NRLMSISE-00 model</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_REAL8</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flag_ti_meas</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Bitwise flag for ‘Ti_meas_drift’ identifying included inputs and processes, see section 3.5 in Swarm SITE product description document</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT1</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flag_ti_model</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Bitwise flag for ‘Ti_model_drift’ identifying included inputs and processes, see section 3.5 in Swarm SITE product description document</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT1</td>
 </tr>
@@ -222,6 +222,10 @@
 <h2>Related resources</h2>
 <ul>
 <li><a href="https://earth.esa.int/eogateway/activities/site">Activity: Swarm Ion Temperature Estimation (SITE)</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/1527249/SW-TN-UoC-GS-001_2-3_SITE_Product_Definition.pdf">Swarm SITE product description</a></li>
+<li><a href=https://earth.esa.int/eogateway/documents/20142/1527249/SW-TN-UoC-GS-004_2-3_SITE_Processing_algorithms.pdf"">Swarm SITE processing algorithm description</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/1527249/SW-TN-UoC-GS-005_2-3_SITE_Validation_Report.pdf">Swarm SITE validation report</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/1527249/SW-TN-UoC-GS-002_2-3_SITE_Product_Validation.pdf">Swarm SITE input data and model validation report</a></li>
 </ul>
 
 <h2>Changelog</h2>
