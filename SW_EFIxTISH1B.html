@@ -1,0 +1,154 @@
+<h1>SW_EFIxTISH1B</h1>
+<p>Swarm Electric Field Instrument (EFI) Thermal Ion Imager (TII) Raw and Corrected Imagery and Spectra at High resolution (TISH)</p>
+<p>Thematic areas: Plasma measurements, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>Swarm Electric Field Instrument (EFI) Thermal Ion Imager (TII) raw and corrected imagery and column sum spectra products at high resolution. 
+Measurements are derived by University of Calgary within the "TII Raw And Corrected Imagery / Spectra" (TRACIS) project.
+This product represents an official archive of Level 0 TII full images and derived (Level 1B) gain-corrected images and energy and angle-of-arrival count-rate spectra.
+The high-resolution (HR) product consists of the Level 0 TII column sum count-rates at a cadence of 2 spectra per second.</p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm%2FAdvanced%2FPlasma_Data%2FTRACIS%2FTISH1B">https://swarm-diss.eo.esa.int/#swarm%2FAdvanced%2FPlasma_Data%2FTRACIS%2FTISH1B</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/TRACIS/TISH1B</li>
+</ul>
+</li>
+</ul>
+<h2>FAST processing</h2>
+<p>N/A</p>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">UTC</td>
+<td style="text-align: left;">time of observation</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric latitude of orbit</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Geocentric longitude of orbit</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Geocentric radius of orbit</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL8</td>
+</tr>
+<tr>
+<td style="text-align: left;">TII_imaging_mode</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Imaging mode. 0: non-nominal; 1: nominal science</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_MCP_Setting_H</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">H sensor MCP front voltage setting</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_MCP_ Setting_V</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">V sensor MCP front voltage setting</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_Phos_ Setting_H</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">H sensor phosphor voltage setting</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_Phos_ Setting_V</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">V sensor phosphor voltage setting</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_Bias_ Setting_H</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">H sensor inner dome bias voltage setting</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">V_Bias_ Setting_V</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">V sensor inner dome bias voltage setting</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Column_sum_spectrum_H</td>
+<td style="text-align: left;">DN</td>
+<td style="text-align: left;">H sensor column sum spectrum</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Column_sum_spectrum_V</td>
+<td style="text-align: left;">DN</td>
+<td style="text-align: left;">V sensor column sum spectrum</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_UINT2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Column_sum_energies_H</td>
+<td style="text-align: left;">eV</td>
+<td style="text-align: left;">H sensor column sum spectrum energies</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Column_sum_energies_V</td>
+<td style="text-align: left;">eV</td>
+<td style="text-align: left;">V sensor column sum spectrum energies</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CDF_REAL4</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<p>N/A</p>
+<h2>Related resources</h2>
+<p><strong>Product Descriptions:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-TRACIS-Product-Definition.pdf">Product Release Note</a></li>
+<li><a href="https://earth.esa.int/eogateway/news/new-swarm-tracis-product-released">News: TRACIS products release announcement</a></li>
+
+</ul>
+
+<h2>Changelog</h2>
+<p>N/A</p>
