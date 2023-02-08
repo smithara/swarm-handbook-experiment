@@ -12,7 +12,7 @@
     "thematic_areas": [
         "GNSS measurements"
     ],
-    "description": "The GPSx_RN_1B Products contain the GPS Navigation files generated from GPSR data.\n\nEach product comes in a zip file composed of one XML Header file, one Product file and one Quality Test Report file:\n\n - XML Header file with extension .HDR\n - Product File with extension .rnx\n - Quality Test Report file with extension .EEF\n\nThe .rnx product store the GPS Navigation message file in the RINEX 3.00 format generally used for LEO satellites. The description of the format can be found in <a href=\"https://files.igs.org/pub/data/format/rinex300.pdf\">rinex300.pdf</a>, Section 2 and Appendix A.",
+    "description": "The GPSx_RN_1B Products contain the GPS Navigation files generated from GPSR data. The product stores the GPS Navigation message file in the RINEX 3.00 format generally used for LEO satellites. The description of the format can be found in <a href=\"https://files.igs.org/pub/data/format/rinex300.pdf\">rinex300.pdf</a>, Section 2 and Appendix A.",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/GPSx_RN",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/GPSx_RN",
     "link_vires_gui": "",

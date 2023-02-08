@@ -12,7 +12,7 @@
     "thematic_areas": [
         "Ephemeris"
     ],
-    "description": "Position and velocity from the preliminary Medium accuracy Orbit Determination (MOD) expressed with respect to the International Terrestrial Reference Frame (ITRF).\n\nEach product comes in a zip file composed of one XML Header file, one Product file and one Quality Test Report file:\n\n - XML Header file with extension .HDR\n - Product file with extension .sp3\n - Quality Test Report file with extension .EEF\n\nThe .sp3 product store the medium precision orbit information in ASCII format, following the <a href=\"http://www.epncb.oma.be/ftp/data/format/sp3c.txt\">Extended Standard Product 3 Orbit Format (SP3c)</a>\n</pre>",
+    "description": "Position and velocity from the preliminary Medium accuracy Orbit Determination (MOD) expressed with respect to the International Terrestrial Reference Frame (ITRF). The product stores the medium precision orbit information in ASCII format, following the <a href=\"http://www.epncb.oma.be/ftp/data/format/sp3c.txt\">Extended Standard Product 3 Orbit Format (SP3c)</a>\n</pre>",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level1b/Latest_baselines/MODx_SC",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/MODx_SC",
     "link_vires_gui": "",

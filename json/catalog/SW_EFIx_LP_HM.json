@@ -13,7 +13,7 @@
         "Plasma measurements",
         "Space Weather"
     ],
-    "description": "Extended Swarm Electric field instrument (EFI) data from the Langmuir probes (LP) in the so-called \u201charmonic submode\u201d, with a 2 Hz cadence. The dataset contains the electron temperature and spacecraft potential measured separately by the two probes.\n\nEach product comes in a zip file composed of one Product file with extension .cdf.",
+    "description": "Extended Swarm Electric field instrument (EFI) data from the Langmuir probes (LP) in the so-called \u201charmonic submode\u201d, with a 2 Hz cadence. The dataset contains the electron temperature and spacecraft potential measured separately by the two probes.\n",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/2_Hz_Langmuir_Probe_Extended_Dataset",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/2_Hz_Langmuir_Probe_Extended_Dataset",
     "link_vires_gui": "",

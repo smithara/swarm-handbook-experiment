@@ -13,7 +13,7 @@
         "Plasma measurements",
         "Space Weather"
     ],
-    "description": "Swarm Electric Flied Instrument (EFI) Thermal Ion Imager (TII) dataset at 16 Hz cadence containing cross-track ion measurements: the TII L1B data processing is simplified by deriving ion flow velocity components perpendicular to the satellite velocity vector. The data also include the electric field, magnetic field in the same coordinate frame.\n\nEach product comes in a zip file composed of one Product file with extension .cdf.",
+    "description": "Swarm Electric Flied Instrument (EFI) Thermal Ion Imager (TII) dataset at 16 Hz cadence containing cross-track ion measurements: the TII L1B data processing is simplified by deriving ion flow velocity components perpendicular to the satellite velocity vector. The data also include the electric field, magnetic field in the same coordinate frame.\n",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/16Hz_TII_Cross-track_Dataset/",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/16Hz_TII_Cross-track_Dataset/",
     "link_vires_gui": "",

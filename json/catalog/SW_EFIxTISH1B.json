@@ -1,0 +1,27 @@
+{
+    "product_id": "SW_EFIxTISH1B",
+    "definition": "Swarm Electric Field Instrument (EFI) Thermal Ion Imager (TII) Raw and Corrected Imagery and Spectra at High resolution (TISH)",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B",
+        "Swarm-C"
+    ],
+    "thematic_areas": [
+        "Plasma measurements",
+        "Space Weather"
+    ],
+    "description": "Swarm Electric Field Instrument (EFI) Thermal Ion Imager (TII) raw and corrected imagery and column sum spectra products at high resolution. \nMeasurements are derived by University of Calgary within the \"TII Raw And Corrected Imagery / Spectra\" (TRACIS) project.\nThis product represents an official archive of Level 0 TII full images and derived (Level 1B) gain-corrected images and energy and angle-of-arrival count-rate spectra.\nThe high-resolution (HR) product consists of the Level 0 TII column sum count-rates at a cadence of 2 spectra per second.\n ",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm%2FAdvanced%2FPlasma_Data%2FTRACIS%2FTISH1B",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/TRACIS/TISH1B",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp \t\t\t,  UTC ,  time of observation\t\t\t\t\t\t\t\t, 1,\tCDF_EPOCH \nLatitude \t\t\t,  deg ,  Geocentric latitude of orbit \t\t\t\t\t\t, 1,\tCDF_REAL8  \t\nLongitude \t\t\t,  deg ,  Geocentric longitude of orbit \t\t\t\t\t, 1,\tCDF_REAL8  \t\nRadius \t\t\t\t,  m \t, Geocentric radius of orbit  \t\t\t\t\t\t, 1,\tCDF_REAL8 \t\nTII_imaging_mode \t,  - \t, Imaging mode. 0: non-nominal; 1: nominal science  , 1,\tCDF_UINT1 \t\nV_MCP_Setting_H \t,  V \t, H sensor MCP front voltage setting \t\t\t\t, 1,\tCDF_REAL4 \t\nV_MCP_ Setting_V \t,  V \t, V sensor MCP front voltage setting  \t\t\t\t, 1,\tCDF_REAL4 \t\nV_Phos_ Setting_H \t,  V \t, H sensor phosphor voltage setting  \t\t\t\t, 1,\tCDF_REAL4 \t\nV_Phos_ Setting_V \t,  V\t, V sensor phosphor voltage setting  \t\t\t\t, 1,\tCDF_REAL4  \t\nV_Bias_ Setting_H \t,  V \t, H sensor inner dome bias voltage setting  \t\t, 1,\tCDF_REAL4 \t\nV_Bias_ Setting_V \t,  V \t, V sensor inner dome bias voltage setting \t \t\t, 1,\tCDF_REAL4 \t\nColumn_sum_spectrum_H,  DN ,  H sensor column sum spectrum \t\t\t, 2,\tCDF_UINT2 \t\nColumn_sum_spectrum_V,  DN ,  V sensor column sum spectrum \t\t\t, 2,\tCDF_UINT2 \t\nColumn_sum_energies_H,  eV ,  H sensor column sum spectrum energies \t\t, 2,\tCDF_REAL4 \t\nColumn_sum_energies_V,  eV ,  V sensor column sum spectrum energies \t\t, 2,\tCDF_REAL4 \t",
+    "related_resources": "<p><strong>Product Descriptions:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/documents/20142/37627/Swarm-TRACIS-Product-Definition.pdf\">Product Release Note</a></li>\n<li><a href=\"https://earth.esa.int/eogateway/news/new-swarm-tracis-product-released\">News: TRACIS products release announcement</a></li>\n\n</ul>\n",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}

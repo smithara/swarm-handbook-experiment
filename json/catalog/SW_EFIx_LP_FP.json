@@ -13,7 +13,7 @@
         "Plasma measurements",
         "Space Weather"
     ],
-    "description": "The EFIx_LP_FP Product contains extended Swarm Electrical Field Instrument (EFI) plasma data derived from the faceplate (FP) current at 16 Hz.\n\nThey include:\n\n - estimates of the ionospheric electron density from the faceplate current at 16 Hz resolution;\n - the actual 16 Hz faceplate current measurements;\n - geodetic coordinates of the satellite positions interpolated to the times of the current measurements.\n\nEach product comes in a zip file composed of one Product file with extension .cdf.\n",
+    "description": "The EFIx_LP_FP Product contains extended Swarm Electrical Field Instrument (EFI) plasma data derived from the faceplate (FP) current at 16 Hz.\n\nThey include:\n\n - estimates of the ionospheric electron density from the faceplate current at 16 Hz resolution;\n - the actual 16 Hz faceplate current measurements;\n - geodetic coordinates of the satellite positions interpolated to the times of the current measurements.\n\n",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Advanced/Plasma_Data/16_Hz_Faceplate_plasma_density",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Advanced/Plasma_Data/16_Hz_Faceplate_plasma_density",
     "link_vires_gui": "",
