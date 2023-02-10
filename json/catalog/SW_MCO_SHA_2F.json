@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MCO_SHA_2F",
-    "definition": "Spherical harmonic model of the main (core) field and its temporal variation",
+    "definition": "Spherical harmonic model of the main (core) field and its temporal variation, from the fast-track inversion",
     "applicable_missions": [
         "Swarm"
     ],
@@ -12,7 +12,7 @@
     "thematic_areas": [
         "Core field"
     ],
-    "description": " ",
+    "description": " Spherical harmonic model of the main (core) field and its temporal variation, from the fast-track inversion",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MCO",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MCO",
     "link_vires_gui": "",

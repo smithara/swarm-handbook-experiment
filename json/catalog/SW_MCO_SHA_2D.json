@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MCO_SHA_2D",
-    "definition": "Spherical harmonic model of the main (core) field and its temporal variation",
+    "definition": "Spherical harmonic model of the main (core) field and its temporal variation derived in Dedicated Inversion chain",
     "applicable_missions": [
         "Swarm"
     ],

@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MIO_SHA_2D",
-    "definition": "Model of non-polar daily geomagnetic variation caused by ionospheric currents",
+    "definition": "Model of non-polar daily geomagnetic variation caused by ionospheric currents, derived from dedicated chain (DIFI)",
     "applicable_missions": [
         "Swarm"
     ],

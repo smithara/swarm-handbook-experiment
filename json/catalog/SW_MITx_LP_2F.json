@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MITx_LP_2F",
-    "definition": "Midlatitude Ionospheric Trough Boundaries and Minima",
+    "definition": "Midlatitude Ionospheric Trough Boundaries and Minima derived from LP (Langmuir Probe)",
     "applicable_missions": [
         "Swarm"
     ],
@@ -12,7 +12,7 @@
     "thematic_areas": [
         "Ionosphere/Magnetosphere"
     ],
-    "description": "",
+    "description": "Midlatitude Ionospheric Trough Boundaries and Minima derived from LP (Langmuir Probe)",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/MIT/LP",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/MIT/LP",
     "link_vires_gui": "",

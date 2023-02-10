@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MLI_SHA_2E",
-    "definition": "Spherical Harmonic Models of the lithospheric field",
+    "definition": "Final map of the lithospheric field from the Revised Spherical Cap Harmonic analysis (R-SCHA) Dedicated Lithospheric Inversion, expressed in terms of high degree Spherical Harmonics",
     "applicable_missions": [
         "Swarm"
     ],
@@ -12,7 +12,7 @@
     "thematic_areas": [
         "Lithosphere"
     ],
-    "description": " ",
+    "description": "Final map of the lithospheric field from the Revised Spherical Cap Harmonic analysis (R-SCHA) Dedicated Lithospheric Inversion, expressed in terms of high degree Spherical Harmonics",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MLI",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MLI",
     "link_vires_gui": "",

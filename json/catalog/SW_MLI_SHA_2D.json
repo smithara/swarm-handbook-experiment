@@ -1,6 +1,6 @@
 {
     "product_id": "SW_MLI_SHA_2D",
-    "definition": "Spherical Harmonic Models of the lithospheric field",
+    "definition": "Spherical Harmonic Models of the lithospheric field from the dedicated inversion",
     "applicable_missions": [
         "Swarm"
     ],
@@ -12,7 +12,7 @@
     "thematic_areas": [
         "Lithosphere"
     ],
-    "description": "Spherical Harmonic Models of the lithospheric field and its temporal variation derived with the Revised Spherical Harmonic Cap method",
+    "description": "Spherical Harmonic Models of the lithospheric field from the dedicated inversion",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MLI",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MLI",
     "link_vires_gui": "",
