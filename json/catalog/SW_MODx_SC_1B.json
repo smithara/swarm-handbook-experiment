@@ -17,7 +17,7 @@
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level1b/Latest_baselines/MODx_SC",
     "link_vires_gui": "",
     "link_notebook": "",
-    "link_hapi": "",
+    "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=SW_OPER_MODA_SC_1B",
     "variables_table": "",
     "related_resources": "<p><strong>Level 1B Product Descriptions:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-processor-algorithms.pdf/e0606842-41ca-fa48-0a40-05a0d4824501?version=1.0\">Swarm Level 1B Processor Algorithms</a></li>\n\t<li><a href=\"https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-product-definition-specification.pdf/12995649-fbcb-6ae2-5302-2269fecf5a08\">Swarm Level 1B Product Definition</a></li>\n</ul>\n\n<p><strong>SP3 format Description</strong></p>\n\n<ul>\n\t<li>The&nbsp;<a href=\"http://www.epncb.oma.be/ftp/data/format/sp3c.txt\">Extended Standard Product 3 Orbit Format (SP3-c)</a>&nbsp;by Steve Hilla, National Geodetic Survey, NOAA, USA, Dated: 2010-08-17</li>\n</ul>\n",
     "details": "",

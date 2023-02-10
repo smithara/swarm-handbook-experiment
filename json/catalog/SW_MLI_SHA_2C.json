@@ -15,7 +15,7 @@
     "description": "Spherical Harmonic Models of the lithospheric field and its temporal variation derived in Comprehensive Inversion chain",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MLI",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MLI",
-    "link_vires_gui": "",
+    "link_vires_gui": "https://vires.services?ws=data%3Aapplication/json%2Bgzip%3Bbase64%2CH4sIAMta5mMC/51Va0/iQBT9K6RfF5p5dF5%2BQ5TVBF0j7qoY0lQ64mxKS9rCagj/fe%2BMPEpZXSWZQOfMPefcuZ3eWXiFzudmpH/pvDBZ6h01POpj7COv2fBKM9F9nehR%2Bbb04BGEeQthGDcIHbnhI4QGNrqyRugRUzB8pdTAG66kTrJJZDY6rIVJi0IseU%2BH3KCdNaszN/pPNSVvnGSP2tKmeRbPRmXRydInM57l0Spi4fVvwx9Xp9fhRft7O%2Bxdh/jYwXNTmMdEw/NTlBQaJLJZmZhUF1VoGo1M%2BQoIth5RHk10CbVyCsfh5WnHPeVROrZKD5hBqs0Gs38231GWZHkxipyP91uX3hLQ7ldJABZu1zoGqMxn2so4/zDXRbuWRYtbPf5RChtueJHFOtnlA1mw98hLS9%2BStmW0ae2UDPliv2jdQwp2tpcfJl%2Bp1F3NFDlTQj80va8VVTiS%2BCcnNnOdj006DrHjDmpc4vw%2BwzyvMSUQ5Sd4JwfyukYn8frYV2vUbATow/rchae3NVMGb/L/lveHEgcHEZdueTLNUp2WdpcPC8/Y0%2BFd9M7D/lk7JB13bszYtZRv3t6pXS6HbzKA5dFVVphNd5luJ3CYGZIUK19ITjClvNloEY6R4Iz4LGA0IEo2GzTABDEe%2BFhIwknA7QZik28bbQv5lKqAcKQQkxKYQEM%2BE0gIzkEygF8CrwgCRQAQ45IgsIRwKzabrlSQAgkhod1KRKWSxMoIrjijWHChAkEFsxinGEspsBJCKaGoVcnN%2BLl035uvKBMYI8qIZEpxbClE2vRAQlFwUFK4dAjiYKRgBATyl2xoC/fSfjHFTuPuQYMuZ/Fb706yst634SW9WpK7L7qu%2Bbt5L3p0nSedJYnFyDpouJnVQtzRWEdZbFgFieNCjjt%2Blc443HP5lKDFiqjUSWLK1bfVTqbPUeVyOc6jeVaZd56jPDHVG%2Bmy36nMfkKdongNLJd/AXkaI0%2B%2BBwAA",
     "link_notebook": "",
     "link_hapi": "",
     "variables_table": "",

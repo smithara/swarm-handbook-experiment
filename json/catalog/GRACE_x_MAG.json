@@ -16,7 +16,7 @@
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE/Magnetic_data",
     "link_vires_gui": "",
     "link_notebook": "https://notebooks.vires.services/notebooks/03y1_multi-mission-intro",
-    "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=GRACE_A_MAG&parameters=B_NEC&start=2008-01-01T00:00:04.787680Z&stop=2008-01-01T01:00:04.787Z&return=data&format=csv&style=header",
+    "link_hapi": "http://hapi-server.org/servers/#server=VirES-for-Swarm&dataset=GRACE_A_MAG",
     "variables_table": "Variable,Units,Description,Dim,Type\nTimestamp,-,Time stamp,1,CDF_EPOCH\nLatitude,deg,Position in ITRF: Geocentric latitude,1,CDF_DOUBLE\nLongitude,deg,Position in ITRF: Geocentric longitude,1,CDF_DOUBLE\nRadius,m,Position in ITRF: Geocentric Radius,1,CDF_DOUBLE\nB_FGM,nT,\"calibrated magnetic vector from FGM, in instrument frame\",3,CDF_DOUBLE\nB_NEC_raw,nT,\"calibrated and aligned magnetic vector in NEC (North, East, Center) frame\",3,CDF_DOUBLE\nB_NEC,nT,\"calibrated and aligned magnetic vector in NEC (North, East, Center) frame, 11 sample (i.e. 11 second) robust average\",3,CDF_DOUBLE\nF,nT,magnetic field intensity determined from B_NEC,1,CDF_DOUBLE\nq_NEC_CRF,-,\"Quaternion, transformation: NEC <- CRF\",4,CDF_DOUBLE\nq_error,-,experimental error indicator of attitude given in Quaternion q_NEC_CRF. Bad attitude if > approx 40,1,CDF_DOUBLE",
     "related_resources": "<ul>\n\t<li>Olsen, N., Magnetometer data from the GRACE satellite duo. Earth Planets Space 73, 62 (2021).<br />\n\t<a class=\"reference external\" href=\"https://doi.org/10.1186/s40623-021-01373-9\">https://doi.org/10.1186/s40623-021-01373-9</a></li>\n</ul>\n",
     "details": "",

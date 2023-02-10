@@ -15,7 +15,7 @@
     "description": "Spherical harmonic model of the main (core) field and its temporal variation derived in Comprehensive Inversion chain",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MCO",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MCO",
-    "link_vires_gui": "",
+    "link_vires_gui": "https://vires.services?ws=data%3Aapplication/json%2Bgzip%3Bbase64%2CH4sIAMta5mMC/51Va0/iQBT9K6RfF5p5dF5%2BQ5R1E18Rd1UMaSodcTalJW1hNab/fe%2BMPEpZXSWZQOfMPefc3t7evnqFzhdmrH/pvDBZ6h20POpj7COv3fJKM9UDnehx%2BXZ07xGEeQdhWNcIHbjlI4SGNrp2RugBU7B8pdTQGy2ljrJpZNY6rINJh0IseU%2BHXKOtM6uzMPpPPSVvkmQP2tJmeRbPx2XRy9JHM5nn0TLi1RvchBeXx1fhWfd7Nzy9CvGhgxemMA%2BJhuvHKCk0SGTzMjGpLurQLBqb8gUQbD2iPJrqEmrlFA7D8%2BOeu8qjdGKV7jGDVNstZv9svuMsyfJiHDkf77cuvQrQ/ldJABburnUMUJnPtZVx/mGui24jiw63evyjFNbc8CyLdbLNB7Jg75ErS9%2BQNmW0aW2VDPlit2j9fQp2spMf/Wqxbhu%2ByPkS%2BqHvXaOuwpHEPzmxWeh8YtJJiB132OAS5/cZ5o8GUwJRfoJ3tCevb3QSrzq/XqN2K0Af1uc2PL5pmDJ4mP%2B3vNuXONyLWLnj6SxLdVrau7x/9YztDu%2BsdxEOTroh6bm%2BMRM3Vb55O41bVaM3GcDy6DIrzHrAzDYb6GeGJMXKF5ITTClvtzqEYyQ4Iz4LGA2IktC%2BASaI8cDHQhJOAm5vIDb5ZtZ2kE%2BpCghHCjEpgQk05DOBhOAcJAP4JfCIIFAEADEuCQJLCLdi89lSBSmQEBImrkRUKkmsjOCKM4oFFyoQVDCLcYqxlAIrIZQSilqV3EyeSvfK%2BYoygTGijEimFMeWQqRNDyQUBQclhUuHIA5GClZAIH/JRrZwz91nU2zN7lOY0eU8fhvfSVY2Rzc8pBdLcp%2BMvpv/bn8aPbjhk86TxGJkFTRa7xohrjVWURYb1UHiuJDjll9tOI52XD4laLEiKnWSmHL5bnWT2VNU%2B74c5tEiq%2B17T1GemPpH6XzQq%2B1%2BQp2ieAVU1V%2B83c/3wQcAAA%3D%3D",
     "link_notebook": "",
     "link_hapi": "",
     "variables_table": "",
