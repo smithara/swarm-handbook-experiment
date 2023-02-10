@@ -1,5 +1,5 @@
 <h1>SW_MMA_SHA_2F</h1>
-<p>Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field</p>
+<p>Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field as a fast-track product</p>
 <p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
@@ -21,97 +21,97 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Variable</th>
-<th style="text-align: left;">Units</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Dim</th>
+<th style="text-align: left;">Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Unit</th>
+<th style="text-align: left;">Contents</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">t_qs</td>
-<td style="text-align: left;">ms</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">1167</td>
 <td style="text-align: left;">CDF_EPOCH</td>
-</tr>
-<tr>
-<td style="text-align: left;">nm_qs</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[3, 2]</td>
-<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time instants (CDFEPOCH) of external Gauss coefficients q (cosine) and s (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">qs_geo</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[1167, 3]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">External Gauss coefficients q (cosine) and s (sine) in Geographic frame</td>
 </tr>
 <tr>
 <td style="text-align: left;">qs_sm</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[1167, 3]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">External Gauss coefficients q (cosine) and s (sine) in Solar Magnetic frame</td>
+</tr>
+<tr>
+<td style="text-align: left;">nm_qs</td>
+<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">First column: vector of spherical harmonic degrees of the coefficients qs_geo and qs_sm. Nonnegative values denote coefficients q (cosine) while negative values denote coefficients s (sine)Second column: vector of spherical harmonic orders</td>
 </tr>
 <tr>
 <td style="text-align: left;">t_gh</td>
-<td style="text-align: left;">ms</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">1167</td>
 <td style="text-align: left;">CDF_EPOCH</td>
-</tr>
-<tr>
-<td style="text-align: left;">nm_gh</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[3, 2]</td>
-<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time instants (CDFEPOCH) of induced Gauss coefficients g (cosine) and h (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">gh_geo</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[1167, 3]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Internal induced Gauss coefficients g (cosine) and h (sine) in Geographic frame</td>
 </tr>
 <tr>
 <td style="text-align: left;">gh_sm</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[1167, 3]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Internal induced Gauss coefficients g (cosine) and h (sine) in Solar Magnetic frame</td>
+</tr>
+<tr>
+<td style="text-align: left;">nm_gh</td>
+<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">First column: vector of spherical harmonic degrees of the coefficients gh_geo and gh_sm. Nonnegative values denote coefficients g (cosine) while negative values denote coefficients h (sine)Second column: vector of spherical harmonic orders</td>
 </tr>
 <tr>
 <td style="text-align: left;">t_qual</td>
-<td style="text-align: left;">ms</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">1167</td>
 <td style="text-align: left;">CDF_EPOCH</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time instants (CDFEPOCH) of quality information (rms, n_data, and q_flag).</td>
 </tr>
 <tr>
 <td style="text-align: left;">rms</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[1167, 3]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Root-mean-square difference between models and input data (after processing to subtract non-magnetospheric sources) in geographic frame.First column: RMS difference in radial direction. Second column: RMS difference in theta direction. Third column: RMS difference in phi direction.</td>
 </tr>
 <tr>
 <td style="text-align: left;">n_data</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[1167, 3]</td>
 <td style="text-align: left;">CDF_UINT2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Number of data used at each time-instant from each satellite.First column: Number of data from SWARM A. Second column: Number of data from SWARM B. Third column: Number of data from SWARM C.</td>
 </tr>
 <tr>
 <td style="text-align: left;">q_flag</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">1167</td>
 <td style="text-align: left;">CDF_UINT1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Product quality flag. Value of zero indicates good quality / no issues.</td>
 </tr>
 </tbody>
 </table>
@@ -183,6 +183,34 @@
         <tr>
             <td>Notes</td>
             <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Meaning of q_flag:</strong></p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Bit</th>
+            <th>Set if</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Input time-series is shorter than 1-year filter used to separate internal and external coefficients. This is unavoidable at the start of the mission.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Internal/external separation filter has at least one bad/missing datum. This is not necessarily serious (check n_data, above and bits 3 and 4, below).</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>total n_data for this model is &lt; 90% of the expected maximum available.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Internal/external separation filter has at least one bad/missing datum amongst the most recent (five) where it is most sensitive.</td>
         </tr>
     </tbody>
 </table>

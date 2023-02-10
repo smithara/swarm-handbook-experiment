@@ -1,10 +1,10 @@
 <h1>SW_MMA_SHA_2C</h1>
-<p>Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field</p>
+<p>Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field from the comprehensive inversion chain</p>
 <p>Thematic areas: Ionosphere/Magnetosphere, Space Weather</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
 <h2>Description</h2>
-<p>Electromagnetic transfer functions (C-responses) related to the model of electrical conductivity of the mantle for its 1-D structure, meaning that the conductivity is assumed to only vary with depth</p>
+<p>Timeseries of spherical harmonic expansion coefficients of the large-scale magnetospheric field from the comprehensive inversion chain</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -21,181 +21,146 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Variable</th>
-<th style="text-align: left;">Units</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Dim</th>
+<th style="text-align: left;">Name</th>
 <th style="text-align: left;">Type</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Unit</th>
+<th style="text-align: left;">Contents</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">t_qs_1</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">23872</td>
 <td style="text-align: left;">CDF_EPOCH</td>
-</tr>
-<tr>
-<td style="text-align: left;">nm_qs_1</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[1, 2]</td>
-<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time instants of external Gauss coefficients q (cosine) and s (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">qs_1</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[23872, 1]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">External Gauss coefficients q (cosine) and s (sine) in dipole frame corresponding to time instants t_qs_1</td>
 </tr>
 <tr>
 <td style="text-align: left;">dqs_1</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[23872, 1]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Formal error estimate for qs_1</td>
+</tr>
+<tr>
+<td style="text-align: left;">nm_qs_1</td>
+<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">First column: vector of spherical harmonic degrees of the coefficients qs_1. Second column: vector of spherical harmonic orders. Nonnegative values denote coefficients q (cosine) while negative values denote coefficients s (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">t_qs_2</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">5968</td>
 <td style="text-align: left;">CDF_EPOCH</td>
-</tr>
-<tr>
-<td style="text-align: left;">nm_qs_2</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[7, 2]</td>
-<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time instants of external Gauss coefficients q (cosine) and s (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">qs_2</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[5968, 7]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">External Gauss coefficients q (cosine) and s (sine) in dipole frame corresponding to time instants t_qs_2</td>
 </tr>
 <tr>
 <td style="text-align: left;">dqs_2</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[5968, 7]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Formal error estimate for qs_2</td>
+</tr>
+<tr>
+<td style="text-align: left;">nm_qs_2</td>
+<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">First column: vector of spherical harmonic degrees of the coefficients qs_2.Second column: vector of spherical harmonic orders. Nonnegative values denote coefficients q (cosine) while negative values denote coefficients s (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">t_gh_1</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">23872</td>
 <td style="text-align: left;">CDF_EPOCH</td>
-</tr>
-<tr>
-<td style="text-align: left;">nm_gh_1</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[1, 2]</td>
-<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time instants of induced Gauss coefficients g (cosine) and h (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">gh_1</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[23872, 1]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Internal induced Gauss coefficients g (cosine) and h (sine) in dipole frame</td>
 </tr>
 <tr>
 <td style="text-align: left;">dgh_1</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[23872, 1]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Formal error estimate for gh_1</td>
+</tr>
+<tr>
+<td style="text-align: left;">nm_gh_1</td>
+<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">First column: vector of spherical harmonic degrees of the coefficients gh_1.Second column: vector of spherical harmonic orders. Nonnegative values denote coefficients g (cosine) while negative values denote coefficients h (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">t_gh_2</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">5968</td>
 <td style="text-align: left;">CDF_EPOCH</td>
-</tr>
-<tr>
-<td style="text-align: left;">nm_gh_2</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[14, 2]</td>
-<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time instants of induced Gauss coefficients g (cosine) and h (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">gh_2</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[5968, 14]</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Internal induced Gauss coefficients g (cosine) and h (sine) in dipole frame</td>
 </tr>
 <tr>
 <td style="text-align: left;">dgh_2</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[5968, 14]</td>
-<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">Formal error estimate for gh_2</td>
 </tr>
 <tr>
-<td style="text-align: left;">t_F107</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">nm_gh_2</td>
+<td style="text-align: left;">CDF_INT2</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;">1492</td>
-<td style="text-align: left;">CDF_EPOCH</td>
-</tr>
-<tr>
-<td style="text-align: left;">F107</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">1492</td>
-<td style="text-align: left;">CDF_DOUBLE</td>
-</tr>
-<tr>
-<td style="text-align: left;">dF107</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">1492</td>
-<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">First column: vector of spherical harmonic degrees of the coefficients gh_2.Second column: vector of spherical harmonic orders. Nonnegative values denote coefficients g (cosine) while negative values denote coefficients h (sine)</td>
 </tr>
 <tr>
 <td style="text-align: left;">t_qual</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">5968</td>
 <td style="text-align: left;">CDF_EPOCH</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">Time instants of quality information (rms, n_data, and q_flag).</td>
 </tr>
 <tr>
 <td style="text-align: left;">rms</td>
-<td style="text-align: left;">nT</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">5968</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Root-mean-square difference between models and input data (after processing to subtract non-magnetospheric sources) in dipole frame, for the time instants indicated by t_qualFirst column: RMS difference in radial direction. Second column: RMS difference in theta direction. Third column: RMS difference in phi direction.</td>
 </tr>
 <tr>
 <td style="text-align: left;">n_data</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">CDF_UINT2</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;">[5968, 4]</td>
-<td style="text-align: left;">CDF_INT2</td>
-</tr>
-<tr>
-<td style="text-align: left;">nm_con</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[29, 2]</td>
-<td style="text-align: left;">CDF_INT2</td>
-</tr>
-<tr>
-<td style="text-align: left;">con</td>
-<td style="text-align: left;">1/nT^2</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">[5968, 29, 29]</td>
-<td style="text-align: left;">CDF_DOUBLE</td>
+<td style="text-align: left;">Number of data used at each time-instant from each satellite.First column: Number of data from SWARM A. Second column: Number of data from SWARM B. Third column: Number of data from SWARM C.</td>
 </tr>
 </tbody>
 </table>
@@ -272,6 +237,7 @@
 </table>
 
 <h2>Related resources</h2>
-<p>N/A</p>
+<p>Part of the CI (comprehensive inversion) chain, related to the "CM" model series, see e.g.:</p>
+<p>Sabaka, T.J., Tøffner-Clausen, L., Olsen, N. et al. CM6: a comprehensive geomagnetic field model derived from both CHAMP and Swarm satellite observations. Earth Planets Space 72, 80 (2020). https://doi.org/10.1186/s40623-020-01210-5</p>
 <h2>Changelog</h2>
 <p>N/A</p>
