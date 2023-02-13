@@ -1,9 +1,11 @@
 <h1>SW_MCO_SHA_2Y</h1>
-<p>Spherical harmonic model of the main (core) field and its temporal variation</p>
+<p>Model of the core field, related to SW_CFW_SHA_2Y</p>
 <p>Thematic areas: Core field</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
 <h2>Description</h2>
+<p>Series of core field models provided in terms of Gauss coefficients + covariance matrices + standard deviations of Gauss coefficients.</p>
+<p>Related to SW_CFW_SHA_2Y</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -19,8 +21,100 @@
 <h2>File contents</h2>
 <p>N/A</p>
 <h2>More details</h2>
-<p>N/A</p>
+<table border="1">
+    <thead>
+        <tr>
+            <th style="text-align: left;">Product identifier</th>
+            <th style="text-align: left;">MCO_SHA_2Y</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Definition</td>
+            <td>&bull; Core field Gauss coefficients stored in the .shc file<br />
+            &bull; The standard deviations of Gauss coefficients are stored in the .std file<br />
+            &bull; The covariance matrices are stored in the .cov file</td>
+        </tr>
+        <tr>
+            <td>Input Data</td>
+            <td>Derived from Swarm Level 1b MAGX_LR_1B, the Oersted, Champ, CryoSat data and the Magnetic Observatories data</td>
+        </tr>
+        <tr>
+            <td>Input Time Span</td>
+            <td>01/01/1999 to latest Swarm data processed</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Spherical harmonic expansion up to degree and order 18</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Snapshots built sequentially through a Kalman filter with a time span of 0.25 &times; 365.25 days</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>nT</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>Temporal resolution: 0.25 &times; 365.25 days<br />
+            Spatial resolution: Max SH degree 18</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>See MCO_SHA_2Y cov and std files</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>~1MB</td>
+        </tr>
+        <tr>
+            <td>Data format</td>
+            <td>The shc file is in SHC format<br />
+            The std file is in ASCII table format (see description below)<br />
+            The cov file is in ASCII format (see description below)</td>
+        </tr>
+        <tr>
+            <td>Output Data</td>
+            <td>The product consists in three files<br />
+            <br />
+            <strong>MCO_SHA_2Y shc and std file</strong><br />
+            The format used has been set in accordance with the usual SHC format defined for this type of files. Units of Gauss coefficients are nT<br />
+            With a very similar format the standard deviations of the Gauss coefficients are provided in an independent file with the extension *.std<br />
+            The only difference in the format is on the first line where the B-spline order, and the number of intervals between spline knots, are not indicated. Units of standard deviations are nT.<br />
+            <br />
+            <strong>MCO_SHA_2Ycov file</strong><br />
+            In this independent file with the extension *.cov, the covariance matrice upper triangles (i.e. variances and covariances) is provided.<br />
+            A covariance matrice being symmetric no information is lost.<br />
+            The format of the file is:<br />
+            &bull; On the first line the series of dates (in decimal years) of the mean snapshot core field models associated with the covariance matrices.<br />
+            &bull; On the next lines are indicated: the row index of the covariance matrix, the column index of the covariance matrix, followed by the time series of variances or covariances in the order given by the first line dates. Units of matrix elements are nT<sup>2</sup>.</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>From earliest to latest epoch compatible with input data</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>Yearly</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>One year</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
 <h2>Related resources</h2>
-<p>N/A</p>
+<p>Ropp, G., Lesur, V., Baerenzung, J., and Holschneider, M. (2020), Sequential modelling of the Earth’s core magnetic field, Earth, Planets and Space, 72(1) :153, doi :10.1186/s40623-020- 01230-1</p>
+<p>Ropp, G. and Lesur, V. (2022), Mid-latitude and equatorial core surface flow variations derived from observatory and satellite magnetic data, Geophys J. Int., under review</p>
 <h2>Changelog</h2>
 <p>N/A</p>

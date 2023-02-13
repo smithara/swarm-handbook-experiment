@@ -1,9 +1,11 @@
 <h1>SW_CFW_SHA_2Y</h1>
 <p>Toroidal and poloidal core flow coefficients co-estimated with the magnetic field model MCO_SHA_2Y</p>
-<p>Thematic areas: </p>
+<p>Thematic areas: Core field</p>
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
 <h2>Description</h2>
+<p>Series of core surface flow models coestimated with the core magnetic field and provided in terms of Toroidal &amp; Poloidal spherical harmonic coefficients + covariance matrices + standard deviations of Gauss coefficients</p>
+<p>Related to SW_MCO_SHA_2Y</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -19,8 +21,103 @@
 <h2>File contents</h2>
 <p>N/A</p>
 <h2>More details</h2>
-<p>N/A</p>
+<table border="1">
+    <thead>
+        <tr>
+            <th style="text-align:left">Product identifier</th>
+            <th style="text-align:left">CFW_SHA_2Y</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Definition</td>
+            <td>&bull; Toroidal &amp; Poloidal core flow coefficients in the .txt file<br />
+            &bull; Standard deviations of coefficients are stored in the .std file<br />
+            &bull; Covariance matrice is stored in the .cov file</td>
+        </tr>
+        <tr>
+            <td>Input Data</td>
+            <td>Co-estimated with MCO_SHA_2Y field model from Swarm Level 1b MAGX_LR_1B, the Oersted, Champ, Cryosat data and the Magnetic Observatories data</td>
+        </tr>
+        <tr>
+            <td>Input Time Span</td>
+            <td>01/01/1999 to latest Swarm data processed</td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>Toroidal &amp; Poloidal spherical harmonic expansion up to degree and order 26</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Snapshots built sequentially through a Kalman filter with a time span of 0.25 &times; 365.25 days</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>km/y</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>Temporal resolution: 0.25 &times; 365.25 days<br />
+            Spatial resolution: Max SH degree 26</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>See CFW_SHA_2Y cov and std files</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Data volume</td>
+            <td>~2MB</td>
+        </tr>
+        <tr>
+            <td>Data format</td>
+            <td>ASCII table (see description below)</td>
+        </tr>
+        <tr>
+            <td>Output Data</td>
+            <td>The product consists in three files<br />
+            <br />
+            CFW_SHA_2Y txt file<br />
+            The file format is such that any line starting with a &rdquo;#&rdquo; is a comment line. Then on the first (not- commented) line are given the minimum and maximum SH degree used, followed by the number of flow model snapshots.<br />
+            <br />
+            The second (not-commented) line contains the series of dates (in decimal years) corresponding to the flow snapshot models. On the remaining lines are given successively: a character &rdquo;T&rdquo; or &rdquo;P&rdquo; as an indication if the line is associated with a toroidal or poloidal flow coefficient, the SH degree of the coefficient, its order, and the time series for this coefficient at the dates indicated on the second line.<br />
+            <br />
+            CFW_SHA_2Y std file<br />
+            The file format is the same as for the txt file but are given the flow coefficient standard deviations in place of the coefficients<br />
+            <br />
+            CFW_SHA_2Y cov file<br />
+            In this independent file with the extension *.cov, the covariance matrice upper triangle (i.e. variances and covariances) is provided.<br />
+            A covariance matrice being symmetric no information is lost.<br />
+            <br />
+            The format of the file is:<br />
+            &bull; On the first line the series of dates (in decimal years) of the mean snapshot core flow models associated with the covariance matrices.<br />
+            &bull; On the next lines are indicated: the row index of the covariance matrix, the column index of the covariance matrix, followed by the time series of variances or covariances in the order given by the first line dates. Units of matrix elements are (km/y)<sup>2</sup>.</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>From earliest to latest epoch compatible with input data (same as MCO_SHA_2Y)</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>Yearly</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>One year</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+
 <h2>Related resources</h2>
-<p>N/A</p>
+<p>SW-TN-IPGP-0003 "Core Field and Core Flow Product Definition and Algorithm"</p>
+<p>Ropp, G., Lesur, V., Baerenzung, J., and Holschneider, M. (2020), Sequential modelling of the Earth’s core magnetic field, Earth, Planets and Space, 72(1) :153, doi :10.1186/s40623-020- 01230-1</p>
+<p>Ropp, G. and Lesur, V. (2022), Mid-latitude and equatorial core surface flow variations derived from observatory and satellite magnetic data, Geophys J. Int., under review</p>
 <h2>Changelog</h2>
 <p>N/A</p>
