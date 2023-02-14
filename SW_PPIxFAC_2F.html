@@ -35,15 +35,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">ms</td>
 <td style="text-align: left;">Time of observation, UTC</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_EPOCH</td>
 </tr>
 <tr>
 <td style="text-align: left;">Counter</td>
-<td style="text-align: left;">nan</td>
-<td style="text-align: left;">Swarm orbit counter and quarter orbit (four per Swarm orbit) counter that are based on magnetic coordinates as defined in [AD-2] (Sect. 4.1.2.2)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Swarm orbit counter and quarter orbit (four per Swarm orbit) counter that are based on magnetic coordinates as defined in <a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-PRISM-Description-of-the-algorithm.pdf">Swarm PRISM processing algorithm description</a> (Sect. 4.1.2.2)</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: left;">CDF_UINT4</td>
 </tr>
@@ -105,15 +105,15 @@
 </tr>
 <tr>
 <td style="text-align: left;">dL</td>
-<td style="text-align: left;">nan</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Boundary width in Earth radii</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
 <tr>
 <td style="text-align: left;">Sigma</td>
-<td style="text-align: left;">nan</td>
-<td style="text-align: left;">Standard deviation of the linear fit of S at the boundary [RD-2]</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Standard deviation of the linear fit of S at the boundary (Heilig, B. and Lühr, H., doi: 10.5194/angeo-31-529-2013)</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -126,7 +126,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Quality</td>
-<td style="text-align: left;">nan</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Quality indicators of SSFAC boundary detection</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: left;">CDF_INT1</td>
@@ -182,7 +182,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">L_value_ID</td>
-<td style="text-align: left;">nan</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">L-value in Earth radii</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
@@ -196,7 +196,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Position_Quality_ID</td>
-<td style="text-align: left;">nan</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Vector of quality indicators characterising the detection quality of each single positions</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: left;">CDF_INT1</td>
@@ -204,10 +204,83 @@
 </tbody>
 </table>
 <h2>More details</h2>
-<p>N/A</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Product identifier</td>
+            <td>PPIxFAC_2F</td>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>Equatorward boundary of SSFACs and the associated midnight PP index</td>
+        </tr>
+        <tr>
+            <td>Input data</td>
+            <td>FACxTMS_2F<sup>1</sup>, EFIx_LP_1B<sup>1</sup>, TECxTMS_2F<sup>1</sup>, AOBxFAC_2F<sup>1</sup>, AUXxORBCNT</td>
+        </tr>
+        <tr>
+            <td>Input time span</td>
+            <td>Up to one year<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Spatial representation</td>
+            <td>One geographic and QD-latitude/longitude pair, the McIlwain L-value as well as radius for each output position at the nearest FAC measurement for each trough crossing, i.e., up to four per orbit</td>
+        </tr>
+        <tr>
+            <td>Time representation</td>
+            <td>Up to four records per orbit (up to one record per orbit quarter)</td>
+        </tr>
+        <tr>
+            <td>Units</td>
+            <td>see at Output Data below</td>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>0.1 degree for coordinates, 0.01 for L-value</td>
+        </tr>
+        <tr>
+            <td>Uncertainty</td>
+            <td>~1 degree for coordinates, ~0.1 for L-value</td>
+        </tr>
+        <tr>
+            <td>Quality indicator</td>
+            <td><strong>Quality</strong> vector flag values are integers ranging from 3 to -1. Positive values indicate good or acceptable observation, while -1 means a likely false observation. For all flags, a 0 value means that the information needed to derive the flag is not available. In general, greater numbers indicate higher quality. A detailed description of the derivation of these flags is given in <a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-PRISM-Description-of-the-algorithm.pdf">Swarm PRISM processing algorithm description</a> (see also related resources)</br>
+<strong>Position_Quality_ID</strong> describes the overall quality of the corresponding boundary/position identified by ID. These flags are defined based on the parameter’s sigma and SZA. 3: sig-ma<0.25, 2: 0.25≤sigma<0.5, 1: 0.5≤sigma AND SZA>90°, -1: 0.5≤sigma AND SZA≤90°.
+</td>
+        </tr>
+<tr>
+            <td>Data volume</td>
+            <td>Up to 1.9 MB</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>See file contents</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>Up to one year<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>< 5 minutes</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>Daily</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td><sup>1</sup> Version information of Input Data are available in the CDF global attributes.</br><sup>2</sup> Product always contains data from the start of the first boundary crossing of the first day until the end of the last boundary-crossing starting the latest day available for that year, i.e., may contain data from the next day if boundary crossing occurs around midnight.</br><sup>3</sup> The meaning of ID: 1 – Equatorward edge of SSFAC boundary; 2 – Poleward edge of SSFAC boundary.</br><sup>4</sup> NaN values: if an ID is not identified Timestamp_ID is set to {the value of} Timestamp and corresponding variable values will be set to NaNs.</br></td>
+        </tr>
+    </tbody>
+</table>
+
 <h2>Related resources</h2>
 <ul>
 <li><a href="https://earth.esa.int/eogateway/activities/swarm-prism">Activity: Plasmapause Related boundaries in the topside Ionosphere as derived from Swarm Measurements (PRISM)</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-PRISM-Product-Definition.pdf">Swarm PRISM product description</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-PRISM-Description-of-the-algorithm.pdf">Swarm PRISM processing algorithm description</a></li>
+<li><a href="https://earth.esa.int/eogateway/documents/20142/37627/Swarm-PRISM-Validation-Report.pdf">Swarm PRISM validation report</a></li>
 </ul>
 
 <h2>Changelog</h2>

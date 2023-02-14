@@ -65,42 +65,42 @@
 </tr>
 <tr>
 <td style="text-align: left;">Bubble_Index</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">Plasma Bubble Index</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Plasma Bubble Index (0 - quiet, 1 - bubble, -1 - not analyzed)</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_INT1</td>
 </tr>
 <tr>
 <td style="text-align: left;">Bubble_Probability</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">Detection probability of the plasma bubble</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Detection probability of the plasma bubble (in steps of 0.2; 0 - not probable, 1 - very probable)</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flags_Bubble</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Flags related to the plasma bubble index</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT1</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flags_F</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Flags_F passed through from MAGx_L1_B</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT1</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flags_B</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Flags_B passed through from MAGx_L1_B</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT1</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flags_q</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Flags_q passed through from MAGx_L1_B</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT1</td>
@@ -149,65 +149,8 @@
             <td>N/A</td>
         </tr>
         <tr>
-            <td>Data volume</td>
-            <td>~4 MB/day/satellite</td>
-        </tr>
-        <tr>
-            <td>Output data</td>
-            <td>CDF file with time series</td>
-        </tr>
-        <tr>
-            <td>Output time span</td>
-            <td>1 day</td>
-        </tr>
-        <tr>
-            <td>Latency</td>
-            <td>6 min</td>
-        </tr>
-        <tr>
-            <td>Update rate</td>
-            <td>1 per day</td>
-        </tr>
-        <tr>
-            <td>Notes</td>
-            <td>&nbsp;</td>
-        </tr>
-    </tbody>
-</table>
-
-<table border="1">
-    <caption>Bubble_Index</caption>
-    <tbody>
-        <tr>
-            <td>0</td>
-            <td>Quiet</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Bubble</td>
-        </tr>
-        <tr>
-            <td>-1</td>
-            <td>Not analyzed</td>
-        </tr>
-    </tbody>
-</table>
-
-<table border="1">
-    <caption>Bubble_Probability</caption>
-    <tbody>
-        <tr>
-            <td>0</td>
-            <td>not probabale</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>very probable</td>
-        </tr>
-    </tbody>
-</table>
-
-<table border="1">
+            <td>Quality indicator</td>
+            <td><table border="1">
     <caption>Flags_Bubble</caption>
     <tbody>
         <tr>
@@ -237,6 +180,33 @@
         <tr>
             <td>32</td>
             <td>Outside equatorial orbit segment or invalid latitude/local time</td>
+        </tr>
+    </tbody>
+</table></td>
+        </tr>
+<tr>
+            <td>Data volume</td>
+            <td>~4 MB/day/satellite</td>
+        </tr>
+        <tr>
+            <td>Output data</td>
+            <td>CDF file with time series</td>
+        </tr>
+        <tr>
+            <td>Output time span</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Latency</td>
+            <td>6 min</td>
+        </tr>
+        <tr>
+            <td>Update rate</td>
+            <td>1 per day</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>&nbsp;</td>
         </tr>
     </tbody>
 </table>
