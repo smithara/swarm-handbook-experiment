@@ -12,14 +12,14 @@
     "thematic_areas": [
         "Ephemeris"
     ],
-    "description": " ",
+    "description": "The SP3xKIN_2_ product contains the time series of kinematic position of the center of mass of each satellite with respect to the International Terrestrial Reference Frame (ITRF) Earth-fixed frame.\n\nQuality report will be provided as separate Level 2 product (SP3xVAL).",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/POD/KIN",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/POD/KIN",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
     "variables_table": "",
-    "related_resources": "",
+    "related_resources": "<p><strong>Level 2 Product Description:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-processor-algorithms.pdf/e0606842-41ca-fa48-0a40-05a0d4824501?version=1.0\">Product specification for L2 Products and Auxiliary</a></li>\n</ul>\n\n<p><strong>SP3 format Description</strong></p>\n\n<ul>\n\t<li>The&nbsp;<a href=\"http://www.epncb.oma.be/ftp/data/format/sp3c.txt\">Extended Standard Product 3 Orbit Format (SP3-c)</a>&nbsp;by Steve Hilla, National Geodetic Survey, NOAA, USA, Dated: 2010-08-17</li>\n</ul>",
     "details": "<table border=\"1\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Product identifier</td>\n\t\t\t<td>SP3xKIN_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Time series of kinematic position of the center of mass of each satellite in the ITRF (Earth-fixed) frame</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Data</td>\n\t\t\t<td>GPSA_RO_1B, GPSB_RO_1B, GPSC_RO_1B, STRAATT_1B, STRBATT_1B, STRCATT_1B, MODA_SC_1B, MODB_SC_1B, MODC_SC_1B, SC_xDYN_1B, External data from IGS, IERS, CODE</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Time Span</td>\n\t\t\t<td>30 hr (daily batches with overlap)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>N/A</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>GPS time (seconds &ndash; s), observation epochs</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>km for position, dm/s for velocity</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>1 ps for time, mm for position, 0.1 &mu;m/s for velocity</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>10 cm 3D for position</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>Validation report SP3xVAL_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>&lt; 15 Megabyte (MB) per satellite per day</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data format</td>\n\t\t\t<td>SP3c</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output Data</td>\n\t\t\t<td>SP3c file</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>24 hr</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>Daily</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>21 days</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>Central 24 hr of input time span will be selected for SP3 product<br />\n\t\t\tQuality report will be provided as separate Level 2 product</td>\n\t\t</tr>\n\t</tbody>\n</table>\n",
     "changelog": "",
     "fast_processing": ""
