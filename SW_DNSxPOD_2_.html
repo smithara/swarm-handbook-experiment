@@ -4,7 +4,7 @@
 <p>Applicable missions: Swarm</p>
 <p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
 <h2>Description</h2>
-<p>Thermospheric density at the satellite location along with auxiliary parameters (altitude, latitude, longitude and local solar time). Derived from non-gravitational accelerations based on precise orbit determination data only (ACCxPOD_2_)</p>
+<p>Thermospheric density at the satellite location along with auxiliary parameters (altitude, latitude, longitude and local solar time). Derived from aerodynamic accelerations based on precise orbit determination data only (ACCxPOD_2_)</p>
 <h2>Data access</h2>
 <ul>
 <li>Files:<ul>
@@ -39,14 +39,14 @@
 <tr>
 <td style="text-align: left;">density</td>
 <td style="text-align: left;">kg/m3</td>
-<td style="text-align: left;">Density derived from GPS accelerations (FAST)</td>
+<td style="text-align: left;">Density from GPS-derived accelerations</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
 <tr>
 <td style="text-align: left;">density_orbitmean</td>
 <td style="text-align: left;">kg/m3</td>
-<td style="text-align: left;">Orbit-average of density derived from GPS accelerations</td>
+<td style="text-align: left;">Orbit-average of density from GPS-derived accelerations</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
@@ -96,7 +96,7 @@
     </tr>
     <tr>
         <td>Definition</td>
-        <td>Thermospheric density at the satellite location along with auxiliary parameters (altitude, latitude, longitude and local solar time). Derived from non-gravitational accelerations based on precise orbit determination data only (ACCxPOD_2_).</td>
+        <td>Thermospheric density at the satellite location along with auxiliary parameters (altitude, latitude, longitude and local solar time). Derived from aerodynamic accelerations based on precise orbit determination data only (ACCxPOD_2_).</td>
     </tr>
     <tr>
         <td>Input Data</td>
@@ -159,6 +159,11 @@
 </table>
 
 <h2>Related resources</h2>
-<p>N/A</p>
+<p><strong>Level 2 Product Description:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-processor-algorithms.pdf/e0606842-41ca-fa48-0a40-05a0d4824501?version=1.0">Product specification for L2 Products and Auxiliary</a></li>
+</ul>
+
 <h2>Changelog</h2>
 <p>N/A</p>
