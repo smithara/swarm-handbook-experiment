@@ -20,135 +20,297 @@
 <h2>File contents</h2>
 <p>N/A</p>
 <h2>More details</h2>
-<p>The tables reported below are extracted from the Appendix A of <a href="https://files.igs.org/pub/data/format/rinex300.pdf">rinex300.pdf</a> and describe the content of the RINEX Product file.</p>
-<pre>
-&nbsp;+----------------------------------------------------------------------------+
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TABLE A4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;|
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;GNSS NAVIGATION MESSAGE FILE - HEADER SECTION DESCRIPTION &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;HEADER LABEL &nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESCRIPTION &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;FORMAT &nbsp;&nbsp;|
-&nbsp;| &nbsp;&nbsp;(Columns 61-80) &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;|RINEX VERSION / TYPE| - Format version : 3.00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;F9.2,11X, |
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - File type (&#39;N&#39; for navigation data) &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;A1,19X, |
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - Satellite System: G: GPS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;A1,19X &nbsp;|
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R: GLONASS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E: Galileo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S: SBAS Payload &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M: Mixed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;|PGM / RUN BY / DATE | - Name of program creating current file &nbsp;| &nbsp; &nbsp; &nbsp; A20, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Name of agency creating current file &nbsp; | &nbsp; &nbsp; &nbsp; A20, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Date and time of file creation &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; Format: yyyymmdd hhmmss zone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; A20 &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;zone: 3-4 char. code for time zone. &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;UTC &#39; recommended! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;LCL &#39; if local time with un- &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;known local time system code &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-*|COMMENT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Comment line(s) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; A60 &nbsp;|*
-&nbsp;+--------------------+------------------------------------------+------------+
-*|IONOSPHERIC CORR &nbsp; &nbsp;| Ionospheric correction parameters &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|*
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp;- Correction type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; A4,1X, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;GAL = Galileo ai0 &ndash; ai2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;GPSA = GPS alpha0 - alpha3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;GPSB = GPS beta0 - beta3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp;- Parameters &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; 4D12.4 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;GPS: alpha0-alpha3 or beta0-beta3 &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;GAL: ai0, ai1, ai2, zero &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-*|TIME SYSTEM CORR &nbsp; &nbsp;| Corrections to transform the system time | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|*
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| to UTC or other time systems &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Correction type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; A4,1X, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;GAUT = GAL to UTC a0, a1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;GPUT = GPS to UTC a0, a1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;SBUT = SBAS to UTC a0, a1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;GLUT = GLO to UTC a0=TauC, a1=zero &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;GPGA = GPS to GAL a0=A0G, a1=A1G &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp;GLGP = GLO to GPS a0=TauGPS, a1=zero &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - a0,a1 Coefficients of 1-deg polynomial | &nbsp; &nbsp;D17.10, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; (a0 sec, a1 sec/sec) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; D16.9, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; CORR(s) = a0 + a1*DELTAT &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - T Reference time for polynomial &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp;I7, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; (Seconds into GPS/GAL week) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - W Reference week number &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp;I5, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; (GPS/GAL week, continuous number) &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; T and W zero for GLONASS. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - S EGNOS, WAAS, or MSAS ... &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp;1X,A5,1X &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; (left-justified) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; Derived from MT17 service provider. &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; If not known: Use Snn with &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; nn = PRN-100 of satellite &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;broadcasting the MT12 &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - U UTC Identifier (0 if unknown) &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; I2,1X &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; 1=UTC(NIST), 2=UTC(USNO), 3=UTC(SU), | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; 4=UTC(BIPM), 5=UTC(Europe Lab), &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; 6=UTC(CRL), &gt;6 = not assigned yet &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; S and U for SBAS only. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-*|LEAP SECONDS &nbsp; &nbsp; &nbsp; &nbsp;| Number of leap seconds since 6-Jan-1980 &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp;I6 &nbsp;|*
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| as transmitted by the GPS almanac. &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;|END OF HEADER &nbsp; &nbsp; &nbsp; | Last record in the header section. &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; 60X &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-</pre>
+<table border="1" class="tg" style="width:616.818px">
+    <caption>The tables reported below are extracted from the Appendix A of <a href="https://files.igs.org/pub/data/format/rinex300.pdf">rinex300.pdf</a> and describe the content of the RINEX Product file.</caption>
+    <thead>
+        <tr>
+            <th colspan="3" style="width:606px">TABLE A4<br />
+            GNSS NAVIGATION MESSAGE FILE - HEADER SECTION DESCRIPTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center; width:163px">HEADER LABEL<br />
+            (Columns 61-80)</td>
+            <td style="text-align:center; width:289px">DESCRIPTION</td>
+            <td style="text-align:center; width:140px">FORMAT</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">RINEX VERSION / TYPE</td>
+            <td style="width:289px">
+            <p>- Format version : 3.00<br />
+            - File type (&#39;N&#39; for navigation data)<br />
+            - Satellite System: G: GPS<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R: GLONASS<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E: Galileo<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S: SBAS Payload<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; M: Mixed</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>F9.2,11X,<br />
+            A1,19X,<br />
+            A1,19X</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">PGM / RUN BY / DATE&nbsp;</td>
+            <td style="width:289px">
+            <p>- Name of program creating current file<br />
+            - Name of agency creating current file&nbsp;<br />
+            - Date and time of file creation &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;Format: yyyymmdd hhmmss zone &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;zone: 3-4 char. code for time zone.&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;UTC &#39; recommended! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;LCL &#39; if local time with un-&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;known local time system code</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>&nbsp;A20,<br />
+            &nbsp;A20,<br />
+            &nbsp; &nbsp; &nbsp;<br />
+            &nbsp;A20&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">*COMMENT</td>
+            <td style="width:289px">
+            <p>Comment line(s)</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>A60</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">*IONOSPHERIC CORR&nbsp;</td>
+            <td style="width:289px">Ionospheric correction parameters &nbsp; &nbsp; &nbsp;<br />
+            &nbsp;- Correction type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp;GAL = Galileo ai0 &ndash; ai2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp;GPSA = GPS alpha0 - alpha3 &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; &nbsp;GPSB = GPS beta0 - beta3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp;- Parameters &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; &nbsp;GPS: alpha0-alpha3 or beta0-beta3&nbsp;<br />
+            &nbsp; &nbsp; &nbsp;GAL: ai0, ai1, ai2, zero &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp;</td>
+            <td style="text-align:center; vertical-align:top; width:140px">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;A4,1X,&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;4D12.4&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">*TIME SYSTEM CORR</td>
+            <td style="width:289px">
+            <p>Corrections to transform the system time<br />
+            to UTC or other time systems &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            - Correction type &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;GAUT = GAL to UTC a0, a1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;GPUT = GPS to UTC a0, a1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;SBUT = SBAS to UTC a0, a1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp;GLUT = GLO to UTC a0=TauC, a1=zero &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;GPGA = GPS to GAL a0=A0G, a1=A1G &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;GLGP = GLO to GPS a0=TauGPS, a1=zero&nbsp;<br />
+            - a0,a1 Coefficients of 1-deg polynomial<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; (a0 sec, a1 sec/sec) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; CORR(s) = a0 + a1*DELTAT &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            - T Reference time for polynomial &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; (Seconds into GPS/GAL week) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            - W Reference week number &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; (GPS/GAL week, continuous number) &nbsp;&nbsp;<br />
+            &nbsp; T and W zero for GLONASS. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            - S EGNOS, WAAS, or MSAS ... &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; (left-justified) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; Derived from MT17 service provider.&nbsp;<br />
+            &nbsp; &nbsp; If not known: Use Snn with &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; &nbsp; nn = PRN-100 of satellite &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;broadcasting the MT12 &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            - U UTC Identifier (0 if unknown) &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; 1=UTC(NIST), 2=UTC(USNO), 3=UTC(SU),<br />
+            &nbsp; &nbsp; 4=UTC(BIPM), 5=UTC(Europe Lab), &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; 6=UTC(CRL), &gt;6 = not assigned yet &nbsp;&nbsp;<br />
+            &nbsp; S and U for SBAS only. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>&nbsp;</p>
+
+            <p>A4,1X,<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;</p>
+
+            <p>D17.10,<br />
+            &nbsp; &nbsp;D16.9,<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp;I7,<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp;I5,<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;1X,A5,1X&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; I2,1X&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">*LEAP SECONDS&nbsp;</td>
+            <td style="width:289px">
+            <p>Number of leap seconds since 6-Jan-1980&nbsp;as transmitted by the GPS almanac. &nbsp; &nbsp;&nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>I6</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">END OF HEADER</td>
+            <td style="width:289px">
+            <p>Last record in the header section. &nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>60X</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 <p>Records marked with * are optional</p>
-<pre>
-&nbsp;+----------------------------------------------------------------------------+
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TABLE A5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;GNSS NAVIGATION MESSAGE FILE &ndash; GPS DATA RECORD DESCRIPTION &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| &nbsp; &nbsp; OBS. RECORD &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;DESCRIPTION &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; FORMAT &nbsp; |
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;|SV / EPOCH / SV CLK | &nbsp;- Satellite system (G), sat number (PRN)| &nbsp; A1,I2.2, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp;- Epoch: Toc - Time of Clock &nbsp; &nbsp; &nbsp; (GPS)| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; - year (4 digits) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; 1X,I4, |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; - month,day,hour,minute,second &nbsp; &nbsp; &nbsp; | 5(1X,I2.2),|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp;- SV clock bias (seconds) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp;3D19.12 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp;- SV clock drift (sec/sec) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp;- SV clock drift rate (sec/sec2) &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;*) &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| BROADCAST ORBIT - 1| - IODE Issue of Data, Ephemeris &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| 4X,4D19.12 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Crs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(meters) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Delta n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians/sec) &nbsp; &nbsp; | &nbsp; &nbsp; ***) &nbsp; |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - M0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians) &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| BROADCAST ORBIT - 2| - Cuc &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians) &nbsp; &nbsp; &nbsp; &nbsp; | 4X,4D19.12 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - e Eccentricity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Cus &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians) &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - sqrt(A) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(sqrt(m)) &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| BROADCAST ORBIT - 3| - Toe Time of Ephemeris (sec of GPS week)| 4X,4D19.12 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Cic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians) &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - OMEGA0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians) &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Cis &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians) &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| BROADCAST ORBIT - 4| - i0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians) &nbsp; &nbsp; &nbsp; &nbsp; | 4X,4D19.12 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Crc &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(meters) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - omega &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians) &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - OMEGA DOT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians/sec) &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| BROADCAST ORBIT - 5| - IDOT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians/sec) &nbsp; &nbsp; | 4X,4D19.12 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Codes on L2 channel &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - GPS Week # (to go with TOE) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; Continuous number, not mod(1024)! &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - L2 P data flag &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| BROADCAST ORBIT - 6| - SV accuracy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(meters) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| 4X,4D19.12 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - SV health &nbsp; &nbsp; &nbsp; &nbsp; (bits 17-22 w 3 sf 1)| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - TGD &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(seconds) &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - IODC Issue of Data, Clock &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-&nbsp;| BROADCAST ORBIT - 7| - Transmission time of message &nbsp; &nbsp; &nbsp; **) | 4X,4D19.12 |
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| (sec of GPS week, derived e.g. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| from Z-count in Hand Over Word (HOW) &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - Fit interval (hours) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| (see ICD-GPS-200, 20.3.4.4) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Zero if not known &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - spare &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| - spare &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-&nbsp;+--------------------+------------------------------------------+------------+
-</pre>
+
+<p>&nbsp;</p>
+
+<table border="1" class="tg" style="width:616.818px">
+    <thead>
+        <tr>
+            <th colspan="3" style="width:606px">TABLE A5<br />
+            GNSS NAVIGATION MESSAGE FILE &ndash; GPS DATA RECORD DESCRIPTION</th>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">OBS. RECORD</td>
+            <td style="text-align:center; width:289px">DESCRIPTION</td>
+            <td style="text-align:center; width:140px">FORMAT</td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">SV / EPOCH / SV CLK</td>
+            <td style="width:289px">
+            <p>&nbsp;- Satellite system (G), sat number (PRN)<br />
+            &nbsp;- Epoch: Toc - Time of Clock &nbsp; &nbsp; &nbsp; (GPS)<br />
+            &nbsp; &nbsp; - year (4 digits) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; - month,day,hour,minute,second &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- SV clock bias (seconds) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- SV clock drift (sec/sec) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp;- SV clock drift rate (sec/sec2) &nbsp; &nbsp; &nbsp; &nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>&nbsp; A1,I2.2,&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; 1X,I4,&nbsp;<br />
+            5(1X,I2.2),<br />
+            &nbsp; &nbsp;3D19.12&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp; &nbsp; &nbsp;*) &nbsp; &nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">BROADCAST ORBIT - 1</td>
+            <td style="width:289px">&nbsp;- IODE Issue of Data, Ephemeris &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- Crs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(meters) &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- Delta n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians/sec)<br />
+            &nbsp;- M0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians) &nbsp; &nbsp;</td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>4X,4D19.12<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; ***) &nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">BROADCAST ORBIT - 2</td>
+            <td style="width:289px">
+            <p>&nbsp;- Cuc &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians)&nbsp;<br />
+            &nbsp;- e Eccentricity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- Cus &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians)&nbsp;<br />
+            &nbsp;- sqrt(A)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(sqrt(m))&nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>4X,4D19.12</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">BROADCAST ORBIT - 3</td>
+            <td style="width:289px">
+            <p>&nbsp;- Toe Time of Ephemeris (sec of GPS week)<br />
+            &nbsp;- Cic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- OMEGA0 &nbsp; &nbsp; &nbsp; (radians) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- Cis &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(radians) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>4X,4D19.12</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">BROADCAST ORBIT - 4</td>
+            <td style="width:289px">
+            <p>&nbsp;- i0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians) &nbsp; &nbsp;<br />
+            &nbsp;- Crc &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;(meters) &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- omega &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians) &nbsp; &nbsp;<br />
+            &nbsp;- OMEGA DOT &nbsp;&nbsp;(radians/sec)</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>4X,4D19.12</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">BROADCAST ORBIT - 5</td>
+            <td style="width:289px">
+            <p>&nbsp;- IDOT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (radians/sec)<br />
+            &nbsp;- Codes on L2 channel &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- GPS Week # (to go with TOE) &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp;Continuous number, not mod(1024)!&nbsp;<br />
+            &nbsp;- L2 P data flag &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>4X,4D19.12</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">BROADCAST ORBIT - 6</td>
+            <td style="width:289px">
+            <p>&nbsp;- SV accuracy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(meters) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp;- SV health &nbsp; &nbsp; &nbsp; &nbsp; (bits 17-22 w 3 sf 1)<br />
+            &nbsp;- TGD &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(seconds) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- IODC Issue of Data, Clock &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>4X,4D19.12</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; width:163px">BROADCAST ORBIT - 7</td>
+            <td style="width:289px">
+            <p>&nbsp;- Transmission time of message &nbsp; &nbsp; &nbsp; **)<br />
+            &nbsp;(sec of GPS week, derived e.g. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp;from Z-count in Hand Over Word (HOW) &nbsp; &nbsp;<br />
+            &nbsp;- Fit interval (hours) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+            &nbsp;(see ICD-GPS-200, 20.3.4.4) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;Zero if not known &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- spare &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp;- spare &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+            </td>
+            <td style="text-align:center; vertical-align:top; width:140px">
+            <p>4X,4D19.12</p>
+            </td>
+        </tr>
+    </thead>
+</table>
 
 <p>**) Adjust the Transmission time of message by + or - 604800 to refer to the reported week in BROADCAST ORBIT - 5, if necessary. Set value to 0.9999E9 if not known.</p>
 
