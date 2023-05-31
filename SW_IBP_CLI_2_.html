@@ -6,86 +6,140 @@
 <h2>Description</h2>
 <p>Climatological model of ionospheric bubble probability</p>
 <h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Level2longterm/IBP">https://swarm-diss.eo.esa.int/#swarm/Level2longterm/IBP</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Level2longterm/IBP</li>
+</ul>
+</li>
+</ul>
 <h2>FAST processing</h2>
 <p>N/A</p>
 <h2>Preview image</h2>
 <p>(delivered separately)</p>
 <h2>File contents</h2>
-<p>N/A</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Parameters</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Bubble Parameters</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Intensity</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Periodic Signal Intensity</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly_LT_Shift</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Density estimations table, 12 month</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Density_Estimators</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Density estimations table, 12 month</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Density_Estimator_Lons</td>
+<td style="text-align: left;">degree</td>
+<td style="text-align: left;">Longitudes of density estimations table</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+</tbody>
+</table>
 <h2>More details</h2>
 <table border="1">
-    <thead>
-        <tr>
-            <th>Product identifier</th>
-            <th>IBP_CLI_2_</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Definition</td>
-            <td>Climatological model of ionospheric bubble probability</td>
-        </tr>
-        <tr>
-            <td>Input data</td>
-            <td>IBIxTMS_2F, AUX_F10_2, Bubble detection index of CHAMP vector magnetic field data (similar procedure as for IBIxTMS_2F)</td>
-        </tr>
-        <tr>
-            <td>Input time span</td>
-            <td>Entire Swarm mission + entire CHAMP mission</td>
-        </tr>
-        <tr>
-            <td>Spatial representation</td>
-            <td>Low geographic latitudes (ITRF) &lt; 45&deg;, continuous in geographic longitude (ITRF)</td>
-        </tr>
-        <tr>
-            <td>Time representation</td>
-            <td>1 LT hour</td>
-        </tr>
-        <tr>
-            <td>Units</td>
-            <td>N/A ([0-1]: probability)</td>
-        </tr>
-        <tr>
-            <td>Resolution</td>
-            <td>0.01</td>
-        </tr>
-        <tr>
-            <td>Uncertainty</td>
-            <td>See presentation 8th SDQW</td>
-        </tr>
-        <tr>
-            <td>Quality indicator</td>
-            <td>N/A</td>
-        </tr>
-        <tr>
-            <td>Data volume</td>
-            <td>Approximately 100 kB per file</td>
-        </tr>
-        <tr>
-            <td>Data format</td>
-            <td>CDF</td>
-        </tr>
-        <tr>
-            <td>Output data</td>
-            <td>Probability estimation by longitude, LT, day of year, F10.7</td>
-        </tr>
-        <tr>
-            <td>Output time span</td>
-            <td>Model is based on data from entire CHAMP and Swarm missions, but it is in valid for any time of solar flux 80 &lt; F10.7 &lt; 200 sfu; resolution: 1 LT hour</td>
-        </tr>
-        <tr>
-            <td>Update rate</td>
-            <td>Yearly</td>
-        </tr>
-        <tr>
-            <td>Latency</td>
-            <td>Two months</td>
-        </tr>
-        <tr>
-            <td>Notes</td>
-            <td>The coefficient file, the applicable forward modelling code (in &lsquo;python&#39;), and related documentation are available at https://igit.iap-kborn.de/ibp/ibp-model</td>
-        </tr>
-    </tbody>
+<thead>
+  <tr>
+    <th>Product identifier</th>
+    <th>IBP_CLI_2_</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Definition</td>
+    <td>Climatological model of ionospheric bubble probability</td>
+  </tr>
+  <tr>
+    <td>Input data</td>
+    <td>IBIxTMS_2F, AUX_F10_2, Bubble detection index of CHAMP vector magnetic field data (similar procedure as for IBIxTMS_2F)</td>
+  </tr>
+  <tr>
+    <td>Input time span</td>
+    <td>Entire Swarm mission + entire CHAMP mission</td>
+  </tr>
+  <tr>
+    <td>Spatial representation</td>
+    <td>Low geographic latitudes (ITRF) &lt; 45°, continuous in geographic longitude (ITRF)</td>
+  </tr>
+  <tr>
+    <td>Time representation</td>
+    <td>1 LT hour</td>
+  </tr>
+  <tr>
+    <td>Units</td>
+    <td>N/A ([0-1]: probability)</td>
+  </tr>
+  <tr>
+    <td>Resolution</td>
+    <td>0.01</td>
+  </tr>
+  <tr>
+    <td>Uncertainty</td>
+    <td>See presentation 8th SDQW (https://earth.esa.int/web/guest/missions/esa-eo-missions/swarm/activities/conferences/8th-data-quality-workshop#Wednesday)</td>
+  </tr>
+  <tr>
+    <td>Quality indicator</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>Data volume</td>
+    <td>Approximately 100 kB per file</td>
+  </tr>
+  <tr>
+    <td>Data format</td>
+    <td>CDF</td>
+  </tr>
+  <tr>
+    <td>Output data</td>
+    <td>Probability estimation by longitude, LT, day of year, F10.7</td>
+  </tr>
+  <tr>
+    <td>Output time span</td>
+    <td>Model is based on data from entire CHAMP and Swarm missions, but it is in valid for any time of solar flux 80 &lt; F10.7 &lt; 200 sfu; resolution: 1 LT hour</td>
+  </tr>
+  <tr>
+    <td>Update rate</td>
+    <td>half-yearly</td>
+  </tr>
+  <tr>
+    <td>Latency</td>
+    <td>Two months</td>
+  </tr>
+  <tr>
+    <td>Notes</td>
+    <td>The coefficient file, the applicable forward modelling code (in Python), and related documentation are available at https://igit.iap-kborn.de/ibp/ibp-model</td>
+  </tr>
+</tbody>
 </table>
 
 <h2>Related resources</h2>
