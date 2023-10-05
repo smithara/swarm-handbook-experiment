@@ -102,28 +102,35 @@
 <tr>
 <td style="text-align: left;">a_jit</td>
 <td style="text-align: left;">m/s^2</td>
-<td style="text-align: left;">Voltage jitter (plus resonant harmonics) correction for linear accelerations</td>
+<td style="text-align: left;">Voltage jitter correction for linear accelerations</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">a_rh</td>
+<td style="text-align: left;">m/s^2</td>
+<td style="text-align: left;">Resonant harmonics correction for linear accelerations</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: left;">CDF_DOUBLE</td>
 </tr>
 <tr>
 <td style="text-align: left;">flag_cor</td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;">Flag indicating which corrections are applied</td>
+<td style="text-align: left;">Flag indicating which corrections are applied (combination of corrections is coded in the binary system)</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT2</td>
 </tr>
 <tr>
 <td style="text-align: left;">flag_val</td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;">Flag indicating if data is valid</td>
+<td style="text-align: left;">Validity flag: 0 = nominal data; 1 = anomalous data</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT2</td>
 </tr>
 <tr>
 <td style="text-align: left;">flag_thr</td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;">Flag indicating if thrusters are activated</td>
+<td style="text-align: left;">Flag indicating on thrusters’ activity: 0 = inactivated; 1 = activated</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">CDF_UINT2</td>
 </tr>
@@ -138,11 +145,11 @@
     </tr>
     <tr>
         <td>Definition</td>
-        <td>Time series of corrected and calibrated acceleration, including all corrections and calibration parameters</td>
+        <td>Time series of corrected and calibrated acceleration, including all corrections, flags, and calibration parameters</td>
     </tr>
     <tr>
         <td>Input Data</td>
-        <td>ACCx_PR_1B, ACCxPOD_2_, ACCxDISi2_, SC_xDYN_1B, ACCx_PR_1B</td>
+        <td>ACCx_PR_1B, ACCxPOD_2_, ACCx_FMi2, ACCxDISi2_, MODx_SC_1B, SC_xDYN_1B</td>
     </tr>
     <tr>
         <td>Input Time Span</td>
@@ -171,11 +178,11 @@
     </tr>
     <tr>
         <td>Data volume</td>
-        <td>15 MB per day</td>
+        <td>Up to 5 MB per day</td>
     </tr>
     <tr>
         <td>Output Data</td>
-        <td>CDF file with corrected and calibrated accelerations from the accelerometer, all corrections and calibration parameters, and flags; sampling rate is 1 Hz (accelerations are at original measurement epochs)</td>
+        <td>CDF file with corrected and calibrated accelerations from the accelerometer, all corrections and calibration parameters, and flags; sampling rate is 1 Hz (accelerations are at original measurement epochs in the associated product ACCx_PR_1B)</td>
     </tr>
     <tr>
         <td>Output time span</td>
@@ -191,9 +198,10 @@
     </tr>
     <tr>
         <td>Notes</td>
-        <td>All accelerations are provided in the CRF (x-direction is roughly along-track, y-direction is roughly cross-track, z-direction is roughly nadir)
-<br>Calibration was performed against non-gravitational accelerations from POD that are contained in product ACCxPOD_2_ 
-<br>Early versions of this product will contain only along-track acceleration data</td>
+        <td>All accelerations are provided in the CRF (x-direction is roughly along-track, y-direction is roughly cross-track, z-direction is roughly nadir).
+<br>Calibration was performed against non-gravitational accelerations from POD that are contained in product ACCxPOD_2_, combined with force models that are contained in the product ACCx_FMi2_.
+<br>Information on data quality and validity and on composition of the validity flag “flag_val” is available in the metadata of the cdf-file.
+<br>Early versions of this product will contain only along-track acceleration data.</td>
     </tr>
     </tbody>
 </table>

@@ -1,8 +1,8 @@
 <h1>SW_MIO_SHA_2D</h1>
 <p>Model of non-polar daily geomagnetic variation caused by ionospheric currents, derived from dedicated chain (DIFI)</p>
 <p>Thematic areas: Ionosphere/Magnetosphere</p>
-<p>Applicable missions: Swarm</p>
-<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<p>Applicable missions: CHAMP, Swarm</p>
+<p>Applicable spacecraft: CHAMP, Swarm-A, Swarm-B, Swarm-C</p>
 <h2>Description</h2>
 <p>Model of non-polar daily geomagnetic variation caused by ionospheric currents, including their variability with season and solar flux, derived in Dedicated Ionospheric Field Inversion chain</p>
 <h2>Data access</h2>
@@ -34,11 +34,15 @@
     <tbody>
         <tr>
             <td>Definition</td>
-            <td>Spherical harmonic representation of the daily geomagnetic variations at mid and low latitudes (Sq and EEJ)</td>
+            <td>Spherical harmonic representation of the daily geomagnetic variations at mid and low<br />
+            latitudes (Sq and EEJ) and its induced counterpart</td>
         </tr>
         <tr>
             <td>Input data</td>
-            <td>MIO_SHAi2D, MIO_VAL_2_</td>
+            <td>MAGx_LR_1B, AUX_KP__2_, AUX_DST_2_, AUX_F10_2_, AUX_IMF_2,<br />
+            AUX_COR_2_, AUX_OBS_2_, AUX_LIT_2_, AUX_IGR_2_, MCO_SHA_2F,<br />
+            MCO_SHAi2D, MLI_SHAi2D, MCO_SHAi2C, MLI_SHAi2C, MMA_SHAi2C,<br />
+            MMA_SHA_2F, Q3D_CI_i2, and other non-Swarm data</td>
         </tr>
         <tr>
             <td>Input time span</td>
