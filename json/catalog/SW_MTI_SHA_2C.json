@@ -12,7 +12,7 @@
     "thematic_areas": [
         "Ocean Tides"
     ],
-    "description": "This product contains the representation of a model of the magnetic field of the Lunar M<sub>2</sub> ocean tides (\u201cMTI\u201d part of product name) using spherical harmonic coefficients (\u201cSHA\u201d part of product name). The model is estimated from Swarm and ground observatory data using the Comprehensive Inversion (CI) scheme within the Swarm Level 2 Processing system (\u201c2C\u201d part of product name).",
+    "description": "This product contains the representation of a model of the magnetic field of the Lunar M<sub>2</sub> ocean tides using spherical harmonic coefficients. The model is estimated from Swarm and ground observatory data using the Comprehensive Inversion scheme within the Swarm Level 2 Processing system.",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MTI",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MTI",
     "link_vires_gui": "",
