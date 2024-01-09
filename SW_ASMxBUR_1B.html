@@ -1,0 +1,134 @@
+<h1>SW_ASMxBUR_1B</h1>
+<p>ASM 250Hz Experimental Burst Mode Data</p>
+<p>Thematic areas: Magnetic measurements, Space Weather</p>
+<p>Applicable missions: Swarm</p>
+<p>Applicable spacecraft: Swarm-A, Swarm-B, Swarm-C</p>
+<h2>Description</h2>
+<p>The ASMxBUR_1B Product contains magnetic scalar data at 250 Hz rate. The ASM data are processed and provided at ASM instrument time stamp. </p>
+<h2>Data access</h2>
+<ul>
+<li>Files:<ul>
+<li><a href="https://swarm-diss.eo.esa.int/#swarm/Advanced/Magnetic_Data/ASM_Burst_Mode_Data/Data">https://swarm-diss.eo.esa.int/#swarm/Advanced/Magnetic_Data/ASM_Burst_Mode_Data/Data</a></li>
+<li>ftp://swarm-diss.eo.esa.int/Advanced/Magnetic_Data/ASM_Burst_Mode_Data/Data</li>
+</ul>
+</li>
+</ul>
+<h2>FAST processing</h2>
+<p>N/A</p>
+<h2>Preview image</h2>
+<p>(delivered separately)</p>
+<h2>File contents</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Dim</th>
+<th style="text-align: left;">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">UTC</td>
+<td style="text-align: left;">Time of observation</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeFrac</td>
+<td style="text-align: left;">ns</td>
+<td style="text-align: left;">Fractional time of observation: ns within second</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Latitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">deg</td>
+<td style="text-align: left;">Position in ITRF - Longitude</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Radius</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">Position in ITRF - Radius</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic field intensity</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dF_Stray</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Magnetic stray fields correction</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">dF_BlochSiegert</td>
+<td style="text-align: left;">nT</td>
+<td style="text-align: left;">Bloch-Siegert correction</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flags</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">Binary combination of the values taken by Flag_outlier, Flag_magnetic_condition, Flag_heater and Flag_step</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_UINT1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Time_piezo</td>
+<td style="text-align: left;">Epoch</td>
+<td style="text-align: left;">Timestamp of ASM motor activations</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CDF_EPOCH</td>
+</tr>
+</tbody>
+</table>
+<h2>More details</h2>
+<p>Flags is stored as a 8 bits unsigned integer and can nominally take values from 0 to 15. This number can be written in a binary form such as Flags = &#39;0000abcd&#39;, where:</p>
+
+<ul>
+    <li>&lsquo;a&rsquo; stands for Flag_outlier value,</li>
+    <li>&lsquo;b&rsquo; stands for Flag_magnetic_condition value,</li>
+    <li>&lsquo;c&rsquo; stands for Flag_heater value,</li>
+    <li>&lsquo;d&rsquo; stands for Flag_step value.</li>
+</ul>
+
+<h2>Related resources</h2>
+<p><strong>ASM Burst Product Description:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/missions/swarm">ASM Burst Product Definition</a></li>
+</ul>
+
+<p><strong>Level 1B Product Format page:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/missions/swarm/product-data-handbook/level-1b-product-format">Swarm Level 1B Product Format</a></li>
+</ul>
+
+<p><strong>ASM Burst Available Product list:</strong></p>
+
+<ul>
+    <li><a href="https://earth.esa.int/eogateway/missions/swarm">ASM Burst Product list</a></li>
+</ul>
+
+<h2>Changelog</h2>
+<p>N/A</p>
