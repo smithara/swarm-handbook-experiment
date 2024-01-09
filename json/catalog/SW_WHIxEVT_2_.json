@@ -1,0 +1,26 @@
+{
+    "product_id": "SW_WHIxEVT_2_",
+    "definition": "Whistler Events from ASM BM 250Hz data",
+    "applicable_missions": [
+        "Swarm"
+    ],
+    "applicable_spacecraft": [
+        "Swarm-A",
+        "Swarm-B"
+    ],
+    "thematic_areas": [
+        "Magnetic measurements",
+        "Space Weather"
+    ],
+    "description": "The WHIxEVT_2_ Product contains information about the Extremely Low Frequency (ELF) portion of whistlers detected during ASM Burst Mode sessions.",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2daily/Latest_baselines/WHI/EVT",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2daily/Latest_baselines/WHI/EVT",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "<p>Variable,Units,Description,Dim,Type<br />\nTimestamp_Whistler,UTC,Time of start of whistler signal,N,CDF_EPOCH<br />\nLatitude,deg,Position in ITRF - Latitude,N,CDF_DOUBLE<br />\nLongitude,deg,Position in ITRF - Longitude,N,CDF_DOUBLE<br />\nRadius,m,Position in ITRF - Radius,N,CDF_DOUBLE<br />\nLT,hours,Local Time at satellite position,N,CDF_DOUBLE<br />\nWhistler_Dispersion, s<sup>&frac12;</sup>, Dispersion of whistler signal,N, CDF_DOUBLE<br />\nWhistler_t0, UTC, Estimated initial time of whistler propagation inside the ionosphere,N,CDF_EPOCH<br />\nWhistler_t0_uncertainty, s, Estimated uncertainty on Whistler_t0,N, CDF_DOUBLE<br />\nIntensity, pT<sup>2&nbsp;</sup>Hz<sup>-1</sup>, Intensity of whistler signal in the frequency range between 16 and 125 Hz,N, CDF_DOUBLE<br />\nTimestamp, UTC, Time of the time series in the whistler time-window, N*m, CDF_EPOCH<br />\nTimeFrac, ns, Fractional time of observation: ns within second in the whistler time-window, N*m, CDF_UINT4<br />\nF_analysed, nT, High-pass filtered magnetic field intensity in the whistler time-window, N*m, CDF_DOUBLE<br />\nFlags, -, Binary combination of the values taken by Flag_outlier Flag_magnetic_condition Flag_heater and Flag_step, N*m, CDF_UINT1<br />\nTimestamp_PSD, UTC, Time of the PSD over the whistler time-window, N*m, CDF_EPOCH<br />\nFrequencies_PSD, Hz, Frequencies of PSD, p, CDF_DOUBLE<br />\nPSD, nT Hz<sup>-&frac12;</sup>, Power Spectral Density values at Timestamp_PSD over Frequencies_PSD, N * n * p, CDF_DOUBLE</p>",
+    "related_resources": "<p><strong>ASM Whistler Product Description:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/missions/swarm\">ASM Whistler Product Definition</a></li>\n</ul>\n\n<p><strong>ASM Whistler Available Product list:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/missions/swarm\">ASM Whistler Product list</a></li>\n</ul>",
+    "details": "<p>In the Dim column, N indicates the number of whistler events contained in the data file, m the number of points of the corresponding time-series, n the number of points of the corresponding PSD, p the number of frequencies of the PSD</p>\n\n<p>Flags is stored as a 8 bits unsigned integer and can nominally take values from 0 to 15. This number can be written in a binary form such as Flags = &#39;0000abcd&#39;, where:</p>\n\n<ul>\n\t<li>&lsquo;a&rsquo; stands for Flag_outlier value,</li>\n\t<li>&lsquo;b&rsquo; stands for Flag_magnetic_condition value,</li>\n\t<li>&lsquo;c&rsquo; stands for Flag_heater value,</li>\n\t<li>&lsquo;d&rsquo; stands for Flag_step value.</li>\n</ul>",
+    "changelog": "",
+    "fast_processing": ""
+}
