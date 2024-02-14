@@ -133,6 +133,12 @@
                 },
                 "variables_table": {
                     "type": "string"
+                },
+                "input_products": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             },
             "required": [],

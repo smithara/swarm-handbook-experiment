@@ -57,6 +57,7 @@ class Product:
     details: str = ""
     changelog: str = ""
     fast_processing: str = ""
+    input_products: "list[str]|None" = field(default_factory=lambda: [])
     
     @staticmethod
     def allowed_thematic_areas():
@@ -121,6 +122,7 @@ class Product:
     def markdown_preview(self):
         items = [
             f"# {self.product_id}\n\n{self.definition}",
+            f"Input products: {', '.join(self.input_products)}",
             f"Thematic areas: {', '.join(self.thematic_areas)}",
             f"Applicable missions: {', '.join(self.applicable_missions)}",
             f"Applicable spacecraft: {', '.join(self.applicable_spacecraft)}",
