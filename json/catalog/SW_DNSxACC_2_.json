@@ -21,5 +21,11 @@
     "related_resources": "<p><strong>Level 2 Product Description:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/documents/20142/37627/swarm-level-1b-processor-algorithms.pdf/e0606842-41ca-fa48-0a40-05a0d4824501?version=1.0\">Product specification for L2 Products and Auxiliary</a></li>\n</ul>\n",
     "details": "<table border=\"1\">\n\t<tbody>\n    <tr>\n        <td><b>Product identifier</b></td>\n        <td><b>DNSxACC_2_</b></td>\n    </tr>\n    <tr>\n        <td>Definition</td>\n        <td>Thermospheric density at the satellite location estimated from calibrated non-gravitational accelerations (ACCx_AE_2_) that are based on precise orbit determination and accelerometer data</td>\n    </tr>\n    <tr>\n        <td>Input Data</td>\n        <td>STRxATT_1B, SC_xDYN_1B, ACCx_AE_2_, SP3_COM__2,\n<br>AUX_IER_2_, AUX_AER_2_, AUX_F10_2_, AUX_KP__2_\n<br>External data from IERS</td>\n    </tr>\n    <tr>\n        <td>Input Time Span</td>\n        <td>24 hr</td>\n    </tr>\n    <tr>\n        <td>Spatial representation</td>\n        <td>Time-series along satellite track, altitude (m), latitude (deg), longitude (deg) and local solar time (hours) available based on MODX_SC_1B</td>\n    </tr>\n    <tr>\n        <td>Time representation</td>\n        <td>UTC (seconds \u2013 s), nominally with 10 s time step</td>\n    </tr>\n    <tr>\n        <td>Units</td>\n        <td>kg/m<sup>3</sup> for density, m/s for wind speed</td>\n    </tr>\n    <tr>\n        <td>Resolution</td>\n        <td>64 bit double precision floating point number format</td>\n    </tr>\n    <tr>\n        <td>Uncertainty</td>\n        <td>30% of variance from models for neutral density</td>\n    </tr>\n    <tr>\n        <td>Quality indicator</td>\n        <td>Validation report TDAxVAL_2_</td>\n    </tr>\n    <tr>\n        <td>Data volume</td>\n        <td>&lt; 15 Mbyte per satellite per day</td>\n    </tr>\n    <tr>\n        <td>Output Data</td>\n        <td>CDF file with time series</td>\n    </tr>\n    <tr>\n        <td>Output time span</td>\n        <td>24 hr</td>\n    </tr>\n    <tr>\n        <td>Update rate</td>\n        <td>3 months</td>\n    </tr>\n    <tr>\n        <td>Latency</td>\n        <td>1 month</td>\n    </tr>\n    <tr>\n        <td>Notes</td>\n        <td>None</td>\n    </tr>\n\t</tbody>\n</table>\n",
     "changelog": "",
-    "fast_processing": ""
+    "fast_processing": "",
+    "input_products": [
+        "SW_ACCx_AE_2_",
+        "SW_SC_xDYN_1B",
+        "SW_SP3xCOM_2_",
+        "SW_STRxATT_1B"
+    ]
 }

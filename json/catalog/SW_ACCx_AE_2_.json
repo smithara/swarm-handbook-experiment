@@ -21,5 +21,12 @@
     "related_resources": "",
     "details": "<table border=\"1\">\n <tbody>\n    <tr>\n        <td>Product identifier</td>\n        <td>ACCx_AE_2_</td>\n    </tr>\n    <tr>\n        <td>Definition</td>\n        <td>Time series of calibrated accelerometer data, pre-processed to represent external non-gravitational forces and aerodynamic accelerations</td>\n    </tr>\n    <tr>\n        <td>Input Data</td>\n        <td>SC_xDYN_1B, STRxATT_1B, SP3xCOM_2_, ACCxCAL_2_, ACCxPOD_2_, AUX_F10_2_, AUX_KP__2_</td>\n    </tr>\n    <tr>\n        <td></td>\n        <td>External data from IERS</td>\n    </tr>\n    <tr>\n        <td>Input Time Span</td>\n        <td>24 hr</td>\n    </tr>\n    <tr>\n        <td>Spatial representation</td>\n        <td>Time-series along satellite track, altitude (m), latitude (deg), longitude (deg) and local solar time (hours) available based on MODX_SC_1B</td>\n    </tr>\n    <tr>\n        <td>Time representation</td>\n        <td>UTC (seconds ? s), nominally with 10 s time step</td>\n    </tr>\n    <tr>\n        <td>Units</td>\n        <td>nm/s<sup>2</sup> for accelerations, s for time, m for altitude, degrees for latitude, longitude, hours for local solar time</td>\n    </tr>\n    <tr>\n        <td>Resolution</td>\n        <td>64 bit double precision floating point number format</td>\n    </tr>\n    <tr>\n        <td>Uncertainty</td>\n        <td>N/A</td>\n    </tr>\n    <tr>\n        <td>Quality indicator</td>\n        <td>Validation report TDAxVAL_2_</td>\n    </tr>\n    <tr>\n        <td>Data volume</td>\n        <td>&lt; 10 Mbyte per satellite per day</td>\n    </tr>\n    <tr>\n        <td>Output Data</td>\n        <td>CDF file with time series</td>\n    </tr>\n    <tr>\n        <td>Output time span</td>\n        <td>24 hr</td>\n    </tr>\n    <tr>\n        <td>Update rate</td>\n        <td>3 months</td>\n    </tr>\n    <tr>\n        <td>Latency</td>\n        <td>1 month</td>\n    </tr>\n    <tr>\n        <td>Notes</td>\n        <td>The applied accelerometer bias and scale factors are available in the metadata.</td>\n    </tr>\n </tbody>\n</table>",
     "changelog": "",
-    "fast_processing": ""
+    "fast_processing": "",
+    "input_products": [
+        "SW_ACCxCAL_2_",
+        "SW_ACCxPOD_2_",
+        "SW_SC_xDYN_1B",
+        "SW_SP3xCOM_2_",
+        "SW_STRxATT_1B"
+    ]
 }

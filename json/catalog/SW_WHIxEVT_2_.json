@@ -22,5 +22,8 @@
     "related_resources": "<p><strong>ASM Whistler Product Description:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/missions/swarm\">ASM Whistler Product Definition</a></li>\n</ul>\n\n<p><strong>ASM Whistler Available Product list:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/missions/swarm\">ASM Whistler Product list</a></li>\n</ul>",
     "details": "<p>In the Dim column, N indicates the number of whistler events contained in the data file, m the number of points of the corresponding time-series, n the number of points of the corresponding PSD, p the number of frequencies of the PSD</p>\n\n<p>Flags is stored as a 8 bits unsigned integer and can nominally take values from 0 to 15. This number can be written in a binary form such as Flags = &#39;0000abcd&#39;, where:</p>\n\n<ul>\n\t<li>&lsquo;a&rsquo; stands for Flag_outlier value,</li>\n\t<li>&lsquo;b&rsquo; stands for Flag_magnetic_condition value,</li>\n\t<li>&lsquo;c&rsquo; stands for Flag_heater value,</li>\n\t<li>&lsquo;d&rsquo; stands for Flag_step value.</li>\n</ul>",
     "changelog": "",
-    "fast_processing": ""
+    "fast_processing": "",
+    "input_products": [
+        "SW_ASMxBUR_1B"
+    ]
 }
