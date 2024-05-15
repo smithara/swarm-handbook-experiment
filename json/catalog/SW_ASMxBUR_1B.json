@@ -23,5 +23,6 @@
     "related_resources": "<p><strong>ASM Burst Product Documentation:</strong></p>\n\n<p>The ASM Burst Product Definition Document and the list if available products can be found <a href=\"https://swarm-diss.eo.esa.int/#swarm%2FAdvanced%2FMagnetic_Data%2FASM_Burst_Mode_Data%2FDocumentation\">here</a> or via ftp under the following folder:</p>\n\n<p>ftp://swarm-diss.eo.esa.int/Advanced/Magnetic_Data/ASM_Burst_Mode_Data/Documentation</p>\n\n<p><strong>Level 1B Product Format page:</strong></p>\n\n<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/missions/swarm/product-data-handbook/level-1b-product-format\">Swarm Level 1B Product Format</a></li>\n</ul>\n",
     "details": "<p>Flags is stored as a 8 bits unsigned integer and can nominally take values from 0 to 15. This number can be written in a binary form such as Flags = &#39;0000abcd&#39;, where:</p>\n\n<ul>\n\t<li>&lsquo;a&rsquo; stands for Flag_outlier value,</li>\n\t<li>&lsquo;b&rsquo; stands for Flag_magnetic_condition value,</li>\n\t<li>&lsquo;c&rsquo; stands for Flag_heater value,</li>\n\t<li>&lsquo;d&rsquo; stands for Flag_step value.</li>\n</ul>",
     "changelog": "",
-    "fast_processing": ""
+    "fast_processing": "",
+    "input_products": []
 }

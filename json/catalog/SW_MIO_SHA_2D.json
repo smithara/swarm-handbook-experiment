@@ -24,5 +24,15 @@
     "related_resources": "",
     "details": "<table border=\"1\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Product identifier</th>\n\t\t\t<th>MIO_SHA_2D</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>Spherical harmonic representation of the daily geomagnetic variations at mid and low<br />\n\t\t\tlatitudes (Sq and EEJ) and its induced counterpart</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input data</td>\n\t\t\t<td>MAGx_LR_1B, AUX_KP__2_, AUX_DST_2_, AUX_F10_2_, AUX_IMF_2,<br />\n\t\t\tAUX_COR_2_, AUX_OBS_2_, AUX_LIT_2_, AUX_IGR_2_, MCO_SHA_2F,<br />\n\t\t\tMCO_SHAi2D, MLI_SHAi2D, MCO_SHAi2C, MLI_SHAi2C, MMA_SHAi2C,<br />\n\t\t\tMMA_SHA_2F, Q3D_CI_i2, and other non-Swarm data</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input time span</td>\n\t\t\t<td>3 months to 1 year, to be confirmed and aligned to update rate</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>Spherical Harmonics up to degree 60 and order 12 in dipole coordinates</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>Fourier Series, seasonal and daily periodicity</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>nT</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>1 fT</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>Refer to product quality report</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>Statistics of data misfits provided in the validation report</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>~ 3.5 Mo&#39;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data format</td>\n\t\t\t<td>ASCII listing</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output data</td>\n\t\t\t<td>Coefficients of SH model in dipole coordinates, with seasonal and diurnal periodicity</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>N/A</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>First after 6 months, 1 year, and update every year</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>1.5 months</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>",
     "changelog": "",
-    "fast_processing": ""
+    "fast_processing": "",
+    "input_products": [
+        "SW_MAGx_LR_1B",
+        "SW_MCO_SHA_2C",
+        "SW_MCO_SHA_2D",
+        "SW_MCO_SHA_2F",
+        "SW_MLI_SHA_2C",
+        "SW_MLI_SHA_2D",
+        "SW_MMA_SHA_2C",
+        "SW_MMA_SHA_2F"
+    ]
 }

@@ -22,5 +22,14 @@
     "related_resources": "<ul>\n<li><a href=\"https://earth.esa.int/eogateway/activities/gvo\">Geomagnetic Virtual Observatories activity</a></li>\n</ul>\n",
     "details": "",
     "changelog": "",
-    "fast_processing": ""
+    "fast_processing": "",
+    "input_products": [
+        "SW_MAGx_LR_1B",
+        "SW_MCO_SHA_2C",
+        "SW_MCO_SHA_2X",
+        "SW_MIO_SHA_2C",
+        "SW_MLI_SHA_2C",
+        "SW_MMA_SHA_2C",
+        "SW_MTI_SHA_2C"
+    ]
 }

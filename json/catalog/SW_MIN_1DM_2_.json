@@ -22,5 +22,9 @@
     "related_resources": "",
     "details": "<table border=\"1\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Product identifier</th>\n\t\t\t<th>MIN_1DM_2_</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Definition</td>\n\t\t\t<td>1-D model of mantle conductivity</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Data</td>\n\t\t\t<td>MIN_1DMi2_, MC1_VAL_2_</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Input Time Span</td>\n\t\t\t<td>2 years</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Spatial representation</td>\n\t\t\t<td>Conductivity distribution with respect to depth (1-D layered model of the Earth)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Time representation</td>\n\t\t\t<td>N/A</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Units</td>\n\t\t\t<td>Kilometers (for layer radii), Siemens per meter (for conductivities)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Resolution</td>\n\t\t\t<td>N/A</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Uncertainty</td>\n\t\t\t<td>Refer to product quality report</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Quality indicator</td>\n\t\t\t<td>N/A</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data volume</td>\n\t\t\t<td>A few Kb</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Data format</td>\n\t\t\t<td>ASCII listing</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output Data</td>\n\t\t\t<td>Conductivities within the layer, and radii of the top of the layer</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Output time span</td>\n\t\t\t<td>N/A</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Update rate</td>\n\t\t\t<td>First version after 2 years, update every year</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Latency</td>\n\t\t\t<td>1 month</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Notes</td>\n\t\t\t<td>This 1-D model is foreseen as the output of the 1-D frequency domain inversion</td>\n\t\t</tr>\n\t</tbody>\n</table>\n",
     "changelog": "",
-    "fast_processing": ""
+    "fast_processing": "",
+    "input_products": [
+        "SW_MMA_SHA_2C",
+        "SW_MTI_SHA_2C"
+    ]
 }
