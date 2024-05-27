@@ -1,0 +1,26 @@
+{
+    "product_id": "GF_WNDxACC_2_",
+    "definition": "Thermosphere crosswind at the GRACE-FO satellite locations",
+    "applicable_missions": [
+        "GRACE-FO"
+    ],
+    "applicable_spacecraft": [
+        "GRACE-FO-1"
+    ],
+    "thematic_areas": [
+        "Ionosphere/Magnetosphere",
+        "Thermosphere",
+        "Space Weather"
+    ],
+    "description": "This product contains thermosphere crosswind at the GRACE-FO satellite locations",
+    "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE-FO/WND",
+    "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE-FO/WND",
+    "link_vires_gui": "",
+    "link_notebook": "",
+    "link_hapi": "",
+    "variables_table": "\"Field name\",\"Type\",\"Dimension\",\"Unit\",\"Contents\"\n\"time\",\"CDF_EPOCH\",\"1\",\"ms\",\"Observation time (UTC)\"\n\"altitude\",\"CDF_REAL8\",\"1\",\"m\",\"Observation altitude (GRS80)\"\n\"latitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Observation geodetic latitude\"\n\"longitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Observation longitude \"\n\"local_solar_time\",\"CDF_REAL8\",\"1\",\"h\",\"Local solar time\"\n\"crosswind\",\"CDF_REAL8\",\"1\",\"m/s\",\"Crosswind magnitude\"\n\"crosswind_direction\",\"CDF_REAL8\",\"3\",\"-\",\"Direction of the crosswind in local North-East-Down frame (unit vector)\"\n\"validity_flag\",\"CDF_INT1\",\"1\",\"-\",\"0 = nominal data, 1 = anomalous data\"",
+    "related_resources": "<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/activities/toleos\">TOLEOS Project</a></li>\n\t<li><a href=\"http://thermosphere.tudelft.nl/\">TU Delft thermosphere data</a></li>\n</ul>",
+    "details": "",
+    "changelog": "",
+    "fast_processing": ""
+}
