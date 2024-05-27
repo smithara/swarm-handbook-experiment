@@ -17,7 +17,7 @@
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/IBP",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/IBP",
     "link_vires_gui": "",
-    "link_notebook": "",
+    "link_notebook": "https://notebooks.vires.services/notebooks/07d1_sw-ibpmodel",
     "link_hapi": "",
     "variables_table": "Variable,Units,Description,Dim,Type\nParameters,-,Bubble Parameters,1,CDF_DOUBLE\nIntensity,-,Periodic Signal Intensity,1,CDF_DOUBLE\nMonthly_LT_Shift,1,\"Density estimations table, 12 month\",12,CDF_DOUBLE\nDensity_Estimators,1,\"Density estimations table, 12 month\",12,CDF_DOUBLE\nDensity_Estimator_Lons,degree,Longitudes of density estimations table,1,CDF_DOUBLE",
     "related_resources": "Software repository for Python package: <a href=\"https://igit.iap-kborn.de/ibp/ibp-model\">https://igit.iap-kborn.de/ibp/ibp-model</a>",
