@@ -10,7 +10,7 @@
     "thematic_areas": [
         "Magnetic measurements"
     ],
-    "description": " ",
+    "description": "This product contains calibrated magnetic measurements derived from Cryosat-2 platform magnetometers",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/CryoSat-2",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/CryoSat-2",
     "link_vires_gui": "",

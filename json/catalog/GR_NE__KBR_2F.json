@@ -12,7 +12,7 @@
         "Space Weather",
         "Ionosphere/Magnetosphere"
     ],
-    "description": " ",
+    "description": "This product contains the time series of the averaged electron density (Ne) between GRACE 1 and 2 satellites",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE/NE",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE/NE",
     "link_vires_gui": "",

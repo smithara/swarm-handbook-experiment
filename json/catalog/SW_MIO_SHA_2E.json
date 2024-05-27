@@ -12,7 +12,7 @@
     "thematic_areas": [
         "Ionosphere/Magnetosphere"
     ],
-    "description": " Model of polar daily geomagnetic variation caused by ionospheric currents (AMPS model)",
+    "description": "Model of polar daily geomagnetic variation caused by ionospheric currents (AMPS model)",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Level2longterm/MIO",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Level2longterm/MIO",
     "link_vires_gui": "https://vires.services?ws=data%3Aapplication/json%2Bgzip%3Bbase64%2CH4sIAMta5mMC/51Va0/bMBT9K1W%2Bro38iF98K4Vuk4AhygYUVVFoTPGUJpWTdiDU/75r00caBoNKVhsf33POzbVz/RyU2i7MWP/StjRFHhy0AhpiHKKg3QoqM9UDnelx9bJ0GxCEeQdhGJcIHfgRIoSGLrq2RugBUzBCpdQwGK2kjoppYjY6rINJh0IseUuHXKKdNaezMPpPPaVgkhV32tFmtkjn46rsFfm9mcxtsop4DgZX8Y/z44v4tPu1G59cxPjQwwtTmrtMw/N9kpUaJIp5lZlcl3VoloxN9QQIdh6JTaa6glp5hcP47Ljnn2yST5zSLWaQarvF3J/Ld1xkhS3HifcJfusqWALa/ywJwNK/tU4BquxcOxnvH1tddhtZdLjT4%2B%2BlsOHGp0Wqs10%2BkAV7i7x09C1pW0aX1k7JUCheF62/T8G%2BvcqPfK5U1w1X5F0Jfdf1plFV4Unin5zULLSdmHwSY88dNrgEvZV0k/m9wZRAlB/gHe3J6xudpetzX69RuxWhd%2BtzHR9fNUwZbOX/LW/2JQ73Ii798nRW5Dqv3FvePgfGnY6ge3o%2B8CfGTHw3%2BRI0D2w%2Bz7Ll6EUCUJucF6XZtJbZdgInmSFJsQqF5ARTytutDuEYCc5IyCJGI6Jku0UjTBDjUYiFJJxE3CWfGrvtsh0UUqoiwpFCTEpgAg2FTCAhOAfJCH4JbA8EigggxiVBYAnhTmw%2BW6kgBRJCQq%2BViEoliZMRXHFGseBCRYIK5jBOMZZSYCWEUkJRp2LN5KHyH1uoKBMYI8qIZEpx7ChEuvRAQlFwUFL4dAjiYKRgRATyl2zkCvfYfTTlTtc%2Bge5czdOXxp0VVbNpwwY9OZK/LPq%2B8/v5SXLn247bFYeRddBoM2uE%2BGOxjnLYqA4Sz4Ucd/xqbXH0yuVDgg4rk0pnmalW31U3mz0ktZvl0CaLojbvPSQ2M/Xr6GzQq81%2BQp2SdA0sl38BYVV2s7sHAAA%3D",

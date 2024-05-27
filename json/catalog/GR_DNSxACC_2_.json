@@ -13,14 +13,14 @@
         "Thermosphere",
         "Space Weather"
     ],
-    "description": " ",
+    "description": "This product contains thermosphere mass density at the GRACE satellite locations",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE/DNS",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE/DNS",
     "link_vires_gui": "",
     "link_notebook": "",
     "link_hapi": "",
     "variables_table": "\"Field name\",\"Type\",\"Dimension\",\"Unit\",\"Contents\"\n\"time\",\"CDF_EPOCH\",\"1\",\"ms\",\"Observation time (UTC)\"\n\"altitude\",\"CDF_REAL8\",\"1\",\"m\",\"Observation altitude (GRS80)\"\n\"latitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Observation geodetic latitude\"\n\"longitude\",\"CDF_REAL8\",\"1\",\"deg\",\"Observation longitude \"\n\"local_solar_time\",\"CDF_REAL8\",\"1\",\"h\",\"Local solar time\"\n\"density\",\"CDF_REAL8\",\"1\",\"kg/m3\",\"Mass density\"\n\"density_orbitmean\",\"CDF_REAL8\",\"1\",\"kg/m3\",\"Orbit average of mass density (implemented as moving average)\"\n\"validity_flag\",\"CDF_INT1\",\"1\",\"-\",\"0 = nominal data, 1 = anomalous data\"\n\"validity_flag_orbitmean\",\"CDF_INT1\",\"1\",\"-\",\"0 = nominal data, 1 = anomalous data\"",
-    "related_resources": "<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/activities/toleos\">TOLEOS Project</a></li>\n</ul>",
+    "related_resources": "<ul>\n\t<li><a href=\"https://earth.esa.int/eogateway/activities/toleos\">TOLEOS Project</a></li>\n\t<li><a href=\"http://thermosphere.tudelft.nl/\">TU Delft thermosphere data</a></li>\n</ul>",
     "details": "",
     "changelog": "",
     "fast_processing": ""

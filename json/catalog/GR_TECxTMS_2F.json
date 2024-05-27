@@ -12,7 +12,7 @@
         "Space Weather",
         "Ionosphere/Magnetosphere"
     ],
-    "description": " Integrated electron density along the line of sight from GRACE 1 and 2 to GNSS satellites",
+    "description": "Integrated electron density along the line of sight from GRACE 1 and 2 to GNSS satellites",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE/TEC",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE/TEC",
     "link_vires_gui": "",

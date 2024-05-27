@@ -11,7 +11,7 @@
     "thematic_areas": [
         "Magnetic measurements"
     ],
-    "description": " ",
+    "description": "This product contains calibrated magnetic measurements derived from GRACE-FO platform magnetometers",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE-FO/Magnetic_data",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE-FO/Magnetic_data",
     "link_vires_gui": "",

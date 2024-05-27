@@ -10,7 +10,7 @@
     "thematic_areas": [
         "Magnetic measurements"
     ],
-    "description": " ",
+    "description": "This product contains calibrated magnetic measurements derived from GOCE platform magnetometers",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GOCE/Magnetic_data",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GOCE/Magnetic_data",
     "link_vires_gui": "",

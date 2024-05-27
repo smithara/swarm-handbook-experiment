@@ -1,6 +1,6 @@
 {
     "product_id": "GF_NE__KBR_2F",
-    "definition": "Time series of the averaged electron density (Ne) between GRACE 1 and 2 satellites",
+    "definition": "Time series of the averaged electron density (Ne) between GRACE-FO 1 and 2 satellites",
     "applicable_missions": [
         "GRACE-FO"
     ],
@@ -12,7 +12,7 @@
         "Space Weather",
         "Ionosphere/Magnetosphere"
     ],
-    "description": " ",
+    "description": "This product contains the time series of the averaged electron density (Ne) between GRACE-FO 1 and 2 satellites",
     "link_files_http": "https://swarm-diss.eo.esa.int/#swarm/Multimission/GRACE-FO/NE",
     "link_files_ftp": "ftp://swarm-diss.eo.esa.int/Multimission/GRACE-FO/NE",
     "link_vires_gui": "",
